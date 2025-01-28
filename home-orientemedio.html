@@ -1,0 +1,285 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Erapolis Travel</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        #main {
+            font-family: 'Arial', serif;
+        }
+
+        #header .inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        #header nav {
+            margin-right: 10px;
+        }
+
+        .language-buttons {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+        }
+
+        .language-buttons img {
+            width: 32px;
+            height: 32px;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .language-buttons img:hover {
+            transform: scale(1.1);
+        }
+
+        .tiles .image img {
+            width: 100%;
+            height: auto;
+            max-height: 200px;
+            object-fit: cover;
+        }
+    </style>
+    
+    <link rel="stylesheet" href="assets/css/erapolis-travel-logo.css">
+    <link rel="icon" href="assets/css/erapolis-travel-logo.css" type="image/x-icon">
+    <noscript><link rel="stylesheet" href="assets/css/erapolis-travel-logo.css"></noscript>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <a href="index.html" class="logo">
+                    <span class="symbol"><img src="images/erapolis-travel-logo.jpg" alt="" /></span><span class="title">Erapolis Travel</span>
+                </a>
+
+                <nav>
+                    <ul>
+                        <li><a href="#menu" id="menu-title">Menu</a></li>
+                    </ul>
+                </nav>
+
+                <div class="language-buttons">
+                    <img src="images/flags/us.png" onclick="setLanguage('en')" alt="English" />
+                    <img src="images/flags/br.png" onclick="setLanguage('pt')" alt="Portuguese" />
+                    <img src="images/flags/it.png" onclick="setLanguage('it')" alt="Italian" />
+                    <img src="images/flags/fr.png" onclick="setLanguage('fr')" alt="French" />
+                    <img src="images/flags/es.png" onclick="setLanguage('es')" alt="Spanish" />
+                </div>
+            </div>
+        </header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <h2 id="menu-title">Menu</h2>
+            <ul>
+                <li><a id="home-link" href="index.html">Home</a></li>
+                <li><a id="company-link" href="nossaempresa.html">Our Company</a></li>
+                <li><a id="info-link" href="informações.html">Information</a></li>
+                <li><a id="contact-link" href="contatos.html">Contact</a></li>
+                <li><a id="bookings-link" href="elements.html">International Hotel Bookings</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main" class="animated">
+            <div class="inner">
+                <header style="text-align: center;">
+                    <h1 id="destination-title">Terrasanta</h1>
+                    <p id="description">Uma jornada pelos passos de Jesus em Jerusalém e além.</p>
+                </header>
+                <section class="tiles">
+                    <article class="style1">
+                        <span class="image">
+                            <img src="images/oriente4.jpg" alt="" />
+                        </span>
+                        <a href="orientemedio.html">
+                            <h2 id="americanorte-title">Terrasanta</h2>
+                            <div class="content">
+                                <p id="americanorte-description">Uma jornada pelos passos de Jesus em Jerusalém e além.</p>
+            </div>
+        </div>
+    </div>
+
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <section>
+                    <h2 id="contact-us-title">Fale Conosco</h2>
+                    <form method="post" action="#">
+                        <div class="fields">
+                            <div class="field half">
+                                <input type="text" name="name" id="name" placeholder="Nome" />
+                            </div>
+                            <div class="field half">
+                                <input type="email" name="email" id="email" placeholder="Email" />
+                            </div>
+                            <div class="field">
+                                <textarea name="message" id="message" placeholder="Mensagem"></textarea>
+                            </div>
+                        </div>
+                        <ul class="actions">
+                            <li><input id="send-button" type="submit" value="enviar" class="primary" /></li>
+                        </ul>
+                    </form>
+                </section>
+                <section>
+                    <h2 id="follow-us-title">Siga-Nos</h2>
+                    <ul class="icons">
+                        <li><a href="https://www.facebook.com/erapolistravel/" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+                    </ul>
+                </section>
+                <ul class="copyright">
+                    <li>&copy; Erapolis Travel 2025. <span id="all-rights-reserved">Todos os direitos reservados</span></li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+    
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Translate Script -->
+    <script>
+        function setLanguage(language) {
+            document.cookie = "language=" + language + "; path=/";
+            translatePage(language);
+        }
+
+        function getLanguage() {
+            let name = "language=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for(let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "pt"; // Default language
+        }
+
+        function translatePage(language) {
+            var translations = {    
+            en: {
+                "menu-title": "Menu",
+                "home-link": "Home",
+                "company-link": "Our Company",
+                "info-link": "Information",
+                "contact-link": "Contact",
+                "bookings-link": "International Hotel Bookings",
+                "destination-title": "Middle East",
+                "description": "Mysticism, history, and culture in every destination",
+                "americanorte-title": "Holy Land",
+                "americanorte-description": "A journey through the footsteps of Jesus in Jerusalem and beyond.",
+                "contact-us-title": "Contact Us",
+                "send-button": "Send",
+                "follow-us-title": "Follow Us",
+                "all-rights-reserved": "All Rights Reserved.",
+            },
+            pt: {
+                "menu-title": "Menu",
+                "home-link": "Home",
+                "company-link": "Nossa Empresa",
+                "info-link": "Informações",
+                "contact-link": "Contatos",
+                "bookings-link": "Reservas Internacionais de Hotéis",
+                "destination-title": "Oriente Médio",
+                "description": "Misticismo, história e cultura em cada destino.",
+                "americanorte-title": "Terrasanta",
+                "americanorte-description": "Uma jornada pelos passos de Jesus em Jerusalém e além.",
+                "contact-us-title": "Fale Conosco",
+                "send-button": "Enviar",
+                "follow-us-title": "Siga-Nos",
+                "all-rights-reserved": "Todos os direitos reservados",
+            },
+            it: {
+                "menu-title": "Menu",
+                "home-link": "Home",
+                "company-link": "La Nostra Azienda",
+                "info-link": "Informazioni",
+                "contact-link": "Contatti",
+                "bookings-link": "Prenotazioni Internazionali di Hotel",
+                "destination-title": "Medio Oriente",
+                "description": "Misticismo, storia e cultura in ogni destinazione.",
+                "americanorte-title": "Terra Santa",
+                "americanorte-description": "Un viaggio attraverso le orme di Gesù a Gerusalemme e oltre.",
+                "contact-us-title": "Contattaci",
+                "send-button": "Invia",
+                "follow-us-title": "Seguici",
+                "all-rights-reserved": "Tutti i diritti riservati",
+            },
+            fr: {
+                "menu-title": "Menu",
+                "home-link": "Accueil",
+                "company-link": "Notre Entreprise",
+                "info-link": "Informations",
+                "contact-link": "Contacts",
+                "bookings-link": "Réservations Internationales d'Hôtels",
+                "destination-title": "Moyen-Orient",
+                "description": "Mysticisme, histoire et culture dans chaque destination.",
+                "americanorte-title": "Terre Sainte",
+                "americanorte-description": "Un voyage sur les pas de Jésus à Jérusalem et au-delà.",
+                "contact-us-title": "Contactez-Nous",
+                "send-button": "Envoyer",
+                "follow-us-title": "Suivez-Nous",
+                "all-rights-reserved": "Tous droits réservés",
+            },
+            es: {
+                "menu-title": "Menú",
+                "home-link": "Inicio",
+                "company-link": "Nuestra Empresa",
+                "info-link": "Información",
+                "contact-link": "Contactos",
+                "bookings-link": "Reservas Internacionales de Hoteles",
+                "destination-title": "Medio Oriente",
+                "description": "Misticismo, historia y cultura en cada destino.",
+                "americanorte-title": "Tierra Santa",
+                "americanorte-description": "Un viaje a través de los pasos de Jesús en Jerusalén y más allá.!",
+                "contact-us-title": "Contáctanos",
+                "send-button": "Enviar",
+                "follow-us-title": "Síguenos",
+                "all-rights-reserved": "Todos los derechos reservados",
+            }
+        };
+        for (var id in translations[language]) {
+                var element = document.getElementById(id);
+                if (element) {
+                    element.innerHTML = translations[language][id];
+                }
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var language = getLanguage();
+            translatePage(language);
+        });
+    
+        
+    </script>
+    
+</body>
+</html>

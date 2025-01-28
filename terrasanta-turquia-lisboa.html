@@ -1,0 +1,467 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Erapolis Travel</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        #main {
+            font-family: 'Arial', serif;
+        }
+
+        /* Estilo para o cabeçalho */
+        #header .inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; 
+            position: relative;
+        }
+
+        /* Estilo para o menu */
+        #header nav {
+            margin-right: 10px; /* Espaço entre o menu e os botões de idioma */
+        }
+
+        /* Estilo para os botões de idioma */
+        .language-buttons {
+            display: flex;
+            align-items: center; /* Alinha verticalmente com o menu */
+            margin-left: auto;
+        }
+
+        .language-buttons img {
+            width: 32px;
+            height: 32px;
+            margin: 0 5px; /* Espaço entre os ícones */
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .language-buttons img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+    <link rel="stylesheet" href="assets/css/erapolis-travel-logo.css">
+    <link rel="icon" href="assets/css/erapolis-travel-logo.css" type="image/x-icon">
+    <!-- arquivo de estilo para quando o JavaScript estiver desativado -->
+    <noscript><link rel="stylesheet" href="assets/css/erapolis-travel-logo.css"></noscript>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <span class="symbol"><img src="images/erapolis-travel-logo.jpg" alt="" /></span><span class="title">Erapolis Travel</span>
+                </a>
+
+                <!-- Nav -->
+                <nav>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Language Buttons -->
+                <div class="language-buttons">
+                    <img src="images/flags/us.png" onclick="setLanguage('en')" />
+                    <img src="images/flags/br.png" onclick="setLanguage('pt')" />
+                    <img src="images/flags/it.png" onclick="setLanguage('it')" />
+                    <img src="images/flags/fr.png" onclick="setLanguage('fr')" />
+                    <img src="images/flags/es.png" onclick="setLanguage('es')" />
+                </div>
+
+            </div>
+        </header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <h2 id="menu-title">Menu</h2>
+            <ul>
+                <li><a id="home-link" href="index.html">Home</a></li>
+                <li><a id="company-link" href="nossaempresa.html">Nossa Empresa</a></li>
+                <li><a id="info-link" href="informações.html">Informações</a></li>
+                <li><a id="contact-link" href="contatos.html">Contatos</a></li>
+                <li><a id="bookings-link" href="elements.html">Reservas Internacionais de Hoteis Online</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+         <div class="inner">
+            <h1 id="main-title">Terrasanta, Turquia e Lisboa</h1>
+            <p id="main-description" class="texto-menor">"Este roteiro oferece uma experiência completa pelos destinos sagrados da Terra Santa, explorando Jerusalém, Tel Aviv, e outros locais históricos de Israel, seguido por uma visita à Turquia e Lisboa. Durante 15 dias, os viajantes conhecerão locais bíblicos, culturais e históricos importantes, como o Mar da Galileia, a Via Dolorosa, os Jardins Persas de Haifa e a Mesquita Azul de Istambul, além de desfrutar das belezas de Lisboa, com seus bairros históricos e monumentos emblemáticos."</p>
+            <div class="images">
+                <img src="images/terrasanta3.jpg" alt="" class="image" />
+                <img src="images/terrasanta4.jpeg" alt="" class="image" />
+                </div>
+                <div class="specific-section">
+                    <h1 id="day1-title">1º Dia – LISBOA</h1>
+                    <p id="day1-description" class="texto-menor">Chegada no aeroporto de Tel Aviv, recepção e saída para Cesaréia Marítima, antiga capital do Império Romano, onde visitaremos as ruínas do Teatro Romano, a parte Bizantina, a cidade cruzada e o Aqueduto. Continuação para Tiberíades. Chegada, acomodação, jantar e pernoite no hotel.</p>
+
+                    <h1 id="day2-title">2º Dia – TIBERIADES / NAZARÉ / CANA DE GALILEIA</h1>
+                    <p id="day2-description" class="texto-menor">Após café da manhã seguimos para Nazaré, cidade onde Jesus passou sua infância e adolescência. Chegada e visita a Basílica da Anunciação, Carpintaria de São José e Fonte da Virgem. Retorno ao hotel em Tiberíades, passando por Cana da Galiléia, local do 1º Milagre de Jesus, com Renovação das Promessas matrimoniais. Jantar e pernoite no hotel.</p>
+
+                    <h1 id="day3-title">3º Dia – TIBERIADES / CAFARNAUM / TABGHA / RIO JORDÃO / M.TE TABOR</h1>
+                    <p id="day3-description" class="texto-menor">Após café da manhã, faremos um passeio de barco pelo Mar da Galileia. Chegada em Cafarnahum, cidade de Pedro, para visitar as escavações da antiga Sinagoga e a Casa de São Pedro. Continuaremos até a Mensa Cristhi, lugar da Igreja do Primado (local da confirmação de São Pedro) e à Tabgha (local da multiplicação dos pães e peixes). Subiremos ao Monte das Bem Aventuranças, lugar do Sermão da Montanha. À tarde, subiremos de táxi ao Monte Tabor para visitar a Basílica da Transfiguração. Continuação para o Rio Jordão. Chegada e Renovação das Promessas do Batismo. Jantar e pernoite no hotel.</p>
+
+                    <h1 id="day4-title">4º Dia – TIBERIADES / HAIFA / JAFFA / JERUSALEM</h1>
+                    <p id="day4-description" class="texto-menor">Café da manhã no hotel e saída para Haifa, onde visitaremos os jardins persas e o Monastério Carmelita de Stella Maris (Estrela do Mar), em homenagem à Nossa Senhora do Monte Carmelo. Continuamos para Jaffa e, em seguida, seguimos para Jerusalém. Chegada e acomodação no hotel. Jantar.</p>
+
+                    <h1 id="day5-title">5º Dia – JERUSALEM</h1>
+                    <p id="day5-description" class="texto-menor">Após café da manhã, saída para visita ao Monte das Oliveiras, Igreja de todas as Nações, Getsêmani e Vale de Cedrom. Continuação com visita ao Muro das Lamentações, a Via Crucis (Caminho de Damasco) e o Santo Sepulcro. Retorno ao hotel para jantar e pernoite.</p>
+
+                    <h1 id="day6-title">6º Dia – JERUSALEM / BELÉM</h1>
+                    <p id="day6-description" class="texto-menor">Café da manhã e visita ao Monte Sion, ao Túmulo de Davi, à Sala da Última Ceia e à Igreja da Dormição. À tarde, saída para Belém, onde visitaremos a Igreja da Natividade e a Gruta de São José. Retorno a Jerusalém para jantar e pernoite.</p>
+
+                    <h1 id="day7-title">7º Dia – JERUSALEM / TEL AVIV / BRASIL</h1>
+                    <p id="day7-description" class="texto-menor">Café da manhã e tempo livre para compras e atividades pessoais. À tarde, traslado ao aeroporto de Tel Aviv para embarque de volta ao Brasil.</p>
+
+                    <h1 id="day8-title">8º Dia – TEL AVIV</h1>
+                    <p id="day8-description" class="texto-menor">Chegada em Tel Aviv. Recepção no aeroporto e traslado para o hotel. Jantar e descanso. Noite livre.</p>
+
+                    <h1 id="day9-title">9º Dia – TEL AVIV / JAFÁ</h1>
+                    <p id="day9-description" class="texto-menor">Após o café da manhã, visita à antiga cidade de Jafá, onde será possível conhecer o porto e a Igreja de São Pedro. À tarde, passeio pelo centro de Tel Aviv e visita ao Museu de Arte de Tel Aviv. Jantar e pernoite no hotel.</p>
+
+                    <h1 id="day10-title">10º Dia – TEL AVIV / RAMAT GAN / HOLON</h1>
+                    <p id="day10-description" class="texto-menor">Café da manhã e visita a Ramat Gan, cidade conhecida pelo seu mercado de diamantes, e também à cidade de Holon, com destaque para o Museu de Design de Holon. Retorno ao hotel para jantar e descanso.</p>
+
+                    <h1 id="day11-title">11º Dia – TEL AVIV / HERZLIYA / NETANYA</h1>
+                    <p id="day11-description" class="texto-menor">Saída para Herzliya, cidade costeira conhecida pela sua marina e praias. Em seguida, visita a Netanya, cidade com belos parques e jardins. Jantar e pernoite em Tel Aviv.</p>
+
+                    <h1 id="day12-title">12º Dia – TEL AVIV / EILAT</h1>
+                    <p id="day12-description" class="texto-menor">Após café da manhã, traslado para Eilat, cidade situada no sul de Israel, no Mar Vermelho. Chegada e visita à praia, onde será possível fazer atividades aquáticas. Jantar e pernoite em Eilat.</p>
+
+                    <h1 id="day13-title">13º Dia – EILAT / MAR VERMELHO</h1>
+                    <p id="day13-description" class="texto-menor">Dia livre em Eilat, com possibilidade de realizar atividades como snorkeling ou passeio de barco pelo Mar Vermelho. Jantar e pernoite no hotel.</p>
+
+                    <h1 id="day14-title">14º Dia – EILAT / JERUSALEM</h1>
+                    <p id="day14-description" class="texto-menor">Café da manhã e traslado de volta para Jerusalém. Tarde livre para compras ou atividades pessoais. Jantar e pernoite no hotel.</p>
+
+                    <h1 id="day15-title">15º Dia – JERUSALEM / BRASIL</h1>
+                    <p id="day15-description" class="texto-menor">Café da manhã e tempo livre para atividades pessoais. À tarde, traslado ao aeroporto de Tel Aviv para embarque de volta ao Brasil.</p>
+            </div>
+                
+        </div>
+</div>
+
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <section>
+                    <h2 id="contact-us-title">Fale Conosco</h2>
+                    <form method="post" action="#">
+                        <div class="fields">
+                            <div class="field half">
+                                <input type="text" name="name" id="name" placeholder="Nome" />
+                            </div>
+                            <div class="field half">
+                                <input type="email" name="email" id="email" placeholder="Email" />
+                            </div>
+                            <div class="field">
+                                <textarea name="message" id="message" placeholder="Mensagem"></textarea>
+                            </div>
+                        </div>
+                        <ul class="actions">
+                            <li><input id="send-button" type="submit" value="enviar" class="primary" /></li>
+                        </ul>
+                    </form>
+                </section>
+                <section>
+                    <h2 id="follow-us-title">Siga-Nos</h2>
+                    <ul class="icons">
+                        <li><a href="https://www.facebook.com/erapolistravel/" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+                    </ul>
+                </section>
+                <ul class="copyright">
+                    <li>&copy; Erapolis Travel 2025. <span id="all-rights-reserved">Todos os direitos reservados</span></li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Translate Script -->
+    <script>
+        function setLanguage(language) {
+            document.cookie = "language=" + language + "; path=/";
+            translatePage(language);
+        }
+
+        function getLanguage() {
+            let name = "language=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for(let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "pt"; // Default language
+        }
+
+        function translatePage(language) {
+            var translations = {
+            en: {
+            "menu-title": "Menu",
+            "home-link": "Home",
+            "company-link": "Our Company",
+            "info-link": "Information",
+            "contact-link": "Contacts",
+            "bookings-link": "International Hotel Bookings Online",
+            "main-title": "Holy Land, Turkey, and Lisbon",
+            "main-description": "This itinerary offers a complete experience through the sacred destinations of the Holy Land, exploring Jerusalem, Tel Aviv, and other historical sites in Israel, followed by visits to Turkey and Lisbon. Over 15 days, travelers will visit important biblical, cultural, and historical locations such as the Sea of Galilee, the Via Dolorosa, the Persian Gardens of Haifa, and the Blue Mosque in Istanbul, in addition to enjoying the beauty of Lisbon with its historic neighborhoods and iconic monuments.",
+            "day1-title": "Day 1: LISBON",
+            "day1-description": "Arrival at Tel Aviv airport, reception, and departure for Caesarea Maritima, the ancient capital of the Roman Empire, where we will visit the ruins of the Roman Theater, the Byzantine section, the Crusader city, and the Aqueduct. Continue to Tiberias. Arrival, check-in, dinner, and overnight at the hotel.",
+            "day2-title": "Day 2: TIBERIAS - NAZARETH - CANA OF GALILEE",
+            "day2-description": "After breakfast, we will head to Nazareth, the town where Jesus spent his childhood and adolescence. Arrival and visit to the Basilica of the Annunciation, St. Joseph's Carpentry, and the Virgin's Fountain. Return to the hotel in Tiberias, passing by Cana of Galilee, where Jesus performed his first miracle, and we will renew marriage vows. Dinner and overnight at the hotel.",
+            "day3-title": "Day 3: TIBERIAS - CAPERNAUM - TABGHA - JORDAN RIVER - MT. TABOR",
+            "day3-description": "After breakfast, we will take a boat ride on the Sea of Galilee. Arrival in Capernaum, Peter's city, to visit the excavations of the ancient synagogue and St. Peter's House. Continue to Mensa Christi, the site of the Church of the Primacy (where Peter was confirmed), and to Tabgha (the site of the multiplication of loaves and fishes). We will ascend the Mount of Beatitudes, the site of the Sermon on the Mount. In the afternoon, we will take a taxi to Mount Tabor to visit the Basilica of the Transfiguration. Continue to the Jordan River, where we will renew baptismal vows. Dinner and overnight at the hotel.",
+            "day4-title": "Day 4: TIBERIAS - HAIFA - JAFFA - JERUSALEM",
+            "day4-description": "Breakfast at the hotel and departure for Haifa, where we will visit the Persian Gardens and the Stella Maris Carmelite Monastery. Panoramic view of the city and Haifa Bay from Mount Carmel, where the Prophet Elijah fought. Visit the Cave of the Prophet Elijah. Continue to Jaffa, with a visit to the Church of St. Peter. Proceed to Jerusalem, passing by Mount Scopus, and visit the Mount of Olives, with the Chapel of the Ascension and the Pater Noster Church. Walk down the Palm Sunday Road to the Dominus Flevit Church, the Garden, and the Cave of the Betrayal of Gethsemane, with the Basilica of Agony and the tomb of Mary. Dinner and overnight at the hotel.",
+            "day5-title": "Day 5: JERUSALEM",
+            "day5-description": "Breakfast and departure for the Via Dolorosa route to Golgotha and the Holy Sepulchre, passing through the 14 Stations. In the afternoon, visit Karem, the birthplace of St. John the Baptist, and the Church of the Visitation. Dinner and overnight.",
+            "day6-title": "Day 6: JERUSALEM - BETHLEHEM - JERUSALEM",
+            "day6-description": "Visit to the Church and Grotto of the Nativity, St. Jerome's Grotto, Basilica of St. Catherine, and the Shepherds' Field in Bethlehem. After lunch, visit Mount Zion, the Cenacle, the Tomb of King David, and the Basilica of the Dormition of Mary. Dinner and overnight.",
+            "day7-title": "Day 7: JERUSALEM - TEL AVIV - ISTANBUL",
+            "day7-description": "Visit to the Jewish Quarter and the Western Wall. At a scheduled time, depart for Istanbul. Arrival and transfer to the hotel. Accommodation, dinner, and overnight.",
+            "day8-title": "Day 8: ISTANBUL",
+            "day8-description": "Cruise on the Bosphorus Strait with views of Turkish palaces and mansions. After lunch, visit the Beylerbeyi Palace. Free time and overnight.",
+            "day9-title": "Day 9: ISTANBUL",
+            "day9-description": "Visit the Roman Hippodrome, the Blue Mosque, Hagia Sophia, Topkapi Palace, and the Grand Bazaar. Return to the hotel and overnight.",
+            "day10-title": "Day 10: ISTANBUL - BANDIRMA - PERGAMON - KUSADASI",
+            "day10-description": "Transfer to the port to take the ferry to Bandirma, followed by a visit to Pergamon and Kusadasi. Dinner and accommodation.",
+            "day11-title": "Day 11: KUSADASI - EPHESUS - MARY'S HOUSE - KUSADASI",
+            "day11-description": "Visit Ephesus, the Library of Celsus, the Temple of Adriano, the Church of the Virgin, and Meryem Ana, the house of the Virgin Mary. Return to the hotel and overnight.",
+            "day12-title": "Day 12: KUSADASI - IZMIR - ISTANBUL",
+            "day12-description": "Panoramic visit to Izmir. In the afternoon, transfer to the Istanbul airport. Arrival, transfer to the hotel, and overnight.",
+            "day13-title": "Day 13: ISTANBUL - LISBON",
+            "day13-description": "Transfer to the airport and flight to Lisbon. Arrival and transfer to the hotel. Accommodation, dinner, and overnight.",
+            "day14-title": "Day 14: LISBON",
+            "day14-description": "Panoramic visit of Lisbon, including the Baixa district, Rossio Square, National Theatre, and the Belem Tower. Visit to the Jeronimos Monastery and free time at the Pastel de Belem shop. Free afternoon. Dinner and overnight.",
+            "day15-title": "Day 15: LISBON - BRAZIL",
+            "day15-description": "Transfer to the airport and flight back to Brazil.",
+            "contact-us-title": "Contact Us",
+            "send-button": "Send",
+            "follow-us-title": "Follow Us",
+            "all-rights-reserved": "All Rights Reserved.",
+            },
+
+        it: {
+            "menu-title": "Menu",
+            "home-link": "Home",
+            "company-link": "La Nostra Azienda",
+            "info-link": "Informazioni",
+            "contact-link": "Contatti",
+            "bookings-link": "Prenotazioni Internazionali di Hotel Online",
+            "main-title": "Terra Santa, Turchia e Lisbona",
+            "main-description": "Questo itinerario offre un'esperienza completa attraverso le destinazioni sacre della Terra Santa, esplorando Gerusalemme, Tel Aviv e altri siti storici in Israele, seguiti da una visita in Turchia e Lisbona. In 15 giorni, i viaggiatori visiteranno luoghi biblici, culturali e storici importanti come il Mar di Galilea, la Via Dolorosa, i Giardini Persiani di Haifa e la Moschea Blu di Istanbul, oltre a godersi la bellezza di Lisbona con i suoi quartieri storici e monumenti iconici.",
+            "day1-title": "Giorno 1: LISBONA",
+            "day1-description": "Arrivo all'aeroporto di Tel Aviv, accoglienza e partenza per Cesarea Marittima, antica capitale dell'Impero Romano, dove visiteremo le rovine del Teatro Romano, la sezione Bizantina, la città crociata e l'Acquedotto. Proseguimento per Tiberiade. Arrivo, sistemazione, cena e pernottamento in hotel.",
+            "day2-title": "Giorno 2: TIBERIADE - NAZARETH - CANA DI GALILEA",
+            "day2-description": "Dopo la colazione, ci dirigiamo verso Nazareth, la città dove Gesù ha trascorso la sua infanzia e adolescenza. Arrivo e visita alla Basilica dell'Annunciazione, la Carpintaria di San Giuseppe e la Fonte della Vergine. Ritorno in hotel a Tiberiade, passando per Cana di Galilea, luogo del primo miracolo di Gesù, con la Rinnovo delle Promesse matrimoniali. Cena e pernottamento in hotel.",
+            "day3-title": "Giorno 3: TIBERIADE - CAFARNAO - TABGHA - FIUME GIORDANO - MONTE TABOR",
+            "day3-description": "Dopo la colazione, faremo un giro in barca sul Mar di Galilea. Arrivo a Cafarnao, la città di Pietro, per visitare gli scavi della sinagoga antica e la Casa di San Pietro. Proseguiremo fino alla Mensa Christi, il luogo della Chiesa del Primato (dove avvenne la conferma di San Pietro) e a Tabgha (luogo della moltiplicazione dei pani e dei pesci). Saliremo al Monte delle Beatitudini, luogo del Sermone della Montagna. Nel pomeriggio, prenderemo un taxi per il Monte Tabor per visitare la Basilica della Trasfigurazione. Proseguimento per il Fiume Giordano, dove ci sarà la Rinnovo delle Promesse del Battesimo. Cena e pernottamento in hotel.",
+            "day4-title": "Giorno 4: TIBERIADE - HAIFA - JAFFA - GERUSALEMME",
+            "day4-description": "Colazione in hotel e partenza per Haifa, dove visiteremo i giardini persiani e il Monastero Carmelitano di Stella Maris. Vista panoramica della città e della baia di Haifa dal Monte Carmelo, dove avvenne la lotta del Profeta Elia. Visita alla Grotta del Profeta Elia. Proseguimento per Jaffa, con visita alla Chiesa di San Pietro. Arrivo a Gerusalemme, passando per il Monte Scopus, e visita al Monte degli Ulivi, con la Cappella dell'Ascensione e la Chiesa del Pater Noster. Discesa a piedi lungo la Via delle Palme fino alla Chiesa di Dominus Flevit, l'Orto e la Grotta del Tradimento del Getsemani, con la Basilica dell'Agonia e la tomba di Maria. Cena e pernottamento in hotel.",
+            "day5-title": "Giorno 5: GERUSALEMME",
+            "day5-description": "Colazione e partenza per il percorso della Via Dolorosa fino al Golgota e al Santo Sepolcro, passando per le 14 Stazioni. Nel pomeriggio, visita a Karem, al luogo di nascita di San Giovanni Battista e alla Chiesa della Visitazione. Cena e pernottamento.",
+            "day6-title": "Giorno 6: GERUSALEMME - BETLEMME - GERUSALEMME",
+            "day6-description": "Visita alla Chiesa e alla Grotta della Natività, alla Grotta di San Girolamo, alla Basilica di Santa Caterina e al Campo dei Pastori a Betlemme. Dopo il pranzo, visita al Monte Sion, al Cenacolo, alla Tomba di Re Davide e alla Basilica della Dormizione di Maria. Cena e pernottamento.",
+            "day7-title": "Giorno 7: GERUSALEMME - TEL AVIV - ISTANBUL",
+            "day7-description": "Visita al quartiere ebraico e al Muro del Pianto. A orario stabilito, partenza per Istanbul. Arrivo e trasferimento in hotel. Sistemazione, cena e pernottamento.",
+            "day8-title": "Giorno 8: ISTANBUL",
+            "day8-description": "Crociere sullo Stretto del Bosforo, con vista su palazzi e ville turche. Dopo il pranzo, visita al Palazzo Beylerbeyi. Tempo libero e pernottamento.",
+            "day9-title": "Giorno 9: ISTANBUL",
+            "day9-description": "Visita all'Ippodromo Romano, alla Moschea Blu, a Santa Sofia, al Palazzo Topkapi e al Gran Bazar. Ritorno in hotel e pernottamento.",
+            "day10-title": "Giorno 10: ISTANBUL - BANDIRMA - PERGAMO - KUSADASI",
+            "day10-description": "Trasferimento al porto per prendere il traghetto per Bandirma, seguito dalla visita a Pergamo e Kusadasi. Cena e sistemazione.",
+            "day11-title": "Giorno 11: KUSADASI - EFESO - CASA DI MARIA - KUSADASI",
+            "day11-description": "Visita a Efeso, alla Biblioteca di Celso, al Tempio di Adriano, alla Chiesa della Vergine e a Meryem Ana, la casa di Maria. Ritorno in hotel e pernottamento.",
+            "day12-title": "Giorno 12: KUSADASI - IZMIR - ISTANBUL",
+            "day12-description": "Visita panoramica di Izmir. Nel pomeriggio, trasferimento all'aeroporto di Istanbul. Arrivo, trasferimento in hotel e pernottamento.",
+            "day13-title": "Giorno 13: ISTANBUL - LISBONA",
+            "day13-description": "Trasferimento in aeroporto e volo per Lisbona. Arrivo e trasferimento in hotel. Sistemazione, cena e pernottamento.",
+            "day14-title": "Giorno 14: LISBONA",
+            "day14-description": "Visita panoramica di Lisbona, incluso il quartiere Baixa, la Piazza del Rossio, il Teatro Nazionale e la Torre di Belém. Visita al Monastero dei Jerónimos e tempo libero nella Casa del Pastel de Belém. Pomeriggio libero. Cena e pernottamento.",
+            "day15-title": "Giorno 15: LISBONA - BRASILE",
+            "day15-description": "Trasferimento in aeroporto e volo per il Brasile.",
+            "contact-us-title": "Contattaci",
+            "send-button": "Invia",
+            "follow-us-title": "Seguici",
+            "all-rights-reserved": "Tutti i diritti riservati",
+        },
+        fr: {
+            "menu-title": "Menu",
+            "home-link": "Accueil",
+            "company-link": "Notre Entreprise",
+            "info-link": "Informations",
+            "contact-link": "Contacts",
+            "bookings-link": "Réservations Internationales d'Hôtels en Ligne",
+            "main-title": "Terre Sainte, Turquie et Lisbonne",
+            "main-description": "Ce circuit offre une expérience complète à travers les destinations sacrées de la Terre Sainte, avec la découverte de Jérusalem, Tel Aviv et d'autres sites historiques en Israël, suivie par une visite de la Turquie et de Lisbonne. En 15 jours, les voyageurs exploreront des lieux bibliques, culturels et historiques importants tels que la mer de Galilée, le Chemin de Croix, les jardins persans de Haïfa, la mosquée bleue d'Istanbul et la beauté de Lisbonne avec ses quartiers historiques et ses monuments emblématiques.",
+            "day1-title": "Jour 1 : LISBONNE",
+            "day1-description": "Arrivée à l'aéroport de Tel Aviv, accueil et départ pour Césarée, ancienne capitale de l'Empire romain, où nous visiterons les ruines du théâtre romain, la section byzantine, la ville des croisés et l'aqueduc. Continuation vers Tibériade. Arrivée, installation, dîner et nuit à l'hôtel.",
+            "day2-title": "Jour 2 : TIBÉRIADE - NAZARETH - CANA DE GALILÉE",
+            "day2-description": "Après le petit-déjeuner, départ pour Nazareth, ville où Jésus a passé son enfance et sa jeunesse. Arrivée et visite de la basilique de l'Annonciation, de l'atelier de Saint Joseph et de la source de la Vierge. Retour à l'hôtel à Tibériade, en passant par Cana de Galilée, lieu du premier miracle de Jésus, avec le renouvellement des vœux de mariage. Dîner et nuit à l'hôtel.",
+            "day3-title": "Jour 3 : TIBÉRIADE - CAFARNAÜM - TABGHA - JORDAN - MONT TABOR",
+            "day3-description": "Après le petit-déjeuner, nous ferons une promenade en bateau sur le lac de Tibériade. Arrivée à Cafarnaüm, la ville de Pierre, pour visiter les fouilles de l'ancienne synagogue et la maison de Saint Pierre. Poursuite jusqu'à la Mensa Christi, lieu de l'église du Primat (où se produisit la confirmation de Saint Pierre) et à Tabgha (lieu de la multiplication des pains et des poissons). Ascension du Mont des Béatitudes, lieu du Sermon sur la Montagne. L'après-midi, transfert en taxi au Mont Tabor pour visiter la basilique de la Transfiguration. Continuation vers le fleuve Jourdain, pour le renouvellement des promesses du baptême. Dîner et nuit à l'hôtel.",
+            "day4-title": "Jour 4 : TIBÉRIADE - HAÏFA - JAFFA - JÉRUSALEM",
+            "day4-description": "Petit-déjeuner à l'hôtel et départ pour Haïfa, où nous visiterons les jardins persans et le monastère carme de Stella Maris. Vue panoramique sur la ville et la baie de Haïfa depuis le Mont Carmel, où se déroula la lutte du prophète Élie. Visite de la grotte du prophète Élie. Poursuite vers Jaffa, avec visite de l'église Saint Pierre. Arrivée à Jérusalem, passage par le Mont Scopus et visite du Mont des Oliviers, de la chapelle de l'Ascension et de l'église du Pater Noster. Descente à pied le long de la voie des palmes jusqu'à l'église de Dominus Flevit, le jardin et la grotte du Trahison de Gethsémané, avec la basilique de l'agonie et la tombe de Marie. Dîner et nuit à l'hôtel.",
+            "day5-title": "Jour 5 : JÉRUSALEM",
+            "day5-description": "Petit-déjeuner et départ pour le parcours du Chemin de Croix jusqu'au Golgotha et au Saint-Sépulcre, en passant par les 14 stations. L'après-midi, visite de Karem, lieu de naissance de Saint Jean-Baptiste, et de l'église de la Visitation. Dîner et nuit.",
+            "day6-title": "Jour 6 : JÉRUSALEM - BETHLÉEM - JÉRUSALEM",
+            "day6-description": "Visite de l'église et de la grotte de la Nativité, de la grotte de Saint Jérôme, de la basilique de Sainte-Catherine et du champ des bergers à Bethléem. Après le déjeuner, visite du Mont Sion, du Cénacle, de la tombe de David et de la basilique de l'Assomption de Marie. Dîner et nuit.",
+            "day7-title": "Jour 7 : JÉRUSALEM - TEL AVIV - ISTANBUL",
+            "day7-description": "Visite du quartier juif et du Mur des Lamentations. À l'heure prévue, départ pour Istanbul. Arrivée et transfert à l'hôtel. Installation, dîner et nuit.",
+            "day8-title": "Jour 8 : ISTANBUL",
+            "day8-description": "Croisière sur le Bosphore, avec vue sur les palais et villas turcs. Après le déjeuner, visite du palais de Beylerbeyi. Temps libre et nuit.",
+            "day9-title": "Jour 9 : ISTANBUL",
+            "day9-description": "Visite de l'hippodrome romain, de la mosquée bleue, de Sainte-Sophie, du palais de Topkapi et du grand bazar. Retour à l'hôtel et nuit.",
+            "day10-title": "Jour 10 : ISTANBUL - BANDIRMA - PERGAME - KUSADASI",
+            "day10-description": "Transfert au port pour prendre le ferry vers Bandirma, suivi de la visite de Pergame et Kusadasi. Dîner et installation.",
+            "day11-title": "Jour 11 : KUSADASI - ÉPHÈSE - MAISON DE MARIE - KUSADASI",
+            "day11-description": "Visite d'Éphèse, de la bibliothèque de Celse, du temple d'Adriano, de l'église de la Vierge et de Meryem Ana, la maison de Marie. Retour à l'hôtel et nuit.",
+            "day12-title": "Jour 12 : KUSADASI - IZMIR - ISTANBUL",
+            "day12-description": "Visite panoramique d'Izmir. Dans l'après-midi, transfert à l'aéroport d'Istanbul. Arrivée, transfert à l'hôtel et nuit.",
+            "day13-title": "Jour 13 : ISTANBUL - LISBONNE",
+            "day13-description": "Transfert à l'aéroport et vol pour Lisbonne. Arrivée et transfert à l'hôtel. Installation, dîner et nuit.",
+            "day14-title": "Jour 14 : LISBONNE",
+            "day14-description": "Visite panoramique de Lisbonne, incluant le quartier Baixa, la place du Rossio, le théâtre national et la tour de Belém. Visite du monastère des Jerónimos et temps libre pour déguster un pastel de Belém. L'après-midi libre. Dîner et nuit.",
+            "day15-title": "Jour 15 : LISBONNE - BRÉSIL",
+            "day15-description": "Transfert à l'aéroport et vol pour le Brésil.",
+            "contact-us-title": "Contactez-Nous",
+            "send-button": "Envoyer",
+            "follow-us-title": "Suivez-Nous",
+            "all-rights-reserved": "Tous droits réservés",
+
+        },
+        es: {
+            "menu-title": "Menú",
+            "home-link": "Inicio",
+            "company-link": "Nuestra Empresa",
+            "info-link": "Información",
+            "contact-link": "Contactos",
+            "bookings-link": "Reservas Internacionales de Hoteles Online",
+            "main-title": "Tierra Santa, Turquía y Lisboa",
+            "main-description": "Este tour ofrece una experiencia completa a través de los destinos sagrados de Tierra Santa, con la visita a Jerusalén, Tel Aviv y otros sitios históricos en Israel, seguido de un recorrido por Turquía y Lisboa. En 15 días, los viajeros explorarán lugares bíblicos, culturales e históricos importantes como el Mar de Galilea, el Camino de la Cruz, los jardines persas de Haifa, la Mezquita Azul de Estambul y la belleza de Lisboa con sus barrios históricos y monumentos emblemáticos.",
+            "day1-title": "Día 1: LISBOA",
+            "day1-description": "Llegada al aeropuerto de Tel Aviv, recibimiento y salida hacia Cesarea, antigua capital del Imperio Romano, donde visitaremos las ruinas del teatro romano, la sección bizantina, la ciudad de los cruzados y el acueducto. Continuación hacia Tiberíades. Llegada, instalación, cena y alojamiento en el hotel.",
+            "day2-title": "Día 2: TIBERIADES - NAZARET - CANÁ DE GALILEA",
+            "day2-description": "Después del desayuno, salida hacia Nazaret, ciudad donde Jesús pasó su infancia y juventud. Llegada y visita a la Basílica de la Anunciación, la Casa de San José y la fuente de la Virgen. Regreso al hotel en Tiberíades, pasando por Caná de Galilea, lugar del primer milagro de Jesús, con renovación de votos matrimoniales. Cena y alojamiento en el hotel.",
+            "day3-title": "Día 3: TIBERIADES - CEFARNÁUM - TABGHA - JORDÁN - MONTE TABOR",
+            "day3-description": "Después del desayuno, paseo en barco por el lago de Tiberíades. Llegada a Cefarnáum, la ciudad de Pedro, para visitar las excavaciones de la antigua sinagoga y la Casa de San Pedro. Continuación hacia la Mensa Christi, lugar de la iglesia del Primado (donde ocurrió la confirmación de San Pedro) y Tabgha (lugar de la multiplicación de los panes y los peces). Ascensión al Monte de las Bienaventuranzas, lugar del Sermón de la Montaña. Por la tarde, traslado en taxi al Monte Tabor para visitar la Basílica de la Transfiguración. Continuación hacia el río Jordán para renovación de promesas bautismales. Cena y alojamiento en el hotel.",
+            "day4-title": "Día 4: TIBERIADES - HAIFA - JAFFA - JERUSALÉN",
+            "day4-description": "Desayuno en el hotel y salida hacia Haifa, donde visitaremos los jardines persas y el monasterio carmelita de Stella Maris. Vista panorámica de la ciudad y la bahía de Haifa desde el Monte Carmelo, donde ocurrió la lucha del profeta Elías. Visita a la cueva del profeta Elías. Continuación hacia Jaffa, con visita a la iglesia de San Pedro. Llegada a Jerusalén, pasando por el Monte Scopus y visita al Monte de los Olivos, la capilla de la Ascensión y la iglesia del Pater Noster. Descenso a pie por el Camino de las Palmas hasta la iglesia de Dominus Flevit, el Jardín y la Cueva de la Traición de Getsemaní, con la Basílica de la Agonía y la Tumba de María. Cena y alojamiento en el hotel.",
+            "day5-title": "Día 5: JERUSALÉN",
+            "day5-description": "Desayuno y recorrido por el Camino de la Cruz hasta el Gólgota y el Santo Sepulcro, pasando por las 14 estaciones. Por la tarde, visita de Karem, lugar de nacimiento de San Juan Bautista, y de la Iglesia de la Visitación. Cena y alojamiento.",
+            "day6-title": "Día 6: JERUSALÉN - BELÉN - JERUSALÉN",
+            "day6-description": "Visita a la iglesia y gruta de la Natividad, la gruta de San Jerónimo, la Basílica de Santa Catalina y el campo de los pastores en Belén. Después del almuerzo, visita al Monte Sion, al Cenáculo, a la Tumba de David y a la Basílica de la Asunción de María. Cena y alojamiento.",
+            "day7-title": "Día 7: JERUSALÉN - TEL AVIV - ESTAMBUL",
+            "day7-description": "Visita al barrio judío y al Muro de las Lamentaciones. A la hora prevista, salida hacia Estambul. Llegada y traslado al hotel. Instalación, cena y alojamiento.",
+            "day8-title": "Día 8: ESTAMBUL",
+            "day8-description": "Paseo en barco por el Bósforo, con vistas a los palacios y villas turcas. Después del almuerzo, visita al Palacio de Beylerbeyi. Tarde libre y alojamiento.",
+            "day9-title": "Día 9: ESTAMBUL",
+            "day9-description": "Visita al hipódromo romano, la Mezquita Azul, Santa Sofía, el Palacio de Topkapi y el Gran Bazar. Regreso al hotel y alojamiento.",
+            "day10-title": "Día 10: ESTAMBUL - BANDIRMA - PÉRGAMO - KUSADASI",
+            "day10-description": "Traslado al puerto para tomar el ferry a Bandirma, seguido de la visita a Pérgamo y Kusadasi. Cena y alojamiento.",
+            "day11-title": "Día 11: KUSADASI - ÉFESO - CASA DE MARÍA - KUSADASI",
+            "day11-description": "Visita a Éfeso, la Biblioteca de Celso, el Templo de Adriano, la Iglesia de la Virgen y Meryem Ana, la Casa de María. Regreso al hotel y alojamiento.",
+            "day12-title": "Día 12: KUSADASI - IZMIR - ESTAMBUL",
+            "day12-description": "Visita panorámica de Izmir. Por la tarde, traslado al aeropuerto de Estambul. Llegada, traslado al hotel y alojamiento.",
+            "day13-title": "Día 13: ESTAMBUL - LISBOA",
+            "day13-description": "Traslado al aeropuerto y vuelo a Lisboa. Llegada y traslado al hotel. Instalación, cena y alojamiento.",
+            "day14-title": "Día 14: LISBOA",
+            "day14-description": "Recorrido panorámico por Lisboa, incluyendo el barrio Baixa, la Plaza Rossio, el Teatro Nacional y la Torre de Belém. Visita al Monasterio de los Jerónimos y tiempo libre para probar un pastel de Belém. Tarde libre. Cena y alojamiento.",
+            "day15-title": "Día 15: LISBOA - BRASIL",
+            "day15-description": "Traslado al aeropuerto y vuelo a Brasil.",
+            "contact-us-title": "Contáctanos",
+            "send-button": "Enviar",
+            "follow-us-title": "Síguenos",
+            "all-rights-reserved": "Todos los derechos reservados"
+        },
+                
+        pt: {
+            "menu-title": "Menu",
+            "home-link": "Home",
+            "company-link": "Nossa Empresa",
+            "info-link": "Informações",
+            "contact-link": "Contatos",
+            "bookings-link": "Reservas Internacionais de Hoteis Online",
+            "main-title": "Terrasanta, Turquia e Lisboa",
+            "main-description": "Este roteiro oferece uma experiência completa pelos destinos sagrados da Terra Santa, explorando Jerusalém, Tel Aviv, e outros locais históricos de Israel, seguido por uma visita à Turquia e Lisboa. Durante 15 dias, os viajantes conhecerão locais bíblicos, culturais e históricos importantes, como o Mar da Galileia, a Via Dolorosa, os Jardins Persas de Haifa e a Mesquita Azul de Istambul, além de desfrutar das belezas de Lisboa, com seus bairros históricos e monumentos emblemáticos.",
+            "day1-title": "1º Dia: LISBOA",
+            "day1-description": "Chegada no aeroporto de Tel Aviv, recepção e saída para Cesaréia Marítima, antiga capital do Império Romano, onde visitaremos as ruínas do Teatro Romano, a parte Bizantina, a cidade cruzada e o Aqueduto. Continuação para Tiberíades. Chegada, acomodação, jantar e pernoite no hotel.",
+            "day2-title": "2º Dia: TIBERIADES - NAZARÉ - CANA DE GALILEIA",
+            "day2-description": "Após café da manhã, seguimos para Nazaré, cidade onde Jesus passou sua infância e adolescência. Chegada e visita à Basílica da Anunciação, Carpintaria de São José e Fonte da Virgem. Retorno ao hotel em Tiberíades, passando por Cana da Galiléia, local do 1º Milagre de Jesus, com Renovação das Promessas matrimoniais. Jantar e pernoite no hotel.",
+            "day3-title": "3º Dia: TIBERIADES - CAFARNAUM - TABGHA - RIO JORDÃO - M. TE TABOR",
+            "day3-description": "Após café da manhã, faremos um passeio de barco pelo Mar da Galileia. Chegada em Cafarnaum, cidade de Pedro, para visitar as escavações da antiga Sinagoga e a Casa de São Pedro. Continuaremos até a Mensa Cristhi, lugar da Igreja do Primado (local da confirmação de São Pedro) e à Tabgha (local da multiplicação dos pães e peixes). Subiremos ao Monte das Bem Aventuranças, lugar do Sermão da Montanha. À tarde, subiremos de táxi ao Monte Tabor para visitar a Basílica da Transfiguração. Continuação para o Rio Jordão, onde haverá a Renovação das Promessas do Batismo. Jantar e pernoite no hotel.",
+            "day4-title": "4º Dia: TIBERIADES - HAIFA - JAFFA - JERUSALÉM",
+            "day4-description": "Café da manhã no hotel e saída para Haifa, onde visitaremos os jardins persas e o Monastério Carmelita de Stella Maris. Visita panorâmica da cidade e baía de Haifa, do alto do Monte Carmelo, onde aconteceu a luta do Profeta Elias. Visita à Gruta do Profeta Elias. Continuação para Jaffa, com visita à Igreja de São Pedro. Seguiremos até Jerusalém, passando pelo Monte Scopus, e visitaremos o Monte das Oliveiras, com a Capela da Ascensão e a Igreja do Pater Noster. Descida a pé pelo caminho do Domingo de Ramos até a Igreja de Dominus Flevit, o Horto e a Gruta da Traição do Getsêmani, com a Basílica da Agonia e o túmulo de Maria. Jantar e pernoite no hotel.",
+            "day5-title": "5º Dia: JERUSALÉM",
+            "day5-description": "Café da manhã e saída para realizar o percurso da Via Dolorosa até o Golgota e o Santo Sepulcro, passando pelas 14 Estações. À tarde, visita a Karem, ao lugar do nascimento de São João Batista e à Igreja da Visitação. Jantar e pernoite.",
+            "day6-title": "6º Dia: JERUSALÉM - BELÉM - JERUSALÉM",
+            "day6-description": "Visita à Igreja e Gruta da Natividade, Gruta de São Jerônimo, Basílica de Santa Catarina e Campo dos Pastores em Belém. Após o almoço, visita ao Monte Sião, ao Cenáculo, ao Túmulo do Rei David e à Basílica da Dormição de Maria. Jantar e pernoite.",
+            "day7-title": "7º Dia: JERUSALÉM - TEL AVIV - ISTAMBUL",
+            "day7-description": "Visita ao bairro judeu e ao Muro das Lamentações. Em horário determinado, embarque para Istambul. Chegada e traslado ao hotel. Acomodação, jantar e pernoite.",
+            "day8-title": "8º Dia: ISTAMBUL",
+            "day8-description": "Cruzeiro pelo estreito de Bósforo, com vista aos palácios e mansões turcas. Após o almoço, visita ao Palácio de Beylerbeyi. Tempo livre e pernoite.",
+            "day9-title": "9º Dia: ISTAMBUL",
+            "day9-description": "Visita ao Hipódromo Romano, Mesquita Azul, Santa Sofia, Palácio Topkapi e Grande Bazar. Retorno ao hotel e pernoite.",
+            "day10-title": "10º Dia: ISTAMBUL - BANDIRMA - PERGAMO - KUSADASI",
+            "day10-description": "Traslado ao porto para pegar o navio para Bandirma, seguido de visita a Pergamo e Kusadasi. Jantar e acomodação.",
+            "day11-title": "11º Dia: KUSADASI - ÉFESO - MERYEM ANA - KUSADASI",
+            "day11-description": "Visita a Éfeso, Biblioteca de Celso, Templo de Adriano, Igreja da Virgem, e à Meryemmana, casa da mãe de Jesus. Retorno ao hotel e pernoite.",
+            "day12-title": "12º Dia: KUSADASI - IZMIR - ISTAMBUL",
+            "day12-description": "Visita panorâmica a Izmir. À tarde, traslado para o aeroporto de Istambul. Chegada, traslado ao hotel e pernoite.",
+            "day13-title": "13º Dia: ISTAMBUL - LISBOA",
+            "day13-description": "Traslado ao aeroporto e embarque para Lisboa. Chegada e traslado ao hotel. Acomodação, jantar e pernoite.",
+            "day14-title": "14º Dia: LISBOA",
+            "day14-description": "Visita panorâmica de Lisboa, incluindo o bairro da Baixa, Praça do Rossio, Teatro Nacional, e a Torre de Belém. Visita ao Mosteiro dos Jerônimos e tempo livre na Casa do Pastel de Belém. Tarde livre. Jantar e pernoite.",
+            "day15-title": "15º Dia: LISBOA - BRASIL",
+            "day15-description": "Traslado ao aeroporto e embarque para o Brasil.",
+            "contact-us-title": "Fale Conosco",
+            "send-button": "Enviar",
+            "follow-us-title": "Siga-Nos",
+            "all-rights-reserved": "Todos os direitos reservados"
+                }
+            };
+
+            for (var id in translations[language]) {
+                var element = document.getElementById(id);
+                if (element) {
+                    element.innerHTML = translations[language][id];
+                }
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var language = getLanguage();
+            translatePage(language);
+        });
+    </script>
+</body>
+</html>

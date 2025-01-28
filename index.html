@@ -1,0 +1,405 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Erapolis Travel</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        #main {
+            font-family: 'Arial', serif;
+        }
+
+        /* Estilo para o cabeçalho */
+        #header .inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; 
+            position: relative;
+        }
+
+        /* Estilo para o menu */
+        #header nav {
+            margin-right: 10px; /* Espaço entre o menu e os botões de idioma */
+        }
+
+        /* Estilo para os botões de idioma */
+        .language-buttons {
+            display: flex;
+            align-items: center; /* Alinha verticalmente com o menu */
+            margin-left: auto;
+        }
+
+        .language-buttons img {
+            width: 32px;
+            height: 32px;
+            margin: 0 5px; /* Espaço entre os ícones */
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .language-buttons img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+    <link rel="stylesheet" href="assets/css/erapolis-travel-logo.css">
+    <link rel="icon" href="assets/css/erapolis-travel-logo.css" type="image/x-icon">
+    <!-- arquivo de estilo para quando o JavaScript estiver desativado -->
+    <noscript><link rel="stylesheet" href="assets/css/erapolis-travel-logo.css"></noscript>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <span class="symbol"><img src="images/erapolis-travel-logo.jpg" alt="" /></span><span class="title">Erapolis Travel</span>
+                </a>
+
+                <!-- Nav -->
+                <nav>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Language Buttons -->
+                <div class="language-buttons">
+                    <img src="images/flags/us.png" onclick="setLanguage('en')" />
+                    <img src="images/flags/br.png" onclick="setLanguage('pt')" />
+                    <img src="images/flags/it.png" onclick="setLanguage('it')" />
+                    <img src="images/flags/fr.png" onclick="setLanguage('fr')" />
+                    <img src="images/flags/es.png" onclick="setLanguage('es')" />
+                </div>
+
+            </div>
+        </header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <h2 id="menu-title">Menu</h2>
+            <ul>
+                <li><a id="home-link" href="index.html">Home</a></li>
+                <li><a id="company-link" href="nossaempresa.html">Nossa Empresa</a></li>
+                <li><a id="info-link" href="informações.html">Informações</a></li>
+                <li><a id="contact-link" href="contatos.html">Contatos</a></li>
+                <li><a id="bookings-link" href="elements.html">Reservas Internacionais de Hoteis Online</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main" class="animated">
+            <div class="inner">
+                <header style="text-align: center;">
+                    <h1 id="incoming-title">Você cuida da bagagem, nós cuidamos de todo o resto!</h1>
+                    <p id="description">Há 25 anos transformando viagens em momentos inesquecíveis com roteiros planejados com carinho."</p>
+                </header>
+                <section class="tiles">
+                    <article class="style1">
+                        <span class="image">
+                            <img src="images/europe.jpg" alt="" />
+                        </span>
+                        <a href="europa.html">
+                            <h2 id="europe-title">Europa</h2>
+                            <div class="content">
+                                <p id="europe-description">Roteiros de encanto e de história.</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="style2">
+                        <span class="image">
+                            <img src="images/africa.jpg" alt="" />
+                        </span>
+                        <a href="africa.html">
+                            <h2 id="africa-title">África</h2>
+                            <div class="content">
+                                <p id="africa-description">Explore a rica cultura e paisagens exóticas de Marrocos.</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="style3">
+                        <span class="image">
+                            <img src="images/asia.jpg" alt="" />
+                        </span>
+                        <a href="asia.html">
+                            <h2 id="asia-title">Ásia</h2>
+                            <div class="content">
+                                <p id="asia-description">Viagens entre mistérios e tradições.</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="style4">
+                        <span class="image">
+                            <img src="images/americanorte.jpg" alt="" />
+                        </span>
+                        <a href="home-americanorte.html">
+                            <h2 id="north-america-title">América do Norte</h2>
+                            <div class="content">
+                                <p id="north-america-description">Rumo aos Brilhos da Califórnia e Nevada.</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="style4">
+                        <span class="image">
+                            <img src="images/oriente1.webp" alt="" />
+                        </span>
+                        <a href="home-orientemedio.html">
+                            <h2 id="orientemedio-title">Oriente Médio</h2>
+                            <div class="content">
+                                <p id="orientemedio-description">Uma jornada única por culturas milenares, paisagens históricas e lugares sagrados.</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="style4">
+                        <span class="image">
+                            <img src="images/orienteeuropa.jpg" alt="" />
+                        </span>
+                        <a href="home-orienteeuropa.html">
+                            <h2 id="orienteeuropa-title">Oriente Médio e Europa</h2>
+                            <div class="content">
+                                <p id="orienteeuropa-description">Explore o encontro entre a história milenar do Oriente e os encantos clássicos da Europa.</p>
+                            </div>
+                        </a>
+                    </article>
+                </section>
+                <style>
+                    .tiles .image img {
+                        width: 100%;
+                        height: auto;
+                        max-height: 200px; /* ajuste conforme necessário */
+                        object-fit: cover; /* garante que a imagem ocupe o espaço definido sem distorcer */
+                    }
+                </style>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <section>
+                    <h2 id="contact-us-title">Fale Conosco</h2>
+                    <form method="post" action="#">
+                        <div class="fields">
+                            <div class="field half">
+                                <input type="text" name="name" id="name" placeholder="Name" />
+                            </div>
+                            <div class="field half">
+                                <input type="email" name="email" id="email" placeholder="Email" />
+                            </div>
+                            <div class="field">
+                                <textarea name="message" id="message" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <ul class="actions">
+                            <li><input id="send-button" type="submit" value="Send" class="primary" /></li>
+                        </ul>
+                    </form>
+                </section>
+                <section>
+                    <h2 id="follow-us-title">Siga-Nos</h2>
+                    <ul class="icons">
+                        <li><a href="https://www.facebook.com/erapolistravel/" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+                    </ul>
+                </section>
+                <ul class="copyright">
+                    <li>&copy; Erapolis Travel 2025. <span id="all-rights-reserved">Todos os direitos reservados</span></li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Translate Script -->
+    <script>
+        function setLanguage(language) {
+            document.cookie = "language=" + language + "; path=/";
+            translatePage(language);
+        }
+
+        function getLanguage() {
+            let name = "language=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for(let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "pt"; // Default language
+        }
+
+        function translatePage(language) {
+            var translations = {
+                en: {
+                    "menu-title": "Menu",
+                    "home-link": "Home",
+                    "company-link": "Our Company",
+                    "info-link": "Information",
+                    "contact-link": "Contacts",
+                    "bookings-link": "International Hotel Bookings Online",
+                    "incoming-title": "You take care of the luggage, we take care of everything else!",
+                    "description": "25 years of transforming trips into unforgettable moments with carefully planned itineraries.",
+                    "europe-title": "Europe",
+                    "europe-description": "Tours of charm and history.",
+                    "africa-title": "Africa",
+                    "africa-description": "Explore the rich culture and exotic landscapes of Morocco.",
+                    "asia-title": "Asia",
+                    "asia-description": "Journeys between mysteries and traditions.",
+                    "north-america-title": "North America",
+                    "north-america-description": "Heading to the Brights of California and Nevada.",
+                    "orientemedio-title": "Middle East",
+                    "orientemedio-description": "A unique journey through ancient cultures, historic landscapes, and sacred places.",
+                    "orienteeuropa-title": "Middle East and Europe",
+                    "orienteeuropa-description": "Explore the timeless history of the East and the classic charms of Europe.",
+                    "contact-us-title": "Contact Us",
+                    "send-button": "Send",
+                    "follow-us-title": "Follow Us",
+                    "all-rights-reserved": "All rights reserved",
+                    "contact-us-title": "Contact Us",
+                    "name": "Name",
+                    "message": "Message",
+                },
+                it: {
+                    "menu-title": "Menù",
+                    "home-link": "Home",
+                    "company-link": "La Nostra Azienda",
+                    "info-link": "Informazioni",
+                    "contact-link": "Contatti",
+                    "bookings-link": "Prenotazioni Internazionali di Hotel Online",
+                    "incoming-title": "Tu ti occupi dei bagagli, noi ci occupiamo di tutto il resto!",
+                    "description": "Da 25 anni trasformiamo i viaggi in momenti indimenticabili con itinerari pianificati con cura.",
+                    "europe-title": "Europa",
+                    "europe-description": "Tour di fascino e storia.",
+                    "africa-title": "Africa",
+                    "africa-description": "Esplora la ricca cultura e i paesaggi esotici del Marocco.",
+                    "asia-title": "Asia",
+                    "asia-description": "Viaggi tra misteri e tradizioni.",
+                    "north-america-title": "Nord America",
+                    "north-america-description": "Verso le Luci della California e del Nevada.",
+                    "orientemedio-title": "Medio Oriente",
+                    "orientemedio-description": "Un viaggio unico attraverso culture millenarie, paesaggi storici e luoghi sacri.",
+                    "orienteeuropa-title": "Medio Oriente e Europa",
+                    "orienteeuropa-description": "Esplora la storia senza tempo dell'Oriente e i classici incanti dell'Europa.",
+                    "contact-us-title": "Contattaci",
+                    "send-button": "Invia",
+                    "follow-us-title": "Seguici",
+                    "all-rights-reserved": "Tutti i diritti riservati"
+                },
+                fr: {
+                    "menu-title": "Menu",
+                    "home-link": "Accueil",
+                    "company-link": "Notre Entreprise",
+                    "info-link": "Informations",
+                    "contact-link": "Contacts",
+                    "bookings-link": "Réservations Internationales d'Hôtels en Ligne",
+                    "incoming-title": "Vous vous occupez des bagages, nous nous occupons du reste!",
+                    "description": "Depuis 25 ans, nous transformons les voyages en moments inoubliables avec des itinéraires soigneusement planifiés.",
+                    "europe-title": "Europe",
+                    "europe-description": "Tours de charme et d'histoire.",
+                    "africa-title": "Afrique",
+                    "africa-description": "Explorez la riche culture et les paysages exotiques du Maroc.",
+                    "asia-title": "Asie",
+                    "asia-description": "Voyages entre mystères et traditions.",
+                    "north-america-title": "Amérique du Nord",
+                    "north-america-description": "En route vers les Lumières de la Californie et du Nevada.",
+                    "orientemedio-title": "Moyen-Orient",
+                    "orientemedio-description": "Un voyage unique à travers des cultures millénaires, des paysages historiques et des lieux sacrés.",
+                    "orienteeuropa-title": "Moyen-Orient et Europe",
+                    "orienteeuropa-description": "Explorez l'histoire intemporelle de l'Est et les charmes classiques de l'Europe.",
+                    "contact-us-title": "Contactez-Nous",
+                    "send-button": "Envoyer",
+                    "follow-us-title": "Suivez-Nous",
+                    "all-rights-reserved": "Tous droits réservés"
+                },
+                es: {
+                    "menu-title": "Menú",
+                    "home-link": "Inicio",
+                    "company-link": "Nuestra Empresa",
+                    "info-link": "Información",
+                    "contact-link": "Contactos",
+                    "bookings-link": "Reservas Internacionales de Hoteles Online",
+                    "incoming-title": "¡Tú te ocupas del equipaje, nosotros nos ocupamos de todo lo demás!",
+                    "description": "Hace 25 años transformamos los viajes en momentos inolvidables con itinerarios cuidadosamente planificados.",
+                    "europe-title": "Europa",
+                    "europe-description": "Recorridos de encanto e historia.",
+                    "africa-title": "África",
+                    "africa-description": "Explora la rica cultura y los paisajes exóticos de Marruecos.",
+                    "asia-title": "Asia",
+                    "asia-description": "Viajes entre misterios y tradiciones.",
+                    "north-america-title": "Norteamérica",
+                    "north-america-description": "Rumbo a las luces de California y Nevada.",
+                    "orientemedio-title": "Medio Oriente",
+                    "orientemedio-description": "Un viaje único a través de culturas milenarias, paisajes históricos y lugares sagrados.",
+                    "orienteeuropa-title": "Oriente Medio y Europa",
+                    "orienteeuropa-description": "Explora la historia eterna del Oriente y los encantos clásicos de Europa.",
+                    "contact-us-title": "Contáctanos",
+                    "send-button": "Enviar",
+                    "follow-us-title": "Síguenos",
+                    "all-rights-reserved": "Todos los derechos reservados"
+                },
+                pt: {
+                    "menu-title": "Menu",
+                    "home-link": "Home",
+                    "company-link": "Nossa Empresa",
+                    "info-link": "Informações",
+                    "contact-link": "Contatos",
+                    "bookings-link": "Reservas Internacionais de Hoteis Online",
+                    "incoming-title": "Você cuida da bagagem, nós cuidamos de todo o resto!",
+                    "description": "Há 25 anos transformando viagens em momentos inesquecíveis com roteiros planejados com carinho.",
+                    "europe-title": "Europa",
+                    "europe-description": "Roteiros de encanto e de história.",
+                    "africa-title": "África",
+                    "africa-description": "Explore a rica cultura e paisagens exóticas de Marrocos.",
+                    "asia-title": "Ásia",
+                    "asia-description": "Viagens entre mistérios e tradições.",
+                    "north-america-title": "América do Norte",
+                    "north-america-description": "Rumo aos Brilhos da Califórnia e Nevada.",
+                    "orientemedio-title": "Oriente Médio",
+                    "orientemedio-description": "Uma jornada única por culturas milenares, paisagens históricas e lugares sagrados.",
+                    "orienteeuropa-title": "Oriente Médio e Europa",
+                    "orienteeuropa-description": "Explore o encontro entre a história milenar do Oriente e os encantos clássicos da Europa.",
+                    "contact-us-title": "Fale Conosco",
+                    "send-button": "Enviar",
+                    "follow-us-title": "Siga-Nos",
+                    "all-rights-reserved": "Todos os direitos reservados"
+                }
+            };
+
+            for (var id in translations[language]) {
+                var element = document.getElementById(id);
+                if (element) {
+                    element.innerHTML = translations[language][id];
+                }
+            }
+        }
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            var language = getLanguage();
+            translatePage(language);
+        });
+    </script>
+</body>
+</html>

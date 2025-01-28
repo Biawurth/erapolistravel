@@ -1,0 +1,427 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Erapolis Travel</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        #main {
+            font-family: 'Arial', serif;
+        }
+
+        /* Estilo para o cabeçalho */
+        #header .inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; 
+            position: relative;
+        }
+
+        /* Estilo para o menu */
+        #header nav {
+            margin-right: 10px; /* Espaço entre o menu e os botões de idioma */
+        }
+
+        /* Estilo para os botões de idioma */
+        .language-buttons {
+            display: flex;
+            align-items: center; /* Alinha verticalmente com o menu */
+            margin-left: auto;
+        }
+
+        .language-buttons img {
+            width: 32px;
+            height: 32px;
+            margin: 0 5px; /* Espaço entre os ícones */
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .language-buttons img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+    <link rel="stylesheet" href="assets/css/erapolis-travel-logo.css">
+    <link rel="icon" href="assets/css/erapolis-travel-logo.css" type="image/x-icon">
+    <!-- arquivo de estilo para quando o JavaScript estiver desativado -->
+    <noscript><link rel="stylesheet" href="assets/css/erapolis-travel-logo.css"></noscript>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <span class="symbol"><img src="images/erapolis-travel-logo.jpg" alt="" /></span><span class="title">Erapolis Travel</span>
+                </a>
+
+                <!-- Nav -->
+                <nav>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Language Buttons -->
+                <div class="language-buttons">
+                    <img src="images/flags/us.png" onclick="setLanguage('en')" />
+                    <img src="images/flags/br.png" onclick="setLanguage('pt')" />
+                    <img src="images/flags/it.png" onclick="setLanguage('it')" />
+                    <img src="images/flags/fr.png" onclick="setLanguage('fr')" />
+                    <img src="images/flags/es.png" onclick="setLanguage('es')" />
+                </div>
+
+            </div>
+        </header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <h2 id="menu-title">Menu</h2>
+            <ul>
+                <li><a id="home-link" href="index.html">Home</a></li>
+                <li><a id="company-link" href="nossaempresa.html">Nossa Empresa</a></li>
+                <li><a id="info-link" href="informações.html">Informações</a></li>
+                <li><a id="contact-link" href="contatos.html">Contatos</a></li>
+                <li><a id="bookings-link" href="elements.html">Reservas Internacionais de Hoteis Online</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+         <div class="inner">
+            <h1 id="main-title">Itália e Medjugorje</h1>
+            <p id="main-description" class="texto-menor">Uma jornada de fé e cultura por Roma, San Giovanni Rotondo, Medjugorje e Assis. Explore locais sagrados, participe de atividades religiosas e vivencie momentos únicos de espiritualidade em meio à rica história e paisagens deslumbrantes da Itália e Bósnia-Herzegovina.</p>
+            <div class="images">
+                <img src="images/italiamedjugorje1" alt="" class="image" />
+                <img src="images/italiamedjugorje2" alt="" class="image" />
+                </div>
+                <div class="specific-section">
+                    <h1 id="day1-title">Dia 1 – Roma</h1>
+                    <p id="day1-description" class="texto-menor">Chegada a Roma e traslado para uma visita panorâmica da cidade. Acomodação no hotel, jantar e pernoite.</p>
+                
+                    <h1 id="day2-title">Dia 2 – Roma Cristã</h1>
+                    <p id="day2-description" class="texto-menor">Após o café da manhã, ida ao Consulado da Bósnia para solicitação do visto. À tarde, visita à Roma Cristã, incluindo a Basílica de São Pedro (túmulo do Papa João Paulo II), Basílica de Santa Maria Maior, Basílica de São João de Latrão, Escada Santa, Coliseu (visita externa), Arco de Constantino e Foro Romano. Jantar e pernoite no hotel.</p>
+                
+                    <h1 id="day3-title">Dia 3 – Roma / San Giovanni Rotondo</h1>
+                    <p id="day3-description" class="texto-menor">Após o café da manhã, retorno ao Consulado da Bósnia para retirada do visto. Tempo livre. À tarde, viagem para San Giovanni Rotondo. Visita ao Santuário de São Pio da Pietrelcina. Acomodação no hotel, jantar e pernoite..</p>
+                
+                    <h1 id="day4-title">Dia 4 – San Giovanni Rotondo / Lanciano / Ancona / Split (noite a bordo)</h1>
+                    <p id="day4-description" class="texto-menor">Café da manhã e saída para Lanciano. Visita ao Santuário do Milagre Eucarístico e participação na Santa Missa. À tarde, viagem até Ancona para embarque no navio com destino a Split. Jantar e pernoite a bordo.</p>
+                
+                    <h1 id="day5-title">Dia 5 – Split / Medjugorje</h1>
+                    <p id="day5-description" class="texto-menor">Café da manhã a bordo. Parada no Santuário de Nossa Senhora de Lourdes, com possibilidade de celebrar uma Missa. Prosseguimento até Medjugorje, chegada e tempo livre. Jantar e pernoite.</p>
+                
+                    <h1 id="day6-title">"Dia 6 – Medjugorje</h1>
+                    <p id="day6-description" class="texto-menor">Café da manhã. Participação nas atividades religiosas do santuário, com possibilidade de encontro com videntes e frades franciscanos. Santa Missa. Jantar e pernoite.</p>
+                
+                    <h1 id="day7-title">Dia 7 – Medjugorje</h1>
+                    <p id="day7-description" class="texto-menor">Café da manhã. Continuação do programa da paróquia, com atividades espirituais e tempo para oração pessoal. Santa Missa. Jantar e pernoite.</p>
+                
+                    <h1 id="day8-title">Dia 8 – Medjugorje</h1>
+                    <p id="day8-description" class="texto-menor">Café da manhã. Dia dedicado a mais atividades religiosas, visita a locais sagrados e tempo para reflexão. Santa Missa. Jantar e pernoite.</p>
+                
+                    <h1 id="day9-title">Dia 9 – Medjugorje</h1>
+                    <p id="day9-description" class="texto-menor">Café da manhã. Último dia de atividades religiosas no santuário, seguindo o programa local. Santa Missa. Jantar e pernoite.</p>
+                
+                    <h1 id="day10-title">Dia 10 – Medjugorje / Split (noite a bordo)</h1>
+                    <p id="day10-description" class="texto-menor">Café da manhã. Saída em direção a Split, visita guiada pela cidade e tempo livre. No final da tarde, embarque no navio para Ancona. Jantar e pernoite a bordo.</p>
+                
+                    <h1 id="day11-title">Dia 11 – Ancona / Assis / Roma</h1>
+                    <p id="day11-description" class="texto-menor">Café da manhã a bordo. Viagem para Assis, com visita à Basílica de Santa Clara, Basílica de São Francisco, centro histórico e Basílica de Santa Maria dos Anjos (Porciúncula). Continuação até Roma, acomodação no hotel, jantar e pernoite.</p>
+                
+                    <h1 id="day12-title">Dia 12 – Roma / Brasil</h1>
+                    <p id="day12-description" class="texto-menor">Café da manhã. Traslado ao aeroporto de Roma Fiumicino para embarque com destino ao Brasil.</p>
+                </div>
+                
+        </div>
+</div>
+
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <section>
+                    <h2 id="contact-us-title">Fale Conosco</h2>
+                    <form method="post" action="#">
+                        <div class="fields">
+                            <div class="field half">
+                                <input type="text" name="name" id="name" placeholder="Nome" />
+                            </div>
+                            <div class="field half">
+                                <input type="email" name="email" id="email" placeholder="Email" />
+                            </div>
+                            <div class="field">
+                                <textarea name="message" id="message" placeholder="Mensagem"></textarea>
+                            </div>
+                        </div>
+                        <ul class="actions">
+                            <li><input id="send-button" type="submit" value="enviar" class="primary" /></li>
+                        </ul>
+                    </form>
+                </section>
+                <section>
+                    <h2 id="follow-us-title">Siga-Nos</h2>
+                    <ul class="icons">
+                        <li><a href="https://www.facebook.com/erapolistravel/" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+                    </ul>
+                </section>
+                <ul class="copyright">
+                    <li>&copy; Erapolis Travel 2025. <span id="all-rights-reserved">Todos os direitos reservados</span></li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Translate Script -->
+    <script>
+        function setLanguage(language) {
+            document.cookie = "language=" + language + "; path=/";
+            translatePage(language);
+        }
+
+        function getLanguage() {
+            let name = "language=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for(let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "pt"; // Default language
+        }
+
+        function translatePage(language) {
+            var translations = {
+            en: {
+            "menu-title": "Menu",
+            "home-link": "Home",
+            "company-link": "Our Company",
+            "info-link": "Information",
+            "contact-link": "Contacts",
+            "bookings-link": "International Hotel Bookings Online",
+            "main-title": "Italy and Medjugorje",
+            "main-description": "A journey of faith and culture through Rome, San Giovanni Rotondo, Medjugorje, and Assisi. Explore sacred sites, participate in religious activities, and experience unique moments of spirituality amidst the rich history and stunning landscapes of Italy and Bosnia-Herzegovina.",
+            "day1-title": "Day 1 – Rome",
+            "day1-description": "Arrival in Rome and transfer for a panoramic tour of the city. Hotel accommodation, dinner, and overnight stay.",
+            "day2-title": "Day 2 – Christian Rome",
+            "day2-description": "After breakfast, visit the Bosnian Consulate to apply for a visa. In the afternoon, tour Christian Rome, including St. Peter's Basilica (tomb of Pope John Paul II), Basilica of St. Mary Major, Basilica of St. John Lateran, the Holy Stairs, Colosseum (external visit), Arch of Constantine, and Roman Forum. Dinner and overnight at the hotel.",
+            "day3-title": "Day 3 – Rome / San Giovanni Rotondo",
+            "day3-description": "After breakfast, return to the Bosnian Consulate to collect the visa. Free time. In the afternoon, travel to San Giovanni Rotondo. Visit the Sanctuary of Padre Pio of Pietrelcina. Hotel accommodation, dinner, and overnight.",
+            "day4-title": "Day 4 – San Giovanni Rotondo / Lanciano / Ancona / Split (overnight on board)",
+            "day4-description": "Breakfast and departure for Lanciano. Visit the Sanctuary of the Eucharistic Miracle and attend Holy Mass. In the afternoon, travel to Ancona to board the ferry to Split. Dinner and overnight on board.",
+            "day5-title": "Day 5 – Split / Medjugorje",
+            "day5-description": "Breakfast on board. Stop to visit the Sanctuary of Our Lady of Lourdes, with the possibility of celebrating Mass. Continue to Medjugorje, arrival, and free time. Dinner and overnight.",
+            "day6-title": "Day 6 – Medjugorje",
+            "day6-description": "Breakfast. Participate in religious activities at the sanctuary, with a possible meeting with visionaries and Franciscan friars. Holy Mass. Dinner and overnight.",
+            "day7-title": "Day 7 – Medjugorje",
+            "day7-description": "Breakfast. Continue the parish program, including spiritual activities and time for personal prayer. Holy Mass. Dinner and overnight.",
+            "day8-title": "Day 8 – Medjugorje",
+            "day8-description": "Breakfast. A full day dedicated to religious activities, visiting sacred places, and reflection. Holy Mass. Dinner and overnight.",
+            "day9-title": "Day 9 – Medjugorje",
+            "day9-description": "Breakfast. Final day of religious activities at the sanctuary, following the local program. Holy Mass. Dinner and overnight.",
+            "day10-title": "Day 10 – Medjugorje / Split (overnight on board)",
+            "day10-description": "Breakfast. Depart for Split, with a guided tour of the city and free time. In the late afternoon, board the ferry to Ancona. Dinner and overnight on board.",
+            "day11-title": "Day 11 – Ancona / Assisi / Rome",
+            "day11-description": "Breakfast on board. Travel to Assisi to visit the Basilica of St. Clare, Basilica of St. Francis, the historic center, and the Basilica of Santa Maria degli Angeli (Porziuncola). Continue to Rome, hotel accommodation, dinner, and overnight.",
+            "day12-title": "Day 12 – Rome / Brazil",
+            "day12-description": "Breakfast. Transfer to Rome Fiumicino Airport for your flight to Brazil.",
+            "contact-us-title": "Contact Us",
+            "send-button": "Send",
+            "follow-us-title": "Follow Us",
+            "all-rights-reserved": "All Rights Reserved.",
+        },
+        it: {
+            "menu-title": "Menu",
+            "home-link": "Home",
+            "company-link": "La Nostra Azienda",
+            "info-link": "Informazioni",
+            "contact-link": "Contatti",
+            "bookings-link": "Prenotazioni Internazionali di Hotel Online",
+            "main-title": "Italia e Medjugorje",
+            "main-description": "Un viaggio di fede e cultura attraverso Roma, San Giovanni Rotondo, Medjugorje e Assisi. Esplora luoghi sacri, partecipa ad attività religiose e vivi momenti unici di spiritualità tra la ricca storia e i paesaggi mozzafiato di Italia e Bosnia-Erzegovina.",
+            "day1-title": "Giorno 1 – Roma",
+            "day1-description": "Arrivo a Roma e trasferimento per una visita panoramica della città. Sistemazione in hotel, cena e pernottamento.",
+            "day2-title": "Giorno 2 – Roma Cristiana",
+            "day2-description": "Dopo la colazione, visita al Consolato bosniaco per la richiesta del visto. Nel pomeriggio, visita di Roma Cristiana, inclusa la Basilica di San Pietro (tomba di Papa Giovanni Paolo II), Basilica di Santa Maria Maggiore, Basilica di San Giovanni in Laterano, Scala Santa, Colosseo (solo esternamente), Arco di Costantino e Foro Romano. Cena e pernottamento in hotel.",
+            "day3-title": "Giorno 3 – Roma / San Giovanni Rotondo",
+            "day3-description": "Dopo la colazione, ritorno al Consolato bosniaco per ritirare il visto. Tempo libero. Nel pomeriggio, partenza per San Giovanni Rotondo. Arrivo e visita al Santuario di Padre Pio da Pietrelcina. Sistemazione in hotel, cena e pernottamento.",
+            "day4-title": "Giorno 4 – San Giovanni Rotondo / Lanciano / Ancona / Split (notte a bordo)",
+            "day4-description": "Colazione e partenza per Lanciano. Visita al Santuario del Miracolo Eucaristico e partecipazione alla Santa Messa. Nel pomeriggio, trasferimento ad Ancona per imbarco sul traghetto verso Split. Cena e pernottamento a bordo.",
+            "day5-title": "Giorno 5 – Split / Medjugorje",
+            "day5-description": "Colazione a bordo. Sosta al Santuario di Nostra Signora di Lourdes con possibilità di celebrare la Messa. Proseguimento per Medjugorje, arrivo e tempo libero. Cena e pernottamento.",
+            "day6-title": "Giorno 6 – Medjugorje",
+            "day6-description": "Colazione. Partecipazione alle attività religiose del santuario, con un possibile incontro con i veggenti e i frati francescani. Santa Messa. Cena e pernottamento.",
+            "day7-title": "Giorno 7 – Medjugorje",
+            "day7-description": "Colazione. Continuazione del programma parrocchiale, con momenti di preghiera personale. Santa Messa. Cena e pernottamento.",
+            "day8-title": "Giorno 8 – Medjugorje",
+            "day8-description": "Colazione. Giornata dedicata alle attività spirituali e alla riflessione. Santa Messa. Cena e pernottamento.",
+            "day9-title": "Giorno 9 – Medjugorje",
+            "day9-description": "Colazione. Ultimo giorno dedicato alle attività religiose seguendo il programma locale. Santa Messa. Cena e pernottamento.",
+            "day10-title": "Giorno 10 – Medjugorje / Split (notte a bordo)",
+            "day10-description": "Colazione. Partenza per Split, visita guidata della città e tempo libero. Imbarco nel tardo pomeriggio sul traghetto per Ancona. Cena e pernottamento a bordo.",
+            "day11-title": "Giorno 11 – Ancona / Assisi / Roma",
+            "day11-description": "Colazione a bordo. Partenza per Assisi per visitare la Basilica di Santa Chiara, la Basilica di San Francesco, il centro storico e la Basilica di Santa Maria degli Angeli (Porziuncola). Proseguimento per Roma, sistemazione in hotel, cena e pernottamento.",
+            "day12-title": "Giorno 12 – Roma / Brasile",
+            "day12-description": "Colazione. Trasferimento all'aeroporto di Roma Fiumicino per il volo verso il Brasile.",
+            "contact-us-title": "Contattaci",
+            "send-button": "Invia",
+            "follow-us-title": "Seguici",
+            "all-rights-reserved": "Tutti i diritti riservati",
+        },
+        fr: {
+            "menu-title": "Menu",
+            "home-link": "Accueil",
+            "company-link": "Notre Entreprise",
+            "info-link": "Informations",
+            "contact-link": "Contacts",
+            "bookings-link": "Réservations Internationales d'Hôtels en Ligne",
+            "main-title": "Italie et Medjugorje",
+            "main-description": "Un voyage de foi et de culture à travers Rome, San Giovanni Rotondo, Medjugorje et Assise. Explorez des lieux sacrés, participez aux activités religieuses et vivez des moments uniques de spiritualité au cœur de l'histoire riche et des paysages magnifiques d'Italie et de Bosnie-Herzégovine.",
+            "day1-title": "Jour 1 – Rome",
+            "day1-description": "Arrivée à Rome et transfert pour une visite panoramique de la ville. Installation à l’hôtel, dîner et nuit.",
+            "day2-title": "Jour 2 – Rome Chrétienne",
+            "day2-description": "Après le petit-déjeuner, visite du Consulat de Bosnie pour la demande de visa. L'après-midi, visite de la Rome chrétienne, incluant la Basilique Saint-Pierre (tombe du Pape Jean-Paul II), la Basilique Sainte-Marie-Majeure, la Basilique Saint-Jean-de-Latran, l'Escalier Saint, le Colisée (vue extérieure), l'Arc de Constantin et le Forum Romain. Dîner et nuit à l'hôtel.",
+            "day3-title": "Jour 3 – Rome / San Giovanni Rotondo",
+            "day3-description": "Après le petit-déjeuner, retour au Consulat pour récupérer le visa. Temps libre. Dans l'après-midi, départ pour San Giovanni Rotondo. Visite du Sanctuaire de Padre Pio de Pietrelcina. Installation, dîner et nuit à l’hôtel.",
+            "day4-title": "Jour 4 – San Giovanni Rotondo / Lanciano / Ancône / Split (nuit à bord)",
+            "day4-description": "Petit-déjeuner et départ pour Lanciano. Visite du Sanctuaire du Miracle Eucharistique avec participation à la messe. L'après-midi, transfert à Ancône pour l'embarquement vers Split. Dîner et nuit à bord.",
+            "day5-title": "Jour 5 – Split / Medjugorje",
+            "day5-description": "Petit-déjeuner à bord. Arrêt au Sanctuaire de Notre-Dame de Lourdes avec possibilité de célébrer la messe. Continuation vers Medjugorje, arrivée et temps libre. Dîner et nuit.",
+            "day6-title": "Jour 6 – Medjugorje",
+            "day6-description": "Petit-déjeuner. Participation aux activités religieuses du sanctuaire, avec possibilité de rencontre avec des voyants et des frères franciscains. Messe. Dîner et nuit.",
+            "day7-title": "Jour 7 – Medjugorje",
+            "day7-description": "Petit-déjeuner. Poursuite du programme paroissial et temps de prière personnelle. Messe. Dîner et nuit.",
+            "day8-title": "Jour 8 – Medjugorje",
+            "day8-description": "Petit-déjeuner. Journée complète dédiée aux activités spirituelles et à la réflexion. Messe. Dîner et nuit.",
+            "day9-title": "Jour 9 – Medjugorje",
+            "day9-description": "Petit-déjeuner. Dernier jour des activités religieuses selon le programme local. Messe. Dîner et nuit.",
+            "day10-title": "Jour 10 – Medjugorje / Split (nuit à bord)",
+            "day10-description": "Petit-déjeuner. Départ pour Split, visite guidée de la ville et temps libre. Embarquement en fin d'après-midi pour Ancône. Dîner et nuit à bord.",
+            "day11-title": "Jour 11 – Ancône / Assise / Rome",
+            "day11-description": "Petit-déjeuner à bord. Départ pour Assise pour visiter la Basilique Sainte-Claire, la Basilique Saint-François, le centre historique et la Basilique Sainte-Marie-des-Anges (Porziuncola). Continuation vers Rome, installation à l’hôtel, dîner et nuit.",
+            "day12-title": "Jour 12 – Rome / Brésil",
+            "day12-description": "Petit-déjeuner. Transfert à l’aéroport de Rome Fiumicino pour le vol à destination du Brésil.",
+            "contact-us-title": "Contactez-Nous",
+            "send-button": "Envoyer",
+            "follow-us-title": "Suivez-Nous",
+            "all-rights-reserved": "Tous droits réservés",
+
+        },
+        es: {
+            "menu-title": "Menú",
+            "home-link": "Inicio",
+            "company-link": "Nuestra Empresa",
+            "info-link": "Información",
+            "contact-link": "Contactos",
+            "bookings-link": "Reservas Internacionales de Hoteles Online",
+            "main-title": "Italia y Medjugorje",
+            "main-description": "Un viaje de fe y cultura por Roma, San Giovanni Rotondo, Medjugorje y Asís. Explore sitios sagrados, participe en actividades religiosas y viva momentos únicos de espiritualidad en medio de la rica historia y los paisajes impresionantes de Italia y Bosnia-Herzegovina.",
+            "day1-title": "Día 1 – Roma",
+            "day1-description": "Llegada a Roma y traslado para una visita panorámica de la ciudad. Alojamiento en el hotel, cena y noche.",
+            "day2-title": "Día 2 – Roma Cristiana",
+            "day2-description": "Después del desayuno, visita al Consulado de Bosnia para solicitar la visa. Por la tarde, recorrido por Roma Cristiana, incluyendo la Basílica de San Pedro (tumba del Papa Juan Pablo II), Basílica de Santa María la Mayor, Basílica de San Juan de Letrán, Escalera Santa, Coliseo (visita externa), Arco de Constantino y Foro Romano. Cena y noche en el hotel.",
+            "day3-title": "Día 3 – Roma / San Giovanni Rotondo",
+            "day3-description": "Después del desayuno, regreso al Consulado para recoger la visa. Tiempo libre. Por la tarde, viaje hacia San Giovanni Rotondo. Visita al Santuario de San Pío de Pietrelcina. Alojamiento, cena y noche.",
+            "day4-title": "Día 4 – San Giovanni Rotondo / Lanciano / Ancona / Split (noche a bordo)",
+            "day4-description": "Desayuno y salida hacia Lanciano. Visita al Santuario del Milagro Eucarístico y Misa. Por la tarde, salida hacia Ancona para embarcar en el ferry hacia Split. Cena y noche a bordo.",
+            "day5-title": "Día 5 – Split / Medjugorje",
+            "day5-description": "Desayuno a bordo. Parada en el Santuario de Nuestra Señora de Lourdes con posibilidad de celebrar la Misa. Continuación hacia Medjugorje, llegada y tiempo libre. Cena y noche.",
+            "day6-title": "Día 6 – Medjugorje",
+            "day6-description": "Desayuno. Participación en actividades religiosas del santuario, con un posible encuentro con videntes y frailes franciscanos. Misa. Cena y noche.",
+            "day7-title": "Día 7 – Medjugorje",
+            "day7-description": "Desayuno. Continuación del programa parroquial con tiempo para oración personal. Misa. Cena y noche.",
+            "day8-title": "Día 8 – Medjugorje",
+            "day8-description": "Desayuno. Día completo de actividades espirituales y reflexión. Misa. Cena y noche.",
+            "day9-title": "Día 9 – Medjugorje",
+            "day9-description": "Desayuno. Último día de actividades religiosas siguiendo el programa local. Misa. Cena y noche.",
+            "day10-title": "Día 10 – Medjugorje / Split (noche a bordo)",
+            "day10-description": "Desayuno. Salida hacia Split, visita guiada de la ciudad y tiempo libre. Embarque en el ferry hacia Ancona. Cena y noche a bordo.",
+            "day11-title": "Día 11 – Ancona / Asís / Roma",
+            "day11-description": "Desayuno a bordo. Viaje a Asís para visitar la Basílica de Santa Clara, Basílica de San Francisco, centro histórico y Basílica de Santa María de los Ángeles (Porciúncula). Continuación hacia Roma, alojamiento en el hotel, cena y noche.",
+            "day12-title": "Día 12 – Roma / Brasil",
+            "day12-description": "Desayuno. Traslado al aeropuerto de Roma Fiumicino para el vuelo a Brasil.",
+            "contact-us-title": "Contáctanos",
+            "send-button": "Enviar",
+            "follow-us-title": "Síguenos",
+            "all-rights-reserved": "Todos los derechos reservados"
+        },
+                
+        pt: {
+            "menu-title": "Menu",
+            "home-link": "Home",
+            "company-link": "Nossa Empresa",
+            "info-link": "Informações",
+            "contact-link": "Contatos",
+            "bookings-link": "Reservas Internacionais de Hoteis Online",
+            "main-title": "Itália e Medjugorje",
+            "main-description": "Uma jornada de fé e cultura por Roma, San Giovanni Rotondo, Medjugorje e Assis. Explore locais sagrados, participe de atividades religiosas e vivencie momentos únicos de espiritualidade em meio à rica história e paisagens deslumbrantes da Itália e Bósnia-Herzegovina.",
+            "day1-title": "Dia 1 – Roma",
+            "day1-description": "Chegada a Roma e traslado para uma visita panorâmica da cidade. Acomodação no hotel, jantar e pernoite.",
+            "day2-title": "Dia 2 – Roma Cristã",
+            "day2-description": "Após o café da manhã, ida ao Consulado da Bósnia para solicitação do visto. À tarde, visita à Roma Cristã, incluindo a Basílica de São Pedro (túmulo do Papa João Paulo II), Basílica de Santa Maria Maior, Basílica de São João de Latrão, Escada Santa, Coliseu (visita externa), Arco de Constantino e Foro Romano. Jantar e pernoite no hotel.",
+            "day3-title": "Dia 3 – Roma / San Giovanni Rotondo",
+            "day3-description": "Após o café da manhã, retorno ao Consulado da Bósnia para retirada do visto. Tempo livre. À tarde, viagem para San Giovanni Rotondo. Visita ao Santuário de São Pio da Pietrelcina. Acomodação no hotel, jantar e pernoite.",
+            "day4-title": "Dia 4 – San Giovanni Rotondo / Lanciano / Ancona / Split (noite a bordo)",
+            "day4-description": "Café da manhã e saída para Lanciano. Visita ao Santuário do Milagre Eucarístico e participação na Santa Missa. À tarde, viagem até Ancona para embarque no navio com destino a Split. Jantar e pernoite a bordo.",
+            "day5-title": "Dia 5 – Split / Medjugorje",
+            "day5-description": "Café da manhã a bordo. Parada no Santuário de Nossa Senhora de Lourdes, com possibilidade de celebrar uma Missa. Prosseguimento até Medjugorje, chegada e tempo livre. Jantar e pernoite.",
+            "day6-title": "Dia 6 – Medjugorje",
+            "day6-description": "Café da manhã. Participação nas atividades religiosas do santuário, com possibilidade de encontro com videntes e frades franciscanos. Santa Missa. Jantar e pernoite.",
+            "day7-title": "Dia 7 – Medjugorje",
+            "day7-description": "Café da manhã. Continuação do programa da paróquia, com atividades espirituais e tempo para oração pessoal. Santa Missa. Jantar e pernoite.",
+            "day8-title": "Dia 8 – Medjugorje",
+            "day8-description": "Café da manhã. Dia dedicado a mais atividades religiosas, visita a locais sagrados e tempo para reflexão. Santa Missa. Jantar e pernoite.",
+            "day9-title": "Dia 9 – Medjugorje",
+            "day9-description": "Café da manhã. Último dia de atividades religiosas no santuário, seguindo o programa local. Santa Missa. Jantar e pernoite.",
+            "day10-title": "Dia 10 – Medjugorje / Split (noite a bordo)",
+            "day10-description": "Café da manhã. Saída em direção a Split, visita guiada pela cidade e tempo livre. No final da tarde, embarque no navio para Ancona. Jantar e pernoite a bordo.",
+            "day11-title": "Dia 11 – Ancona / Assis / Roma",
+            "day11-description": "Café da manhã a bordo. Viagem para Assis, com visita à Basílica de Santa Clara, Basílica de São Francisco, centro histórico e Basílica de Santa Maria dos Anjos (Porciúncula). Continuação até Roma, acomodação no hotel, jantar e pernoite.",
+            "day12-title": "Dia 12 – Roma / Brasil",
+            "day12-description": "Café da manhã. Traslado ao aeroporto de Roma Fiumicino para embarque com destino ao Brasil.",
+            "contact-us-title": "Fale Conosco",
+            "send-button": "Enviar",
+            "follow-us-title": "Siga-Nos",
+            "all-rights-reserved": "Todos os direitos reservados"
+                }
+            };
+
+            for (var id in translations[language]) {
+                var element = document.getElementById(id);
+                if (element) {
+                    element.innerHTML = translations[language][id];
+                }
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var language = getLanguage();
+            translatePage(language);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,465 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Erapolis Travel</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        #main {
+            font-family: 'Arial', serif;
+        }
+
+        /* Estilo para o cabeçalho */
+        #header .inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; 
+            position: relative;
+        }
+
+        /* Estilo para o menu */
+        #header nav {
+            margin-right: 10px; /* Espaço entre o menu e os botões de idioma */
+        }
+
+        /* Estilo para os botões de idioma */
+        .language-buttons {
+            display: flex;
+            align-items: center; /* Alinha verticalmente com o menu */
+            margin-left: auto;
+        }
+
+        .language-buttons img {
+            width: 32px;
+            height: 32px;
+            margin: 0 5px; /* Espaço entre os ícones */
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .language-buttons img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+    <link rel="stylesheet" href="assets/css/erapolis-travel-logo.css">
+    <link rel="icon" href="assets/css/erapolis-travel-logo.css" type="image/x-icon">
+    <!-- arquivo de estilo para quando o JavaScript estiver desativado -->
+    <noscript><link rel="stylesheet" href="assets/css/erapolis-travel-logo.css"></noscript>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <span class="symbol"><img src="images/erapolis-travel-logo.jpg" alt="" /></span><span class="title">Erapolis Travel</span>
+                </a>
+
+                <!-- Nav -->
+                <nav>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Language Buttons -->
+                <div class="language-buttons">
+                    <img src="images/flags/us.png" onclick="setLanguage('en')" />
+                    <img src="images/flags/br.png" onclick="setLanguage('pt')" />
+                    <img src="images/flags/it.png" onclick="setLanguage('it')" />
+                    <img src="images/flags/fr.png" onclick="setLanguage('fr')" />
+                    <img src="images/flags/es.png" onclick="setLanguage('es')" />
+                </div>
+
+            </div>
+        </header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <h2 id="menu-title">Menu</h2>
+            <ul>
+                <li><a id="home-link" href="index.html">Home</a></li>
+                <li><a id="company-link" href="nossaempresa.html">Nossa Empresa</a></li>
+                <li><a id="info-link" href="informações.html">Informações</a></li>
+                <li><a id="contact-link" href="contatos.html">Contatos</a></li>
+                <li><a id="bookings-link" href="elements.html">Reservas Internacionais de Hoteis Online</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+         <div class="inner">
+            <h1 id="main-title">Turquia e Grécia</h1>
+            <p id="main-description" class="texto-menor">Uma jornada espiritual e cultural por Portugal, Espanha, França, Croácia e Bósnia e Herzegovina, visitando destinos sagrados como o Santuário de Fátima, Lourdes, Medjugorje e a Catedral de Santiago de Compostela. Explore cidades históricas como Lisboa, Paris, Coimbra, Porto e Zagreb, com destaque para monumentos icônicos como o Mosteiro dos Jerônimos, a Torre de Belém e o Palácio de Diocleciano. Uma viagem única de fé, história e devoção.</p>
+            <div class="images">
+                <img src="images/turquia.jpg" alt="" class="image" />
+                <img src="images/grecia.jpg" alt="" class="image" />
+                </div>
+                <div class="specific-section">
+                    <h1 id="day1-title">1º Dia - ISTAMBUL</h1>
+                    <p id="day1-description" class="texto-menor">Chegada no Aeroporto de Istambul, traslado ao hotel. Jantar e pernoite.</p>
+
+                    <h1 id="day2-title">2º Dia – ISTAMBUL</h1>
+                    <p id="day2-description" class="texto-menor">Café da manhã no hotel. Saída para visita à Cidade Antiga. Visita à majestosa e elegante Mesquita Azul, conhecida por suas decorações interiores. Em seguida, visitaremos o Hipódromo da Época Bizantina e a Catedral de Santa Sofia, datada do século VI. À tarde, visita ao Palácio Topkapi, a residência dos sultões do Império Otomano, famoso por sua excelente coleção de jóias e porcelanas. A última parada será no Gran Bazar, onde será possível realizar compras de artesanato local. Jantar e pernoite.</p>
+
+                    <h1 id="day3-title">3º Dia - ISTAMBUL E CAPADÓCIA</h1>
+                    <p id="day3-description" class="texto-menor">Café da manhã no hotel. Manhã de cruzeiro no Bósforo, que separa o Oriente do Ocidente. Durante o cruzeiro, visita ao Bazar das Especiarias e Fortaleza Rumeli. No final da tarde, transferência para o aeroporto e voo para Kayseri (Capadócia). Chegada e traslado ao hotel. Jantar e pernoite.</p>
+
+                    <h1 id="day4-title">4º Dia – CAPADÓCIA E GOREME</h1>
+                    <p id="day4-description" class="texto-menor">Café da manhã no hotel. Visita à Cidade Subterrânea de Kaymakli, famosa por suas formações rochosas de origem vulcânica, vestígios da cultura Hittite e uso por comunidades cristãs no século IV. Em seguida, visita ao Museu ao Ar Livre de Goreme, com igrejas medievais e afrescos nas cavernas. Continuação para Pasabagi, na área de Zelve, local de retiro para monges. Visita a Avanos, cidade da cerâmica, banhada pelo maior rio da Turquia. Jantar e pernoite. Sugestão: Passeio opcional de balão ao amanhecer para ver as paisagens deslumbrantes da Capadócia.</p>
+
+                    <h1 id="day5-title">5º Dia – CAPADÓCIA, KONYA E PAMUKKALE</h1>
+                    <p id="day5-description" class="texto-menor">Café da manhã no hotel. Visita a uma cidade subterrânea, construída como depósito de cereais. Continuação para Konya, com parada em um Karavansaray. Em Konya, visita ao Mosteiro dos Derviches Dançantes, fundado por Mevlana. Após a visita, viagem para Pamukkale. Jantar e pernoite.</p>
+
+                    <h1 id="day6-title">6º Dia – PAMUKKALE, HIERAPOLIS E KUSADASI</h1>
+                    <p id="day6-description" class="texto-menor">Café da manhã no hotel. Visita aos espetaculares terraços de travertino em Pamukkale e às ruínas de Hierápolis, incluindo o magnífico cemitério de Necrópole, a piscina de banhos termais, o Teatro Romano e o Museu. Em seguida, visita a Afrodisias, a cidade de Afrodite, com o Museu, o Templo de Afrodite, o Teatro, o Estádio e o Ágora. Continuação para Kusadasi. Chegada e traslado ao hotel. Jantar e pernoite.</p>
+
+                    <h1 id="day7-title">7º Dia – ÉFESO</h1>
+                    <p id="day7-description" class="texto-menor">Café da manhã no hotel. Saída para visita à antiga cidade de Éfeso, a mais bem preservada cidade greco-romana do mundo, incluindo a Ágora, Odeon, Curetes Street, Biblioteca de Celsius, Banhos Romanos, o Grande Teatro e a Rua de Mármore. Após o almoço, visita à Casa da Virgem Maria, local de peregrinação, e às ruínas do Templo de Artemis, uma das sete maravilhas do mundo antigo. Jantar e pernoite em Kusadasi.</p>
+
+                    <h1 id="day8-title">8º Dia – KUSADASI, PATMOS E CRUZEIRO ILHAS GREGAS</h1>
+                    <p id="day8-description" class="texto-menor">Café da manhã no hotel. Traslado para o porto de Kusadasi e navegação para Patmos. Chegada por volta das 16h. Tempo livre até 21h. Retorno ao navio. Noite a bordo. Todas as refeições inclusas.</p>
+
+                    <h1 id="day9-title">9º Dia – RODES</h1>
+                    <p id="day9-description" class="texto-menor">Café da manhã. Chegada a Rodes por volta das 07h. Tempo livre até 18h. Retorno ao navio. Noite a bordo. Todas as refeições inclusas.</p>
+
+                    <h1 id="day10-title">10º Dia – HERAKLION, ILHA DE CRETA E SANTORINI</h1>
+                    <p id="day10-description" class="texto-menor">Café da manhã. Chegada a Heraklion, Creta, por volta das 07h. Navegação para Santorini, chegada às 16h30. Tempo livre até 21h. Retorno ao navio. Noite a bordo. Todas as refeições inclusas.</p>
+
+                    <h1 id="day11-title">11º Dia – ATENAS</h1>
+                    <p id="day11-description" class="texto-menor">Café da manhã. Chegada ao porto de Pireo às 07h. Visita panorâmica à Acrópole, Parlamento, Tumba do Soldado Desconhecido, Teatro de Dionísio, Arco de Adriano, Templo de Zeus, Estádio Panatenaico, Palácio Real, Academia, Universidade e Biblioteca Nacional. Resto do dia livre. Pernoite.</p>
+
+                    <h1 id="day12-title">12º Dia – ATENAS</h1>
+                    <p id="day12-description" class="texto-menor">Café da manhã no hotel. Dia livre em Atenas. Sugestão de passeio opcional: Ilhas do Golfo Saronico – Aegina, Hydra e Poros.</p>
+
+                    <h1 id="day13-title">13º Dia – ATENAS, CORINTO, MICENAS E EPIDAURO</h1>
+                    <p id="day13-description" class="texto-menor">Café da manhã no hotel. Saída para passeio de dia inteiro a Corinto, passando pelos pitorescos caminhos da costa do Golfo Sarônico. Continuação para Micenas, com visita à Porta dos Leões e às ruínas do Palácio Real de Agamenon. Prosseguimento para Epidauro e visita ao famoso teatro, com acústica perfeita. Retorno a Atenas. Pernoite.</p>
+
+                    <h1 id="day14-title">14º Dia – ATENAS E BRASIL</h1>
+                    <p id="day14-description" class="texto-menor">Café da manhã, check-out e traslado ao aeroporto de Atenas para vôo de retorno ao Brasil.</p>
+
+
+                </div>
+                
+        </div>
+</div>
+
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <section>
+                    <h2 id="contact-us-title">Fale Conosco</h2>
+                    <form method="post" action="#">
+                        <div class="fields">
+                            <div class="field half">
+                                <input type="text" name="name" id="name" placeholder="Nome" />
+                            </div>
+                            <div class="field half">
+                                <input type="email" name="email" id="email" placeholder="Email" />
+                            </div>
+                            <div class="field">
+                                <textarea name="message" id="message" placeholder="Mensagem"></textarea>
+                            </div>
+                        </div>
+                        <ul class="actions">
+                            <li><input id="send-button" type="submit" value="enviar" class="primary" /></li>
+                        </ul>
+                    </form>
+                </section>
+                <section>
+                    <h2 id="follow-us-title">Siga-Nos</h2>
+                    <ul class="icons">
+                        <li><a href="https://www.facebook.com/erapolistravel/" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+                    </ul>
+                </section>
+                <ul class="copyright">
+                    <li>&copy; Erapolis Travel 2025. <span id="all-rights-reserved">Todos os direitos reservados</span></li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Translate Script -->
+    <script>
+        function setLanguage(language) {
+            document.cookie = "language=" + language + "; path=/";
+            translatePage(language);
+        }
+
+        function getLanguage() {
+            let name = "language=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for(let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "pt"; // Default language
+        }
+
+        function translatePage(language) {
+            var translations = {
+            en: {
+            "menu-title": "Menu",
+            "home-link": "Home",
+            "company-link": "Our Company",
+            "info-link": "Information",
+            "contact-link": "Contacts",
+            "bookings-link": "International Hotel Bookings Online",
+            "main-title": "Turkey and Greece",
+            "main-description": "A journey through the rich culture, history, and spiritual heritage of Turkey and Greece. Explore iconic cities like Istanbul, Cappadocia, Pamukkale, and Athens, with visits to historical sites, ancient cities, and breathtaking landscapes.",
+            "day1-title": "Day 1 – ISTANBUL",
+            "day1-description": "Arrival at Istanbul Airport, transfer to the hotel. Dinner and overnight stay.",
+            "day2-title": "Day 2 – ISTANBUL",
+            "day2-description": "Breakfast at the hotel. Departure for a visit to the Old City. Visit the majestic and elegant Blue Mosque, famous for its interior decorations. Next, visit the Byzantine Hippodrome and the 6th-century Hagia Sophia. In the afternoon, visit the Topkapi Palace, residence of the Ottoman sultans, famous for its excellent collection of jewelry and porcelain. The final stop will be the Grand Bazaar, where you can shop for local crafts. Dinner and overnight stay.",
+            "day3-title": "Day 3 – ISTANBUL AND CAPPADOCIA",
+            "day3-description": "Breakfast at the hotel. Morning Bosphorus cruise, separating the East from the West. During the cruise, visit the Spice Bazaar and Rumeli Fortress. In the late afternoon, transfer to the airport and flight to Kayseri (Cappadocia). Arrival and transfer to the hotel. Dinner and overnight stay.",  
+            "day4-title": "Day 4 – CAPPADOCIA AND GOREME",
+            "day4-description": "Breakfast at the hotel. Visit the Kaymakli Underground City, famous for its volcanic rock formations, Hittite culture remnants, and use by Christian communities in the 4th century. Next, visit the Goreme Open-Air Museum, with medieval churches and frescoes in the caves. Continue to Pasabagi in the Zelve area, a retreat site for monks. Visit Avanos, a pottery city, located along the largest river in Turkey. Dinner and overnight stay. Suggestion: Optional hot air balloon ride at sunrise to view the stunning landscapes of Cappadocia.",
+            "day5-title": "Day 5 – CAPPADOCIA, KONYA AND PAMUKKALE",
+            "day5-description": "Breakfast at the hotel. Visit an underground city, built as a grain storage facility. Continue to Konya, with a stop at a Karavansaray. In Konya, visit the Mevlana Dervishes Monastery. After the visit, travel to Pamukkale. Dinner and overnight stay.",
+            "day6-title": "Day 6 – PAMUKKALE, HIERAPOLIS AND KUSADASI",
+            "day6-description": "Breakfast at the hotel. Visit the spectacular travertine terraces in Pamukkale and the ruins of Hierapolis, including the magnificent Necropolis cemetery, the thermal baths, the Roman Theatre, and the Museum. Then, visit Afrodisias, the city of Aphrodite, with the Museum, the Temple of Aphrodite, the Theatre, the Stadium, and the Agora. Continue to Kusadasi. Arrival and transfer to the hotel. Dinner and overnight stay.",
+            "day7-title": "Day 7 – EPHESUS",
+            "day7-description": "Breakfast at the hotel. Departure to visit the ancient city of Ephesus, the best-preserved Greco-Roman city in the world, including the Agora, Odeon, Curetes Street, Celsus Library, Roman Baths, the Grand Theatre, and Marble Street. After lunch, visit the House of the Virgin Mary, a pilgrimage site, and the ruins of the Temple of Artemis, one of the Seven Wonders of the Ancient World. Dinner and overnight stay in Kusadasi.",
+            "day8-title": "Day 8 – KUSADASI, PATMOS AND GREEK ISLANDS CRUISE",
+            "day8-description": "Breakfast at the hotel. Transfer to the port of Kusadasi and sail to Patmos. Arrival around 4 PM. Free time until 9 PM. Return to the ship. Night on board. All meals included.",
+            "day9-title": "Day 9 – RHODES",
+            "day9-description": "Breakfast. Arrival in Rhodes around 7 AM. Free time until 6 PM. Return to the ship. Night on board. All meals included.",
+            "day10-title": "Day 10 – HERAKLION, CRETE AND SANTORINI",
+            "day10-description": "Breakfast. Arrival in Heraklion, Crete, around 7 AM. Sail to Santorini, arrival at 4:30 PM. Free time until 9 PM. Return to the ship. Night on board. All meals included.",
+            "day11-title": "Day 11 – ATHENS",
+            "day11-description": "Breakfast. Arrival at the port of Piraeus at 7 AM. Panoramic tour of the Acropolis, Parliament, Tomb of the Unknown Soldier, Dionysus Theatre, Arch of Hadrian, Temple of Zeus, Panathenaic Stadium, Royal Palace, Academy, University, and National Library. The rest of the day is free. Overnight stay.",
+            "day12-title": "Day 12 – ATHENS",
+            "day12-description": "Breakfast at the hotel. Free day in Athens. Optional excursion: Saronic Gulf Islands – Aegina, Hydra, and Poros.",
+            "day13-title": "Day 13 – ATHENS, CORINTH, MYCENAE AND EPIDAURUS",
+            "day13-description": "Breakfast at the hotel. Full-day excursion to Corinth, passing through the picturesque roads along the Saronic Gulf. Continue to Mycenae, with a visit to the Lion Gate and the ruins of Agamemnon's Royal Palace. Proceed to Epidauros and visit the famous theatre with perfect acoustics. Return to Athens. Overnight stay.",
+            "day14-title": "Day 14 – ATHENS AND BRAZIL",
+            "day14-description": "Breakfast, check-out, and transfer to Athens airport for the return flight to Brazil.",
+            "contact-us-title": "Contact Us",
+            "send-button": "Send",
+            "follow-us-title": "Follow Us",
+            "all-rights-reserved": "All Rights Reserved.",
+        },
+        it: {
+            "menu-title": "Menu",
+            "home-link": "Home",
+            "company-link": "La Nostra Azienda",
+            "info-link": "Informazioni",
+            "contact-link": "Contatti",
+            "bookings-link": "Prenotazioni Internazionali di Hotel Online",
+            "main-title": "Turquía e Grecia",
+            "main-description": "Un viaggio affascinante tra due paesi ricchi di storia, cultura e bellezza naturale. Scopri le meraviglie della Turchia e della Grecia, esplorando città storiche, monumenti iconici, paesaggi mozzafiato e vivendo esperienze uniche di spiritualità e tradizioni locali.",
+            "day1-title": "Giorno 1 – ISTANBUL",
+            "day1-description": "Arrivo all'aeroporto di Istanbul, trasferimento in hotel. Cena e pernottamento.",
+            "day2-title": "Giorno 2 – ISTANBUL",
+            "day2-description": "Colazione in hotel. Partenza per la visita alla Città Antica. Visita alla maestosa ed elegante Moschea Blu, famosa per le sue decorazioni interne. Successivamente, visita all'Ippodromo dell'epoca bizantina e alla Cattedrale di Santa Sofia, risalente al VI secolo. Nel pomeriggio, visita al Palazzo Topkapi, residenza dei sultani dell'Impero Ottomano, famoso per la sua eccellente collezione di gioielli e porcellane. L'ultima tappa sarà al Gran Bazaar, dove sarà possibile fare acquisti di artigianato locale. Cena e pernottamento.",
+            "day3-title": "Giorno 3 – ISTANBUL E CAPPADOCIA",
+            "day3-description": "Colazione in hotel. Mattinata in crociera sul Bosforo, che separa l'Oriente dall'Occidente. Durante la crociera, visita al Bazar delle Spezie e alla Fortezza Rumeli. Nel tardo pomeriggio, trasferimento all'aeroporto e volo per Kayseri (Cappadocia). Arrivo e trasferimento in hotel. Cena e pernottamento.",
+            "day4-title": "Giorno 4 – CAPPADOCIA E GOREME",
+            "day4-description": "Colazione in hotel. Visita alla Città Sotterranea di Kaymakli, famosa per le sue formazioni rocciose di origine vulcanica, i resti della cultura Ittita e l'uso da parte delle comunità cristiane nel IV secolo. Successivamente, visita al Museo all'Aperto di Goreme, con chiese medievali e affreschi nelle grotte. Proseguimento per Pasabagi, nella zona di Zelve, luogo di ritiro per monaci. Visita ad Avanos, città della ceramica, bagnata dal fiume più grande della Turchia. Cena e pernottamento. Suggerimento: Passeggiata facoltativa in mongolfiera all'alba per ammirare i panorami mozzafiato della Cappadocia.",
+            "day5-title": "Giorno 5 – CAPPADOCIA, KONYA E PAMUKKALE",
+            "day5-description": "Colazione in hotel. Visita a una città sotterranea, costruita come deposito di cereali. Proseguimento per Konya, con sosta in un Karavansaray. A Konya, visita al Monastero dei Dervisci Rotanti, fondato da Mevlana. Dopo la visita, viaggio verso Pamukkale. Cena e pernottamento.",
+            "day6-title": "Giorno 6 – PAMUKKALE, HIERAPOLIS E KUSADASI",
+            "day6-description": "Colazione in hotel. Visita alle spettacolari terrazze di travertino di Pamukkale e alle rovine di Hierapolis, tra cui il magnifico cimitero della Necropoli, la piscina termale, il Teatro Romano e il Museo. Successivamente, visita ad Afrodisia, la città di Afrodite, con il Museo, il Tempio di Afrodite, il Teatro, lo Stadio e l'Agorà. Proseguimento per Kusadasi. Arrivo e trasferimento in hotel. Cena e pernottamento.",
+            "day7-title": "Giorno 7 – EFESO",
+            "day7-description": "Colazione in hotel. Partenza per la visita alla città antica di Efeso, la città greco-romana meglio conservata al mondo, compresa l'Agorà, l'Odeon, la Via dei Cureti, la Biblioteca di Celso, le Terme Romane, il Grande Teatro e la Via di Marmo. Dopo il pranzo, partenza per la Grecia. Arrivo e sistemazione in hotel. Cena e pernottamento.",
+            "day8-title": "Giorno 8 – Atene",
+            "day8-description": "Colazione in hotel. Partenza per la visita dell'Acropoli di Atene, un sito UNESCO che ospita il Partenone, il Tempio di Atena Nike e il Museo dell'Acropoli. Proseguimento per il Tempio di Zeus Olimpio e il moderno stadio Panathenaic. Pomeriggio libero per esplorare la Plaka, il quartiere antico di Atene. Cena e pernottamento.",
+            "day9-title": "Giorno 9 – Atene e Santorini",
+            "day9-description": "Colazione in hotel. Mattinata libera per shopping o visita al Museo Archeologico Nazionale. Nel pomeriggio, partenza per Santorini in volo o nave. Arrivo e trasferimento in hotel. Cena e pernottamento.",
+            "day10-title": "Giorno 10 – Santorini",
+            "day10-description": "Colazione in hotel. Giornata dedicata alla visita dell'isola di Santorini, famosa per i suoi panorami mozzafiato, le case bianche con tetti blu e le spiagge vulcaniche. Visita al villaggio di Oia per ammirare il tramonto, uno dei più belli al mondo. Cena e pernottamento.",
+            "day11-title": "Giorno 11 – Santorini e ritorno",
+            "day11-description": "Colazione in hotel. Tempo libero per un'ultima passeggiata sull'isola o per fare acquisti. Nel pomeriggio, trasferimento all'aeroporto per il volo di ritorno.",
+            "day12-title": "Giorno 12 – Santorini e Atene",
+            "day12-description": "Colazione in hotel. Mattinata libera per un'ultima passeggiata su Santorini. Pranzo libero, quindi partenza in pomeriggio per il volo di ritorno ad Atene. Arrivo e sistemazione in hotel. Cena e pernottamento.",
+            "day13-title": "Giorno 13 – Atene e Meteora",
+            "day13-description": "Colazione in hotel. Partenza per la visita di Meteora, un complesso di monasteri ortodossi situato su formazioni rocciose spettacolari. Visita ai principali monasteri, ammirando la vista mozzafiato e scoprendo la storia di questo sito UNESCO. Nel pomeriggio, ritorno ad Atene. Cena e pernottamento.",
+            "day14-title": "Giorno 14 – Atene e ritorno",
+            "day14-description": "Colazione in hotel. Mattinata libera per esplorare altri luoghi di Atene o fare shopping. Trasferimento in aeroporto nel pomeriggio per il volo di ritorno.",
+            "contact-us-title": "Contattaci",
+            "send-button": "Invia",
+            "follow-us-title": "Seguici",
+            "all-rights-reserved": "Tutti i diritti riservati",
+        },
+        fr: {
+            "menu-title": "Menu",
+            "home-link": "Accueil",
+            "company-link": "Notre Entreprise",
+            "info-link": "Informations",
+            "contact-link": "Contacts",
+            "bookings-link": "Réservations Internationales d'Hôtels en Ligne",
+            "main-title": "Turquie et Grèce",
+            "main-description": "Un voyage à travers la culture, l'histoire et le patrimoine spirituel de la Turquie et de la Grèce. Explorez des villes emblématiques telles qu'Istanbul, la Cappadoce, Pamukkale et Athènes, avec des visites de sites historiques, de villes anciennes et de paysages à couper le souffle.",
+            "day1-title": "Jour 1 – ISTANBUL",
+            "day1-description": "Arrivée à l'aéroport d'Istanbul, transfert à l'hôtel. Dîner et nuit à l'hôtel.",
+            "day2-title": "Jour 2 – ISTANBUL",
+            "day2-description": "Petit-déjeuner à l'hôtel. Départ pour une visite de la vieille ville. Visite de la majestueuse Mosquée Bleue, célèbre pour sa décoration intérieure. Ensuite, visite de l'Hippodrome byzantin et de la Sainte-Sophie du VIe siècle. L'après-midi, visite du Palais de Topkapi, résidence des sultans ottomans, célèbre pour sa remarquable collection de bijoux et de porcelaines. Dernière étape : le Grand Bazar, où vous pourrez acheter des objets artisanaux locaux. Dîner et nuit à l'hôtel.",
+            "day3-title": "Jour 3 – ISTANBUL ET CAPPADOCE",
+            "day3-description": "Petit-déjeuner à l'hôtel. Croisière matinale sur le Bosphore, séparant l'Est de l'Ouest. Visite du Marché aux Épices et de la forteresse de Rumeli. L'après-midi, transfert à l'aéroport pour un vol vers Kayseri (Cappadoce). Arrivée et transfert à l'hôtel. Dîner et nuit à l'hôtel.",
+            "day4-title": "Jour 4 – CAPPADOCE ET GOREME",
+            "day4-description": "Petit-déjeuner à l'hôtel. Visite de la ville souterraine de Kaymakli, célèbre pour ses formations rocheuses volcaniques, ses vestiges de la culture hittite et son utilisation par les communautés chrétiennes au IVe siècle. Ensuite, visite du musée en plein air de Goreme, avec des églises médiévales et des fresques dans les grottes. Continuation vers Pasabagi, région de Zelve, un lieu de retraite pour les moines. Visite d'Avanos, ville célèbre pour sa poterie, située le long du plus grand fleuve de Turquie. Dîner et nuit à l'hôtel. Option : Balade en montgolfière au lever du soleil pour admirer les paysages spectaculaires de la Cappadoce.",
+            "day5-title": "Jour 5 – CAPPADOCE, KONYA ET PAMUKKALE",
+            "day5-description": "Petit-déjeuner à l'hôtel. Visite d'une ville souterraine, construite comme un entrepôt de grains. Continuation vers Konya, avec une halte à un caravansérail. À Konya, visite du monastère des derviches de Mevlana. Après la visite, départ pour Pamukkale. Dîner et nuit à l'hôtel.",
+            "day6-title": "Jour 6 – PAMUKKALE, HIERAPOLIS ET KUSADASI",
+            "day6-description": "Petit-déjeuner à l'hôtel. Visite des spectaculaires terrasses de travertin de Pamukkale et des ruines de Hiérapolis, y compris le magnifique cimetière Nécropole, les thermes, le théâtre romain et le musée. Ensuite, visite d'Afrodisias, la ville d'Afrodite, avec son musée, son temple d'Afrodite, son théâtre, son stade et son agora. Continuation vers Kusadasi. Arrivée et transfert à l'hôtel. Dîner et nuit à l'hôtel.",
+            "day7-title": "Jour 7 – EPHESOS",
+            "day7-description": "Petit-déjeuner à l'hôtel. Départ pour la visite de l'ancienne ville d'Éphèse, la ville gréco-romaine la mieux préservée du monde, comprenant l'agora, l'odéon, la rue des Curètes, la bibliothèque de Celsus, les bains romains, le grand théâtre et la rue de marbre. Après le déjeuner, visite de la maison de Marie, un lieu de pèlerinage, et des ruines du temple d'Artémis, l'une des sept merveilles du monde antique. Dîner et nuit à Kusadasi.",
+            "day8-title": "Jour 8 – KUSADASI, PATMOS ET CROISIÈRE DANS LES ÎLES GRECQUES",
+            "day8-description": "Petit-déjeuner à l'hôtel. Transfert au port de Kusadasi et navigation jusqu'à Patmos. Arrivée vers 16h. Temps libre jusqu'à 21h. Retour au navire. Nuit à bord. Tous les repas inclus.",
+            "day9-title": "Jour 9 – RHODES",
+            "day9-description": "Petit-déjeuner à bord. Arrivée à Rhodes vers 7h. Temps libre jusqu'à 18h. Retour au navire. Nuit à bord. Tous les repas inclus.",
+            "day10-title": "Jour 10 – HERAKLION, CRÈTE ET SANTORIN",
+            "day10-description": "Petit-déjeuner à bord. Arrivée à Heraklion, Crète, vers 7h. Navigation jusqu'à Santorin, arrivée à 16h30. Temps libre jusqu'à 21h. Retour au navire. Nuit à bord. Tous les repas inclus.",
+            "day11-title": "Jour 11 – ATHÈNES",
+            "day11-description": "Petit-déjeuner à l'hôtel. Arrivée au port du Pirée à 7h. Visite panoramique de l'Acropole, du parlement, du tombeau du soldat inconnu, du théâtre de Dionysos, de l'arc d'Hadrien, du temple de Zeus, du stade panathénaïque, du palais royal, de l'académie, de l'université et de la bibliothèque nationale. Reste de la journée libre. Nuit à l'hôtel.",
+            "day12-title": "Jour 12 – ATHÈNES",
+            "day12-description": "Petit-déjeuner à l'hôtel. Journée libre à Athènes. Excursion optionnelle : Îles du golfe Saronique – Aegina, Hydra et Poros.",
+            "day13-title": "Jour 13 – ATHÈNES, CORINTHES, MYCÈNES ET EPIDAURE",
+            "day13-description": "Petit-déjeuner à l'hôtel. Excursion d'une journée à Corinthe, en passant par des routes pittoresques le long du golfe Saronique. Continuation vers Mycènes, avec la visite de la porte des lions et des ruines du palais royal d'Agamemnon. Poursuite vers Épidaure et visite du célèbre théâtre avec une acoustique parfaite. Retour à Athènes. Nuit à l'hôtel.",
+            "day14-title": "Jour 14 – ATHÈNES ET BRÉSIL",
+            "day14-description": "Petit-déjeuner, check-out et transfert à l'aéroport d'Athènes pour le vol retour au Brésil.",
+            "contact-us-title": "Contactez-Nous",
+            "send-button": "Envoyer",
+            "follow-us-title": "Suivez-Nous",
+            "all-rights-reserved": "Tous droits réservés",
+
+        },
+        es: {
+            "menu-title": "Menú",
+            "home-link": "Inicio",
+            "company-link": "Nuestra Empresa",
+            "info-link": "Información",
+            "contact-link": "Contactos",
+            "bookings-link": "Reservas Internacionales de Hoteles Online",
+            "main-title": "Portugal, Francia y Bosnia",
+            "main-description": "Un viaje de fe y cultura a través de Lisboa, Fátima, Santiago de Compostela, Lourdes, París, Medjugorje y otras ciudades. Explora los lugares sagrados, participa en actividades religiosas y vive momentos únicos de espiritualidad en un contexto lleno de historia y paisajes de Portugal, Francia y Bosnia.",
+            "day1-title": "Día 1 – LISBOA",
+            "day1-description": "Llegada al aeropuerto de Lisboa, bienvenida y recorrido panorámico por la ciudad. Visita al Barrio Baixa, Alfama, Belém y otros sitios históricos como la Plaza del Rossio, el Teatro Nacional y la Torre de Belém. Tiempo libre para disfrutar del famoso Pastel de Belém. Cena y noche en el hotel.",
+            "day2-title": "Día 2 – LISBOA - TOMAR - FÁTIMA",
+            "day2-description": "Desayuno en el hotel y salida hacia Tomar. Visita al Convento de Cristo. Continuación hacia Fátima. Tiempo libre y participación en el Rosario y la Procesión de las Velas. Cena y noche en el hotel.",
+            "day3-title": "Día 3 – FÁTIMA",
+            "day3-description": "Visita al Santuario de Fátima, la Capilla de las Apariciones, la Basílica y otros lugares sagrados. Participación en el Rosario y la Procesión de las Velas. Cena y noche en el hotel.",
+            "day4-title": "Día 4 – FÁTIMA / COIMBRA / BRAGA",
+            "day4-description": "Desayuno en el hotel y salida hacia Coimbra para visitar la Universidad de Coimbra. Continuación hacia Braga. Llegada, cena y noche en el hotel.",
+            "day5-title": "Día 5 – BRAGA / OPORTO / SANTIAGO DE COMPOSTELA",
+            "day5-description": "Desayuno y salida hacia el Santuario del Bom Jesús, destacando la arquitectura y las escaleras. Visita panorámica de Oporto. Continuación hacia Galicia y llegada a Santiago de Compostela. Cena y noche en el hotel.",
+            "day6-title": "Día 6 – SANTIAGO DE COMPOSTELA",
+            "day6-description": "Recorrido guiado por la ciudad, incluyendo la Plaza Obradoiro y la Catedral de Santiago. Participación en la Misa del Peregrino. Cena y noche en el hotel.",
+            "day7-title": "Día 7 – SANTIAGO DE COMPOSTELA / LEÓN",
+            "day7-description": "Viaje hacia León, una de las principales ciudades del Camino de Santiago. Visita a la Catedral de León. Noche, cena y alojamiento en el hotel.",
+            "day8-title": "Día 8 – LEÓN / BURGOS / LOURDES",
+            "day8-description": "Visita a la Catedral de Burgos y continuación hacia Lourdes. Participación en la Procesión de las Velas en la explanada del Santuario. Cena y noche en el hotel.",
+            "day9-title": "Día 9 – LOURDES",
+            "day9-description": "Visita al Santuario de Nuestra Señora de Lourdes, incluida la gruta y participación en la Bendición del Santísimo Sacramento. Cena y noche en el hotel.",
+            "day10-title": "Día 10 – LOURDES / PARÍS",
+            "day10-description": "Desayuno y traslado al aeropuerto para un vuelo a París. Llegada y traslado al hotel. Alojamiento y noche en el hotel.",
+            "day11-title": "Día 11 – PARÍS",
+            "day11-description": "Visita a la Iglesia de la Medalla Milagrosa y tiempo libre para compras. Por la tarde, visita a Montmartre y a la Basílica del Sagrado Corazón. Noche en el hotel.",
+            "day12-title": "Día 12 – PARÍS / LISIEUX / PARÍS",
+            "day12-description": "Visita a la Basílica de Santa Teresa en Lisieux, donde vivió Santa Teresa. Regreso a París para pasar la noche en el hotel.",
+            "day13-title": "Día 13 – PARÍS",
+            "day13-description": "Visita a la Catedral de Notre-Dame y recorrido por los principales sitios turísticos de la ciudad, como la Torre Eiffel, el Arco de Triunfo y el Museo del Louvre. Noche en el hotel.",
+            "day14-title": "Día 14 – PARÍS / SPLIT / MEDJUGORJE",
+            "day14-description": "Traslado al aeropuerto y vuelo a Split. Llegada y salida hacia Medjugorje. Alojamiento, cena y noche en el hotel.",
+            "day15-title": "Día 15 – MEDJUGORJE",
+            "day15-description": "Visita a Medjugorje, incluyendo Podbrdo y la Comunidad de la Hermana Euvira. Cena y noche en el hotel.",
+            "day16-title": "Día 16 – MEDJUGORJE / SPLIT",
+            "day16-description": "Salida hacia Split con visita a la ciudad, incluida el Palacio de Diocleciano. Cena y noche en el hotel.",
+            "day17-title": "Día 17 – SPLIT / ZAGREB",
+            "day17-description": "Viaje hacia Zagreb y visita al centro histórico, incluida la Catedral y la Iglesia de San Marcos. Cena y noche en el hotel.",
+            "day18-title": "Día 18 – ZAGREB / LISBOA",
+            "day18-description": "Traslado al aeropuerto y vuelo de regreso a Lisboa. Llegada y alojamiento en el hotel. Cena y noche en el hotel.",
+            "day19-title": "Día 19 – LISBOA / BRASIL",
+            "day19-description": "Recorrido por la ciudad de Lisboa, incluyendo el Monasterio de São Jerônimo, la Iglesia de Santo Antônio, la Catedral de Sé y otros lugares turísticos. Traslado al aeropuerto y vuelo a Brasil.",
+            "contact-us-title": "Contáctanos",
+            "send-button": "Enviar",
+            "follow-us-title": "Síguenos",
+            "all-rights-reserved": "Todos los derechos reservados"
+        },
+                
+        pt: {
+            "menu-title": "Menu",
+            "home-link": "Home",
+            "company-link": "Nossa Empresa",
+            "info-link": "Informações",
+            "contact-link": "Contatos",
+            "bookings-link": "Reservas Internacionais de Hoteis Online",
+            "main-title": "Turquia e Grécia",
+            "main-description": "Uma jornada pela rica cultura, história e herança espiritual da Turquia e da Grécia. Explore cidades icônicas como Istambul, Capadócia, Pamukkale e Atenas, com visitas a sítios históricos, cidades antigas e paisagens deslumbrantes.",
+            "day1-title": "Dia 1 – ISTAMBUL",
+            "day1-description": "Chegada ao Aeroporto de Istambul, traslado para o hotel. Jantar e pernoite.",
+            "day2-title": "Dia 2 – ISTAMBUL",
+            "day2-description": "Café da manhã no hotel. Partida para visita à Cidade Antiga. Visita à majestosa e elegante Mesquita Azul, famosa por sua decoração interior. Em seguida, visita ao Hipódromo Bizantino e à Hagia Sophia do século VI. À tarde, visita ao Palácio Topkapi, residência dos sultões otomanos, famoso por sua excelente coleção de joias e porcelanas. A última parada será o Grande Bazaar, onde você pode comprar artesanato local. Jantar e pernoite.",
+            "day3-title": "Dia 3 – ISTAMBUL E CAPADÓCIA",
+            "day3-description": "Café da manhã no hotel. Cruzeiro matinal pelo Bósforo, separando o Leste do Oeste. Durante o passeio, visita ao Mercado de Especiarias e à Fortaleza Rumeli. À tarde, traslado para o aeroporto e voo para Kayseri (Capadócia). Chegada e traslado para o hotel. Jantar e pernoite.",
+            "day4-title": "Dia 4 – CAPADÓCIA E GOREME",
+            "day4-description": "Café da manhã no hotel. Visita à cidade subterrânea de Kaymakli, famosa por suas formações rochosas vulcânicas, restos da cultura hitita e uso pelas comunidades cristãs no século IV. Em seguida, visita ao Museu ao Ar Livre de Goreme, com igrejas medievais e afrescos nas cavernas. Continue até Pasabagi na região de Zelve, um local de retiro para monges. Visita à Avanos, cidade famosa pela cerâmica, situada ao longo do maior rio da Turquia. Jantar e pernoite. Sugestão: Passeio opcional de balão de ar quente ao amanhecer para apreciar as paisagens deslumbrantes da Capadócia.",
+            "day5-title": "Dia 5 – CAPADÓCIA, KONYA E PAMUKKALE",
+            "day5-description": "Café da manhã no hotel. Visita a uma cidade subterrânea, construída como um depósito de grãos. Continuação para Konya, com parada em uma Caravansaray. Em Konya, visita ao Mosteiro dos Dervixes de Mevlana. Após a visita, viagem para Pamukkale. Jantar e pernoite.",
+            "day6-title": "Dia 6 – PAMUKKALE, HIERÁPOLIS E KUSADASI",
+            "day6-description": "Café da manhã no hotel. Visita às espetaculares terras de travertino de Pamukkale e às ruínas de Hierápolis, incluindo o magnífico cemitério Necropolis, os banhos termais, o Teatro Romano e o Museu. Depois, visita a Afrodisias, a cidade de Afrodite, com o Museu, o Templo de Afrodite, o Teatro, o Estádio e a Ágora. Continuação para Kusadasi. Chegada e traslado para o hotel. Jantar e pernoite.",
+            "day7-title": "Dia 7 – ÉFESO",
+            "day7-description": "Café da manhã no hotel. Partida para visitar a antiga cidade de Éfeso, a cidade greco-romana melhor preservada do mundo, incluindo a Ágora, o Odeão, a Rua dos Curètes, a Biblioteca de Célso, os Banhos Romanos, o Grande Teatro e a Rua de Mármore. Após o almoço, visita à Casa de Maria, um local de peregrinação, e às ruínas do Templo de Ártemis, uma das Sete Maravilhas do Mundo Antigo. Jantar e pernoite em Kusadasi.",
+            "day8-title": "Dia 8 – KUSADASI, PATMOS E CRUZEIRO PELOS ILHÉUS GREGOS",
+            "day8-description": "Café da manhã no hotel. Traslado para o porto de Kusadasi e navegação até Patmos. Chegada por volta das 16h. Tempo livre até as 21h. Retorno ao navio. Noite a bordo. Todas as refeições inclusas.",
+            "day9-title": "Dia 9 – RODES",
+            "day9-description": "Café da manhã. Chegada a Rodes por volta das 7h. Tempo livre até as 18h. Retorno ao navio. Noite a bordo. Todas as refeições inclusas.",
+            "day10-title": "Dia 10 – HERAKLION, CRETA E SANTORINI",
+            "day10-description": "Café da manhã. Chegada em Heraklion, Creta, por volta das 7h. Navegação até Santorini, chegada às 16h30. Tempo livre até as 21h. Retorno ao navio. Noite a bordo. Todas as refeições inclusas.",
+            "day11-title": "Dia 11 – ATENAS",
+            "day11-description": "Café da manhã. Chegada ao porto de Piraeus às 7h. Visita panorâmica da Acrópole, Parlamento, Túmulo do Soldado Desconhecido, Teatro Dionísio, Arco de Adriano, Templo de Zeus, Estádio Panatenaico, Palácio Real, Academia, Universidade e Biblioteca Nacional. O restante do dia será livre. Pernoite.",
+            "day12-title": "Dia 12 – ATENAS",
+            "day12-description": "Café da manhã no hotel. Dia livre em Atenas. Excursão opcional: Ilhas do Golfo Sarônico – Aegina, Hydra e Poros.",
+            "day13-title": "Dia 13 – ATENAS, CORINTO, MICÊNIA E EPIDAURO",
+            "day13-description": "Café da manhã no hotel. Excursão de dia inteiro para Corinto, passando pelas pitorescas estradas ao longo do Golfo Sarônico. Continuação para Micênia, com visita ao Portão dos Leões e às ruínas do Palácio Real de Agamenon. Prosseguimento para Epidauro e visita ao famoso teatro com acústica perfeita. Retorno a Atenas. Pernoite.",
+            "day14-title": "Dia 14 – ATENAS E BRASIL",
+            "day14-description": "Café da manhã, check-out e traslado para o aeroporto de Atenas para o voo de retorno ao Brasil.",
+            "contact-us-title": "Fale Conosco",
+            "send-button": "Enviar",
+            "follow-us-title": "Siga-Nos",
+            "all-rights-reserved": "Todos os direitos reservados"
+                }
+            };
+
+            for (var id in translations[language]) {
+                var element = document.getElementById(id);
+                if (element) {
+                    element.innerHTML = translations[language][id];
+                }
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var language = getLanguage();
+            translatePage(language);
+        });
+    </script>
+</body>
+</html>

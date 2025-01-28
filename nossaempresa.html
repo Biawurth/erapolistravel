@@ -1,0 +1,306 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Erapolis Travel</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        #main {
+            font-family: 'Arial', serif;
+        }
+
+        /* Estilo para o cabeçalho */
+        #header .inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; 
+            position: relative;
+        }
+
+        /* Estilo para o menu */
+        #header nav {
+            margin-right: 10px; /* Espaço entre o menu e os botões de idioma */
+        }
+
+        /* Estilo para os botões de idioma */
+        .language-buttons {
+            display: flex;
+            align-items: center; /* Alinha verticalmente com o menu */
+            margin-left: auto;
+        }
+
+        .language-buttons img {
+            width: 32px;
+            height: 32px;
+            margin: 0 5px; /* Espaço entre os ícones */
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .language-buttons img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+    <link rel="stylesheet" href="assets/css/erapolis-travel-logo.css">
+    <link rel="icon" href="assets/css/erapolis-travel-logo.css" type="image/x-icon">
+    <!-- arquivo de estilo para quando o JavaScript estiver desativado -->
+    <noscript><link rel="stylesheet" href="assets/css/erapolis-travel-logo.css"></noscript>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <span class="symbol"><img src="images/erapolis-travel-logo.jpg" alt="" /></span><span class="title">Erapolis Travel</span>
+                </a>
+
+                <!-- Nav -->
+                <nav>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Language Buttons -->
+                <div class="language-buttons">
+                    <img src="images/flags/us.png" onclick="setLanguage('en')" />
+                    <img src="images/flags/br.png" onclick="setLanguage('pt')" />
+                    <img src="images/flags/it.png" onclick="setLanguage('it')" />
+                    <img src="images/flags/fr.png" onclick="setLanguage('fr')" />
+                    <img src="images/flags/es.png" onclick="setLanguage('es')" />
+                </div>
+
+            </div>
+        </header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <h2 id="menu-title">Menu</h2>
+            <ul>
+                <li><a id="home-link" href="index.html">Home</a></li>
+                <li><a id="company-link" href="nossaempresa.html">Nossa Empresa</a></li>
+                <li><a id="info-link" href="informações.html">Informações</a></li>
+                <li><a id="contact-link" href="contatos.html">Contatos</a></li>
+                <li><a id="bookings-link" href="elements.html">Reservas Internacionais de Hoteis Online</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+         <div class="inner">
+            <h1 id="main-title">Nossa empresa</h1>
+				<span class="image main"><img src="images/banner1.png" alt="" /></span>
+				<h3 id="origem-title">A Origem da Erapolis Travel</h3>
+                <p><span class="image left"><img src="images/erapolis-travel-logo2.jpg" alt="" /></span>
+				<p id="origem-description">A Erapolis Travel iniciou suas atividades em 2006, fruto da fusão com outra operadora, ambas sob a mesma propriedade. O objetivo principal era dar continuidade e expandir uma organização turística com foco especial em viagens de grupo. Com mais de 25 anos de experiência acumulada no setor de viagens de grupo, a Erapolis Travel aproveitou a estrutura operativa da fusão anterior para garantir um serviço de alta qualidade. Nossa abordagem é marcada pela confiabilidade, flexibilidade e consultoria logística precisa, essenciais para atender às necessidades dos viajantes em grupo. Nossa expertise se estende a destinos considerados complexos e desafiadores, como o Oriente Médio, o Extremo Oriente, a Índia e a América do Sul. Além disso, atendemos à demanda de viagens para a Europa, organizando excursões de grupo para os principais destinos europeus, frequentemente com a inclusão de voos especiais para maior comodidade dos nossos clientes.</p>
+				<h3 id="organização-title">A Organização</h3>
+				<p id="organização-description">Hoje, a equipe da Erapolis Travel é composta por profissionais organizados em uma estrutura linear, não vertical, que administra com rapidez e eficiência os pedidos de qualquer cliente. Experiência, profissionalismo e paixão caracterizam o diálogo da nossa equipe poliglota com todos os clientes, para poder atender às diversas exigências, elaborar e submeter propostas sempre únicas e personalizadas.</p>
+				<h3 id="operadora-title">A Operadora</h3>
+				<p id="operadora-description">Graças à experiência adquirida no setor de viagens de grupo, a Erapolis Travel desenvolve progressivamente sua atividade organizativa, direcionada a propostas de lazer, turístico-culturais e, sobretudo, ao setor de peregrinação. Os primeiros destinos a serem programados são, naturalmente, a Europa, o Oriente Médio, o Extremo Oriente e a Índia, apresentados em todas as suas complexidades, mantendo a flexibilidade necessária para a realização de viagens personalizadas para cada cliente.</p>
+				<h3 id="exportativo-title">Setor Exportativo</h3>	
+				<p id="exportativo-description">Nosso setor exportativo é capaz de oferecer alternativas e propostas diferenciadas, propondo viagens e férias de acordo com as exigências e disponibilidades de cada grupo.</p>
+				<h3 id="receptivo-title">Setor Receptivo</h3>	
+				<p id="receptivo-description">Nosso setor receptivo se destaca pela oferta de serviços de alto nível e, sobretudo, pela profissionalidade e assistência da nossa equipe poliglota.
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <section>
+                    <h2 id="contact-us-title">Fale Conosco</h2>
+                    <form method="post" action="#">
+                        <div class="fields">
+                            <div class="field half">
+                                <input type="text" name="name" id="name" placeholder="Name" />
+                            </div>
+                            <div class="field half">
+                                <input type="email" name="email" id="email" placeholder="Email" />
+                            </div>
+                            <div class="field">
+                                <textarea name="message" id="message" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <ul class="actions">
+                            <li><input id="send-button" type="submit" value="send" class="primary" /></li>
+                        </ul>
+                    </form>
+                </section>
+                <section>
+                    <h2 id="follow-us-title">Siga-Nos</h2>
+                    <ul class="icons">
+                        <li><a href="https://www.facebook.com/erapolistravel/" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+                    </ul>
+                </section>
+                <ul class="copyright">
+                    <li>&copy; Erapolis Travel 2025. <span id="all-rights-reserved">Todos os direitos reservados</span></li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Translate Script -->
+    <script>
+        function setLanguage(language) {
+            document.cookie = "language=" + language + "; path=/";
+            translatePage(language);
+        }
+
+        function getLanguage() {
+            let name = "language=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for(let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "pt"; // Default language
+        }
+
+        function translatePage(language) {
+            var translations = {
+        en: {
+            "main-title": "Our Company",
+            "origem-title": "The Origin of Erapolis Travel",
+            "origem-description": "Erapolis Travel began its activities in 2006, as a result of a merger with another operator, both under the same ownership. The main goal was to continue and expand a travel organization with a special focus on group travel. With over 25 years of accumulated experience in the group travel sector, Erapolis Travel leveraged the operational structure from the previous merger to ensure high-quality service. Our approach is characterized by reliability, flexibility, and precise logistical consulting, which are essential to meet the needs of group travelers. Our expertise extends to destinations considered complex and challenging, such as the Middle East, the Far East, India, and South America. Additionally, we cater to the demand for travel to Europe, organizing group tours to major European destinations, often including special flights for the added convenience of our clients.",
+            "organização-title": "The Organization",
+            "organização-description": "Today, Erapolis Travel's team is composed of professionals organized in a linear structure, not vertical, which manages client requests quickly and efficiently. Experience, professionalism, and passion characterize our multilingual team's interaction with all clients, enabling us to meet various demands, prepare, and submit always unique and personalized proposals.",
+            "operadora-title": "The Operator",
+            "operadora-description": "Thanks to the experience acquired in the group travel sector, Erapolis Travel progressively develops its organizational activity, focusing on leisure, cultural-tourism proposals, and, above all, the pilgrimage sector. The first destinations to be scheduled are, naturally, Europe, the Middle East, the Far East, and India, presented in all their complexities, maintaining the necessary flexibility to carry out personalized trips for each client.",
+            "exportativo-title": "Export Sector",
+            "exportativo-description": "Our export sector is capable of offering alternatives and differentiated proposals, suggesting trips and holidays according to the demands and availability of each group.",
+            "receptivo-title": "Reception Sector",
+            "receptivo-description": "Our reception sector stands out for offering high-level services and, above all, for the professionalism and assistance of our multilingual team.",
+            "contact-us-title": "Contact us",
+            "send-button": "Send",
+            "follow-us-title": "Follow Us",
+            "all-rights-reserved": "All rights reserved",
+            "name": "Name",
+            "message": "Message",
+        },
+        it: {
+            "main-title": "La nostra azienda",
+            "origem-title": "L'origine di Erapolis Travel",
+            "origem-description": "Erapolis Travel ha iniziato la sua attività nel 2006, a seguito di una fusione con un altro operatore, entrambi sotto la stessa proprietà. L'obiettivo principale era quello di continuare ed espandere un'organizzazione turistica con un focus particolare sui viaggi di gruppo. Con oltre 25 anni di esperienza accumulata nel settore dei viaggi di gruppo, Erapolis Travel ha sfruttato la struttura operativa della fusione precedente per garantire un servizio di alta qualità. Il nostro approccio è caratterizzato da affidabilità, flessibilità e consulenza logistica precisa, essenziali per soddisfare le esigenze dei viaggiatori di gruppo. La nostra esperienza si estende a destinazioni considerate complesse e difficili, come il Medio Oriente, l'Estremo Oriente, l'India e il Sud America. Inoltre, soddisfiamo la domanda di viaggi in Europa, organizzando tour di gruppo verso le principali destinazioni europee, spesso con voli speciali per maggiore comodità dei nostri clienti.",
+            "organização-title": "L'organizzazione",
+            "organização-description": "Oggi, il team di Erapolis Travel è composto da professionisti organizzati in una struttura lineare, non verticale, che gestisce rapidamente ed efficacemente le richieste di ogni cliente. Esperienza, professionalità e passione caratterizzano il dialogo del nostro team poliglotta con tutti i clienti, per rispondere alle diverse esigenze, elaborare e presentare sempre proposte uniche e personalizzate.",    
+            "operadora-title": "L'operatore",
+            "operadora-description": "Grazie all'esperienza acquisita nel settore dei viaggi di gruppo, Erapolis Travel sviluppa progressivamente la sua attività organizzativa, concentrandosi su proposte di svago, turistiche e culturali e, soprattutto, sul settore dei pellegrinaggi. Le prime destinazioni a essere programmate sono, naturalmente, l'Europa, il Medio Oriente, l'Estremo Oriente e l'India, presentate in tutte le loro complessità, mantenendo la flessibilità necessaria per realizzare viaggi personalizzati per ogni cliente.",   
+            "exportativo-title": "Settore Esportazioni",
+            "exportativo-description": "Il nostro settore esportazioni è in grado di offrire alternative e proposte differenziate, suggerendo viaggi e vacanze in base alle esigenze e disponibilità di ciascun gruppo.",   
+            "receptivo-title": "Settore Ricezione",
+            "receptivo-description": "Il nostro settore di ricezione si distingue per l'offerta di servizi di alto livello e, soprattutto, per il professionismo e l'assistenza del nostro team poliglotta.",
+            "contact-us-title": "Contattaci",
+            "send-button": "Invia",
+            "follow-us-title": "Seguici",
+            "all-rights-reserved": "Tutti i diritti riservati",
+            "name": "Nome",
+            "message": "Messaggio",
+        },
+        fr: {
+            "main-title": "Notre entreprise",
+            "origem-title": "L'origine d'Erapolis Travel",
+            "origem-description": "Erapolis Travel a commencé ses activités en 2006, à la suite d'une fusion avec un autre opérateur, les deux étant sous la même propriété. L'objectif principal était de continuer et d'élargir une organisation touristique avec un accent particulier sur les voyages de groupe. Fort de plus de 25 ans d'expérience accumulée dans le secteur des voyages de groupe, Erapolis Travel a tiré parti de la structure opérationnelle de la fusion précédente pour garantir un service de haute qualité. Notre approche se distingue par sa fiabilité, sa flexibilité et sa consultation logistique précise, essentielles pour répondre aux besoins des voyageurs en groupe. Notre expertise s'étend à des destinations considérées comme complexes et difficiles, comme le Moyen-Orient, l'Extrême-Orient, l'Inde et l'Amérique du Sud. De plus, nous répondons à la demande de voyages en Europe, en organisant des circuits de groupe vers les principales destinations européennes, souvent avec des vols spéciaux pour plus de commodité pour nos clients.",    
+            "organização-title": "L'organisation",
+            "organização-description": "Aujourd'hui, l'équipe d'Erapolis Travel est composée de professionnels organisés dans une structure linéaire, et non verticale, qui gère rapidement et efficacement les demandes de chaque client. L'expérience, le professionnalisme et la passion caractérisent le dialogue de notre équipe polyglotte avec tous les clients, afin de pouvoir répondre aux différentes exigences, élaborer et soumettre des propositions toujours uniques et personnalisées.",   
+            "operadora-title": "L'opérateur",
+            "operadora-description": "Grâce à l'expérience acquise dans le secteur des voyages de groupe, Erapolis Travel développe progressivement son activité organisationnelle, axée sur les propositions de loisirs, culturelles et touristiques, et surtout sur le secteur des pèlerinages. Les premières destinations à être programmées sont, naturellement, l'Europe, le Moyen-Orient, l'Extrême-Orient et l'Inde, présentées dans toutes leurs complexités, tout en maintenant la flexibilité nécessaire pour organiser des voyages personnalisés pour chaque client.",    
+            "exportativo-title": "Secteur Export",
+            "exportativo-description": "Notre secteur export est en mesure d'offrir des alternatives et des propositions différenciées, proposant des voyages et des vacances en fonction des besoins et des disponibilités de chaque groupe.",   
+            "receptivo-title": "Secteur Réceptif",
+            "receptivo-description": "Notre secteur réceptif se distingue par la qualité de ses services et, surtout, par le professionnalisme et l'assistance de notre équipe polyglotte.",
+            "send-button": "Envoyer",
+            "follow-us-title": "Suivez-Nous",
+            "all-rights-reserved": "Tous droits réservés",
+            "name": "Nom",
+            "message": "Message",
+
+        },
+        es: {
+            "main-title": "Nuestra Empresa",
+            "origem-title": "El Origen de Erapolis Travel",
+            "origem-description": "Erapolis Travel comenzó sus actividades en 2006, como resultado de una fusión con otra operadora, ambas bajo la misma propiedad. El objetivo principal era continuar y expandir una organización turística con un enfoque especial en los viajes en grupo. Con más de 25 años de experiencia acumulada en el sector de viajes en grupo, Erapolis Travel aprovechó la estructura operativa de la fusión anterior para garantizar un servicio de alta calidad. Nuestro enfoque se caracteriza por la fiabilidad, la flexibilidad y la consultoría logística precisa, esenciales para satisfacer las necesidades de los viajeros en grupo. Nuestra experiencia se extiende a destinos considerados complejos y desafiantes, como Oriente Medio, Extremo Oriente, India y Sudamérica. Además, atendemos la demanda de viajes a Europa, organizando tours grupales a los principales destinos europeos, a menudo con vuelos especiales para mayor comodidad de nuestros clientes.",           
+            "organização-title": "La Organización",
+            "organização-description": "Hoy en día, el equipo de Erapolis Travel está compuesto por profesionales organizados en una estructura lineal, no vertical, que gestiona rápidamente y con eficiencia las solicitudes de cualquier cliente. La experiencia, el profesionalismo y la pasión caracterizan el diálogo de nuestro equipo multilingüe con todos los clientes, permitiéndonos satisfacer diversas demandas, elaborar y presentar siempre propuestas únicas y personalizadas.",           
+            "operadora-title": "La Operadora",
+            "operadora-description": "Gracias a la experiencia adquirida en el sector de viajes en grupo, Erapolis Travel desarrolla progresivamente su actividad organizativa, centrándose en propuestas de ocio, turismo cultural y, sobre todo, en el sector de peregrinaciones. Los primeros destinos programados son, naturalmente, Europa, Oriente Medio, Extremo Oriente e India, presentados en todas sus complejidades, manteniendo la flexibilidad necesaria para realizar viajes personalizados para cada cliente.",            
+            "exportativo-title": "Sector de Exportación",
+            "exportativo-description": "Nuestro sector de exportación es capaz de ofrecer alternativas y propuestas diferenciadas, sugiriendo viajes y vacaciones según las exigencias y disponibilidades de cada grupo.",
+            "receptivo-title": "Sector de Recepción",
+            "receptivo-description": "Nuestro sector de recepción se destaca por ofrecer servicios de alto nivel y, sobre todo, por la profesionalidad y la asistencia de nuestro equipo multilingüe.",
+            "contact-us-title": "Contáctanos",
+            "send-button": "Enviar",
+            "follow-us-title": "Síguenos",
+            "all-rights-reserved": "Todos los derechos reservados",
+            "name": "Nombre",
+            "message": "Mensaje"
+        },
+                
+        pt: {
+            "menu-title": "Menu",
+            "home-link": "Home",
+            "company-link": "Nossa Empresa",
+            "info-link": "Informações",
+            "contact-link": "Contatos",
+            "bookings-link": "Reservas Internacionais de Hoteis Online",
+            "main-title": "Nossa Empresa",
+            "origem-title": "A Origem da Erapolis Travel",
+            "origem-description": "A Erapolis Travel iniciou suas atividades em 2006, fruto da fusão com outra operadora, ambas sob a mesma propriedade. O principal objetivo era dar continuidade e expandir uma organização turística com foco especial em viagens de grupo. Com mais de 25 anos de experiência acumulada no setor de viagens de grupo, a Erapolis Travel aproveitou a estrutura operativa da fusão anterior para garantir um serviço de alta qualidade. Nossa abordagem é caracterizada pela confiabilidade, flexibilidade e consultoria logística precisa, essenciais para atender às necessidades dos viajantes em grupo. Nossa expertise se estende a destinos considerados complexos e desafiadores, como Oriente Médio, Extremo Oriente, Índia e América do Sul. Além disso, atendemos à demanda de viagens para a Europa, organizando excursões em grupo para os principais destinos europeus, frequentemente incluindo voos especiais para maior comodidade dos nossos clientes.",
+            
+            "organização-title": "A Organização",
+            "organização-description": "Hoje, a equipe da Erapolis Travel é composta por profissionais organizados em uma estrutura linear, não vertical, que gerenciam rapidamente e com eficiência os pedidos de qualquer cliente. A experiência, o profissionalismo e a paixão caracterizam o diálogo da nossa equipe multilíngue com todos os clientes, permitindo-nos atender a diversas demandas, elaborar e apresentar propostas sempre únicas e personalizadas.",
+            
+            "operadora-title": "A Operadora",
+            "operadora-description": "Graças à experiência adquirida no setor de viagens de grupo, a Erapolis Travel desenvolve progressivamente sua atividade organizativa, focando em propostas de lazer, turismo cultural e, sobretudo, no setor de peregrinação. Os primeiros destinos programados são, naturalmente, Europa, Oriente Médio, Extremo Oriente e Índia, apresentados em todas as suas complexidades, mantendo a flexibilidade necessária para realizar viagens personalizadas para cada cliente.",
+            
+            "exportativo-title": "Setor de Exportação",
+            "exportativo-description": "Nosso setor de exportação é capaz de oferecer alternativas e propostas diferenciadas, sugerindo viagens e férias de acordo com as exigências e disponibilidades de cada grupo.",
+            
+            "receptivo-title": "Setor de Recepção",
+            "receptivo-description": "Nosso setor de recepção se destaca por oferecer serviços de alto nível e, sobretudo, pela profissionalidade e assistência da nossa equipe multilíngue.",
+            "contact-us-title": "Fale Conosco",
+            "send-button": "Enviar",
+            "follow-us-title": "Siga-Nos",
+            "all-rights-reserved": "Todos os direitos reservados"
+                }
+            };
+
+            for (var id in translations[language]) {
+                var element = document.getElementById(id);
+                if (element) {
+                    element.innerHTML = translations[language][id];
+                }
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var language = getLanguage();
+            translatePage(language);
+        });
+    </script>
+</body>
+</html>

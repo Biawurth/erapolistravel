@@ -1,0 +1,442 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Erapolis Travel</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        #main {
+            font-family: 'Arial', serif;
+        }
+
+        /* Estilo para o cabeçalho */
+        #header .inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; 
+            position: relative;
+        }
+
+        /* Estilo para o menu */
+        #header nav {
+            margin-right: 10px; /* Espaço entre o menu e os botões de idioma */
+        }
+
+        /* Estilo para os botões de idioma */
+        .language-buttons {
+            display: flex;
+            align-items: center; /* Alinha verticalmente com o menu */
+            margin-left: auto;
+        }
+
+        .language-buttons img {
+            width: 32px;
+            height: 32px;
+            margin: 0 5px; /* Espaço entre os ícones */
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .language-buttons img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+    <link rel="stylesheet" href="assets/css/erapolis-travel-logo.css">
+    <link rel="icon" href="assets/css/erapolis-travel-logo.css" type="image/x-icon">
+    <!-- arquivo de estilo para quando o JavaScript estiver desativado -->
+    <noscript><link rel="stylesheet" href="assets/css/erapolis-travel-logo.css"></noscript>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <span class="symbol"><img src="images/erapolis-travel-logo.jpg" alt="" /></span><span class="title">Erapolis Travel</span>
+                </a>
+
+                <!-- Nav -->
+                <nav>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Language Buttons -->
+                <div class="language-buttons">
+                    <img src="images/flags/us.png" onclick="setLanguage('en')" />
+                    <img src="images/flags/br.png" onclick="setLanguage('pt')" />
+                    <img src="images/flags/it.png" onclick="setLanguage('it')" />
+                    <img src="images/flags/fr.png" onclick="setLanguage('fr')" />
+                    <img src="images/flags/es.png" onclick="setLanguage('es')" />
+                </div>
+
+            </div>
+        </header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <h2 id="menu-title">Menu</h2>
+            <ul>
+                <li><a id="home-link" href="index.html">Home</a></li>
+                <li><a id="company-link" href="nossaempresa.html">Nossa Empresa</a></li>
+                <li><a id="info-link" href="informações.html">Informações</a></li>
+                <li><a id="contact-link" href="contatos.html">Contatos</a></li>
+                <li><a id="bookings-link" href="elements.html">Reservas Internacionais de Hoteis Online</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+         <div class="inner">
+            <h1 id="main-title">Califórnia e Nevada: São Francisco, Los Angeles, Las Vegas</h1>
+            <p id="main-description" class="texto-menor">"Explore o melhor da Califórnia e Nevada com um tour repleto de paisagens deslumbrantes, atividades emocionantes e cultura vibrante. De São Francisco a Las Vegas, você vivenciará experiências únicas, incluindo visitas a ícones como a Ponte Golden Gate, a Ilha de Alcatraz, o Grand Canyon, Monument Valley, Bryce Canyon e muito mais. Aproveite para relaxar nas praias de Los Angeles e explorar o estilo de vida descontraído da Costa Oeste, sem perder o brilho da Las Vegas iluminada e cheia de entretenimento. Uma viagem inesquecível por dois dos destinos mais famosos dos Estados Unidos."</p>
+            <div class="images">
+                <img src="images/americanorte2.jpg" alt="" class="image" />
+                <img src="images/americanorte3.jpg" alt="" class="image" />
+                </div>
+                <div class="specific-section">
+                    <h1 id="day1-title">Dia 01 – São Francisco (Califórnia)</h1>
+                    <p id="day1-description" class="texto-menor">Chegada em São Francisco. Acomodação no hotel. Pernoite.</p>
+                    
+                    <h1 id="day2-title">Dia 02 – São Francisco</h1>
+                    <p id="day2-description" class="texto-menor">Café da manhã e saída para visita guiada pela cidade. Tempo livre para almoço em Chinatown. À tarde, excursão de barco até a Ilha de Alcatraz saindo de Fisherman’s Wharf. Em seguida, tempo para compras e atividades individuais. Jantar em um restaurante em Fisherman’s Wharf. Retorno ao hotel e pernoite.</p>
+                    
+                    <h1 id="day3-title">Dia 03 – São Francisco – Muir Woods – Sausalito – Monterey</h1>
+                    <p id="day3-description" class="texto-menor">Após o café da manhã, saída para uma excursão ao Parque Nacional de Muir Woods. Visita à Ponte Golden Gate e continuação para Sausalito. Almoço em restaurante local e continuação para Monterey. Acomodação no hotel, jantar e pernoite.</p>
+                    
+                    <h1 id="day4-title">Dia 04 – Monterey – Carmel – Los Angeles</h1>
+                    <p id="day4-description" class="texto-menor">Após o café da manhã, saída para Carmel, famosa pelo Mosteiro espanhol de São Carlos Borromeu. Percurso pela icônica estrada “17 Mile Drive” e continuação para Los Angeles. Chegada ao hotel, jantar e pernoite.</p>
+                    
+                    <h1 id="day5-title">Dia 05 – Los Angeles</h1>
+                    <p id="day5-description" class="texto-menor">Após o café da manhã, visita guiada por Los Angeles, incluindo Hollywood, o Teatro Chinês e Beverly Hills. Tempo livre para relaxar na praia de Veneza. Jantar em restaurante e pernoite.</p>
+                    
+                    <h1 id="day6-title">Dia 06 – Los Angeles</h1>
+                    <p id="day6-description" class="texto-menor">Café da manhã no hotel. Dia dedicado a excursões opcionais, como Universal Studios ou Disneyland. Almoço livre e jantar no hotel.</p>
+                    
+                    <h1 id="day7-title">Dia 07 – Los Angeles – Laughlin</h1>
+                    <p id="day7-description" class="texto-menor">Após o café da manhã, saída para o oeste americano. Parada no Outlet de Barstow e visita à cidade fantasma de Calico. Continuação para Laughlin. Jantar no hotel e pernoite.</p>
+                    
+                    <h1 id="day8-title">Dia 08 – Laughlin – Grand Canyon</h1>
+                    <p id="day8-description" class="texto-menor">Café da manhã e saída para o Grand Canyon. Almoço e visitas aos pontos panorâmicos. Possibilidade de assistir ao espetáculo IMAX ou passeio de helicóptero (opcional). Jantar e pernoite.</p>
+                    
+                    <h1 id="day9-title">Dia 09 – Grand Canyon – Monument Valley – Page</h1>
+                    <p id="day9-description" class="texto-menor">Após o café da manhã, saída para Monument Valley. Excursão de jipe com guia local e almoço tipo piquenique. Continuação para Page. Jantar e pernoite.</p>
+                    
+                    <h1 id="day10-title">Dia 10 – Page – Kanab</h1>
+                    <p id="day10-description" class="texto-menor">Café da manhã e manhã livre para admirar o Lago Powell. Almoço em restaurante local e continuação para Kanab. Jantar em estilo cowboy no Chuck Wagon Cookout.</p>
+                    
+                    <h1 id="day11-title">Dia 11 – Kanab – Bryce Canyon – Las Vegas</h1>
+                    <p id="day11-description" class="texto-menor">Após o café da manhã, saída para Bryce Canyon, famoso por seus pináculos coloridos. Almoço e continuação para Las Vegas. Jantar em restaurante e pernoite.</p>
+                    
+                    <h1 id="day12-title">Dia 12 – Las Vegas</h1>
+                    <p id="day12-description" class="texto-menor">Dia livre em Las Vegas, com possibilidade de visitas opcionais à represa Hoover ou aos famosos hotéis da cidade. Meia pensão inclusa.</p>
+                    
+                    <h1 id="day13-title">Dia 13 – Las Vegas</h1>
+                    <p id="day13-description" class="texto-menor">Café da manhã e traslado ao aeroporto para embarque de retorno ao Brasil.</p>
+
+            </div>
+                
+        </div>
+</div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <section>
+                    <h2 id="contact-us-title">Fale Conosco</h2>
+                    <form method="post" action="#">
+                        <div class="fields">
+                            <div class="field half">
+                                <input type="text" name="name" id="name" placeholder="Nome" />
+                            </div>
+                            <div class="field half">
+                                <input type="email" name="email" id="email" placeholder="Email" />
+                            </div>
+                            <div class="field">
+                                <textarea name="message" id="message" placeholder="Mensagem"></textarea>
+                            </div>
+                        </div>
+                        <ul class="actions">
+                            <li><input id="send-button" type="submit" value="enviar" class="primary" /></li>
+                        </ul>
+                    </form>
+                </section>
+                <section>
+                    <h2 id="follow-us-title">Siga-Nos</h2>
+                    <ul class="icons">
+                        <li><a href="https://www.facebook.com/erapolistravel/" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+                    </ul>
+                </section>
+                <ul class="copyright">
+                    <li>&copy; Erapolis Travel 2025. <span id="all-rights-reserved">Todos os direitos reservados</span></li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+ 
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Translate Script -->
+    <script>
+        function setLanguage(language) {
+            document.cookie = "language=" + language + "; path=/";
+            translatePage(language);
+        }
+
+        function getLanguage() {
+            let name = "language=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for(let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "pt"; // Default language
+        }
+
+        function translatePage(language) {
+            var translations = {
+            en: {
+            "menu-title": "Menu",
+            "home-link": "Home",
+            "company-link": "Our Company",
+            "info-link": "Information",
+            "contact-link": "Contacts",
+            "bookings-link": "International Hotel Bookings Online",
+            "main-title": "California and Nevada: San Francisco, Los Angeles, Las Vegas",
+            "main-description": "Explore the best of California and Nevada with a tour filled with breathtaking landscapes, exciting activities, and vibrant culture. From San Francisco to Las Vegas, you’ll experience unique adventures, including visits to landmarks like the Golden Gate Bridge, Alcatraz Island, the Grand Canyon, Monument Valley, Bryce Canyon, and more. Take time to relax on the beaches of Los Angeles and soak in the laid-back lifestyle of the West Coast, while enjoying the bright lights and endless entertainment of Las Vegas. An unforgettable journey through two of the most famous destinations in the United States.",
+            "day1-title": "Day 1: San Francisco",
+            "day1-description": "Arrival in San Francisco. Check-in at the hotel. Overnight stay.",
+            "day2-title": "Day 2: San Francisco",
+            "day2-description": "Breakfast and guided city tour. Free time for lunch in Chinatown. In the afternoon, take a boat excursion to Alcatraz Island departing from Fisherman’s Wharf. Afterwards, enjoy free time for shopping and individual activities. Dinner at a restaurant in Fisherman’s Wharf. Return to the hotel and overnight stay.",
+            "day3-title": "Day 3: San Francisco - Muir Woods - Sausalito - Monterey (244 km)",
+            "day3-description": "After breakfast, full-day excursion to Muir Woods National Monument, renowned for its towering trees reaching heights of up to 250 feet (76 meters). Visit the Golden Gate Bridge and continue to Sausalito, known for its floating homes and stunning bay views. Lunch at a local restaurant. In the afternoon, continue to Monterey. Check-in at the hotel, dinner, and overnight stay.",
+            "day4-title": "Day 4: Monterey - Carmel - Los Angeles (512 km)",
+            "day4-description": "After breakfast, depart for Carmel, famous for its Spanish Mission founded by Saint Junipero Serra. Drive along the iconic '17 Mile Drive' and continue to Big Sur, known for its wild and dramatic landscapes. Lunch at a local restaurant and proceed to Los Angeles, with an optional stop in San Simeon to visit Hearst Castle. Check-in at the hotel, dinner, and overnight stay.",
+            "day5-title": "Day 5: Los Angeles",
+            "day5-description": "After breakfast, guided city tour of Los Angeles, including Hollywood, the Chinese Theatre, Beverly Hills, and Downtown LA. Free time for lunch and relaxation near Venice Beach. Dinner at a restaurant in Marina Del Rey. Overnight stay.",
+            "day6-title": "Day 6: Los Angeles",
+            "day6-description": "Breakfast at the hotel. Day dedicated to optional excursions: Universal Studios, Disneyland, or the Paul Getty Museum in Malibu. Free time for lunch and dinner at the hotel.",
+            "day7-title": "Day 7: Los Angeles - Laughlin (500 km)",
+            "day7-description": "After breakfast, depart for the western United States. Stop at Barstow Outlet for shopping and free time for lunch. Continue to Calico, a silver mining ghost town, and then to Laughlin. Dinner at the hotel and overnight stay.",
+            "day8-title": "Day 8: Laughlin - Grand Canyon (327 km)",
+            "day8-description": "Breakfast and departure for the Grand Canyon. Check-in at the hotel and lunch. In the afternoon, visit the most stunning panoramic viewpoints, with the option to watch an IMAX presentation or take a helicopter tour (optional). Dinner and overnight stay.",
+            "day9-title": "Day 9: Grand Canyon - Monument Valley - Page (494 km)",
+            "day9-description": "After breakfast, depart for Monument Valley, famous for its towering rock formations. Jeep tour with a local guide and picnic lunch with the natives. Continue to Page, located near Lake Powell, with a visit to Glen Canyon Dam. Check-in at the hotel, dinner, and overnight stay.",
+            "day10-title": "Day 10: Page - Kanab (116 km)",
+            "day10-description": "Breakfast and free morning to admire Lake Powell and its submerged canyons, with an optional boat tour. Lunch at a local restaurant and continue to Kanab. Dinner cowboy-style at the Chuck Wagon Cookout.",
+            "day11-title": "Day 11: Kanab - Bryce Canyon - Las Vegas (552 km)",
+            "day11-description": "After breakfast, depart for Bryce Canyon, one of Utah’s most spectacular parks, known for its pinnacles that change color with the sunlight. Lunch at a local restaurant and continue to Las Vegas, the entertainment capital. Dinner at a restaurant and overnight stay.",
+            "day12-title": "Day 12: Las Vegas",
+            "day12-description": "Free day in Las Vegas, with half board included. Optional visits to Hoover Dam on Lake Mead or tours of the city’s famous hotels and casinos.",
+            "day13-title": "Day 13: Las Vegas",
+            "day13-description": "Breakfast and transfer to the airport for your return flight to Brazil.",
+            "contact-us-title": "Contact Us",
+            "send-button": "Send",
+            "follow-us-title": "Follow Us",
+            "all-rights-reserved": "All Rights Reserved.",
+            },
+
+        it: {
+            "menu-title": "Menu",
+            "home-link": "Home",
+            "company-link": "La Nostra Azienda",
+            "info-link": "Informazioni",
+            "contact-link": "Contatti",
+            "bookings-link": "Prenotazioni Internazionali di Hotel Online",
+            "main-title": "California e Nevada: San Francisco, Los Angeles, Las Vegas",
+            "main-description": "Esplora il meglio della California e del Nevada con un tour ricco di paesaggi mozzafiato, attività emozionanti e una cultura vibrante. Da San Francisco a Las Vegas, vivrai esperienze uniche, tra cui visite a luoghi iconici come il Golden Gate Bridge, l’Isola di Alcatraz, il Grand Canyon, la Monument Valley, il Bryce Canyon e molto altro. Approfitta del relax sulle spiagge di Los Angeles e scopri lo stile di vita rilassato della West Coast, senza perdere il fascino luminoso e pieno di intrattenimento di Las Vegas. Un viaggio indimenticabile attraverso due delle destinazioni più famose degli Stati Uniti.",
+            "day1-title": "Giorno 1: San Francisco",
+            "day1-description": "Arrivo a San Francisco. Check-in in hotel. Pernottamento.",
+            "day2-title": "Giorno 2: San Francisco",
+            "day2-description": "Colazione e visita guidata della città. Tempo libero per pranzo a Chinatown. Nel pomeriggio, escursione in barca fino all’Isola di Alcatraz con partenza da Fisherman’s Wharf. Successivamente, tempo libero per shopping e attività individuali. Cena in un ristorante al Fisherman’s Wharf. Rientro in hotel e pernottamento.",
+            "day3-title": "Giorno 3: San Francisco - Muir Woods - Sausalito - Monterey (244 km)",
+            "day3-description": "Dopo colazione, escursione di un’intera giornata al Parco Nazionale di Muir Woods, famoso per i suoi alberi secolari che raggiungono altezze fino a 76 metri. Visita al Golden Gate Bridge e proseguimento per Sausalito, nota per le sue case galleggianti e le viste spettacolari sulla baia. Pranzo in un ristorante locale. Nel pomeriggio, proseguimento per Monterey. Check-in in hotel, cena e pernottamento.",
+            "day4-title": "Giorno 4: Monterey - Carmel - Los Angeles (512 km)",
+            "day4-description": "Dopo colazione, partenza per Carmel, famosa per il Monastero spagnolo fondato da San Junipero Serra. Percorso lungo la famosa strada '17 Mile Drive' e proseguimento per Big Sur, caratterizzato da paesaggi selvaggi e spettacolari. Pranzo in un ristorante locale e continuazione verso Los Angeles, con sosta opzionale a San Simeon per visitare il Castello di Hearst. Arrivo in hotel, cena e pernottamento.",
+            "day5-title": "Giorno 5: Los Angeles",
+            "day5-description": "Dopo colazione, visita guidata di Los Angeles, inclusi Hollywood, il Teatro Cinese, Beverly Hills e il centro città. Tempo libero per pranzo e relax nei pressi della spiaggia di Venice. Cena in un ristorante a Marina Del Rey. Pernottamento.",
+            "day6-title": "Giorno 6: Los Angeles",
+            "day6-description": "Colazione in hotel. Giornata dedicata a escursioni opzionali: Universal Studios, Disneyland o il Museo Paul Getty a Malibu. Pranzo libero e cena in hotel.",
+            "day7-title": "Giorno 7: Los Angeles - Laughlin (500 km)",
+            "day7-description": "Dopo colazione, partenza verso il West americano. Sosta al Barstow Outlet per shopping e pranzo libero. Proseguimento per Calico, una città fantasma di minatori d’argento, e successivamente per Laughlin. Cena in hotel e pernottamento.",
+            "day8-title": "Giorno 8: Laughlin - Grand Canyon (327 km)",
+            "day8-description": "Colazione e partenza per il Grand Canyon. Check-in in hotel e pranzo. Nel pomeriggio, visita ai punti panoramici più spettacolari, con possibilità di assistere a uno spettacolo IMAX o di fare un giro in elicottero (opzionale). Cena e pernottamento.",
+            "day9-title": "Giorno 9: Grand Canyon - Monument Valley - Page (494 km)",
+            "day9-description": "Dopo colazione, partenza per la Monument Valley, famosa per i suoi monoliti rocciosi. Tour in jeep con guida locale e pranzo tipo picnic con i nativi. Proseguimento per Page, situata sulle rive del Lago Powell, con visita alla diga di Glen Canyon. Check-in in hotel, cena e pernottamento.",
+            "day10-title": "Giorno 10: Page - Kanab (116 km)",
+            "day10-description": "Colazione e mattinata libera per ammirare il Lago Powell e i suoi canyon sommersi, con possibilità di escursione in barca. Pranzo in un ristorante locale e proseguimento per Kanab. Cena in stile cowboy al Chuck Wagon Cookout.",
+            "day11-title": "Giorno 11: Kanab - Bryce Canyon - Las Vegas (552 km)",
+            "day11-description": "Dopo colazione, partenza per il Bryce Canyon, uno dei parchi più spettacolari dello Utah, famoso per i suoi pinnacoli che cambiano colore con la posizione del sole. Pranzo in un ristorante locale e proseguimento per Las Vegas, capitale dell’intrattenimento. Cena in un ristorante e pernottamento.",
+            "day12-title": "Giorno 12: Las Vegas",
+            "day12-description": "Giornata libera a Las Vegas, con mezza pensione inclusa. Possibilità di visite opzionali alla diga di Hoover sul Lago Mead o di tour negli hotel e casinò più famosi della città.",
+            "day13-title": "Giorno 13: Las Vegas",
+            "day13-description": "Colazione e trasferimento all’aeroporto per il volo di ritorno in Brasile.",
+            "contact-us-title": "Contattaci",
+            "send-button": "Invia",
+            "follow-us-title": "Seguici",
+            "all-rights-reserved": "Tutti i diritti riservati",
+        },
+        fr: {
+            "menu-title": "Menu",
+            "home-link": "Accueil",
+            "company-link": "Notre Entreprise",
+            "info-link": "Informations",
+            "contact-link": "Contacts",
+            "bookings-link": "Réservations Internationales d'Hôtels en Ligne",
+            "main-title": "Californie et Nevada : San Francisco, Los Angeles, Las Vegas",
+            "main-description": "Découvrez le meilleur de la Californie et du Nevada avec un circuit riche en paysages à couper le souffle, activités passionnantes et une culture vibrante. De San Francisco à Las Vegas, vous vivrez des expériences uniques, notamment des visites de lieux emblématiques tels que le Golden Gate Bridge, l’île d’Alcatraz, le Grand Canyon, Monument Valley, Bryce Canyon et bien plus encore. Profitez des plages de Los Angeles et explorez le style de vie détendu de la côte ouest, sans oublier le charme lumineux et animé de Las Vegas. Un voyage inoubliable à travers deux des destinations les plus célèbres des États-Unis.",
+            "day1-title": "Jour 1 : San Francisco",
+            "day1-description": "Arrivée à San Francisco. Installation à l’hôtel. Nuitée.",
+            "day2-title": "Jour 2 : San Francisco",
+            "day2-description": "Petit-déjeuner et visite guidée de la ville. Temps libre pour le déjeuner à Chinatown. L’après-midi, excursion en bateau jusqu’à l’île d’Alcatraz au départ de Fisherman’s Wharf. Ensuite, temps libre pour le shopping et les activités individuelles. Dîner dans un restaurant à Fisherman’s Wharf. Retour à l’hôtel et nuitée.",
+            "day3-title": "Jour 3 : San Francisco - Muir Woods - Sausalito - Monterey (244 km)",
+            "day3-description": "Après le petit-déjeuner, excursion d’une journée au parc national de Muir Woods, célèbre pour ses arbres centenaires atteignant jusqu’à 76 mètres de hauteur. Visite du Golden Gate Bridge et continuation vers Sausalito, connue pour ses maisons flottantes et ses vues spectaculaires sur la baie. Déjeuner dans un restaurant local. L’après-midi, continuation vers Monterey. Installation à l’hôtel, dîner et nuitée.",
+            "day4-title": "Jour 4 : Monterey - Carmel - Los Angeles (512 km)",
+            "day4-description": "Après le petit-déjeuner, départ pour Carmel, célèbre pour son monastère espagnol fondé par Saint Charles Borromée. Route le long de la célèbre '17 Mile Drive' et continuation vers Big Sur, avec ses paysages sauvages et spectaculaires. Déjeuner dans un restaurant local et continuation vers Los Angeles, avec un arrêt optionnel à San Simeon pour visiter le château de Hearst. Arrivée à l’hôtel, dîner et nuitée.",
+            "day5-title": "Jour 5 : Los Angeles",
+            "day5-description": "Après le petit-déjeuner, visite guidée de Los Angeles, incluant Hollywood, le Théâtre Chinois, Beverly Hills et le centre-ville. Temps libre pour le déjeuner et détente près de la plage de Venice. Dîner dans un restaurant à Marina Del Rey. Nuitée.",
+            "day6-title": "Jour 6 : Los Angeles",
+            "day6-description": "Petit-déjeuner à l’hôtel. Journée dédiée à des excursions optionnelles : Universal Studios, Disneyland ou le musée Paul Getty à Malibu. Déjeuner libre et dîner à l’hôtel.",
+            "day7-title": "Jour 7 : Los Angeles - Laughlin (500 km)",
+            "day7-description": "Après le petit-déjeuner, départ pour l’Ouest américain. Arrêt au Barstow Outlet pour faire du shopping et déjeuner libre. Continuation vers Calico, une ville fantôme des mines d’argent, puis vers Laughlin. Dîner à l’hôtel et nuitée.",
+            "day8-title": "Jour 8 : Laughlin - Grand Canyon (327 km)",
+            "day8-description": "Petit-déjeuner et départ pour le Grand Canyon. Installation à l’hôtel et déjeuner. L’après-midi, visite des points de vue les plus impressionnants, avec possibilité d’assister à un spectacle IMAX ou de faire un tour en hélicoptère (optionnel). Dîner et nuitée.",
+            "day9-title": "Jour 9 : Grand Canyon - Monument Valley - Page (494 km)",
+            "day9-description": "Après le petit-déjeuner, départ pour Monument Valley, célèbre pour ses monolithes rocheux. Excursion en jeep avec un guide local et déjeuner pique-nique avec les natifs. Continuation vers Page, au bord du lac Powell, avec visite du barrage de Glen Canyon. Installation à l’hôtel, dîner et nuitée.",
+            "day10-title": "Jour 10 : Page - Kanab (116 km)",
+            "day10-description": "Petit-déjeuner et matinée libre pour admirer le lac Powell et ses canyons submergés, avec possibilité d’excursion en bateau. Déjeuner dans un restaurant local et continuation vers Kanab. Dîner de style cowboy au Chuck Wagon Cookout.",
+            "day11-title": "Jour 11 : Kanab - Bryce Canyon - Las Vegas (552 km)",
+            "day11-description": "Après le petit-déjeuner, départ pour Bryce Canyon, l’un des parcs les plus spectaculaires de l’Utah, célèbre pour ses pinacles changeant de couleur selon la position du soleil. Déjeuner dans un restaurant local et continuation vers Las Vegas, capitale du divertissement. Dîner dans un restaurant et nuitée.",
+            "day12-title": "Jour 12 : Las Vegas",
+            "day12-description": "Journée libre à Las Vegas, avec demi-pension incluse. Possibilité de visites optionnelles au barrage Hoover sur le lac Mead ou de balades dans les célèbres hôtels et casinos de la ville.",
+            "day13-title": "Jour 13 : Las Vegas",
+            "day13-description": "Petit-déjeuner et transfert à l’aéroport pour le vol de retour vers le Brésil.",
+            "contact-us-title": "Contactez-Nous",
+            "send-button": "Envoyer",
+            "follow-us-title": "Suivez-Nous",
+            "all-rights-reserved": "Tous droits réservés",
+
+        },
+        es: {
+            "menu-title": "Menú",
+            "home-link": "Inicio",
+            "company-link": "Nuestra Empresa",
+            "info-link": "Información",
+            "contact-link": "Contactos",
+            "bookings-link": "Reservas Internacionales de Hoteles Online",
+            "main-title": "California y Nevada: San Francisco, Los Ángeles, Las Vegas",
+            "main-description": "Descubra lo mejor de California y Nevada con un recorrido lleno de paisajes impresionantes, actividades emocionantes y una cultura vibrante. Desde San Francisco hasta Las Vegas, vivirá experiencias únicas, incluyendo visitas a iconos como el Puente Golden Gate, la Isla de Alcatraz, el Gran Cañón, Monument Valley, Bryce Canyon y mucho más. Relájese en las playas de Los Ángeles y explore el estilo de vida relajado de la Costa Oeste, sin perderse el brillo de Las Vegas, llena de luces y entretenimiento. Un viaje inolvidable por dos de los destinos más famosos de los Estados Unidos.",
+            "day1-title": "Día 1: San Francisco",
+            "day1-description": "Llegada a San Francisco. Alojamiento en el hotel. Noche en San Francisco.",
+            "day2-title": "Día 2: San Francisco",
+            "day2-description": "Desayuno y salida para una visita guiada por la ciudad. Tiempo libre para almorzar en Chinatown. Por la tarde, excursión en barco hasta la Isla de Alcatraz desde Fisherman’s Wharf. Luego, tiempo libre para compras y actividades individuales. Cena en un restaurante en Fisherman’s Wharf. Regreso al hotel y alojamiento.",
+            "day3-title": "Día 3: San Francisco - Muir Woods - Sausalito - Monterey (244 km)",
+            "day3-description": "Después del desayuno, salida para una excursión de día completo al Parque Nacional Muir Woods, famoso por sus árboles centenarios que alcanzan hasta 76 metros de altura. Visita al Puente Golden Gate y continuación hacia Sausalito, conocida por sus casas flotantes y sus vistas impresionantes de la bahía. Almuerzo en un restaurante local. Por la tarde, continuación hacia Monterey. Alojamiento en el hotel, cena y noche en Monterey.",
+            "day4-title": "Día 4: Monterey - Carmel - Los Ángeles (512 km)",
+            "day4-description": "Después del desayuno, salida hacia Carmel, conocida por su monasterio español fundado por San Carlos Borromeo. Recorrido por la famosa carretera '17 Mile Drive' y continuación hacia Big Sur, con sus paisajes salvajes e impresionantes. Almuerzo en un restaurante local y continuación hacia Los Ángeles, con una parada opcional en San Simeón para visitar el Castillo Hearst. Llegada al hotel, cena y alojamiento.",
+            "day5-title": "Día 5: Los Ángeles",
+            "day5-description": "Después del desayuno, visita guiada por Los Ángeles, incluyendo Hollywood, el Teatro Chino, Beverly Hills y el centro de la ciudad. Tiempo libre para almorzar y relajarse cerca de la playa de Venice. Cena en un restaurante en Marina Del Rey. Alojamiento.",
+            "day6-title": "Día 6: Los Ángeles",
+            "day6-description": "Desayuno en el hotel. Día dedicado a excursiones opcionales: Universal Studios, Disneyland o el Museo Paul Getty en Malibú. Almuerzo libre y cena en el hotel.",
+            "day7-title": "Día 7: Los Ángeles - Laughlin (500 km)",
+            "day7-description": "Después del desayuno, salida hacia el oeste estadounidense. Parada en el Outlet de Barstow para compras y almuerzo libre. Continuación hacia Calico, una ciudad fantasma de mineros de plata, y luego hacia Laughlin. Cena en el hotel y alojamiento.",
+            "day8-title": "Día 8: Laughlin - Gran Cañón (327 km)",
+            "day8-description": "Desayuno y salida hacia el Gran Cañón. Alojamiento en el hotel y almuerzo. Por la tarde, visita a los miradores más impresionantes, con posibilidad de asistir a un espectáculo IMAX o realizar un paseo en helicóptero (opcional). Cena y alojamiento.",
+            "day9-title": "Día 9: Gran Cañón - Monument Valley - Page (494 km)",
+            "day9-description": "Después del desayuno, salida hacia Monument Valley, famoso por sus monolitos rocosos. Excursión en jeep con guía local y almuerzo tipo picnic con los nativos. Continuación hacia Page, a orillas del Lago Powell, con visita a la presa Glen Canyon. Alojamiento en el hotel, cena y noche en Page.",
+            "day10-title": "Día 10: Page - Kanab (116 km)",
+            "day10-description": "Desayuno y mañana libre para admirar el Lago Powell y sus cañones sumergidos, con opción de excursión en barco. Almuerzo en un restaurante local y continuación hacia Kanab. Cena estilo vaquero en Chuck Wagon Cookout.",
+            "day11-title": "Día 11: Kanab - Bryce Canyon - Las Vegas (552 km)",
+            "day11-description": "Después del desayuno, salida hacia Bryce Canyon, uno de los parques más espectaculares de Utah, famoso por sus pináculos que cambian de color con la posición del sol. Almuerzo en un restaurante local y continuación hacia Las Vegas, la capital del entretenimiento. Cena en un restaurante y alojamiento.",
+            "day12-title": "Día 12: Las Vegas",
+            "day12-description": "Día libre en Las Vegas, con media pensión incluida. Posibilidad de visitas opcionales a la presa Hoover en el Lago Mead o paseos por los famosos hoteles y casinos de la ciudad.",
+            "day13-title": "Día 13: Las Vegas",
+            "day13-description": "Desayuno y traslado al aeropuerto para tomar el vuelo de regreso a Brasil.",
+            "contact-us-title": "Contáctanos",
+            "send-button": "Enviar",
+            "follow-us-title": "Síguenos",
+            "all-rights-reserved": "Todos los derechos reservados"
+        },
+                
+        pt: {
+            "menu-title": "Menu",
+            "home-link": "Home",
+            "company-link": "Nossa Empresa",
+            "info-link": "Informações",
+            "contact-link": "Contatos",
+            "bookings-link": "Reservas Internacionais de Hoteis Online",
+            "main-title": "Califórnia e Nevada: São Francisco, Los Angeles, Las Vegas",
+            "main-description": "Explore o melhor da Califórnia e Nevada com um tour repleto de paisagens deslumbrantes, atividades emocionantes e cultura vibrante. De São Francisco a Las Vegas, você vivenciará experiências únicas, incluindo visitas a ícones como a Ponte Golden Gate, a Ilha de Alcatraz, o Grand Canyon, Monument Valley, Bryce Canyon e muito mais. Aproveite para relaxar nas praias de Los Angeles e explorar o estilo de vida descontraído da Costa Oeste, sem perder o brilho da Las Vegas iluminada e cheia de entretenimento. Uma viagem inesquecível por dois dos destinos mais famosos dos Estados Unidos.",
+            "day1-title": "1° dia: São Francisco",
+            "day1-description": "Chegada em São Francisco. Acomodação no hotel. Pernoite.",
+            "day2-title": "2° dia: São Francisco",
+            "day2-description": "Café da manhã e saída para visita guiada pela cidade. Tempo livre para almoço em Chinatown. À tarde, excursão de barco até a Ilha de Alcatraz saindo de Fisherman’s Wharf. Em seguida, tempo para compras e atividades individuais. Jantar em um restaurante em Fisherman’s Wharf. Retorno ao hotel e pernoite.",
+            "day3-title": "3° dia: São Francisco - Muir Woods - Sausalito - Monterey (244 km)",
+            "day3-description": "Após o café da manhã, saída para uma excursão de dia inteiro ao Parque Nacional de Muir Woods, famoso por suas árvores seculares com alturas impressionantes de até 76 metros. Visita à Ponte Golden Gate e continuação para Sausalito, cidade conhecida por suas casas flutuantes e vistas deslumbrantes da baía. Almoço em um restaurante local. À tarde, continuação para Monterey. Acomodação no hotel, jantar e pernoite.",
+            "day4-title": "4° dia: Monterey - Carmel - Los Angeles (512 km)",
+            "day4-description": "Após o café da manhã, saída para Carmel, famosa por seu Mosteiro espanhol fundado por São Carlos Borromeu. Percurso pela icônica estrada '17 Mile Drive' e, em seguida, até Big Sur, com suas paisagens selvagens e impressionantes. Almoço em restaurante local e continuação para Los Angeles, com parada opcional em São Simeão para visitar o Castelo Hearst. Chegada ao hotel, jantar e pernoite.",
+            "day5-title": "5° dia: Los Angeles",
+            "day5-description": "Após o café da manhã, visita guiada por Los Angeles, incluindo Hollywood, o Teatro Chinês, Beverly Hills e o centro. Tempo livre para almoço e relaxamento nas proximidades da praia de Veneza. Jantar em restaurante na Marina Del Rey. Pernoite.",
+            "day6-title": "6° dia: Los Angeles",
+            "day6-description": "Café da manhã no hotel. Dia dedicado a excursões opcionais: Universal Studios, Disneyland ou o Museu Paul Getty em Malibu. Almoço livre e jantar no hotel.",
+            "day7-title": "7° dia: Los Angeles - Laughlin (500 km)",
+            "day7-description": "Após o café da manhã, saída para o oeste americano. Parada no Outlet de Barstow para compras e almoço livre. Continuação para Calico, uma cidade fantasma de mineradores de prata, e posteriormente para Laughlin. Jantar no hotel e pernoite.",
+            "day8-title": "8° dia: Laughlin - Grand Canyon (327 km)",
+            "day8-description": "Café da manhã e saída para o Grand Canyon. Acomodação no hotel e almoço. À tarde, visitas aos pontos panorâmicos mais impressionantes, com possibilidade de assistir ao espetáculo IMAX ou realizar um passeio de helicóptero (opcional). Jantar e pernoite.",
+            "day9-title": "9° dia: Grand Canyon - Monument Valley - Page (494 km)",
+            "day9-description": "Após o café da manhã, saída para Monument Valley, famoso por seus monólitos rochosos. Excursão de jipe com guia local e almoço tipo piquenique com os nativos. Continuação para Page, às margens do Lago Powell, com visita à represa de Glen Canyon. Acomodação no hotel, jantar e pernoite.",
+            "day10-title": "10° dia: Page - Kanab (116 km)",
+            "day10-description": "Café da manhã e manhã livre para admirar o Lago Powell e seus cânions submersos, com opção de excursão de barco. Almoço em restaurante local e continuação para Kanab. Jantar em estilo cowboy no Chuck Wagon Cookout.",
+            "day11-title": "11° dia: Kanab - Bryce Canyon - Las Vegas (552 km)",
+            "day11-description": "Após o café da manhã, saída para Bryce Canyon, um dos parques mais espetaculares de Utah, famoso por seus pináculos que mudam de cor com a posição do sol. Almoço em restaurante local e continuação para Las Vegas, capital do entretenimento. Jantar em restaurante e pernoite.",
+            "day12-title": "12° dia: Las Vegas",
+            "day12-description": "Dia livre em Las Vegas, com meia pensão inclusa. Possibilidade de visitas opcionais à represa Hoover no Lago Mead ou passeios pelos famosos hotéis e cassinos da cidade.",
+            "day13-title": "13° dia: Las Vegas",
+            "day13-description": "Café da manhã e traslado ao aeroporto para embarque de retorno ao Brasil.",
+            "contact-us-title": "Fale Conosco",
+            "send-button": "Enviar",
+            "follow-us-title": "Siga-Nos",
+            "all-rights-reserved": "Todos os direitos reservados"
+                }
+            };
+
+            for (var id in translations[language]) {
+                var element = document.getElementById(id);
+                if (element) {
+                    element.innerHTML = translations[language][id];
+                }
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var language = getLanguage();
+            translatePage(language);
+        });
+    </script>
+</body>
+</html>

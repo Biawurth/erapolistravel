@@ -1,0 +1,437 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Erapolis Travel</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        #main {
+            font-family: 'Arial', serif;
+        }
+
+        /* Estilo para o cabeçalho */
+        #header .inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; 
+            position: relative;
+        }
+
+        /* Estilo para o menu */
+        #header nav {
+            margin-right: 10px; /* Espaço entre o menu e os botões de idioma */
+        }
+
+        /* Estilo para os botões de idioma */
+        .language-buttons {
+            display: flex;
+            align-items: center; /* Alinha verticalmente com o menu */
+            margin-left: auto;
+        }
+
+        .language-buttons img {
+            width: 32px;
+            height: 32px;
+            margin: 0 5px; /* Espaço entre os ícones */
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .language-buttons img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+    <link rel="stylesheet" href="assets/css/erapolis-travel-logo.css">
+    <link rel="icon" href="assets/css/erapolis-travel-logo.css" type="image/x-icon">
+    <!-- arquivo de estilo para quando o JavaScript estiver desativado -->
+    <noscript><link rel="stylesheet" href="assets/css/erapolis-travel-logo.css"></noscript>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <span class="symbol"><img src="images/erapolis-travel-logo.jpg" alt="" /></span><span class="title">Erapolis Travel</span>
+                </a>
+
+                <!-- Nav -->
+                <nav>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Language Buttons -->
+                <div class="language-buttons">
+                    <img src="images/flags/us.png" onclick="setLanguage('en')" />
+                    <img src="images/flags/br.png" onclick="setLanguage('pt')" />
+                    <img src="images/flags/it.png" onclick="setLanguage('it')" />
+                    <img src="images/flags/fr.png" onclick="setLanguage('fr')" />
+                    <img src="images/flags/es.png" onclick="setLanguage('es')" />
+                </div>
+
+            </div>
+        </header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <h2 id="menu-title">Menu</h2>
+            <ul>
+                <li><a id="home-link" href="index.html">Home</a></li>
+                <li><a id="company-link" href="nossaempresa.html">Nossa Empresa</a></li>
+                <li><a id="info-link" href="informações.html">Informações</a></li>
+                <li><a id="contact-link" href="contatos.html">Contatos</a></li>
+                <li><a id="bookings-link" href="elements.html">Reservas Internacionais de Hoteis Online</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+         <div class="inner">
+            <h1 id="main-title">Leste Europeu: Alemanha, Republica Tcheca e Polônia</h1>
+            <p id="main-description" class="texto-menor">Uma jornada espiritual e cultural pela Europa, visitando destinos sagrados como o Santuário de Schoenstatt, a Catedral Kolner Dom e o Santuário de Jasna Gora. Explore cidades históricas como Trier, Munique, Praga, Cracóvia e Varsóvia, com destaque para Auschwitz e o Santuário da Divina Misericórdia. Uma viagem única de fé e cultura.</p>
+            <div class="images">
+                <img src="images/lesteeuropeu1" alt="" class="image" />
+                <img src="images/lesteeuropeu2" alt="" class="image" />
+                </div>
+                <div class="specific-section">
+                    <h1 id="day1-title">1º dia - Frankfurt / Schoenstatt</h1>
+                    <p id="day1-description" class="texto-menor">Chegada, recepção e saída para Schoenstatt. Visita ao Santuário Original da Mãe Rainha, centro mundial do Movimento Internacional de Schoenstatt. Tarde dedicada à Mãe Rainha. Jantar e pernoite.</p>
+                
+                    <h1 id="day2-title">2º dia - Schoenstatt / Colônia</h1>
+                    <p id="day2-description" class="texto-menor">Manhã no Santuário de Schoenstatt. À tarde, visita a Colônia, famosa pela catedral Kolner Dom, patrimônio da UNESCO e maior igreja da Alemanha. Jantar e pernoite.</p>
+                
+                    <h1 id="day3-title">3º dia - Colônia / Trier</h1>
+                    <p id="day3-description" class="texto-menor">Partida para Trier, a cidade mais antiga da Alemanha. Missa no túmulo do Beato Pedro Friedhofen e visita à Catedral de Trier, onde está a Túnica de Cristo. Jantar e pernoite.</p>
+                
+                    <h1 id="day4-title">4º dia - Trier / Munique</h1>
+                    <p id="day4-description" class="texto-menor">Viagem para Munique, com parada em Dachau para visita ao campo de concentração. Missa na capela das Carmelitas. City tour em Munique, incluindo a Catedral Frauenkirche. Jantar e pernoite.                    </p>
+                
+                    <h1 id="day5-title">5º dia - Munique / Altotting / Praga</h1>
+                    <p id="day5-description" class="texto-menor">Visita ao Santuário Mariano de Altotting, um dos mais importantes da Europa, e continuação para Praga. Jantar e pernoite.</p>
+                
+                    <h1 id="day6-title">6º dia - Praga</h1>
+                    <p id="day6-description" class="texto-menor">isita ao Castelo de Praga, Igreja do Loreto, Catedral de São Vítor, Ponte Carlos IV e Relógio Astronômico. Missa na Igreja de Nossa Senhora da Vitória (Menino Jesus de Praga). Jantar e pernoite.</p>
+                
+                    <h1 id="day7-title">7º dia - Praga / Czestochowa</h1>
+                    <p id="day7-description" class="texto-menor">Viagem até Czestochowa, com belas paisagens. Hospedagem e jantar.</p>
+                
+                    <h1 id="day8-title">8º dia - Czestochowa</h1>
+                    <p id="day8-description" class="texto-menor">Visita ao Santuário de Jasna Gora, onde está a imagem da Virgem Negra. Tempo livre para devoções e visita ao Museu de Skarbiec. Missa, hospedagem e jantar.</p>
+                
+                    <h1 id="day9-title">9º dia - Czestochowa / Cracóvia</h1>
+                    <p id="day9-description" class="texto-menor">Viagem a Cracóvia, antiga capital polonesa. Visita ao Castelo de Wawel, Catedral, Igreja de Santa Maria e bairro judeu. Missa e hospedagem.</p>
+                
+                    <h1 id="day10-title">10º dia - Cracóvia / Varsóvia</h1>
+                    <p id="day10-description" class="texto-menor">Visita à mina de sal de Wieliczka, Wadowice (terra natal de João Paulo II) e Auschwitz. Parada no bloco 11 (São Maximiliano Kolbe) e visita ao Santuário da Divina Misericórdia. Chegada a Varsóvia. Jantar e pernoite.</p>
+                
+                    <h1 id="day11-title">11º dia - Varsóvia</h1>
+                    <p id="day11-description" class="texto-menor">Visita aos principais monumentos, incluindo a Catedral de São João, Porta de Barbacã, Praça da Cidade Velha e Igreja da Santa Cruz (coração de Chopin). Visita ao Santuário de Nossa Senhora de Kalwaria.</p>
+                
+                    <h1 id="day12-title">12º dia - Varsóvia / Brasil</h1>
+                    <p id="day12-description" class="texto-menor">Tempo livre e traslado ao aeroporto para retorno ao Brasil.</p>
+                </div>
+                
+        </div>
+</div>
+
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <section>
+                    <h2 id="contact-us-title">Fale Conosco</h2>
+                    <form method="post" action="#">
+                        <div class="fields">
+                            <div class="field half">
+                                <input type="text" name="name" id="name" placeholder="Nome" />
+                            </div>
+                            <div class="field half">
+                                <input type="email" name="email" id="email" placeholder="Email" />
+                            </div>
+                            <div class="field">
+                                <textarea name="message" id="message" placeholder="Mensagem"></textarea>
+                            </div>
+                        </div>
+                        <ul class="actions">
+                            <li><input id="send-button" type="submit" value="enviar" class="primary" /></li>
+                        </ul>
+                    </form>
+                </section>
+                <section>
+                    <h2 id="follow-us-title">Siga-Nos</h2>
+                    <ul class="icons">
+                        <li><a href="https://www.facebook.com/erapolistravel/" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+                    </ul>
+                </section>
+                <ul class="copyright">
+                    <li>&copy; Erapolis Travel 2025. <span id="all-rights-reserved">Todos os direitos reservados</span></li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Translate Script -->
+    <script>
+        function setLanguage(language) {
+            document.cookie = "language=" + language + "; path=/";
+            translatePage(language);
+        }
+
+        function getLanguage() {
+            let name = "language=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for(let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "pt"; // Default language
+        }
+
+        function translatePage(language) {
+            var translations = {
+            en: {
+            "menu-title": "Menu",
+            "home-link": "Home",
+            "company-link": "Our Company",
+            "info-link": "Information",
+            "contact-link": "Contacts",
+            "bookings-link": "International Hotel Bookings Online",
+            "main-title": "Eastern Europe: Germany, Czech Republic, and Poland",
+            "main-description": "A spiritual and cultural journey through Europe, visiting sacred destinations such as the Schoenstatt Shrine, the Cologne Cathedral (Kolner Dom), and the Jasna Gora Monastery. Explore historic cities like Trier, Munich, Prague, Krakow, and Warsaw, with highlights including Auschwitz and the Divine Mercy Sanctuary. A unique journey of faith and culture.",
+            "day1-title": "Day 1 – Frankfurt / Schoenstatt",
+            "day1-description": "Arrival, reception, and transfer to Schoenstatt. Visit the Original Shrine of the Mother Thrice Admirable, the global center of the Schoenstatt Movement. Afternoon dedicated to the Mother Thrice Admirable. Dinner and overnight stay.",
+            "day2-title": "Day 2 – Schoenstatt / Cologne",
+            "day2-description": "Morning at the Schoenstatt Shrine. In the afternoon, visit Cologne, renowned for the Cologne Cathedral (Kolner Dom), a UNESCO World Heritage site and the largest church in Germany. Dinner and overnight stay.",
+            "day3-title": "Day 3 – Cologne / Trier",
+            "day3-description": "Departure for Trier, Germany's oldest city. Mass at the tomb of Blessed Peter Friedhofen and a visit to the Trier Cathedral, where the Holy Tunic of Christ is kept. Dinner and overnight stay.",
+            "day4-title": "Day 4 – Trier / Munich",
+            "day4-description": "Journey to Munich with a stop in Dachau to visit the concentration camp. Mass at the Carmel Chapel. City tour of Munich, including the Frauenkirche Cathedral. Dinner and overnight stay.",
+            "day5-title": "Day 5 – Munich / Altotting / Prague",
+            "day5-description": "Visit the Marian Shrine of Altotting, one of the most important in Europe, and continue to Prague. Dinner and overnight stay.",
+            "day6-title": "Day 6 – Prague",
+            "day6-description": "Visit Prague Castle, the Loreto Church, St. Vitus Cathedral, Charles Bridge, and the Astronomical Clock. Mass at the Church of Our Lady Victorious (Infant Jesus of Prague). Dinner and overnight stay.",
+            "day7-title": "Day 7 – Prague / Czestochowa",
+            "day7-description": "Travel to Czestochowa, enjoying beautiful landscapes along the way. Accommodation and dinner.",
+            "day8-title": "Day 8 – Czestochowa",
+            "day8-description": "Visit the Jasna Gora Monastery, home to the Black Madonna icon. Free time for devotions and a visit to the Skarbiec Museum. Mass, accommodation, and dinner.",
+            "day9-title": "Day 9 – Czestochowa / Krakow",
+            "day9-description": "Travel to Krakow, Poland's former capital. Visit Wawel Castle, the Cathedral, St. Mary’s Church, and the Jewish Quarter. Mass and accommodation.",
+            "day10-title": "Day 10 – Krakow / Warsaw",
+            "day10-description": "Visit the Wieliczka Salt Mine, Wadowice (birthplace of John Paul II), and Auschwitz. Stop at Block 11 (St. Maximilian Kolbe) and visit the Divine Mercy Sanctuary. Arrive in Warsaw. Dinner and overnight stay.",
+            "day11-title": "Day 11 – Warsaw",
+            "day11-description": "Visit major landmarks, including St. John’s Cathedral, Barbican Gate, Old Town Square, and the Church of the Holy Cross (Chopin's heart). Visit the Sanctuary of Our Lady of Kalwaria.",
+            "day12-title": "Day 12 – Warsaw / Brazil",
+            "day12-description": "Free time and transfer to the airport for the return flight to Brazil.",
+            "contact-us-title": "Contact Us",
+            "send-button": "Send",
+            "follow-us-title": "Follow Us",
+            "all-rights-reserved": "All Rights Reserved.",
+            "name": "Name",
+            "message": "Message",
+        },
+        it: {
+            "menu-title": "Menu",
+            "home-link": "Home",
+            "company-link": "La Nostra Azienda",
+            "info-link": "Informazioni",
+            "contact-link": "Contatti",
+            "bookings-link": "Prenotazioni Internazionali di Hotel Online",
+            "main-title": "Europa dell'Est: Germania, Repubblica Ceca e Polonia",
+            "main-description": "Un viaggio spirituale e culturale attraverso l'Europa, visitando luoghi sacri come il Santuario di Schoenstatt, la Cattedrale di Colonia (Kolner Dom) e il Monastero di Jasna Gora. Esplora città storiche come Treviri, Monaco, Praga, Cracovia e Varsavia, con punti salienti come Auschwitz e il Santuario della Divina Misericordia. Un'esperienza unica di fede e cultura.",
+            "day1-title": "1° giorno – Francoforte / Schoenstatt",
+            "day1-description": "Arrivo, accoglienza e trasferimento a Schoenstatt. Visita al Santuario Originale della Madre Tre Volte Ammirabile, centro mondiale del Movimento di Schoenstatt. Pomeriggio dedicato alla Madre Tre Volte Ammirabile. Cena e pernottamento.",
+            "day2-title": "2° giorno – Schoenstatt / Colonia",
+            "day2-description": "Mattinata al Santuario di Schoenstatt. Nel pomeriggio, visita a Colonia, famosa per la Cattedrale di Colonia (Kolner Dom), patrimonio dell'UNESCO e la chiesa più grande della Germania. Cena e pernottamento.",
+            "day3-title": "3° giorno – Colonia / Treviri",
+            "day3-description": "Partenza per Treviri, la città più antica della Germania. Messa presso la tomba del Beato Peter Friedhofen e visita alla Cattedrale di Treviri, dove si conserva la Sacra Tunica di Cristo. Cena e pernottamento.",
+            "day4-title": "4° giorno – Treviri / Monaco",
+            "day4-description": "Viaggio verso Monaco con sosta a Dachau per visitare il campo di concentramento. Messa nella cappella delle Carmelitane. Tour della città di Monaco, inclusa la Cattedrale di Frauenkirche. Cena e pernottamento.",
+            "day5-title": "5° giorno – Monaco / Altotting / Praga",
+            "day5-description": "Visita al Santuario Mariano di Altotting, uno dei più importanti d'Europa, e proseguimento per Praga. Cena e pernottamento.",
+            "day6-title": "6° giorno – Praga",
+            "day6-description": "Visita al Castello di Praga, alla Chiesa del Loreto, alla Cattedrale di San Vito, al Ponte Carlo e all'Orologio Astronomico. Messa nella Chiesa di Nostra Signora Vittoriosa (Bambino Gesù di Praga). Cena e pernottamento.",
+            "day7-title": "7° giorno – Praga / Czestochowa",
+            "day7-description": "Viaggio verso Czestochowa, ammirando i bellissimi paesaggi lungo il percorso. Sistemazione e cena.",
+            "day8-title": "8° giorno – Czestochowa",
+            "day8-description": "Visita al Monastero di Jasna Gora, dove si trova l'icona della Madonna Nera. Tempo libero per devozioni e visita al Museo Skarbiec. Messa, sistemazione e cena.",
+            "day9-title": "9° giorno – Czestochowa / Cracovia",
+            "day9-description": "Viaggio a Cracovia, antica capitale polacca. Visita al Castello di Wawel, alla Cattedrale, alla Chiesa di Santa Maria e al quartiere ebraico. Messa e sistemazione.",
+            "day10-title": "10° giorno – Cracovia / Varsavia",
+            "day10-description": "Visita alla miniera di sale di Wieliczka, a Wadowice (città natale di Giovanni Paolo II) e ad Auschwitz. Sosta al Blocco 11 (San Massimiliano Kolbe) e visita al Santuario della Divina Misericordia. Arrivo a Varsavia. Cena e pernottamento.",
+            "day11-title": "11° giorno – Varsavia",
+            "day11-description": "Visita ai principali monumenti, tra cui la Cattedrale di San Giovanni, la Porta di Barbacane, la Piazza della Città Vecchia e la Chiesa della Santa Croce (cuore di Chopin). Visita al Santuario di Nostra Signora di Kalwaria.",
+            "day12-title": "12° giorno – Varsavia / Brasile",
+            "day12-description": "Tempo libero e trasferimento in aeroporto per il ritorno in Brasile.",
+            "contact-us-title": "Contattaci",
+            "send-button": "Invia",
+            "follow-us-title": "Seguici",
+            "all-rights-reserved": "Tutti i diritti riservati",
+            "name": "Nome",
+            "message": "Messaggio",
+        },
+        fr: {
+            "menu-title": "Menu",
+            "home-link": "Accueil",
+            "company-link": "Notre Entreprise",
+            "info-link": "Informations",
+            "contact-link": "Contacts",
+            "bookings-link": "Réservations Internationales d'Hôtels en Ligne",
+            "main-title": "Europe de l'Est : Allemagne, République Tchèque et Pologne",
+            "main-description": "Un voyage spirituel et culturel à travers l'Europe, visitant des lieux sacrés tels que le Sanctuaire de Schoenstatt, la Cathédrale de Cologne (Kolner Dom) et le Monastère de Jasna Gora. Explorez des villes historiques comme Trèves, Munich, Prague, Cracovie et Varsovie, avec des points forts tels qu'Auschwitz et le Sanctuaire de la Divine Miséricorde. Une expérience unique de foi et de culture.",
+            "day1-title": "1er jour – Francfort / Schoenstatt",
+            "day1-description": "Arrivée, accueil et transfert à Schoenstatt. Visite du Sanctuaire Original de la Mère Trois Fois Admirable, centre mondial du Mouvement de Schoenstatt. Après-midi dédié à la Mère Trois Fois Admirable. Dîner et nuit.",
+            "day2-title": "2e jour – Schoenstatt / Cologne",
+            "day2-description": "Matinée au Sanctuaire de Schoenstatt. L'après-midi, visite de Cologne, célèbre pour sa Cathédrale de Cologne (Kolner Dom), classée au patrimoine mondial de l'UNESCO et plus grande église d'Allemagne. Dîner et nuit.",
+            "day3-title": "3e jour – Cologne / Trèves",
+            "day3-description": "Départ pour Trèves, la plus ancienne ville d'Allemagne. Messe sur la tombe du Bienheureux Peter Friedhofen et visite de la Cathédrale de Trèves, où se trouve la Sainte Tunique du Christ. Dîner et nuit.",
+            "day4-title": "4e jour – Trèves / Munich",
+            "day4-description": "Voyage vers Munich avec une halte à Dachau pour visiter le camp de concentration. Messe à la chapelle des Carmélites. Visite de Munich, incluant la Cathédrale Frauenkirche. Dîner et nuit.",
+            "day5-title": "5e jour – Munich / Altotting / Prague",
+            "day5-description": "Visite du Sanctuaire Marial d'Altotting, l'un des plus importants d'Europe, et continuation vers Prague. Dîner et nuit.",
+            "day6-title": "6e jour – Prague",
+            "day6-description": "Visite du Château de Prague, de l'Église du Loreto, de la Cathédrale Saint-Guy, du Pont Charles et de l'Horloge Astronomique. Messe à l'Église Notre-Dame-de-la-Victoire (Petit Jésus de Prague). Dîner et nuit.",
+            "day7-title": "7e jour – Prague / Czestochowa",
+            "day7-description": "Voyage vers Czestochowa, en admirant les magnifiques paysages en chemin. Hébergement et dîner.",
+            "day8-title": "8e jour – Czestochowa",
+            "day8-description": "Visite du Monastère de Jasna Gora, où se trouve l'icône de la Vierge Noire. Temps libre pour dévotions et visite du Musée Skarbiec. Messe, hébergement et dîner.",
+            "day9-title": "9e jour – Czestochowa / Cracovie",
+            "day9-description": "Voyage à Cracovie, ancienne capitale polonaise. Visite du Château de Wawel, de la Cathédrale, de l'Église Sainte-Marie et du quartier juif. Messe et hébergement.",
+            "day10-title": "10e jour – Cracovie / Varsovie",
+            "day10-description": "Visite de la mine de sel de Wieliczka, de Wadowice (ville natale de Jean-Paul II) et d'Auschwitz. Arrêt au Bloc 11 (Saint Maximilien Kolbe) et visite du Sanctuaire de la Divine Miséricorde. Arrivée à Varsovie. Dîner et nuit.",
+            "day11-title": "11e jour – Varsovie",
+            "day11-description": "Visite des principaux monuments, incluant la Cathédrale Saint-Jean, la Porte de Barbacane, la Place de la Vieille Ville et l'Église Sainte-Croix (cœur de Chopin). Visite du Sanctuaire de Notre-Dame de Kalwaria.",
+            "day12-title": "12e jour – Varsovie / Brésil",
+            "day12-description": "Temps libre et transfert à l'aéroport pour le retour au Brésil.",
+            "contact-us-title": "Contactez-Nous",
+            "send-button": "Envoyer",
+            "follow-us-title": "Suivez-Nous",
+            "all-rights-reserved": "Tous droits réservés",
+            "name": "Nom",
+            "message": "Message",
+
+        },
+        es: {
+            "menu-title": "Menú",
+            "home-link": "Inicio",
+            "company-link": "Nuestra Empresa",
+            "info-link": "Información",
+            "contact-link": "Contactos",
+            "bookings-link": "Reservas Internacionales de Hoteles Online",
+            "main-title": "Europa del Este: Alemania, República Checa y Polonia",
+            "main-description": "Un viaje espiritual y cultural por Europa, visitando lugares sagrados como el Santuario de Schoenstatt, la Catedral de Colonia (Kolner Dom) y el Monasterio de Jasna Gora. Explore ciudades históricas como Tréveris, Múnich, Praga, Cracovia y Varsovia, destacando lugares como Auschwitz y el Santuario de la Divina Misericordia. Una experiencia única de fe y cultura.",
+            "day1-title": "Día 1 – Frankfurt / Schoenstatt",
+            "day1-description": "Llegada, recepción y traslado a Schoenstatt. Visita al Santuario Original de la Madre Tres Veces Admirable, centro mundial del Movimiento de Schoenstatt. Tarde dedicada a la Madre Tres Veces Admirable. Cena y alojamiento.",
+            "day2-title": "Día 2 – Schoenstatt / Colonia",
+            "day2-description": "Mañana en el Santuario de Schoenstatt. Por la tarde, visita a Colonia, famosa por su Catedral de Colonia (Kolner Dom), patrimonio de la UNESCO y la iglesia más grande de Alemania. Cena y alojamiento.",
+            "day3-title": "Día 3 – Colonia / Tréveris",
+            "day3-description": "Salida hacia Tréveris, la ciudad más antigua de Alemania. Misa en la tumba del Beato Pedro Friedhofen y visita a la Catedral de Tréveris, donde se encuentra la Túnica Santa de Cristo. Cena y alojamiento.",
+            "day4-title": "Día 4 – Tréveris / Múnich",
+            "day4-description": "Viaje hacia Múnich con una parada en Dachau para visitar el campo de concentración. Misa en la capilla de las Carmelitas. Tour por Múnich, incluyendo la Catedral Frauenkirche. Cena y alojamiento.",
+            "day5-title": "Día 5 – Múnich / Altotting / Praga",
+            "day5-description": "Visita al Santuario Mariano de Altotting, uno de los más importantes de Europa, y continuación hacia Praga. Cena y alojamiento.",
+            "day6-title": "Día 6 – Praga",
+            "day6-description": "Visita al Castillo de Praga, la Iglesia de Loreto, la Catedral de San Vito, el Puente de Carlos y el Reloj Astronómico. Misa en la Iglesia de Nuestra Señora de la Victoria (Niño Jesús de Praga). Cena y alojamiento.",
+            "day7-title": "Día 7 – Praga / Czestochowa",
+            "day7-description": "Viaje hacia Czestochowa, disfrutando de hermosos paisajes en el camino. Alojamiento y cena.",
+            "day8-title": "Día 8 – Czestochowa",
+            "day8-description": "Visita al Monasterio de Jasna Gora, donde se encuentra la imagen de la Virgen Negra. Tiempo libre para devociones y visita al Museo Skarbiec. Misa, alojamiento y cena.",
+            "day9-title": "Día 9 – Czestochowa / Cracovia",
+            "day9-description": "Viaje a Cracovia, antigua capital de Polonia. Visita al Castillo de Wawel, la Catedral, la Iglesia de Santa María y el barrio judío. Misa y alojamiento.",
+            "day10-title": "Día 10 – Cracovia / Varsovia",
+            "day10-description": "Visita a la mina de sal de Wieliczka, a Wadowice (ciudad natal de Juan Pablo II) y a Auschwitz. Parada en el Bloque 11 (San Maximiliano Kolbe) y visita al Santuario de la Divina Misericordia. Llegada a Varsovia. Cena y alojamiento.",
+            "day11-title": "Día 11 – Varsovia",
+            "day11-description": "Visita a los principales monumentos, incluyendo la Catedral de San Juan, la Puerta de Barbacana, la Plaza de la Ciudad Vieja y la Iglesia de la Santa Cruz (corazón de Chopin). Visita al Santuario de Nuestra Señora de Kalwaria.",
+            "day12-title": "Día 12 – Varsovia / Brasil",
+            "day12-description": "Tiempo libre y traslado al aeropuerto para el regreso a Brasil.",
+            "contact-us-title": "Contáctanos",
+            "send-button": "Enviar",
+            "follow-us-title": "Síguenos",
+            "all-rights-reserved": "Todos los derechos reservados",
+            "name": "Nombre",
+            "message": "Mensaje",
+        },
+                
+        pt: {
+            "menu-title": "Menu",
+            "home-link": "Home",
+            "company-link": "Nossa Empresa",
+            "info-link": "Informações",
+            "contact-link": "Contatos",
+            "bookings-link": "Reservas Internacionais de Hoteis Online",
+            "main-title": "Leste Europeu: Alemanha, República Tcheca e Polônia",
+            "main-description": "Uma jornada espiritual e cultural pela Europa, visitando destinos sagrados como o Santuário de Schoenstatt, a Catedral de Colônia (Kolner Dom) e o Santuário de Jasna Gora. Explore cidades históricas como Trier, Munique, Praga, Cracóvia e Varsóvia, com destaque para Auschwitz e o Santuário da Divina Misericórdia. Uma viagem única de fé e cultura.",
+            "day1-title": "1º dia – Frankfurt / Schoenstatt",
+            "day1-description": "Chegada, recepção e traslado para Schoenstatt. Visita ao Santuário Original da Mãe Rainha, centro mundial do Movimento Internacional de Schoenstatt. Tarde dedicada à Mãe Rainha. Jantar e pernoite.",
+            "day2-title": "2º dia – Schoenstatt / Colônia",
+            "day2-description": "Manhã no Santuário de Schoenstatt. À tarde, visita a Colônia, famosa pela catedral Kolner Dom, patrimônio da UNESCO e maior igreja da Alemanha. Jantar e pernoite.",
+            "day3-title": "3º dia – Colônia / Trier",
+            "day3-description": "Partida para Trier, a cidade mais antiga da Alemanha. Missa no túmulo do Beato Pedro Friedhofen e visita à Catedral de Trier, onde está a Túnica de Cristo. Jantar e pernoite.",
+            "day4-title": "4º dia – Trier / Munique",
+            "day4-description": "Viagem para Munique com parada em Dachau para visita ao campo de concentração. Missa na capela das Carmelitas. City tour em Munique, incluindo a Catedral Frauenkirche. Jantar e pernoite.",
+            "day5-title": "5º dia – Munique / Altotting / Praga",
+            "day5-description": "Visita ao Santuário Mariano de Altotting, um dos mais importantes da Europa, e continuação para Praga. Jantar e pernoite.",
+            "day6-title": "6º dia – Praga",
+            "day6-description": "Visita ao Castelo de Praga, Igreja do Loreto, Catedral de São Vítor, Ponte Carlos IV e Relógio Astronômico. Missa na Igreja de Nossa Senhora da Vitória (Menino Jesus de Praga). Jantar e pernoite.",
+            "day7-title": "7º dia – Praga / Czestochowa",
+            "day7-description": "Viagem até Czestochowa, com belas paisagens. Hospedagem e jantar.",
+            "day8-title": "8º dia – Czestochowa",
+            "day8-description": "Visita ao Santuário de Jasna Gora, onde está a imagem da Virgem Negra. Tempo livre para devoções e visita ao Museu de Skarbiec. Missa, hospedagem e jantar.",
+            "day9-title": "9º dia – Czestochowa / Cracóvia",
+            "day9-description": "Viagem a Cracóvia, antiga capital polonesa. Visita ao Castelo de Wawel, Catedral, Igreja de Santa Maria e bairro judeu. Missa e hospedagem.",
+            "day10-title": "10º dia – Cracóvia / Varsóvia",
+            "day10-description": "Visita à mina de sal de Wieliczka, Wadowice (terra natal de João Paulo II) e Auschwitz. Parada no bloco 11 (São Maximiliano Kolbe) e visita ao Santuário da Divina Misericórdia. Chegada a Varsóvia. Jantar e pernoite.",
+            "day11-title": "11º dia – Varsóvia",
+            "day11-description": "Visita aos principais monumentos, incluindo a Catedral de São João, Porta de Barbacã, Praça da Cidade Velha e Igreja da Santa Cruz (coração de Chopin). Visita ao Santuário de Nossa Senhora de Kalwaria.",
+            "day12-title": "12º dia – Varsóvia / Brasil",
+            "day12-description": "Tempo livre e traslado ao aeroporto para retorno ao Brasil.",
+            "contact-us-title": "Fale Conosco",
+            "send-button": "Enviar",
+            "follow-us-title": "Siga-Nos",
+            "all-rights-reserved": "Todos os direitos reservados",
+            "name": "Nome",
+            "message": "Mensagem",
+            }
+            };
+
+            for (var id in translations[language]) {
+                var element = document.getElementById(id);
+                if (element) {
+                    element.innerHTML = translations[language][id];
+                }
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var language = getLanguage();
+            translatePage(language);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,464 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Erapolis Travel</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        #main {
+            font-family: 'Arial', serif;
+        }
+
+        /* Estilo para o cabeçalho */
+        #header .inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; 
+            position: relative;
+        }
+
+        /* Estilo para o menu */
+        #header nav {
+            margin-right: 10px; /* Espaço entre o menu e os botões de idioma */
+        }
+
+        /* Estilo para os botões de idioma */
+        .language-buttons {
+            display: flex;
+            align-items: center; /* Alinha verticalmente com o menu */
+            margin-left: auto;
+        }
+
+        .language-buttons img {
+            width: 32px;
+            height: 32px;
+            margin: 0 5px; /* Espaço entre os ícones */
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .language-buttons img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+    <link rel="stylesheet" href="assets/css/erapolis-travel-logo.css">
+    <link rel="icon" href="assets/css/erapolis-travel-logo.css" type="image/x-icon">
+    <!-- arquivo de estilo para quando o JavaScript estiver desativado -->
+    <noscript><link rel="stylesheet" href="assets/css/erapolis-travel-logo.css"></noscript>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <span class="symbol"><img src="images/erapolis-travel-logo.jpg" alt="" /></span><span class="title">Erapolis Travel</span>
+                </a>
+
+                <!-- Nav -->
+                <nav>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Language Buttons -->
+                <div class="language-buttons">
+                    <img src="images/flags/us.png" onclick="setLanguage('en')" />
+                    <img src="images/flags/br.png" onclick="setLanguage('pt')" />
+                    <img src="images/flags/it.png" onclick="setLanguage('it')" />
+                    <img src="images/flags/fr.png" onclick="setLanguage('fr')" />
+                    <img src="images/flags/es.png" onclick="setLanguage('es')" />
+                </div>
+
+            </div>
+        </header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <h2 id="menu-title">Menu</h2>
+            <ul>
+                <li><a id="home-link" href="index.html">Home</a></li>
+                <li><a id="company-link" href="nossaempresa.html">Nossa Empresa</a></li>
+                <li><a id="info-link" href="informações.html">Informações</a></li>
+                <li><a id="contact-link" href="contatos.html">Contatos</a></li>
+                <li><a id="bookings-link" href="elements.html">Reservas Internacionais de Hoteis Online</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+         <div class="inner">
+            <h1 id="main-title">Itália e Suiça</h1>
+            <p id="main-description" class="texto-menor">Embarque em uma jornada única pela Itália e Suíça, começando com a Roma Antiga e o Vaticano, seguido de visitas a Capri, Florença e Veneza. Explore a beleza alpina de Lucerna e Interlaken, incluindo a subida ao Jungfraujoch, o topo da Europa. Finalize sua experiência em Milão, a capital da moda, antes de retornar ao Brasil. Um roteiro completo com os melhores destinos da Europa! </p>
+            <div class="images">
+                <img src="images/suicaitalia1.jpg" alt="" class="image" />
+                <img src="images/suicaitalia2.jpg" alt="" class="image" />
+                </div>
+                <div class="specific-section">
+                    <h1 id="day1-title">1º DIA – ROMA</h1>
+                    <p id="day1-description" class="texto-menor">Chegada em Roma, recepção no aeroporto e traslado para o hotel. Restante do dia livre para explorar a cidade. Jantar e pernoite.</p>
+
+                    <h1 id="day2-title">2º DIA – ROMA</h1>
+                    <p id="day2-description" class="texto-menor">Após café da manhã, city tour pela Roma Antiga: Coliseu, Fóruns Imperiais, Praça Veneza, Capitolio e Basílica de São Pedro. À tarde, visita ao Museu do Vaticano e Capela Sistina. Jantar e pernoite.</p>
+
+                    <h1 id="day3-title">3º DIA – ROMA / CAPRI</h1>
+                    <p id="day3-description" class="texto-menor">Dia livre ou passeio opcional para Capri, com traslado, visita guiada e almoço. Jantar e pernoite em Roma.</p>
+
+                    <h1 id="day4-title">4º DIA – ROMA / ASSIS / FLORENÇA</h1>
+                    <p id="day4-description" class="texto-menor">Saída para Assis, visita às Basílicas de São Francisco e Sta. Maria dos Anjos. Continuação para Florença. Chegada, jantar e pernoite.</p>
+
+                    <h1 id="day5-title">5º DIA – FLORENÇA</h1>
+                    <p id="day5-description" class="texto-menor">City tour por Florença: Ponte Vecchio, Praça da Signoria, Basílica de N. S. das Flores e Batistério. Tempo livre. Jantar e pernoite.</p>
+
+                    <h1 id="day6-title">6º DIA – FLORENÇA / VENEZA</h1>
+                    <p id="day6-description" class="texto-menor">Saída para Veneza, com parada em Pádua para visitar a Basílica de Santo Antônio. Chegada em Veneza, jantar e pernoite em Mestre.</p>
+
+                    <h1 id="day7-title">7º DIA – VENEZA</h1>
+                    <p id="day7-description" class="texto-menor">City tour por Veneza: Praça São Marcos, Basílica, Ponte Rialto e Palácio Ducal. Sugestão de passeio de gôndola opcional. Jantar e pernoite.</p>
+
+                    <h1 id="day8-title">8º DIA – VENEZA / LAGO DE GARDA / LUCERNA</h1>
+                    <p id="day8-description" class="texto-menor">Saída para Lucerna, com parada no Lago de Garda. Chegada, jantar e pernoite em Lucerna.</p>
+
+                    <h1 id="day9-title">9º DIA – LUCERNA</h1>
+                    <p id="day9-description" class="texto-menor">City tour por Lucerna: centro histórico, ponte medieval de madeira pintada. Tempo livre. Jantar e pernoite.</p>
+
+                    <h1 id="day10-title">10º DIA – LUCERNA / INTERLAKEN</h1>
+                    <p id="day10-description" class="texto-menor">Viagem para Interlaken, com parada no Canyon do Rio Aar. Chegada, jantar e pernoite.</p>
+
+                    <h1 id="day11-title">11º DIA – INTERLAKEN</h1>
+                    <p id="day11-description" class="texto-menor">Sugestão de passeio opcional ao Jungfraujoch, topo da Europa. Retorno a Interlaken, jantar e pernoite.</p>
+
+                    <h1 id="day12-title">12º DIA – INTERLAKEN / GENEBRA / MILÃO</h1>
+                    <p id="day12-description" class="texto-menor">Viagem para Genebra, visita à cidade e continuação para Milão. Chegada, jantar e pernoite.</p>
+
+                    <h1 id="day13-title">13º DIA – MILÃO</h1>
+                    <p id="day13-description" class="texto-menor">City tour por Milão, visitando o Duomo e a Galeria Vittorio Emanuele. Tempo livre. Jantar e pernoite.</p>
+
+                    <h1 id="day14-title">14º DIA – MILÃO / BRASIL</h1>
+                    <p id="day14-description" class="texto-menor">Traslado para o aeroporto de Malpensa para embarque de volta ao Brasil.</p>
+                                    </div>
+                                    
+        </div>
+</div>
+
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <section>
+                    <h2 id="contact-us-title">Fale Conosco</h2>
+                    <form method="post" action="#">
+                        <div class="fields">
+                            <div class="field half">
+                                <input type="text" name="name" id="name" placeholder="Nome" />
+                            </div>
+                            <div class="field half">
+                                <input type="email" name="email" id="email" placeholder="Email" />
+                            </div>
+                            <div class="field">
+                                <textarea name="message" id="message" placeholder="Mensagem"></textarea>
+                            </div>
+                        </div>
+                        <ul class="actions">
+                            <li><input id="send-button" type="submit" value="enviar" class="primary" /></li>
+                        </ul>
+                    </form>
+                </section>
+                <section>
+                    <h2 id="follow-us-title">Siga-Nos</h2>
+                    <ul class="icons">
+                        <li><a href="https://www.facebook.com/erapolistravel/" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+                    </ul>
+                </section>
+                <ul class="copyright">
+                    <li>&copy; Erapolis Travel 2025. <span id="all-rights-reserved">Todos os direitos reservados</span></li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Translate Script -->
+    <script>
+        function setLanguage(language) {
+            document.cookie = "language=" + language + "; path=/";
+            translatePage(language);
+        }
+
+        function getLanguage() {
+            let name = "language=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for(let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "pt"; // Default language
+        }
+
+        function translatePage(language) {
+            var translations = {
+        en: {
+            "menu-title": "Menu",
+            "home-link": "Home",
+            "company-link": "Our Company",
+            "info-link": "Information",
+            "contact-link": "Contacts",
+            "bookings-link": "International Hotel Bookings Online",
+            "main-title": "Italy and Switzerland",
+            "main-description": "A fascinating journey through Italy and Switzerland, visiting iconic cities and stunning landscapes. From the ancient monuments of Rome to the beauty of the Swiss Alps, this itinerary offers a perfect combination of art, history, and nature.",
+            "day1-title": "Day 1 – Rome",
+            "day1-description": "Arrival in Rome, reception at the airport, and transfer to the hotel. The rest of the day is free to explore the city. Dinner and overnight stay.",
+            "day2-title": "Day 2 – Rome",
+            "day2-description": "After breakfast, a city tour through Ancient Rome: Colosseum, Imperial Forums, Piazza Venezia, Capitoline Hill, and St. Peter's Basilica. In the afternoon, visit to the Vatican Museums and Sistine Chapel. Dinner and overnight stay.",
+            "day3-title": "Day 3 – Rome / Capri",
+            "day3-description": "Free day or optional excursion to Capri with transfer, guided tour, and lunch. Dinner and overnight stay in Rome.",
+            "day4-title": "Day 4 – Rome / Assisi / Florence",
+            "day4-description": "Departure to Assisi, visiting the Basilicas of St. Francis and St. Mary of the Angels. Continue to Florence. Arrival, dinner, and overnight stay.",
+            "day5-title": "Day 5 – Florence",
+            "day5-description": "City tour in Florence: Ponte Vecchio, Piazza della Signoria, Basilica of Santa Maria del Fiore, and Baptistery. Free time. Dinner and overnight stay.",
+            "day6-title": "Day 6 – Florence / Venice",
+            "day6-description": "Departure to Venice, with a stop in Padua to visit the Basilica of St. Anthony. Arrival in Venice, dinner, and overnight stay in Mestre.",
+            "day7-title": "Day 7 – Venice",
+            "day7-description": "City tour in Venice: Piazza San Marco, Basilica, Rialto Bridge, and Doge's Palace. Optional gondola ride. Dinner and overnight stay.",
+            "day8-title": "Day 8 – Venice / Lake Garda / Lucerne",
+            "day8-description": "Departure to Lucerne, with a stop at Lake Garda. Arrival, dinner, and overnight stay in Lucerne.",
+            "day9-title": "Day 9 – Lucerne",
+            "day9-description": "City tour in Lucerne: historic center, painted wooden medieval bridge. Free time. Dinner and overnight stay.",
+            "day10-title": "Day 10 – Lucerne / Interlaken",
+            "day10-description": "Travel to Interlaken, with a stop at the Aar River Canyon. Arrival, dinner, and overnight stay.",
+            "day11-title": "Day 11 – Interlaken",
+            "day11-description": "Optional excursion to Jungfraujoch, the Top of Europe. Return to Interlaken, dinner, and overnight stay.",
+            "day12-title": "Day 12 – Interlaken / Geneva / Milan",
+            "day12-description": "Travel to Geneva, city tour, and continue to Milan. Arrival, dinner, and overnight stay.",
+            "day13-title": "Day 13 – Milan",
+            "day13-description": "City tour in Milan, visiting the Duomo and the Vittorio Emanuele Gallery. Free time. Dinner and overnight stay.",
+            "day14-title": "Day 14 – Milan / Brazil",
+            "day14-description": "Transfer to Malpensa Airport for the return flight to Brazil.",
+            "contact-us-title": "Contact Us",
+            "send-button": "Send",
+            "follow-us-title": "Follow Us",
+            "all-rights-reserved": "All rights reserved",
+            "contact-us-title": "Contact Us",
+            "name": "Name",
+            "message": "Message",    
+        },
+        it: {
+            "menu-title": "Menu",
+            "home-link": "Home",
+            "company-link": "La Nostra Azienda",
+            "info-link": "Informazioni",
+            "contact-link": "Contatti",
+            "bookings-link": "Prenotazioni Internazionali di Hotel Online",
+            "main-title": "Italia e Svizzera",
+            "main-description": "Un affascinante viaggio attraverso l'Italia e la Svizzera, visitando città iconiche e paesaggi mozzafiato. Dai monumenti antichi di Roma alla bellezza delle Alpi svizzere, questo itinerario offre una perfetta combinazione di arte, storia e natura.",
+            "day1-title": "1° Giorno – Roma",
+            "day1-description": "Arrivo a Roma, accoglienza all'aeroporto e trasferimento in hotel. Resto della giornata libero per esplorare la città. Cena e pernottamento.",
+            "day2-title": "2° Giorno – Roma",
+            "day2-description": "Dopo la colazione, tour della città nell'Antica Roma: Colosseo, Fori Imperiali, Piazza Venezia, Campidoglio e Basilica di San Pietro. Nel pomeriggio, visita ai Musei Vaticani e alla Cappella Sistina. Cena e pernottamento.",
+            "day3-title": "3° Giorno – Roma / Capri",
+            "day3-description": "Giornata libera o escursione facoltativa a Capri con trasferimento, visita guidata e pranzo. Cena e pernottamento a Roma.",
+            "day4-title": "4° Giorno – Roma / Assisi / Firenze",
+            "day4-description": "Partenza per Assisi, visita alle Basiliche di San Francesco e Santa Maria degli Angeli. Proseguimento per Firenze. Arrivo, cena e pernottamento.",
+            "day5-title": "5° Giorno – Firenze",
+            "day5-description": "Tour della città di Firenze: Ponte Vecchio, Piazza della Signoria, Basilica di Santa Maria del Fiore e Battistero. Tempo libero. Cena e pernottamento.",
+            "day6-title": "6° Giorno – Firenze / Venezia",
+            "day6-description": "Partenza per Venezia, con sosta a Padova per visitare la Basilica di Sant'Antonio. Arrivo a Venezia, cena e pernottamento a Mestre.",
+            "day7-title": "7° Giorno – Venezia",
+            "day7-description": "Tour della città di Venezia: Piazza San Marco, Basilica, Ponte di Rialto e Palazzo Ducale. Possibilità di un giro in gondola facoltativo. Cena e pernottamento.",
+            "day8-title": "8° Giorno – Venezia / Lago di Garda / Lucerna",
+            "day8-description": "Partenza per Lucerna, con sosta al Lago di Garda. Arrivo, cena e pernottamento a Lucerna.",
+            "day9-title": "9° Giorno – Lucerna",
+            "day9-description": "Tour della città di Lucerna: centro storico, ponte medievale di legno dipinto. Tempo libero. Cena e pernottamento.",
+            "day10-title": "10° Giorno – Lucerna / Interlaken",
+            "day10-description": "Viaggio verso Interlaken, con sosta al Canyon del Fiume Aar. Arrivo, cena e pernottamento.",
+            "day11-title": "11° Giorno – Interlaken",
+            "day11-description": "Escursione facoltativa allo Jungfraujoch, il Top of Europe. Ritorno a Interlaken, cena e pernottamento.",
+            "day12-title": "12° Giorno – Interlaken / Ginevra / Milano",
+            "day12-description": "Viaggio verso Ginevra, tour della città e proseguimento per Milano. Arrivo, cena e pernottamento.",
+            "day13-title": "13° Giorno – Milano",
+            "day13-description": "Tour della città di Milano, visita al Duomo e alla Galleria Vittorio Emanuele. Tempo libero. Cena e pernottamento.",
+            "day14-title": "14° Giorno – Milano / Brasile",
+            "day14-description": "Trasferimento all'Aeroporto di Malpensa per il volo di ritorno in Brasile.",
+            "contact-us-title": "Contattaci",
+            "send-button": "Invia",
+            "follow-us-title": "Seguici",
+            "all-rights-reserved": "Tutti i diritti riservati",
+            "name": "Nome",
+            "message": "Messaggio",
+            
+        },
+        fr: {
+            "menu-title": "Menu",
+            "home-link": "Accueil",
+            "company-link": "Notre Entreprise",
+            "info-link": "Informations",
+            "contact-link": "Contacts",
+            "bookings-link": "Réservations Internationales d'Hôtels en Ligne",
+            "main-title": "Italie et Suisse",
+            "main-description": "Un voyage fascinant à travers l'Italie et la Suisse, visitant des villes emblématiques et des paysages à couper le souffle. Des monuments antiques de Rome à la beauté des Alpes suisses, cet itinéraire offre une combinaison parfaite d'art, d'histoire et de nature.",
+            "day1-title": "1er Jour – Rome",
+            "day1-description": "Arrivée à Rome, accueil à l'aéroport et transfert à l'hôtel. Reste de la journée libre pour explorer la ville. Dîner et nuitée.",
+            "day2-title": "2e Jour – Rome",
+            "day2-description": "Après le petit-déjeuner, visite de la Rome Antique : Colisée, Forums Impériaux, Place Venise, Capitole et Basilique Saint-Pierre. L'après-midi, visite des Musées du Vatican et de la Chapelle Sixtine. Dîner et nuitée.",
+            "day3-title": "3e Jour – Rome / Capri",
+            "day3-description": "Journée libre ou excursion facultative à Capri avec transfert, visite guidée et déjeuner. Dîner et nuitée à Rome.",
+            "day4-title": "4e Jour – Rome / Assise / Florence",
+            "day4-description": "Départ pour Assise, visite des Basiliques de Saint-François et Sainte-Marie-des-Anges. Continuation vers Florence. Arrivée, dîner et nuitée.",
+            "day5-title": "5e Jour – Florence",
+            "day5-description": "Visite de Florence : Pont Vecchio, Place de la Signoria, Basilique Santa Maria del Fiore et Baptistère. Temps libre. Dîner et nuitée.",
+            "day6-title": "6e Jour – Florence / Venise",
+            "day6-description": "Départ pour Venise, avec un arrêt à Padoue pour visiter la Basilique Saint-Antoine. Arrivée à Venise, dîner et nuitée à Mestre.",
+            "day7-title": "7e Jour – Venise",
+            "day7-description": "Visite de Venise : Place Saint-Marc, Basilique, Pont du Rialto et Palais des Doges. Possibilité de faire un tour en gondole facultatif. Dîner et nuitée.",
+            "day8-title": "8e Jour – Venise / Lac de Garde / Lucerne",
+            "day8-description": "Départ pour Lucerne, avec un arrêt au Lac de Garde. Arrivée, dîner et nuitée à Lucerne.",
+            "day9-title": "9e Jour – Lucerne",
+            "day9-description": "Visite de Lucerne : centre historique, pont médiéval en bois peint. Temps libre. Dîner et nuitée.",
+            "day10-title": "10e Jour – Lucerne / Interlaken",
+            "day10-description": "Voyage vers Interlaken, avec un arrêt au Canyon de la Rivière Aar. Arrivée, dîner et nuitée.",
+            "day11-title": "11e Jour – Interlaken",
+            "day11-description": "Excursion facultative au Jungfraujoch, le Top of Europe. Retour à Interlaken, dîner et nuitée.",
+            "day12-title": "12e Jour – Interlaken / Genève / Milan",
+            "day12-description": "Voyage vers Genève, visite de la ville et continuation vers Milan. Arrivée, dîner et nuitée.",
+            "day13-title": "13e Jour – Milan",
+            "day13-description": "Visite de Milan, découverte du Dôme et de la Galerie Vittorio Emanuele. Temps libre. Dîner et nuitée.",
+            "day14-title": "14e Jour – Milan / Brésil",
+            "day14-description": "Transfert à l'Aéroport de Malpensa pour le vol de retour au Brésil.",
+            "contact-us-title": "Contactez-Nous",
+            "send-button": "Envoyer",
+            "follow-us-title": "Suivez-Nous",
+            "all-rights-reserved": "Tous droits réservés",
+            "name": "Nom",
+            "message": "Message",
+        },
+        es: {
+            "menu-title": "Menú",
+            "home-link": "Inicio",
+            "company-link": "Nuestra Empresa",
+            "info-link": "Información",
+            "contact-link": "Contactos",
+            "bookings-link": "Reservas Internacionales de Hoteles Online",
+           "main-title": "Italia y Suiza",
+            "main-description": "Un fascinante viaje a través de Italia y Suiza, visitando ciudades emblemáticas y paisajes impresionantes. Desde los monumentos antiguos de Roma hasta la belleza de los Alpes suizos, este itinerario ofrece una combinación perfecta de arte, historia y naturaleza.",
+            "day1-title": "Día 1 – Roma",
+            "day1-description": "Llegada a Roma, recepción en el aeropuerto y traslado al hotel. Resto del día libre para explorar la ciudad. Cena y alojamiento.",
+            "day2-title": "Día 2 – Roma",
+            "day2-description": "Después del desayuno, visita a la Roma Antigua: Coliseo, Foros Imperiales, Plaza Venecia, Capitolio y Basílica de San Pedro. Por la tarde, visita a los Museos Vaticanos y la Capilla Sixtina. Cena y alojamiento.",
+            "day3-title": "Día 3 – Roma / Capri",
+            "day3-description": "Día libre o excursión opcional a Capri con traslado, visita guiada y almuerzo. Cena y alojamiento en Roma.",
+            "day4-title": "Día 4 – Roma / Asís / Florencia",
+            "day4-description": "Salida hacia Asís, visita a las Basílicas de San Francisco y Santa María de los Ángeles. Continuación hacia Florencia. Llegada, cena y alojamiento.",
+            "day5-title": "Día 5 – Florencia",
+            "day5-description": "Visita a Florencia: Ponte Vecchio, Plaza de la Signoria, Basílica de Santa María del Fiore y Baptisterio. Tiempo libre. Cena y alojamiento.",
+            "day6-title": "Día 6 – Florencia / Venecia",
+            "day6-description": "Salida hacia Venecia, con una parada en Padua para visitar la Basílica de San Antonio. Llegada a Venecia, cena y alojamiento en Mestre.",
+            "day7-title": "Día 7 – Venecia",
+            "day7-description": "Visita a Venecia: Plaza de San Marcos, Basílica, Puente de Rialto y Palacio Ducal. Opción de paseo en góndola opcional. Cena y alojamiento.",
+            "day8-title": "Día 8 – Venecia / Lago de Garda / Lucerna",
+            "day8-description": "Salida hacia Lucerna, con una parada en el Lago de Garda. Llegada, cena y alojamiento en Lucerna.",
+            "day9-title": "Día 9 – Lucerna",
+            "day9-description": "Visita a Lucerna: casco antiguo, puente medieval de madera pintado. Tiempo libre. Cena y alojamiento.",
+            "day10-title": "Día 10 – Lucerna / Interlaken",
+            "day10-description": "Viaje a Interlaken, con una parada en el Cañón del Río Aar. Llegada, cena y alojamiento.",
+            "day11-title": "Día 11 – Interlaken",
+            "day11-description": "Excursión opcional al Jungfraujoch, la cima de Europa. Regreso a Interlaken, cena y alojamiento.",
+            "day12-title": "Día 12 – Interlaken / Ginebra / Milán",
+            "day12-description": "Viaje hacia Ginebra, visita a la ciudad y continuación hacia Milán. Llegada, cena y alojamiento.",
+            "day13-title": "Día 13 – Milán",
+            "day13-description": "Visita a Milán, incluyendo el Duomo y la Galería Vittorio Emanuele. Tiempo libre. Cena y alojamiento.",
+            "day14-title": "Día 14 – Milán / Brasil",
+            "day14-description": "Traslado al Aeropuerto de Malpensa para el vuelo de regreso a Brasil.",
+            "contact-us-title": "Contáctenos",
+            "send-button": "Enviar",
+            "follow-us-title": "Síganos",
+            "all-rights-reserved": "Todos los derechos reservados",
+            "name": "Nombre",
+            "message": "Mensaje",
+        },
+                
+        pt: {
+            "menu-title": "Menu",
+            "home-link": "Home",
+            "company-link": "Nossa Empresa",
+            "info-link": "Informações",
+            "contact-link": "Contatos",
+            "bookings-link": "Reservas Internacionais de Hoteis Online",
+            "main-title": "Itália e Suíça",
+            "main-description": "Uma fascinante viagem pela Itália e Suíça, visitando cidades emblemáticas e paisagens deslumbrantes. Dos monumentos antigos de Roma à beleza dos Alpes suíços, este roteiro oferece uma combinação perfeita de arte, história e natureza.",
+            "day1-title": "1º Dia – Roma",
+            "day1-description": "Chegada em Roma, recepção no aeroporto e traslado para o hotel. Restante do dia livre para explorar a cidade. Jantar e pernoite.",
+            "day2-title": "2º Dia – Roma",
+            "day2-description": "Após o café da manhã, visita à Roma Antiga: Coliseu, Fóruns Imperiais, Praça Veneza, Capitólio e Basílica de São Pedro. À tarde, visita ao Museu do Vaticano e à Capela Sistina. Jantar e pernoite.",
+            "day3-title": "3º Dia – Roma / Capri",
+            "day3-description": "Dia livre ou passeio opcional para Capri, com traslado, visita guiada e almoço. Jantar e pernoite em Roma.",
+            "day4-title": "4º Dia – Roma / Assis / Florença",
+            "day4-description": "Saída para Assis, visita às Basílicas de São Francisco e Santa Maria dos Anjos. Continuação para Florença. Chegada, jantar e pernoite.",
+            "day5-title": "5º Dia – Florença",
+            "day5-description": "Visita a Florença: Ponte Vecchio, Praça da Signoria, Basílica de Santa Maria del Fiore e Batistério. Tempo livre. Jantar e pernoite.",
+            "day6-title": "6º Dia – Florença / Veneza",
+            "day6-description": "Saída para Veneza, com parada em Pádua para visitar a Basílica de Santo Antônio. Chegada em Veneza, jantar e pernoite em Mestre.",
+            "day7-title": "7º Dia – Veneza",
+            "day7-description": "Visita a Veneza: Praça São Marcos, Basílica, Ponte Rialto e Palácio Ducal. Sugestão de passeio de gôndola opcional. Jantar e pernoite.",
+            "day8-title": "8º Dia – Veneza / Lago de Garda / Lucerna",
+            "day8-description": "Saída para Lucerna, com parada no Lago de Garda. Chegada, jantar e pernoite em Lucerna.",
+            "day9-title": "9º Dia – Lucerna",
+            "day9-description": "Visita a Lucerna: centro histórico, ponte medieval de madeira pintada. Tempo livre. Jantar e pernoite.",
+            "day10-title": "10º Dia – Lucerna / Interlaken",
+            "day10-description": "Viagem para Interlaken, com parada no Cânion do Rio Aar. Chegada, jantar e pernoite.",
+            "day11-title": "11º Dia – Interlaken",
+            "day11-description": "Sugestão de passeio opcional ao Jungfraujoch, topo da Europa. Retorno a Interlaken, jantar e pernoite.",
+            "day12-title": "12º Dia – Interlaken / Genebra / Milão",
+            "day12-description": "Viagem para Genebra, visita à cidade e continuação para Milão. Chegada, jantar e pernoite.",
+            "day13-title": "13º Dia – Milão",
+            "day13-description": "Visita a Milão, incluindo o Duomo e a Galeria Vittorio Emanuele. Tempo livre. Jantar e pernoite.",
+            "day14-title": "14º Dia – Milão / Brasil",
+            "day14-description": "Traslado para o Aeroporto de Malpensa para o embarque de volta ao Brasil.",
+            "contact-us-title": "Fale Conosco",
+            "send-button": "Enviar",
+            "follow-us-title": "Siga-nos",
+            "all-rights-reserved": "Todos os direitos reservados",
+            "name": "Nome",
+            "message": "Mensagem",
+                }
+            };
+
+            for (var id in translations[language]) {
+                var element = document.getElementById(id);
+                if (element) {
+                    element.innerHTML = translations[language][id];
+                }
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var language = getLanguage();
+            translatePage(language);
+        });
+    </script>
+</body>
+</html>

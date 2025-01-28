@@ -1,0 +1,416 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Erapolis Travel</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        #main {
+            font-family: 'Arial', serif;
+        }
+
+        /* Estilo para o cabeçalho */
+        #header .inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; 
+            position: relative;
+        }
+
+        /* Estilo para o menu */
+        #header nav {
+            margin-right: 10px; /* Espaço entre o menu e os botões de idioma */
+        }
+
+        /* Estilo para os botões de idioma */
+        .language-buttons {
+            display: flex;
+            align-items: center; /* Alinha verticalmente com o menu */
+            margin-left: auto;
+        }
+
+        .language-buttons img {
+            width: 32px;
+            height: 32px;
+            margin: 0 5px; /* Espaço entre os ícones */
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .language-buttons img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+    <link rel="stylesheet" href="assets/css/erapolis-travel-logo.css">
+    <link rel="icon" href="assets/css/erapolis-travel-logo.css" type="image/x-icon">
+    <!-- arquivo de estilo para quando o JavaScript estiver desativado -->
+    <noscript><link rel="stylesheet" href="assets/css/erapolis-travel-logo.css"></noscript>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <span class="symbol"><img src="images/erapolis-travel-logo.jpg" alt="" /></span><span class="title">Erapolis Travel</span>
+                </a>
+
+                <!-- Nav -->
+                <nav>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Language Buttons -->
+                <div class="language-buttons">
+                    <img src="images/flags/us.png" onclick="setLanguage('en')" />
+                    <img src="images/flags/br.png" onclick="setLanguage('pt')" />
+                    <img src="images/flags/it.png" onclick="setLanguage('it')" />
+                    <img src="images/flags/fr.png" onclick="setLanguage('fr')" />
+                    <img src="images/flags/es.png" onclick="setLanguage('es')" />
+                </div>
+
+            </div>
+        </header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <h2 id="menu-title">Menu</h2>
+            <ul>
+                <li><a id="home-link" href="index.html">Home</a></li>
+                <li><a id="company-link" href="nossaempresa.html">Nossa Empresa</a></li>
+                <li><a id="info-link" href="informações.html">Informações</a></li>
+                <li><a id="contact-link" href="contatos.html">Contatos</a></li>
+                <li><a id="bookings-link" href="elements.html">Reservas Internacionais de Hoteis Online</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+         <div class="inner">
+            <h1 id="main-title">Vietnã, Camboja e Laos</h1>
+            <p id="main-description" class="texto-menor">"Uma jornada por maravilhas culturais, templos antigos e paisagens deslumbrantes."</p>
+            <div class="images">
+                <img src="images/vietna2.jpg" alt="" class="image" />
+                <img src="images/vietnam3.jpg" alt="" class="image" />
+                </div>
+                <div class="specific-section">
+                <h1 id="day1-title">Dia 01 – Hanoi (Vietnã)</h1>
+                <p id="day1-description" class="texto-menor">Chegada em Hanoi, com recepção e traslado ao hotel. Descubra a fascinante história da capital vietnamita, que remonta ao século III e foi revitalizada no século XI pela dinastia que libertou o país do domínio chinês. Explore a rica herança colonial francesa em seus monumentos e paisagens arborizadas. Visite o Lago da Espada Restituída, o Templo da Literatura, a icônica Pagoda de Um Só Pilar e o Mausoléu de Ho Chi Minh. Faça uma imersão no Centro Histórico e conheça uma casa tradicional vietnamita. Após o almoço, se encante com um espetacular espetáculo de marionetes na água. Jantar e pernoite.</p>
+
+                <h1 id="day2-title">Dia 02 – Hanoi – Halong</h1>
+                <p id="day2-description" class="texto-menor">Acorde cedo e aproveite um café da manhã no hotel antes de seguir para a Baía de Halong, passando pelos campos e portos tradicionais da região. Chegue à deslumbrante Baía de Halong, onde um cruzeiro de barco o levará a uma viagem mítica, onde o dragão emerge do mar. Almoço e jantar a bordo.</p>
+
+                <h1 id="day3-title">Dia 03 – Halong – Hanoi – Hue</h1>
+                <p id="day3-description" class="texto-menor">Após o café da manhã, embarque em sampans locais e visite a Gruta da Surpresa, com a possibilidade de um refrescante banho em praias isoladas. Retorno ao porto e traslado ao aeroporto de Hanoi para voo a Hue. Chegada, assistência, traslado e acomodações no hotel. Jantar e pernoite.</p>
+
+                <h1 id="day4-title">Dia 04 – Hue</h1>
+                <p id="day4-description" class="texto-menor">Explore Hue, antiga capital do Vietnã durante a dinastia Nguyen, e Patrimônio Mundial da Humanidade pela UNESCO. Conheça a Citadela e a Cidade Proibida, onde os imperadores residiam, e o grandioso Palácio Thai Hoa. Navegue pelo Rio dos Perfumes até os túmulos dos Imperadores Nguyen e a famosa Pagoda Thien Mu. Almoço e jantar em restaurante local. Pernoite.</p>
+
+                <h1 id="day5-title">Dia 05 – Hue – Ho Chi Minh</h1>
+                <p id="day5-description" class="texto-menor">Após o café da manhã, voo para Ho Chi Minh (antiga Saigon), a maior cidade do Vietnã. Mergulhe na rica história colonial francesa, explorando avenidas e mercados vibrantes. Visite Cholon, a 'cidade chinesa', e as famosas pagodas de Giac Lam e Thien Hau. Passeie pela “cidade branca” e seus edifícios coloniais. Almoço e jantar no hotel. Pernoite.</p>
+
+                <h1 id="day6-title">Dia 06 – Ho Chi Minh – Siem Reap (Camboja)</h1>
+                <p id="day6-description" class="texto-menor">Traslado para o aeroporto e voo para Siem Reap. À tarde, conheça a antiga cidade fortificada de Angkor Thom e seus magníficos templos, incluindo o Bayon, Baphuon e o Pimeanakas. Termine a visita com os Terraços dos Elefantes e do Rei Leproso. Almoço e jantar. Pernoite.</p>
+
+                <h1 id="day7-title">Dia 07 – Siem Reap</h1>
+                <p id="day7-description" class="texto-menor">Visite o templo de Bantey Srey, com suas impressionantes esculturas, e siga para o grande complexo de Angkor. Explore o templo de Prae Khan, o Neak Pean e o Ta Phrom. Almoço e jantar em restaurante local. Pernoite.</p>
+                
+                <h1 id="day8-title">Dia 08 – Siem Reap – Luang Prabang (Laos)</h1>
+                <p id="day8-description" class="texto-menor">Visite o famoso templo de Angkor Wat, uma das maravilhas do mundo. Após o almoço, pegue o voo para Luang Prabang. Chegada, traslado ao hotel e descanso. Aproveite a noite para explorar o mercado noturno. Pernoite.</p>
+
+                <h1 id="day9-title">Dia 09 – Luang Prabang – Grutas de Pak Ou</h1>
+                <p id="day9-description" class="texto-menor">Explore Luang Prabang, patrimônio mundial da UNESCO, e visite o Museu Nacional e os mosteiros Wat Sene e Wat Xieng Thong. Navegue pelo Rio Mekong até as Grutas de Pak Ou, um local sagrado repleto de milhares de estátuas de Buda. Almoço e jantar. Pernoite.</p>
+
+                <h1 id="day10-title">Dia 10 – Luang Prabang – Experiência no Vilarejo Hmong – Cachoeiras de Kuang Si</h1>
+                <p id="day10-description" class="texto-menor">Participe do ritual matinal dos monges e explore o mercado local. Conheça o povo Hmong e sua agricultura em um trekking pelas plantações de arroz. Visite as belas Cachoeiras de Kuang Si, com sua água cristalina e paisagens deslumbrantes. Termine o dia com uma visita ao topo da colina Phou Si para admirar o pôr do sol. Almoço pic-nic próximo às cachoeiras e jantar no hotel. Pernoite.</p>
+
+                <h1 id="day11-title">Dia 11 – Luang Prabang</h1>
+                <p id="day11-description" class="texto-menor">Dia livre para atividades pessoais e últimas compras. Traslado ao aeroporto para o voo de retorno.</p>
+
+            </div>
+                
+        </div>
+</div>
+
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <section>
+                    <h2 id="contact-us-title">Fale Conosco</h2>
+                    <form method="post" action="#">
+                        <div class="fields">
+                            <div class="field half">
+                                <input type="text" name="name" id="name" placeholder="Nome" />
+                            </div>
+                            <div class="field half">
+                                <input type="email" name="email" id="email" placeholder="Email" />
+                            </div>
+                            <div class="field">
+                                <textarea name="message" id="message" placeholder="Mensagem"></textarea>
+                            </div>
+                        </div>
+                        <ul class="actions">
+                            <li><input id="send-button" type="submit" value="enviar" class="primary" /></li>
+                        </ul>
+                    </form>
+                </section>
+                <section>
+                    <h2 id="follow-us-title">Siga-Nos</h2>
+                    <ul class="icons">
+                        <li><a href="https://www.facebook.com/erapolistravel/" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+                    </ul>
+                </section>
+                <ul class="copyright">
+                    <li>&copy; Erapolis Travel 2025. <span id="all-rights-reserved">Todos os direitos reservados</span></li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Translate Script -->
+    <script>
+        function setLanguage(language) {
+            document.cookie = "language=" + language + "; path=/";
+            translatePage(language);
+        }
+
+        function getLanguage() {
+            let name = "language=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for(let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "pt"; // Default language
+        }
+
+        function translatePage(language) {
+            var translations = {
+            en: {
+            "menu-title": "Menu",
+            "home-link": "Home",
+            "company-link": "Our Company",
+            "info-link": "Information",
+            "contact-link": "Contacts",
+            "bookings-link": "International Hotel Bookings Online",
+            "main-title": "Vietnam, Cambodia, and Laos",
+            "main-description": "Immerse yourself in the vibrant cultures of Southeast Asia with this 11-day itinerary, where you will explore the breathtaking landscapes and ancient temples of Vietnam, Cambodia, and Laos. Travel through time, learning about the stories that shaped these nations, from the Nguyen dynasty to the majestic Khmer empires. Embark on a cruise through the mythical Halong Bay, explore the sacred Pak Ou caves, and experience the unique spirituality of Kuang Si waterfalls. A journey that combines history, nature, and culture into one unforgettable experience.",
+            "day1-title": "Day 01 – Hanoi (Vietnam)",
+            "day1-description": "Arrive in Hanoi, with a warm welcome and transfer to your hotel. Discover the fascinating history of Vietnam's capital, dating back to the 3rd century, and revitalized in the 11th century by the dynasty that freed the country from Chinese rule. Explore the rich French colonial heritage in its monuments and tree-lined landscapes. Visit the Hoan Kiem Lake, the Temple of Literature, the iconic One Pillar Pagoda, and the Ho Chi Minh Mausoleum. Immerse yourself in the Old Quarter and visit a traditional Vietnamese house. After lunch, enjoy a spectacular water puppet show. Dinner and overnight.",
+            "day2-title": "Day 02 – Hanoi – Halong",
+            "day2-description": "Wake up early and enjoy breakfast at the hotel before heading to Halong Bay, passing through the traditional fields and ports of the region. Arrive at the stunning Halong Bay, where a boat cruise will take you on a mythical journey, where the dragon rises from the sea. Lunch and dinner on board.",
+            "day3-title": "Day 03 – Halong – Hanoi – Hue",
+            "day3-description": "After breakfast, embark on local sampans and visit the Surprise Cave, with the option to take a refreshing swim at isolated beaches. Return to the port and transfer to Hanoi airport for a flight to Hue. Arrival, assistance, transfer, and hotel check-in. Dinner and overnight.",
+            "day4-title": "Day 04 – Hue",
+            "day4-description": "Explore Hue, the former capital of Vietnam during the Nguyen dynasty and a UNESCO World Heritage site. Visit the Citadel and the Forbidden City, where the emperors once resided, and the grand Thai Hoa Palace. Cruise along the Perfume River to the tombs of the Nguyen emperors and the famous Thien Mu Pagoda. Lunch and dinner at a local restaurant. Overnight.", 
+            "day5-title": "Day 05 – Hue – Ho Chi Minh",
+            "day5-description": "After breakfast, fly to Ho Chi Minh City (formerly Saigon), the largest city in Vietnam. Dive into the rich French colonial history, exploring the lively avenues and markets. Visit Cholon, the 'Chinese city', and the famous Giac Lam and Thien Hau Pagodas. Walk through the 'White City' and admire its colonial buildings. Lunch and dinner at the hotel. Overnight.",
+            "day6-title": "Day 06 – Ho Chi Minh – Siem Reap (Cambodia)",
+            "day6-description": "Transfer to the airport and fly to Siem Reap. In the afternoon, visit the ancient fortified city of Angkor Thom and its magnificent temples, including Bayon, Baphuon, and Pimeanakas. End the visit with the Elephant Terrace and the Terrace of the Leper King. Lunch and dinner. Overnight.",
+            "day7-title": "Day 07 – Siem Reap",
+            "day7-description": "Visit the Bantey Srey Temple, with its impressive sculptures, and continue to the grand Angkor complex. Explore the Prae Khan Temple, Neak Pean, and Ta Phrom. Lunch and dinner at a local restaurant. Overnight.",
+            "day8-title": "Day 08 – Siem Reap – Luang Prabang (Laos)",
+            "day8-description": "Visit the famous Angkor Wat temple, one of the wonders of the world. After lunch, take the flight to Luang Prabang. Arrival, transfer to the hotel, and rest. Enjoy the night exploring the night market. Overnight.",
+            "day9-title": "Day 09 – Luang Prabang – Pak Ou Caves",
+            "day9-description": "Explore Luang Prabang, a UNESCO World Heritage site, and visit the National Museum and the Wat Sene and Wat Xieng Thong temples. Cruise along the Mekong River to the Pak Ou Caves, a sacred site filled with thousands of Buddha statues. Lunch and dinner. Overnight.",
+            "day10-title": "Day 10 – Luang Prabang – Hmong Village Experience – Kuang Si Waterfalls",
+            "day10-description": "Participate in the morning monk ritual and explore the local market. Meet the Hmong people and their agriculture on a trek through rice plantations. Visit the beautiful Kuang Si Waterfalls, with its crystal-clear water and stunning landscapes. End the day with a visit to the top of Phou Si Hill to watch the sunset. Picnic lunch near the waterfalls and dinner at the hotel. Overnight.",
+            "day11-title": "Day 11 – Luang Prabang",
+            "day11-description": "Free day for personal activities and last-minute shopping. Transfer to the airport for the return flight.",
+            "contact-us-title": "Contact Us",
+            "send-button": "Send",
+            "follow-us-title": "Follow Us",
+            "all-rights-reserved": "All Rights Reserved.",
+            },
+
+        it: {
+            "menu-title": "Menu",
+            "home-link": "Home",
+            "company-link": "La Nostra Azienda",
+            "info-link": "Informazioni",
+            "contact-link": "Contatti",
+            "bookings-link": "Prenotazioni Internazionali di Hotel Online",
+            "main-title": "Vietnam, Cambogia e Laos",
+            "main-description": "Immergiti nelle culture vibranti del Sud-Est Asiatico con questo itinerario di 11 giorni, dove esplorerai i paesaggi mozzafiato e i templi millenari del Vietnam, della Cambogia e del Laos. Viaggia nel tempo, imparando le storie che hanno plasmato queste nazioni, dalla dinastia Nguyen ai maestosi imperi khmer. Imbarcati in una crociera nella mitica Baia di Halong, esplora le sacre grotte di Pak Ou e vivi la spiritualità unica delle cascate di Kuang Si. Un viaggio che combina storia, natura e cultura in un'esperienza indimenticabile.",
+            "day1-title": "Giorno 01 – Hanoi (Vietnam)",
+            "day1-description": "Arrivo a Hanoi, con un caloroso benvenuto e trasferimento in hotel. Scopri la storia affascinante della capitale vietnamita, che risale al III secolo, e che è stata rivitalizzata nell'XI secolo dalla dinastia che liberò il paese dal dominio cinese. Esplora la ricca eredità coloniale francese nei suoi monumenti e paesaggi alberati. Visita il Lago della Spada Restituita, il Tempio della Letteratura, l'iconica Pagoda a Pilastro Unico e il Mausoleo di Ho Chi Minh. Immergiti nel Quartiere Vecchio e visita una casa tradizionale vietnamita. Dopo pranzo, goditi uno spettacolare spettacolo di marionette sull'acqua. Cena e pernottamento.",
+            "day2-title": "Giorno 02 – Hanoi – Halong",
+            "day2-description": "Sveglia presto e goditi una colazione in hotel prima di partire per la Baia di Halong, passando per i campi e i porti tradizionali della regione. Arrivo alla splendida Baia di Halong, dove una crociera in barca ti porterà in un viaggio mitico, dove il drago emerge dal mare. Pranzo e cena a bordo.",
+            "day3-title": "Giorno 03 – Halong – Hanoi – Hue",
+            "day3-description": "Dopo la colazione, imbarcati su sampan locali e visita la Grotta della Sorpresa, con la possibilità di un rinfrescante bagno in spiagge isolate. Ritorno al porto e trasferimento all'aeroporto di Hanoi per un volo verso Hue. Arrivo, assistenza, trasferimento e sistemazione in hotel. Cena e pernottamento.", 
+            "day4-title": "Giorno 04 – Hue",
+            "day4-description": "Esplora Hue, l'antica capitale del Vietnam durante la dinastia Nguyen e patrimonio mondiale dell'umanità UNESCO. Visita la Cittadella e la Città Proibita, dove un tempo risiedevano gli imperatori, e il grandioso Palazzo Thai Hoa. Naviga lungo il Fiume dei Profumi fino alle tombe degli imperatori Nguyen e alla famosa Pagoda Thien Mu. Pranzo e cena in ristorante locale. Pernottamento.",
+            "day5-title": "Giorno 05 – Hue – Ho Chi Minh",
+            "day5-description": "Dopo colazione, volo per Ho Chi Minh City (ex Saigon), la città più grande del Vietnam. Immergiti nella ricca storia coloniale francese, esplorando le vivaci avenidas e i mercati. Visita Cholon, la 'città cinese', e le famose pagode Giac Lam e Thien Hau. Passeggia nella 'città bianca' e ammira gli edifici coloniali. Pranzo e cena in hotel. Pernottamento.",
+            "day6-title": "Giorno 06 – Ho Chi Minh – Siem Reap (Cambogia)",
+            "day6-description": "Trasferimento all'aeroporto e volo per Siem Reap. Nel pomeriggio, visita l'antica città fortificata di Angkor Thom e i suoi magnifici templi, tra cui Bayon, Baphuon e Pimeanakas. Concludi la visita con i Terrazzi degli Elefanti e del Re Leproso. Pranzo e cena. Pernottamento.",
+            "day7-title": "Giorno 07 – Siem Reap",
+            "day7-description": "Visita il Tempio di Bantey Srey, con le sue impressionanti sculture, e prosegui per il grande complesso di Angkor. Esplora il Tempio di Prae Khan, Neak Pean e Ta Phrom. Pranzo e cena in ristorante locale. Pernottamento.",
+            "day8-title": "Giorno 08 – Siem Reap – Luang Prabang (Laos)",
+            "day8-description": "Visita il famoso tempio di Angkor Wat, una delle meraviglie del mondo. Dopo pranzo, prendi il volo per Luang Prabang. Arrivo, trasferimento in hotel e riposo. Goditi la notte esplorando il mercato notturno. Pernottamento.",
+            "day9-title": "Giorno 09 – Luang Prabang – Grotte di Pak Ou",
+            "day9-description": "Esplora Luang Prabang, patrimonio dell'umanità UNESCO, e visita il Museo Nazionale e i templi Wat Sene e Wat Xieng Thong. Naviga lungo il fiume Mekong fino alle Grotte di Pak Ou, un sito sacro ricco di migliaia di statue di Buddha. Pranzo e cena. Pernottamento.",
+            "day10-title": "Giorno 10 – Luang Prabang – Esperienza nel Villaggio Hmong – Cascate di Kuang Si",
+            "day10-description": "Partecipa al rituale mattutino dei monaci e esplora il mercato locale. Conosci il popolo Hmong e la loro agricoltura in un trekking tra le piantagioni di riso. Visita le bellissime Cascate di Kuang Si, con la loro acqua cristallina e paesaggi mozzafiato. Concludi la giornata con una visita alla cima della collina Phou Si per ammirare il tramonto. Pranzo al sacco vicino alle cascate e cena in hotel. Pernottamento.",
+            "day11-title": "Giorno 11 – Luang Prabang",
+            "day11-description": "Giornata libera per attività personali e ultimi acquisti. Trasferimento all'aeroporto per il volo di ritorno.",
+            "contact-us-title": "Contattaci",
+            "send-button": "Invia",
+            "follow-us-title": "Seguici",
+            "all-rights-reserved": "Tutti i diritti riservati",
+        },
+        fr: {
+            "menu-title": "Menu",
+            "home-link": "Accueil",
+            "company-link": "Notre Entreprise",
+            "info-link": "Informations",
+            "contact-link": "Contacts",
+            "bookings-link": "Réservations Internationales d'Hôtels en Ligne",
+            "main-title": "Vietnam, Cambodge et Laos",
+            "main-description": "Plongez dans les cultures vibrantes de l'Asie du Sud-Est avec cet itinéraire de 11 jours, où vous explorerez des paysages impressionnants et des temples millénaires du Vietnam, du Cambodge et du Laos. Voyagez dans le temps en découvrant les histoires qui ont façonné ces nations, de la dynastie Nguyen aux majestueux empires khmers. Embarquez pour une croisière mythique dans la baie d'Halong, explorez les grottes sacrées de Pak Ou et vivez la spiritualité unique des chutes de Kuang Si. Un itinéraire alliant histoire, nature et culture dans une expérience inoubliable.",
+            "day1-title": "Jour 01 – Hanoi (Vietnam)",
+            "day1-description": "Arrivée à Hanoi, accueil et transfert à l'hôtel. Découvrez l'histoire fascinante de la capitale vietnamienne, datant du IIIe siècle et revitalisée au XIe siècle par la dynastie qui libéra le pays de la domination chinoise. Explorez l'héritage colonial français à travers ses monuments et ses paysages boisés. Visitez le lac de l'épée restituée, le temple de la littérature, la pagode à pilier unique et le mausolée de Ho Chi Minh. Imprégnez-vous du quartier historique et découvrez une maison traditionnelle vietnamienne. Après le déjeuner, profitez d'un spectacle de marionnettes sur l'eau. Dîner et nuit à l'hôtel.",
+            "day2-title": "Jour 02 – Hanoi – Halong",
+            "day2-description": "Réveillez-vous tôt et profitez d'un petit-déjeuner à l'hôtel avant de partir pour la baie d'Halong, en traversant les champs et les ports traditionnels de la région. Arrivée à la splendide baie d'Halong, où une croisière en bateau vous emmènera dans un voyage mythique où le dragon émerge de la mer. Déjeuner et dîner à bord.",
+            "day3-title": "Jour 03 – Halong – Hanoi – Hue",
+            "day3-description": "Après le petit-déjeuner, embarquez sur des sampans locaux et visitez la grotte de la surprise, avec la possibilité de vous baigner dans des plages isolées. Retour au port et transfert à l'aéroport de Hanoi pour un vol à destination de Hue. Arrivée, assistance, transfert et installation à l'hôtel. Dîner et nuit.",
+            "day4-title": "Jour 04 – Hue",
+            "day4-description": "Explorez Hue, ancienne capitale du Vietnam sous la dynastie Nguyen et classée au patrimoine mondial de l'UNESCO. Découvrez la citadelle et la cité interdite où résidaient les empereurs, ainsi que le grandiose palais Thai Hoa. Naviguez sur la rivière des Parfums jusqu'aux tombeaux des empereurs Nguyen et à la célèbre pagode Thien Mu. Déjeuner et dîner dans un restaurant local. Nuit à l'hôtel.",
+            "day5-title": "Jour 05 – Hue – Ho Chi Minh",
+            "day5-description": "Après le petit-déjeuner, vol pour Ho Chi Minh (anciennement Saïgon), la plus grande ville du Vietnam. Plongez dans l'histoire coloniale française en explorant les boulevards animés et les marchés. Visitez Cholon, la « ville chinoise », ainsi que les célèbres pagodes Giac Lam et Thien Hau. Promenez-vous dans la « ville blanche » et admirez ses bâtiments coloniaux. Déjeuner et dîner à l'hôtel. Nuit.",
+            "day6-title": "Jour 06 – Ho Chi Minh – Siem Reap (Cambodge)",
+            "day6-description": "Transfert à l'aéroport et vol pour Siem Reap. Dans l'après-midi, visitez l'ancienne ville fortifiée d'Angkor Thom et ses temples magnifiques, dont le Bayon, le Baphuon et le Pimeanakas. Terminez la visite par les Terrasses des Éléphants et du Roi Lépreux. Déjeuner et dîner. Nuit.",
+            "day7-title": "Jour 07 – Siem Reap",
+            "day7-description": "Visitez le temple de Bantey Srey, avec ses sculptures impressionnantes, puis poursuivez votre visite du grand complexe d'Angkor. Explorez le temple de Prae Khan, Neak Pean et Ta Phrom. Déjeuner et dîner dans un restaurant local. Nuit.",
+            "day8-title": "Jour 08 – Siem Reap – Luang Prabang (Laos)",
+            "day8-description": "Visitez le célèbre temple d'Angkor Wat, l'une des merveilles du monde. Après le déjeuner, prenez le vol pour Luang Prabang. Arrivée, transfert à l'hôtel et repos. Profitez de la soirée pour explorer le marché nocturne. Nuit.",
+            "day9-title": "Jour 09 – Luang Prabang – Grottes de Pak Ou",
+            "day9-description": "Explorez Luang Prabang, classée au patrimoine mondial de l'UNESCO, et visitez le musée national ainsi que les temples Wat Sene et Wat Xieng Thong. Naviguez sur le Mékong jusqu'aux grottes de Pak Ou, un site sacré avec des milliers de statues de Bouddha. Déjeuner et dîner. Nuit.",
+            "day10-title": "Jour 10 – Luang Prabang – Expérience au village Hmong – Chutes de Kuang Si",
+            "day10-description": "Participez au rituel matinal des moines et explorez le marché local. Découvrez le peuple Hmong et son agriculture lors d'une randonnée à travers les rizières. Visitez les magnifiques chutes de Kuang Si, avec leurs eaux cristallines et leurs paysages spectaculaires. Terminez la journée avec une visite du sommet de la colline Phou Si pour admirer le coucher du soleil. Déjeuner-pique-nique près des chutes et dîner à l'hôtel. Nuit.",
+            "day11-title": "Jour 11 – Luang Prabang",
+            "day11-description": "Journée libre pour des activités personnelles et pour faire des achats de souvenirs. Transfert à l'aéroport pour votre vol retour.",
+            "contact-us-title": "Contactez-Nous",
+            "send-button": "Envoyer",
+            "follow-us-title": "Suivez-Nous",
+            "all-rights-reserved": "Tous droits réservés",
+
+        },
+        es: {
+            "menu-title": "Menú",
+            "home-link": "Inicio",
+            "company-link": "Nuestra Empresa",
+            "info-link": "Información",
+            "contact-link": "Contactos",
+            "bookings-link": "Reservas Internacionales de Hoteles Online",
+            "main-title": "Vietnam, Camboya y Laos",
+            "main-description": "Sumérgete en las vibrantes culturas del Sudeste Asiático con este itinerario de 11 días, donde explorarás paisajes impresionantes y templos milenarios de Vietnam, Camboya y Laos. Viaja en el tiempo conociendo las historias que han dado forma a estas naciones, desde la dinastía Nguyen hasta los majestuosos imperios jemeres. Embárcate en un crucero por la mítica Bahía de Ha Long, explora las sagradas grutas de Pak Ou y vive la espiritualidad única de las cataratas de Kuang Si. Un recorrido que combina historia, naturaleza y cultura en una experiencia inolvidable.",
+            "day1-title": "Día 01 – Hanoi (Vietnam)",
+            "day1-description": "Llegada a Hanoi, recepción y traslado al hotel. Descubre la fascinante historia de la capital vietnamita, que data del siglo III y fue revitalizada en el siglo XI por la dinastía que liberó al país del dominio chino. Explora el rico legado colonial francés a través de sus monumentos y paisajes arbolados. Visita el Lago de la Espada Restituida, el Templo de la Literatura, la icónica Pagoda de un solo Pilar y el Mausoleo de Ho Chi Minh. Sumérgete en el Centro Histórico y conoce una casa tradicional vietnamita. Después del almuerzo, disfruta de un espectáculo de marionetas sobre agua. Cena y noche en el hotel.",
+            "day2-title": "Día 02 – Hanoi – Ha Long",
+            "day2-description": "Levántate temprano y disfruta de un desayuno en el hotel antes de partir hacia la Bahía de Ha Long, pasando por los campos y puertos tradicionales de la región. Llegada a la impresionante Bahía de Ha Long, donde un crucero en barco te llevará a un viaje mítico, donde el dragón emerge del mar. Almuerzo y cena a bordo.",
+            "day3-title": "Día 03 – Ha Long – Hanoi – Hue",
+            "day3-description": "Después del desayuno, sube a los sampanes locales y visita la Gruta de la Sorpresa, con la posibilidad de un baño refrescante en playas aisladas. Regreso al puerto y traslado al aeropuerto de Hanoi para un vuelo a Hue. Llegada, asistencia, traslado e instalación en el hotel. Cena y noche en el hotel.",
+            "day4-title": "Día 04 – Hue",
+            "day4-description": "Explora Hue, antigua capital de Vietnam durante la dinastía Nguyen y Patrimonio de la Humanidad por la UNESCO. Conoce la Ciudadela y la Ciudad Prohibida, donde residían los emperadores, y el grandioso Palacio Thai Hoa. Navega por el Río de los Perfumes hasta las tumbas de los emperadores Nguyen y la famosa Pagoda Thien Mu. Almuerzo y cena en un restaurante local. Noche en el hotel.",
+            "day5-title": "Día 05 – Hue – Ho Chi Minh",
+            "day5-description": "Después del desayuno, vuelo a Ho Chi Minh (antigua Saigón), la ciudad más grande de Vietnam. Sumérgete en la rica historia colonial francesa, explorando avenidas y mercados vibrantes. Visita Cholon, la 'ciudad china', y las famosas pagodas Giac Lam y Thien Hau. Pasea por la 'ciudad blanca' y sus edificios coloniales. Almuerzo y cena en el hotel. Noche en el hotel.",
+            "day6-title": "Día 06 – Ho Chi Minh – Siem Reap (Camboya)",
+            "day6-description": "Traslado al aeropuerto y vuelo a Siem Reap. Por la tarde, visita la antigua ciudad amurallada de Angkor Thom y sus magníficos templos, incluyendo el Bayon, Baphuon y Pimeanakas. Termina la visita con las Terrazas de los Elefantes y del Rey Leproso. Almuerzo y cena. Noche en el hotel.",
+            "day7-title": "Día 07 – Siem Reap",
+            "day7-description": "Visita el templo de Bantey Srey, con sus impresionantes esculturas, y luego explora el gran complejo de Angkor. Conoce el templo de Prae Khan, Neak Pean y Ta Phrom. Almuerzo y cena en un restaurante local. Noche en el hotel.",
+            "day8-title": "Día 08 – Siem Reap – Luang Prabang (Laos)",
+            "day8-description": "Visita el famoso templo de Angkor Wat, una de las maravillas del mundo. Después del almuerzo, toma el vuelo hacia Luang Prabang. Llegada, traslado al hotel y descanso. Aprovecha la noche para explorar el mercado nocturno. Noche en el hotel.",
+            "day9-title": "Día 09 – Luang Prabang – Grutas de Pak Ou",
+            "day9-description": "Explora Luang Prabang, Patrimonio de la Humanidad por la UNESCO, y visita el Museo Nacional y los monasterios Wat Sene y Wat Xieng Thong. Navega por el río Mekong hasta las Grutas de Pak Ou, un lugar sagrado lleno de miles de estatuas de Buda. Almuerzo y cena. Noche en el hotel.",
+            "day10-title": "Día 10 – Luang Prabang – Experiencia en el Pueblo Hmong – Cataratas de Kuang Si",
+            "day10-description": "Participa en el ritual matutino de los monjes y explora el mercado local. Conoce al pueblo Hmong y su agricultura durante una caminata por los campos de arroz. Visita las hermosas Cataratas de Kuang Si, con aguas cristalinas y paisajes impresionantes. Termina el día con una visita al alto de la colina Phou Si para admirar la puesta de sol. Almuerzo tipo picnic cerca de las cataratas y cena en el hotel. Noche en el hotel.",
+            "day11-title": "Día 11 – Luang Prabang",
+            "day11-description": "Día libre para actividades personales y compras de última hora. Traslado al aeropuerto para el vuelo de regreso.",
+            "contact-us-title": "Contáctanos",
+            "send-button": "Enviar",
+            "follow-us-title": "Síguenos",
+            "all-rights-reserved": "Todos los derechos reservados"
+        },
+                
+        pt: {
+            "menu-title": "Menu",
+            "home-link": "Home",
+            "company-link": "Nossa Empresa",
+            "info-link": "Informações",
+            "contact-link": "Contatos",
+            "bookings-link": "Reservas Internacionais de Hoteis Online",
+            "main-title": "Vietnã, Camboja e Laos",
+            "main-description": "Mergulhe nas culturas vibrantes do Sudeste Asiático com este itinerário de 11 dias, onde você explorará as paisagens impressionantes e os templos milenares do Vietnã, Camboja e Laos. Viaje no tempo, conhecendo as histórias que moldaram essas nações, desde a dinastia Nguyen até os majestosos impérios khmeres. Embarque em um cruzeiro pela mítica Baía de Halong, explore as grutas sagradas de Pak Ou e viva a espiritualidade única das cachoeiras de Kuang Si. Um roteiro que combina história, natureza e cultura em uma experiência única e inesquecível.",
+            "day1-title": "Dia 01 – Hanoi (Vietnã)",
+            "day1-description": "Chegada em Hanoi, com recepção e traslado ao hotel. Descubra a fascinante história da capital vietnamita, que remonta ao século III e foi revitalizada no século XI pela dinastia que libertou o país do domínio chinês. Explore a rica herança colonial francesa em seus monumentos e paisagens arborizadas. Visite o Lago da Espada Restituída, o Templo da Literatura, a icônica Pagoda de Um Só Pilar e o Mausoléu de Ho Chi Minh. Faça uma imersão no Centro Histórico e conheça uma casa tradicional vietnamita. Após o almoço, se encante com um espetacular espetáculo de marionetes na água. Jantar e pernoite.",
+            "day2-title": "Dia 02 – Hanoi – Halong",
+            "day2-description": "Acorde cedo e aproveite um café da manhã no hotel antes de seguir para a Baía de Halong, passando pelos campos e portos tradicionais da região. Chegue à deslumbrante Baía de Halong, onde um cruzeiro de barco o levará a uma viagem mítica, onde o dragão emerge do mar. Almoço e jantar a bordo.",
+            "day3-title": "Dia 03 – Halong – Hanoi – Hue",
+            "day3-description": "Após o café da manhã, embarque em sampans locais e visite a Gruta da Surpresa, com a possibilidade de um refrescante banho em praias isoladas. Retorno ao porto e traslado ao aeroporto de Hanoi para voo a Hue. Chegada, assistência, traslado e acomodações no hotel. Jantar e pernoite.", 
+            "day4-title": "Dia 04 – Hue",
+            "day4-description": "Explore Hue, antiga capital do Vietnã durante a dinastia Nguyen, e Patrimônio Mundial da Humanidade pela UNESCO. Conheça a Citadela e a Cidade Proibida, onde os imperadores residiam, e o grandioso Palácio Thai Hoa. Navegue pelo Rio dos Perfumes até os túmulos dos Imperadores Nguyen e a famosa Pagoda Thien Mu. Almoço e jantar em restaurante local. Pernoite.", 
+            "day5-title": "Dia 05 – Hue – Ho Chi Minh",
+            "day5-description": "Após o café da manhã, voo para Ho Chi Minh (antiga Saigon), a maior cidade do Vietnã. Mergulhe na rica história colonial francesa, explorando avenidas e mercados vibrantes. Visite Cholon, a 'cidade chinesa', e as famosas pagodas de Giac Lam e Thien Hau. Passeie pela “cidade branca” e seus edifícios coloniais. Almoço e jantar no hotel. Pernoite.",
+            "day6-title": "Dia 06 – Ho Chi Minh – Siem Reap (Camboja)",
+            "day6-description": "Traslado para o aeroporto e voo para Siem Reap. À tarde, conheça a antiga cidade fortificada de Angkor Thom e seus magníficos templos, incluindo o Bayon, Baphuon e o Pimeanakas. Termine a visita com os Terraços dos Elefantes e do Rei Leproso. Almoço e jantar. Pernoite.",
+            "day7-title": "Dia 07 – Siem Reap",
+            "day7-description": "Visite o templo de Bantey Srey, com suas impressionantes esculturas, e siga para o grande complexo de Angkor. Explore o templo de Prae Khan, o Neak Pean e o Ta Phrom. Almoço e jantar em restaurante local. Pernoite.",
+            "day8-title": "Dia 08 – Siem Reap – Luang Prabang (Laos)",
+            "day8-description": "Visite o famoso templo de Angkor Wat, uma das maravilhas do mundo. Após o almoço, pegue o voo para Luang Prabang. Chegada, traslado ao hotel e descanso. Aproveite a noite para explorar o mercado noturno. Pernoite.",
+            "day9-title": "Dia 09 – Luang Prabang – Grutas de Pak Ou",
+            "day9-description": "Explore Luang Prabang, patrimônio mundial da UNESCO, e visite o Museu Nacional e os mosteiros Wat Sene e Wat Xieng Thong. Navegue pelo Rio Mekong até as Grutas de Pak Ou, um local sagrado repleto de milhares de estátuas de Buda. Almoço e jantar. Pernoite.",
+            "day10-title": "Dia 10 – Luang Prabang – Experiência no Vilarejo Hmong – Cachoeiras de Kuang Si",
+            "day10-description": "Participe do ritual matinal dos monges e explore o mercado local. Conheça o povo Hmong e sua agricultura em um trekking pelas plantações de arroz. Visite as belas Cachoeiras de Kuang Si, com sua água cristalina e paisagens deslumbrantes. Termine o dia com uma visita ao topo da colina Phou Si para admirar o pôr do sol. Almoço pic-nic próximo às cachoeiras e jantar no hotel. Pernoite.",
+            "day11-title": "Dia 11 – Luang Prabang",
+            "day11-description": "Dia livre para atividades pessoais e últimas compras. Traslado ao aeroporto para o voo de retorno.",
+            "contact-us-title": "Fale Conosco",
+            "send-button": "Enviar",
+            "follow-us-title": "Siga-Nos",
+            "all-rights-reserved": "Todos os direitos reservados"
+                }
+            };
+
+            for (var id in translations[language]) {
+                var element = document.getElementById(id);
+                if (element) {
+                    element.innerHTML = translations[language][id];
+                }
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var language = getLanguage();
+            translatePage(language);
+        });
+    </script>
+</body>
+</html>

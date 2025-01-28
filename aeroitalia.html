@@ -1,0 +1,291 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Erapolis Travel</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        #main {
+            font-family: 'Arial', serif;
+        }
+
+        /* Estilo para o cabeçalho */
+        #header .inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; 
+            position: relative;
+        }
+
+        /* Estilo para o menu */
+        #header nav {
+            margin-right: 10px; /* Espaço entre o menu e os botões de idioma */
+        }
+
+        /* Estilo para os botões de idioma */
+        .language-buttons {
+            display: flex;
+            align-items: center; /* Alinha verticalmente com o menu */
+            margin-left: auto;
+        }
+
+        .language-buttons img {
+            width: 32px;
+            height: 32px;
+            margin: 0 5px; /* Espaço entre os ícones */
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .language-buttons img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+    <link rel="stylesheet" href="assets/css/erapolis-travel-logo.css">
+    <link rel="icon" href="assets/css/erapolis-travel-logo.css" type="image/x-icon">
+    <!-- arquivo de estilo para quando o JavaScript estiver desativado -->
+    <noscript><link rel="stylesheet" href="assets/css/erapolis-travel-logo.css"></noscript>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <span class="symbol"><img src="images/erapolis-travel-logo.jpg" alt="" /></span><span class="title">Erapolis Travel</span>
+                </a>
+
+                <!-- Nav -->
+                <nav>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Language Buttons -->
+                <div class="language-buttons">
+                    <img src="images/flags/us.png" onclick="setLanguage('en')" />
+                    <img src="images/flags/br.png" onclick="setLanguage('pt')" />
+                    <img src="images/flags/it.png" onclick="setLanguage('it')" />
+                    <img src="images/flags/fr.png" onclick="setLanguage('fr')" />
+                    <img src="images/flags/es.png" onclick="setLanguage('es')" />
+                </div>
+
+            </div>
+        </header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <h2 id="menu-title">Menu</h2>
+            <ul>
+                <li><a id="home-link" href="index.html">Home</a></li>
+                <li><a id="company-link" href="nossaempresa.html">Nossa Empresa</a></li>
+                <li><a id="info-link" href="informações.html">Informações</a></li>
+                <li><a id="contact-link" href="contatos.html">Contatos</a></li>
+                <li><a id="bookings-link" href="elements.html">Reservas Internacionais de Hoteis Online</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+         <div class="inner">
+            <section>
+                <h2 id="aeroitalia">Aeroportos Italianos</h2>
+                <div class="row">
+                    <div class="col-6 col-12-medium">
+                        <ul>
+                            <li id="local1"><a href="https://maps.app.goo.gl/GbHxv82nz71sC2Cw5" target="_blank">Guglielmo Marconi</a></li>
+                            <li id="local2"><a href="https://maps.app.goo.gl/9Sabzn8Ybr4qcbut6" target="_blank">Cagliari Elmas</a></li>
+                            <li id="local3"><a href="https://maps.app.goo.gl/V7tVJaadkBwKsLwA6" target="_blank">Catania-Fontanarossa </a></li>
+                            <li id="local4"><a href="https://maps.app.goo.gl/mz4iu7FmgLFEKcXB8" target="_blank">Florença-Peretola </a></li>
+                            <li id="local5"><a href="https://maps.app.goo.gl/ustCFvotA1jPY2CS8" target="_blank">Genova</a></li>
+                            <li id="local6"><a href="https://maps.app.goo.gl/qB5B5WJS7XFSpwPZ9" target="_blank">Lamezia Terme</a></li>
+                            <li id="local7"><a href="https://maps.app.goo.gl/ZyuAd5CDLT2dbz4cA" target="_blank">Milano</a></li>
+                            <li id="local8"><a href="https://maps.app.goo.gl/LkZpMcztvcvu2jdWA" target="_blank">Napoli</a></li>
+                            <li id="local9"><a href="https://maps.app.goo.gl/e1roP2gDbkNqFfWk7" target="_blank">Palermo Falcone Borsellino</a></li>
+                            <li id="local10"><a href="https://maps.app.goo.gl/wcUUcPMPVtf96WQh7" target="_blank">Perugia San Francesco d'Assisi </a></li>
+                            <li id="local11"><a href="https://maps.app.goo.gl/Di6UcXM2vNGJAFxx7" target="_blank">Pescara Abruzos </a></li>
+                            <li id="local12"><a href="https://maps.app.goo.gl/bWzQxosSGmzgYdp96" target="_blank">Pisa Galileo Galilei </a></li>
+                            <li id="local13"><a href="https://maps.app.goo.gl/sWrYR158gbJ3jfJ58" target="_blank">Reggio Calabria</a></li>
+                            <li id="local14"><a href="https://maps.app.goo.gl/oGyeT7aJDnyZaeed8" target="_blank">Caselle Torinese Torino</a></li>
+                            <li id="local15"><a href="https://maps.app.goo.gl/6miVx7sGzWX7fgFx8" target="_blank">Gorizia Trieste</a></li>
+                            <li id="local16"><a href="https://maps.app.goo.gl/5Q5kHmYdCBeZHcdcA" target="_blank">Venezia Marco Polo</a></li>
+                            <li id="local17"><a href="https://maps.app.goo.gl/dqzmSRfEpT2rYKES7" target="_blank">Verona Villafranca</a></li>
+
+                        </ul>
+            </div>
+        </div></section></div></div>
+       
+       
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <section>
+                    <h2 id="contact-us-title">Fale Conosco</h2>
+                    <form method="post" action="#">
+                        <div class="fields">
+                            <div class="field half">
+                                <input type="text" name="name" id="name" placeholder="Name" />
+                            </div>
+                            <div class="field half">
+                                <input type="email" name="email" id="email" placeholder="Email" />
+                            </div>
+                            <div class="field">
+                                <textarea name="message" id="message" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <ul class="actions">
+                            <li><input id="send-button" type="submit" value="send" class="primary" /></li>
+                        </ul>
+                    </form>
+                </section>
+                <section>
+                    <h2 id="follow-us-title">Siga-Nos</h2>
+                    <ul class="icons">
+                        <li><a href="https://www.facebook.com/erapolistravel/" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+                    </ul>
+                </section>
+                <ul class="copyright">
+                    <li>&copy; Erapolis Travel 2025. <span id="all-rights-reserved">Todos os direitos reservados</span></li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Translate Script -->
+    <script>
+        function setLanguage(language) {
+            document.cookie = "language=" + language + "; path=/";
+            translatePage(language);
+        }
+
+        function getLanguage() {
+            let name = "language=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for(let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "pt"; // Default language
+        }
+
+        function translatePage(language) {
+            var translations = {
+        en: {
+            "menu-title": "Menu",
+            "home-link": "Home",
+            "company-link": "Our Company",
+            "info-link": "Information",
+            "contact-link": "Contacts",
+            "bookings-link": "International Hotel Bookings Online",
+            "aeroitalia": "Italian Airports",
+            "contact-us-title": "Contact us",
+            "send-button": "Send",
+            "follow-us-title": "Follow Us",
+            "all-rights-reserved": "All rights reserved",
+            "name": "Name",
+            "message": "Message",
+        },
+        it: {
+            "menu-title": "Menù",
+            "home-link": "Home",
+            "company-link": "La Nostra Azienda",
+            "info-link": "Informazioni",
+            "contact-link": "Contatti",
+            "bookings-link": "Prenotazioni Internazionali di Hotel Online",
+            "aeroitalia": "Aeroporti Italiani",
+            "contact-us-title": "Contattaci",
+            "send-button": "Invia",
+            "follow-us-title": "Seguici",
+            "all-rights-reserved": "Tutti i diritti riservati",
+            "name": "Nome",
+            "message": "Messaggio",
+        },
+        fr: {
+            "menu-title": "Menu",
+            "home-link": "Accueil",
+            "company-link": "Notre Entreprise",
+            "info-link": "Informations",
+            "contact-link": "Contacts",
+            "bookings-link": "Réservations Internationales d'Hôtels en Ligne",
+            "aeroitalia": "Aéroports Italiens",
+            "contact-us-title": "Contactez-nous",
+            "send-button": "Envoyer",
+            "follow-us-title": "Suivez-nous",
+            "all-rights-reserved": "Tous droits réservés",
+            "name": "Nom",
+            "message": "Message",
+        },
+        es: {
+            "menu-title": "Menú",
+            "home-link": "Inicio",
+            "company-link": "Nuestra Empresa",
+            "info-link": "Información",
+            "contact-link": "Contactos",
+            "bookings-link": "Reservas Internacionales de Hoteles en Línea",
+            "aeroitalia": "Aeropuertos Italianos",
+            "contact-us-title": "Contáctanos",
+            "send-button": "Enviar",
+            "follow-us-title": "Síguenos",
+            "all-rights-reserved": "Todos los derechos reservados",
+            "name": "Nombre",
+            "message": "Mensaje",
+        },
+                
+        pt: {
+            "menu-title": "Menu",
+            "home-link": "Início",
+            "company-link": "Nossa Empresa",
+            "info-link": "Informações",
+            "contact-link": "Contatos",
+            "bookings-link": "Reservas Internacionais de Hotéis Online",
+            "aeroitalia": "Aeroportos Italianos",
+            "contact-us-title": "Entre em Contato",
+            "send-button": "Enviar",
+            "follow-us-title": "Siga-nos",
+            "all-rights-reserved": "Todos os direitos reservados",
+            "name": "Nome",
+            "message": "Mensagem",
+                }
+            };
+
+            for (var id in translations[language]) {
+                var element = document.getElementById(id);
+                if (element) {
+                    element.innerHTML = translations[language][id];
+                }
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var language = getLanguage();
+            translatePage(language);
+        });
+    </script>
+</body>
+</html>

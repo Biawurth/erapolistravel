@@ -1,0 +1,378 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Erapolis Travel</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        #main {
+            font-family: 'Arial', serif;
+        }
+
+        /* Estilo para o cabeçalho */
+        #header .inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; 
+            position: relative;
+        }
+
+        /* Estilo para o menu */
+        #header nav {
+            margin-right: 10px; /* Espaço entre o menu e os botões de idioma */
+        }
+
+        /* Estilo para os botões de idioma */
+        .language-buttons {
+            display: flex;
+            align-items: center; /* Alinha verticalmente com o menu */
+            margin-left: auto;
+        }
+
+        .language-buttons img {
+            width: 32px;
+            height: 32px;
+            margin: 0 5px; /* Espaço entre os ícones */
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .language-buttons img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+    <link rel="stylesheet" href="assets/css/erapolis-travel-logo.css">
+    <link rel="icon" href="assets/css/erapolis-travel-logo.css" type="image/x-icon">
+    <!-- arquivo de estilo para quando o JavaScript estiver desativado -->
+    <noscript><link rel="stylesheet" href="assets/css/erapolis-travel-logo.css"></noscript>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <span class="symbol"><img src="images/erapolis-travel-logo.jpg" alt="" /></span><span class="title">Erapolis Travel</span>
+                </a>
+
+                <!-- Nav -->
+                <nav>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Language Buttons -->
+                <div class="language-buttons">
+                    <img src="images/flags/us.png" onclick="setLanguage('en')" />
+                    <img src="images/flags/br.png" onclick="setLanguage('pt')" />
+                    <img src="images/flags/it.png" onclick="setLanguage('it')" />
+                    <img src="images/flags/fr.png" onclick="setLanguage('fr')" />
+                    <img src="images/flags/es.png" onclick="setLanguage('es')" />
+                </div>
+
+            </div>
+        </header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <h2 id="menu-title">Menu</h2>
+            <ul>
+                <li><a id="home-link" href="index.html">Home</a></li>
+                <li><a id="company-link" href="nossaempresa.html">Nossa Empresa</a></li>
+                <li><a id="info-link" href="informações.html">Informações</a></li>
+                <li><a id="contact-link" href="contatos.html">Contatos</a></li>
+                <li><a id="bookings-link" href="elements.html">Reservas Internacionais de Hoteis Online</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+         <div class="inner">
+            <h1 id="main-title">Terrasanta</h1>
+            <p id="main-description" class="texto-menor">"Este roteiro leva você a locais bíblicos icônicos, como Jerusalém, o Mar da Galileia, Cafarnaum e o Monte das Oliveiras. Explore a Via Dolorosa, o Jardim do Getsêmani, o Monte Sião e o Sepulcro Vazio, revivendo momentos cruciais da vida de Cristo. Além disso, visite o Rio Jordão e Jericó, conhecendo a rica história e espiritualidade que tornam a Terra Santa um destino inesquecível."</p>
+            <div class="images">
+                <img src="images/oriente2.jpeg" alt="" class="image" />
+                <img src="images/oriente3.jpg" alt="" class="image" />
+                </div>
+                <div class="specific-section">
+                    <h1 id="day1-title">Dia 01 – TEL AVIV</h1>
+                    <p id="day1-description" class="texto-menor">Chegada ao aeroporto Ben-Gurion. Assistência e recepção. Bem-vindo à Terra da Bíblia. Acomodação em Tel Aviv. Jantar e pernoite.</p>
+
+                    <h1 id="day2-title">Dia 02 – TEL AVIV – JAFFA – CESÁREA MARITIMA – MONTE CARMELO – TIBERIADES</h1>
+                    <p id="day2-description" class="texto-menor">Café da manhã no hotel. Partida para o norte de Israel, passando por Cesárea Marítima, Monte Carmelo e Tel Meguido. Continuação até o coração da Galileia. Jantar e pernoite.</p>
+
+                    <h1 id="day3-title">Dia 03 – MAR DA GALILEIA – CAFARNAUM – TABGHA</h1>
+                    <p id="day3-description" class="texto-menor">Café da manhã. Travessia do Mar da Galileia em barco, seguido por visita a Cafarnaum e Tabgha, local da Multiplicação dos Pães e Peixes. Jantar e pernoite.</p>
+
+                    <h1 id="day4-title">Dia 04 – YARDENIT – VALE DO JORDÃO – JERUSALÉM</h1>
+                    <p id="day4-description" class="texto-menor">Café da manhã. Visita a Yardenit no Rio Jordão, seguida por passagem pelo Vale do Jordão e chegada triunfal em Jerusalém. Jantar e pernoite.</p>
+
+                    <h1 id="day5-title">Dia 05 – JERUSALÉM</h1>
+                    <p id="day5-description" class="texto-menor">Café da manhã. Visita ao Monte das Oliveiras, Horto do Getsêmani, Cenáculo e Túmulo do Rei David. Jantar e pernoite.</p>
+
+                    <h1 id="day6-title">Dia 06 – JERUSALÉM</h1>
+                    <p id="day6-description" class="texto-menor">Café da manhã. Passeio pela cidade velha de Jerusalém, incluindo o Muro das Lamentações, a Via Dolorosa e o Jardim do Gólgota. Visita à maquete de Jerusalém, Memorial do Holocausto e Museu do Livro. Jantar e pernoite.</p>
+
+                    <h1 id="day7-title">Dia 07 – JERUSALÉM</h1>
+                    <p id="day7-description" class="texto-menor">Café da manhã. Dia livre para atividades pessoais ou passeio opcional ao Mar Morto. Jantar e pernoite.</p>
+
+                    <h1 id="day8-title">Dia 08 – JERUSALÉM – TEL AVIV – BRASIL</h1>
+                    <p id="day8-description" class="texto-menor">Café da manhã. Traslado ao aeroporto Ben Gurion em Tel Aviv para embarque de volta ao Brasil.</p>
+            </div>
+                
+        </div>
+</div>
+
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <section>
+                    <h2 id="contact-us-title">Fale Conosco</h2>
+                    <form method="post" action="#">
+                        <div class="fields">
+                            <div class="field half">
+                                <input type="text" name="name" id="name" placeholder="Nome" />
+                            </div>
+                            <div class="field half">
+                                <input type="email" name="email" id="email" placeholder="Email" />
+                            </div>
+                            <div class="field">
+                                <textarea name="message" id="message" placeholder="Mensagem"></textarea>
+                            </div>
+                        </div>
+                        <ul class="actions">
+                            <li><input id="send-button" type="submit" value="enviar" class="primary" /></li>
+                        </ul>
+                    </form>
+                </section>
+                <section>
+                    <h2 id="follow-us-title">Siga-Nos</h2>
+                    <ul class="icons">
+                        <li><a href="https://www.facebook.com/erapolistravel/" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+                    </ul>
+                </section>
+                <ul class="copyright">
+                    <li>&copy; Erapolis Travel 2025. <span id="all-rights-reserved">Todos os direitos reservados</span></li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Translate Script -->
+    <script>
+        function setLanguage(language) {
+            document.cookie = "language=" + language + "; path=/";
+            translatePage(language);
+        }
+
+        function getLanguage() {
+            let name = "language=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for(let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "pt"; // Default language
+        }
+
+        function translatePage(language) {
+            var translations = {
+            en: {
+            "menu-title": "Menu",
+            "home-link": "Home",
+            "company-link": "Our Company",
+            "info-link": "Information",
+            "contact-link": "Contacts",
+            "bookings-link": "International Hotel Bookings Online",
+            "main-title": "Holy Land: A Journey Through Biblical History",
+            "main-description": "This itinerary takes you to iconic biblical locations such as Jerusalem, the Sea of Galilee, Capernaum, and the Mount of Olives. Explore the Via Dolorosa, the Garden of Gethsemane, Mount Zion, and the Empty Tomb, reliving crucial moments in the life of Christ. Additionally, visit the Jordan River and Jericho, learning about the rich history and spirituality that make the Holy Land an unforgettable destination.",
+            "day1-title": "Day 1: Tel Aviv",
+            "day1-description": "Arrival at Ben Gurion Airport. Welcome reception and assistance. Begin our journey through the Land of the Bible. Accommodation in Tel Aviv. Dinner and overnight.",
+            "day2-title": "Day 2: Tel Aviv – Jaffa – Caesarea Maritima – Mount Carmel – Tiberias",
+            "day2-description": "After breakfast, head north to Israel, passing by the Via Maris to visit Caesarea Maritima, by the Mediterranean Sea. Next, visit Mount Carmel, the site of events involving the Prophet Elijah, with views of Haifa. Continue to Tel Megiddo, an archaeological hill in the Valley of Armageddon. Finally, arrive in Galilee. Dinner and overnight.",
+            "day3-title": "Day 3: Sea of Galilee – Capernaum – Tabgha",
+            "day3-description": "Breakfast and boat crossing on the Sea of Galilee, as in the time of Jesus. Visit the ruins of Capernaum, where Peter's mother-in-law's house stood. Continue to Tabgha, the site of the Multiplication of the Loaves and Fishes, and the Mount of the Sermon on the Mount. Dinner and overnight.",
+            "day4-title": "Day 4: Yardenit – Jordan Valley – Jerusalem",
+            "day4-description": "Breakfast and departure for Jerusalem, with a visit to Yardenit, on the banks of the Jordan River. Cross the Jordan Valley and the deserts of Samaria and Judea. Stop in Jericho, where we remember the conquest of Joshua and the passage of Jesus. Triumphal arrival in Jerusalem. Dinner and overnight.",
+            "day5-title": "Day 5: Jerusalem",
+            "day5-description": "Breakfast and visit to the Mount of Olives, recalling the ascension of Jesus and His weeping over Jerusalem. Prayer at the Garden of Gethsemane, followed by Mount Zion, the Cenacle, and the Tomb of King David. Return to the hotel and dinner.",
+            "day6-title": "Day 6: Jerusalem",
+            "day6-description": "After breakfast, enter Jerusalem through the ancient walls and visit the Western Wall, Mount Moriah, Pilate's Praetorium, and the Via Dolorosa, following the steps of Jesus to the Garden of Golgotha. Next, visit the new part of Jerusalem, including a model of the city, the Holocaust Memorial, and the Shrine of the Book. Return to the hotel and dinner.",
+            "day7-title": "Day 7: Jerusalem",
+            "day7-description": "Breakfast and free day for personal activities. Optional visit to the Dead Sea. Dinner and overnight.",
+            "day8-title": "Day 8: Jerusalem – Tel Aviv – Brazil",
+            "day8-description": "Breakfast and transfer to Ben Gurion Airport in Tel Aviv for the return flight to Brazil.",
+            "contact-us-title": "Contact Us",
+            "send-button": "Send",
+            "follow-us-title": "Follow Us",
+            "all-rights-reserved": "All Rights Reserved.",
+            "name": "Name",
+            "email": "Email",
+            },
+
+        it: {
+            "menu-title": "Menu",
+            "home-link": "Home",
+            "company-link": "La Nostra Azienda",
+            "info-link": "Informazioni",
+            "contact-link": "Contatti",
+            "bookings-link": "Prenotazioni Internazionali di Hotel Online",
+            "main-title": "Terra Santa: Un Viaggio nella Storia Biblica",
+            "main-description": "Questo itinerario ti porta in luoghi biblici iconici come Gerusalemme, il Lago di Galilea, Cafarnao e il Monte degli Ulivi. Esplora la Via Dolorosa, il Giardino di Getsemani, il Monte Sion e la Tomba Vuota, rivivendo momenti cruciali nella vita di Cristo. Inoltre, visita il Fiume Giordano e Gerico, imparando la ricca storia e spiritualità che rendono la Terra Santa una destinazione indimenticabile.",
+            "day1-title": "Giorno 1: Tel Aviv",
+            "day1-description": "Arrivo all'aeroporto Ben Gurion. Accoglienza e assistenza. Inizio del nostro viaggio nella Terra della Bibbia. Sistemazione a Tel Aviv. Cena e pernottamento.",
+            "day2-title": "Giorno 2: Tel Aviv – Jaffa – Cesarea Marittima – Monte Carmelo – Tiberiade",
+            "day2-description": "Dopo la colazione, partenza per il nord di Israele, passando per la Via Maris per visitare Cesarea Marittima, sul Mar Mediterraneo. Successivamente, visita al Monte Carmelo, luogo degli eventi del Profeta Elia, con vista su Haifa. Proseguiamo verso Tel Megiddo, una collina archeologica nella Valle di Armageddon. Infine, arrivo in Galilea. Cena e pernottamento.",
+            "day3-title": "Giorno 3: Lago di Galilea – Cafarnao – Tabgha",
+            "day3-description": "Colazione e attraversamento in barca del Lago di Galilea, come al tempo di Gesù. Visita alle rovine di Cafarnao, dove si trovava la casa della suocera di Pietro. Continuazione verso Tabgha, il luogo della Moltiplicazione dei Pani e dei Pesci, e il Monte del Discorso della Montagna. Cena e pernottamento.",
+            "day4-title": "Giorno 4: Yardenit – Valle del Giordano – Gerusalemme",
+            "day4-description": "Colazione e partenza per Gerusalemme, con visita a Yardenit, sulle rive del fiume Giordano. Attraversiamo la Valle del Giordano e il deserto di Samaria e Giudea. Sosta panoramica a Gerico, dove ricordiamo la conquista di Giosuè e il passaggio di Gesù. Arrivo trionfale a Gerusalemme. Cena e pernottamento.",
+            "day5-title": "Giorno 5: Gerusalemme",
+            "day5-description": "Colazione e visita al Monte degli Ulivi, che ricorda l'ascensione di Gesù e il suo pianto su Gerusalemme. Preghiera nel Giardino di Getsemani, seguita dal Monte Sion, dal Cenacolo e dalla Tomba del Re Davide. Ritorno in hotel e cena.",
+            "day6-title": "Giorno 6: Gerusalemme",
+            "day6-description": "Dopo la colazione, ingresso a Gerusalemme attraverso le antiche mura e visita al Muro delle Lamentazioni, al Monte Moriah, al Pretorio di Pilato e alla Via Dolorosa, seguendo i passi di Gesù fino al Giardino del Golgota. Successivamente, visita alla parte nuova di Gerusalemme, con la maquette della città, il Memoriale dell'Olocausto e il Museo del Libro. Ritorno in hotel e cena.",
+            "day7-title": "Giorno 7: Gerusalemme",
+            "day7-description": "Colazione e giorno libero per attività personali. Visita opzionale al Mar Morto. Cena e pernottamento.",
+            "day8-title": "Giorno 8: Gerusalemme – Tel Aviv – Brasile",
+            "day8-description": "Colazione e trasferimento all'aeroporto Ben Gurion di Tel Aviv per il volo di ritorno in Brasile.",
+            "contact-us-title": "Contattaci",
+            "send-button": "Invia",
+            "follow-us-title": "Seguici",
+            "all-rights-reserved": "Tutti i diritti riservati",
+        },
+        fr: {
+            "menu-title": "Menu",
+            "home-link": "Accueil",
+            "company-link": "Notre Entreprise",
+            "info-link": "Informations",
+            "contact-link": "Contacts",
+            "bookings-link": "Réservations Internationales d'Hôtels en Ligne",
+            "main-title": "Terre Sainte : Un Voyage à travers l'Histoire Biblique",
+            "main-description": "Ce circuit vous emmène dans des lieux bibliques emblématiques tels que Jérusalem, le lac de Galilée, Capharnaüm et le Mont des Oliviers. Explorez la Via Dolorosa, le Jardin de Gethsémané, le Mont Sion et le Tombeau Vide, en revivant des moments cruciaux de la vie du Christ. De plus, visitez le Jourdain et Jéricho, découvrant l'histoire riche et la spiritualité qui font de la Terre Sainte une destination inoubliable.",
+            "day1-title": "Jour 1 : Tel Aviv",
+            "day1-description": "Arrivée à l'aéroport Ben Gurion. Accueil et assistance. Début de notre voyage en Terre Biblique. Installation à Tel Aviv. Dîner et nuit.",
+            "day2-title": "Jour 2 : Tel Aviv – Jaffa – Césarée Maritime – Mont Carmel – Tibériade",
+            "day2-description": "Après le petit-déjeuner, départ pour le nord d'Israël, en passant par la Via Maris pour visiter Césarée Maritime, sur la mer Méditerranée. Puis, visite du Mont Carmel, lieu des événements du prophète Elie avec une vue sur Haïfa. Continuation vers Tel Megiddo, une colline archéologique dans la vallée d'Armageddon. Enfin, arrivée en Galilée. Dîner et nuit.",
+            "day3-title": "Jour 3 : Lac de Galilée – Capharnaüm – Tabgha",
+            "day3-description": "Petit-déjeuner et traversée en bateau sur le lac de Galilée, comme à l'époque de Jésus. Visite des ruines de Capharnaüm, où se trouvait la maison de la belle-mère de Pierre. Continuation vers Tabgha, le lieu de la multiplication des pains et des poissons, et le Mont des Béatitudes. Dîner et nuit.",
+            "day4-title": "Jour 4 : Yardenit – Vallée du Jourdain – Jérusalem",
+            "day4-description": "Petit-déjeuner et départ pour Jérusalem, avec visite de Yardenit, sur les rives du Jourdain. Traversée de la vallée du Jourdain et du désert de Samarie et de Judée. Arrêt panoramique à Jéricho, où nous nous souvenons de la conquête de Josué et du passage de Jésus. Arrivée triomphale à Jérusalem. Dîner et nuit.",
+            "day5-title": "Jour 5 : Jérusalem",
+            "day5-description": "Petit-déjeuner et visite du Mont des Oliviers, en souvenir de l'ascension de Jésus et de ses larmes sur Jérusalem. Prière au Jardin de Gethsémané, suivie du Mont Sion, du Cénacle et du Tombeau du Roi David. Retour à l'hôtel et dîner.",
+            "day6-title": "Jour 6 : Jérusalem",
+            "day6-description": "Après le petit-déjeuner, entrée à Jérusalem par les anciennes murailles et visite du Mur des Lamentations, du Mont Moriah, du Prétoire de Pilate et de la Via Dolorosa, suivant les pas de Jésus jusqu'au Jardin du Golgotha. Puis, visite de la nouvelle ville de Jérusalem, y compris le modèle de la ville, le Mémorial de l'Holocauste et le Musée du Livre. Retour à l'hôtel et dîner.",
+            "day7-title": "Jour 7 : Jérusalem",
+            "day7-description": "Petit-déjeuner et journée libre pour des activités personnelles. Visite optionnelle de la Mer Morte. Dîner et nuit.",
+            "day8-title": "Jour 8 : Jérusalem – Tel Aviv – Brésil",
+            "day8-description": "Petit-déjeuner et transfert à l'aéroport Ben Gurion de Tel Aviv pour le vol de retour au Brésil.",
+            "contact-us-title": "Contactez-Nous",
+            "send-button": "Envoyer",
+            "follow-us-title": "Suivez-Nous",
+            "all-rights-reserved": "Tous droits réservés",
+
+        },
+        es: {
+            "menu-title": "Menú",
+            "home-link": "Inicio",
+            "company-link": "Nuestra Empresa",
+            "info-link": "Información",
+            "contact-link": "Contactos",
+            "bookings-link": "Reservas Internacionales de Hoteles Online",
+            "main-title": "Tierra Santa: Un Viaje a través de la Historia Bíblica",
+            "main-description": "Este recorrido lo lleva a lugares bíblicos emblemáticos como Jerusalén, el Mar de Galilea, Cafarnaúm y el Monte de los Olivos. Explore la Vía Dolorosa, el Jardín de Getsemaní, el Monte Sion y el Santo Sepulcro, reviviendo momentos cruciales de la vida de Cristo. Además, visite el Río Jordán y Jericó, conociendo la rica historia y espiritualidad que hacen de Tierra Santa un destino inolvidable.",
+            "day1-title": "Día 1: Tel Aviv",
+            "day1-description": "Llegada al aeropuerto Ben Gurion. Recepción y asistencia. Inicio de nuestro viaje por la Tierra de la Biblia. Alojamiento en Tel Aviv. Cena y pernocte.",
+            "day2-title": "Día 2: Tel Aviv – Jaffa – Cesarea Marítima – Monte Carmelo – Tiberíades",
+            "day2-description": "Después del desayuno, salida hacia el norte de Israel, pasando por la Via Maris para visitar Cesarea Marítima, a orillas del Mediterráneo. Luego, visita al Monte Carmelo, escenario de los eventos del Profeta Elías, con vistas de Haifa. Continuamos hasta Tel Megido, una colina arqueológica en el Valle de Armagedón. Finalmente, llegada a Galilea. Cena y pernocte.",
+            "day3-title": "Día 3: Mar de Galilea – Cafarnaúm – Tabgha",
+            "day3-description": "Desayuno y paseo en barco por el Mar de Galilea, como en tiempos de Jesús. Visita a las ruinas de Cafarnaúm, donde se encontraba la casa de la suegra de Pedro. Continuamos hacia Tabgha, el lugar de la Multiplicación de los Panes y los Peces, y el Monte de las Bienaventuranzas. Cena y pernocte.",
+            "day4-title": "Día 4: Yardenit – Valle del Jordán – Jerusalén",
+            "day4-description": "Desayuno y salida hacia Jerusalén, con visita a Yardenit, a orillas del Río Jordán. Cruzamos el Valle del Jordán y el desierto de Samaria y Judea. Parada panorámica en Jericó, donde recordamos la conquista de Josué y el paso de Jesús. Llegada triunfal a Jerusalén. Cena y pernocte.",
+            "day5-title": "Día 5: Jerusalén",
+            "day5-description": "Desayuno y visita al Monte de los Olivos, recordando la ascensión de Jesús y sus lágrimas sobre Jerusalén. Oración en el Jardín de Getsemaní, seguida del Monte Sion, el Cenáculo y la Tumba del Rey David. Regreso al hotel y cena.",
+            "day6-title": "Día 6: Jerusalén",
+            "day6-description": "Después del desayuno, entrada a Jerusalén a través de las antiguas murallas y visita al Muro de los Lamentos, al Monte Moriah, al Pretorio de Pilato y a la Vía Dolorosa, siguiendo los pasos de Jesús hasta el Jardín del Gólgota. Luego, visita a la parte nueva de Jerusalén, incluyendo el modelo de la ciudad, el Memorial del Holocausto y el Museo del Libro. Regreso al hotel y cena.",
+            "day7-title": "Día 7: Jerusalén",
+            "day7-description": "Desayuno y día libre para actividades personales. Visita opcional al Mar Muerto. Cena y pernocte.",
+            "day8-title": "Día 8: Jerusalén – Tel Aviv – Brasil",
+            "day8-description": "Desayuno y traslado al aeropuerto Ben Gurion en Tel Aviv para el vuelo de regreso a Brasil.",
+            "contact-us-title": "Contáctanos",
+            "send-button": "Enviar",
+            "follow-us-title": "Síguenos",
+            "all-rights-reserved": "Todos los derechos reservados"
+        },
+                
+        pt: {
+            "menu-title": "Menu",
+            "home-link": "Home",
+            "company-link": "Nossa Empresa",
+            "info-link": "Informações",
+            "contact-link": "Contatos",
+            "bookings-link": "Reservas Internacionais de Hoteis Online",
+            "main-title": "Terra Santa: Uma Viagem pela História Bíblica",
+            "main-description": "Este roteiro leva você a locais bíblicos icônicos, como Jerusalém, o Mar da Galileia, Cafarnaum e o Monte das Oliveiras. Explore a Via Dolorosa, o Jardim do Getsêmani, o Monte Sião e o Sepulcro Vazio, revivendo momentos cruciais da vida de Cristo. Além disso, visite o Rio Jordão e Jericó, conhecendo a rica história e espiritualidade que tornam a Terra Santa um destino inesquecível.",
+            "day1-title": "1º Dia: Tel Aviv",
+            "day1-description": "Chegada ao aeroporto Ben Gurion. Recepção e assistência. Início da nossa jornada na Terra da Bíblia. Acomodação em Tel Aviv. Jantar e pernoite.",
+            "day2-title": "2º Dia: Tel Aviv – Jaffa – Cesárea Marítima – Monte Carmelo – Tiberíades",
+            "day2-description": "Após o café da manhã, saída para o norte de Israel, passando pela Via Maris para conhecer Cesárea Marítima, à beira do Mediterrâneo. Em seguida, visita ao Monte Carmelo, palco de acontecimentos do Profeta Elias e com vistas de Haifa. Continuamos até Tel Meguido, uma colina arqueológica no Vale do Armagedom. Por fim, chegada à Galileia. Jantar e pernoite.",
+            "day3-title": "3º Dia: Mar da Galileia – Cafarnaum – Tabgha",
+            "day3-description": "Café da manhã e travessia de barco pelo Mar da Galileia, como na época de Jesus. Visita às ruínas de Cafarnaum, onde se encontrava a casa da sogra de Pedro. Continuamos para Tabgha, o local da Multiplicação dos Pães e dos Peixes, e o Monte do Sermão da Montanha. Jantar e pernoite.",
+            "day4-title": "4º Dia: Yardenit – Vale do Jordão – Jerusalém",
+            "day4-description": "Café da manhã e partida para Jerusalém, com visita a Yardenit, nas margens do Rio Jordão. Atravessamos o Vale do Jordão e o deserto da Samaria e Judéia. Parada panorâmica em Jericó, onde lembramos a conquista de Josué e a passagem de Jesus. Chegada triunfal a Jerusalém. Jantar e pernoite.",
+            "day5-title": "5º Dia: Jerusalém",
+            "day5-description": "Café da manhã e visita ao Monte das Oliveiras, lembrando a ascensão de Jesus e o choro de Jesus sobre Jerusalém. Oração no Horto do Getsêmani, seguido pelo Monte Sião, Cenáculo e Túmulo do Rei David. Retorno ao hotel e jantar.",
+            "day6-title": "6º Dia: Jerusalém",
+            "day6-description": "Após o café da manhã, entrada em Jerusalém através das antigas muralhas e visita ao Muro das Lamentações, ao Monte Moriah, ao Pretorium de Pilatos e à Via Dolorosa, seguindo os passos de Jesus até o Jardim do Gólgota. Em seguida, visita à parte nova de Jerusalém, incluindo a maquete da cidade, o Memorial do Holocausto e o Museu do Livro. Retorno ao hotel e jantar.",
+            "day7-title": "7º Dia: Jerusalém",
+            "day7-description": "Café da manhã e dia livre para atividades pessoais. Opcional visita ao Mar Morto. Jantar e pernoite.",
+            "day8-title": "8º Dia: Jerusalém – Tel Aviv – Brasil",
+            "day8-description": "Café da manhã e traslado ao aeroporto Ben Gurion em Tel Aviv para o vôo de retorno ao Brasil.",
+            "contact-us-title": "Fale Conosco",
+            "send-button": "Enviar",
+            "follow-us-title": "Siga-Nos",
+            "all-rights-reserved": "Todos os direitos reservados"
+                }
+            };
+
+            for (var id in translations[language]) {
+                var element = document.getElementById(id);
+                if (element) {
+                    element.innerHTML = translations[language][id];
+                }
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var language = getLanguage();
+            translatePage(language);
+        });
+    </script>
+</body>
+</html>

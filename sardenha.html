@@ -1,0 +1,345 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Erapolis Travel</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        #main {
+            font-family: 'Arial', serif;
+        }
+
+        /* Estilo para o cabeçalho */
+        #header .inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; 
+            position: relative;
+        }
+
+        /* Estilo para o menu */
+        #header nav {
+            margin-right: 10px; /* Espaço entre o menu e os botões de idioma */
+        }
+
+        /* Estilo para os botões de idioma */
+        .language-buttons {
+            display: flex;
+            align-items: center; /* Alinha verticalmente com o menu */
+            margin-left: auto;
+        }
+
+        .language-buttons img {
+            width: 32px;
+            height: 32px;
+            margin: 0 5px; /* Espaço entre os ícones */
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .language-buttons img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+    <link rel="stylesheet" href="assets/css/erapolis-travel-logo.css">
+    <link rel="icon" href="assets/css/erapolis-travel-logo.css" type="image/x-icon">
+    <!-- arquivo de estilo para quando o JavaScript estiver desativado -->
+    <noscript><link rel="stylesheet" href="assets/css/erapolis-travel-logo.css"></noscript>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <span class="symbol"><img src="images/erapolis-travel-logo.jpg" alt="" /></span><span class="title">Erapolis Travel</span>
+                </a>
+
+                <!-- Nav -->
+                <nav>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Language Buttons -->
+                <div class="language-buttons">
+                    <img src="images/flags/us.png" onclick="setLanguage('en')" />
+                    <img src="images/flags/br.png" onclick="setLanguage('pt')" />
+                    <img src="images/flags/it.png" onclick="setLanguage('it')" />
+                    <img src="images/flags/fr.png" onclick="setLanguage('fr')" />
+                    <img src="images/flags/es.png" onclick="setLanguage('es')" />
+                </div>
+
+            </div>
+        </header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <h2 id="menu-title">Menu</h2>
+            <ul>
+                <li><a id="home-link" href="index.html">Home</a></li>
+                <li><a id="company-link" href="nossaempresa.html">Nossa Empresa</a></li>
+                <li><a id="info-link" href="informações.html">Informações</a></li>
+                <li><a id="contact-link" href="contatos.html">Contatos</a></li>
+                <li><a id="bookings-link" href="elements.html">Reservas Internacionais de Hoteis Online</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+         <div class="inner">
+            <h1 id="main-title">Ilhas da Sardenha e Corsega</h1>
+            <p id="main-description" class="texto-menor">Uma jornada encantadora pela Sardenha e Córsega, explorando paisagens deslumbrantes, cidades históricas e a rica cultura mediterrânea.</p>
+            <div class="images">
+                <img src="images/sardenha1.jpg" alt="" class="image" />
+                <img src="images/corsega1" alt="" class="image" />
+                </div>
+        <div class="specific-section">
+        <h1 id="day1-title">1º Dia: Chegada a Cagliari</h1>
+        <p id="day1-description" class="texto-menor">Bem-vindo à encantadora Cagliari! Após sua chegada à capital da Sardenha, acomode-se no hotel e aproveite o tempo livre para explorar o ambiente local. À noite, desfrute de um delicioso jantar, imergindo nas saborosas tradições culinárias da região. Pernoite.</p>
+        <h1 id="day2-title">2º Dia: Cagliari – Nora - Cagliari</h1>
+        <p id="day2-description" class="texto-menor">Após o café da manhã, embarque em um tour panorâmico por Cagliari. Explore o porto ativo e o centro histórico, protegido por antigas muralhas. Visitaremos a Catedral, o mirante Umberto I e a Torre do Elefante. Aproveite o tempo livre para compras ou explorar a cidade a seu ritmo. Em seguida, saboreie um almoço típico com os pastores locais. À tarde, seguimos para Nora, um sítio arqueológico fascinante da civilização fenícia. Mergulhe na história enquanto visita o templo, as termas e os mosaicos preservados. Retorno ao hotel, jantar e pernoite.</p>
+        <h1 id="day3-title">3º Dia: Cagliari – Barumini – Alghero</h1>
+        <p id="day3-description" class="texto-menor">Após o café da manhã, partimos para Barumini, onde encontraremos vestígios de antigas civilizações megalíticas. O complexo de Su Nuraxi revela o engenho e a organização da população da ilha no século XVII a.C. Continuamos para Alghero, uma cidade encantadora que mistura a arquitetura medieval espanhola com paisagens costeiras deslumbrantes. Explore as ruas estreitas do centro histórico e aproveite o tempo livre para relaxar. Pernoite em Alghero, jantar e descanso.</p>
+        <h1 id="day4-title">4º Dia: Alghero – Bosa – Alghero</h1>
+        <p id="day4-description" class="texto-menor">Após o café da manhã, embarque em uma jornada pelas lindas paisagens costeiras de Alghero até Bosa. Em Bosa, explore a cidade encantadora e, em seguida, retorne a Alghero para uma visita panorâmica a Capo Caccia. O mirante oferece vistas deslumbrantes do mar Mediterrâneo, e você pode ainda visitar opcionalmente as Grutas de Netuno. Retorno ao hotel, jantar e pernoite.</p>
+        <h1 id="day5-title">5º Dia: Alghero – Castelsardo – Olbia </h1>
+        <p id="day5-description" class="texto-menor">Depois do café da manhã, partimos para Castelsardo, uma encantadora cidade medieval famosa pelo artesanato sardo. Aproveite o tempo livre para comprar produtos locais e seguir pela costa até Baia Sardinia, próxima à famosa Costa Esmeralda. Relaxe em um dos pontos turísticos e, à tarde, seguimos para Olbia. Chegada ao hotel, jantar e pernoite.</p>
+        <h1 id="day6-title">6º Dia: Olbia – Costa Smeralda – Olbia</h1>
+        <p id="day6-description" class="texto-menor">Após o café da manhã, dedicamos o dia a explorar a famosa Costa Esmeralda, um destino internacional de luxo. Conheça Porto Cervo, Porto Rotondo e Arzachena, e registre momentos inesquecíveis com sua câmera. Retorno ao hotel, jantar e pernoite.</p>
+        <h1 id="day7-title">7º Dia: Olbia – Santa Teresa di Gallura – Bonifácio (Córsega) </h1>
+        <p id="day7-description" class="texto-menor">Café da manhã e partida para Santa Teresa di Gallura. Após breve visita à cidade, embarque em um ferry para a Córsega. A chegada a Bonifácio, com sua posição estratégica sobre um promontório, oferece uma das vistas mais impressionantes do Mediterrâneo. Após o desembarque, siga para o hotel e acomode-se para um merecido descanso. Jantar e pernoite.</p>
+        <h1 id="day8-title">8º Dia: Bonifácio – Bastia </h1>
+        <p id="day8-description" class="texto-menor">Após o café da manhã, explore Bonifácio, onde ruínas gregas e romanas atestam sua importância histórica. Siga para Bastia, onde os vestígios de ocupação genovesa contrastam com a fortaleza medieval da cidade. Passeie pelo porto e pelas ruas históricas antes de retornar ao hotel para jantar e pernoite.
+		</p>
+    </div>
+        </div>
+</div>
+
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <section>
+                    <h2 id="contact-us-title">Fale Conosco</h2>
+                    <form method="post" action="#">
+                        <div class="fields">
+							<div class="field half">
+                                <input type="text" name="name" id="name" placeholder="Name" />
+                            </div>
+                            <div class="field half">
+                                <input type="email" name="email" id="email" placeholder="Email" />
+                            </div>
+                            <div class="field">
+                                <textarea name="message" id="message" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <ul class="actions">
+                            <li><input id="send-button" type="submit" value="Send" class="primary" /></li>
+                        </ul>
+                    </form>
+                </section>
+                <section>
+                    <h2 id="follow-us-title">Siga-Nos</h2>
+                    <ul class="icons">
+                        <li><a href="https://www.facebook.com/erapolistravel/" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+                    </ul>
+                </section>
+                <ul class="copyright">
+                    <li>&copy; Erapolis Travel 2025. <span id="all-rights-reserved">Todos os direitos reservados</span></li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Translate Script -->
+    <script>
+        function setLanguage(language) {
+            document.cookie = "language=" + language + "; path=/";
+            translatePage(language);
+        }
+
+        function getLanguage() {
+            let name = "language=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for(let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "pt"; // Default language
+        }
+
+        function translatePage(language) {
+            var translations = {
+                en: {
+            "main-title": "Islands of Sardinia and Corsica",
+			"main-description": "Explore the enchanting islands of Sardinia and Corsica, where Mediterranean charm, crystal-clear waters, and breathtaking landscapes come together. Discover the unique culture, historic sites, and idyllic beaches that make these islands a paradise for travelers. An unforgettable journey through nature, history, and local gastronomy.",
+			"day1-title": "Day 1 – Arrival in Sardinia",
+			"day1-description": "Arrival in Sardinia. Check-in at the hotel and enjoy a welcome dinner with local flavors.",
+			"day2-title": "Day 2 – Exploring Cagliari",
+			"day2-description": "Discover the historic charm of Cagliari, its ancient streets, and panoramic views.",
+			"day3-title": "Day 3 – Costa Smeralda",
+			"day3-description": "Visit the luxurious Costa Smeralda, with its stunning beaches and turquoise waters.",
+			"day4-title": "Day 4 – Ferry to Corsica",
+			"day4-description": "Take a scenic ferry ride to Corsica and settle into the picturesque town of Bonifacio.",
+			"day5-title": "Day 5 – Bonifacio and Surroundings",
+			"day5-description": "Explore the medieval town of Bonifacio and enjoy its cliffside views.",
+			"day6-title": "Day 6 – Ajaccio and Napoleonic Heritage",
+			"day6-description": "Visit Ajaccio, the birthplace of Napoleon, and its surrounding natural beauty.",
+			"day7-title": "Day 7 – Corsican Nature and Villages",
+			"day7-description": "Immerse yourself in the stunning landscapes and charming villages of Corsica.",
+			"day8-title": "Day 8 – Departure",
+			"day8-description": "Farewell breakfast and departure, taking memories of the islands with you.",
+			"contact-us-title": "Contact Us",
+			"send-button": "Send",
+			"follow-us-title": "Follow Us",
+			"all-rights-reserved": "All rights reserved"
+        },
+        it: {
+            "main-title": "Isole della Sardegna e Corsica",
+            "main-description": "Esplora le incantevoli isole della Sardegna e della Corsica, dove il fascino mediterraneo, le acque cristalline e i paesaggi mozzafiato si uniscono. Scopri la cultura unica, i siti storici e le spiagge idilliache che rendono queste isole un paradiso per i viaggiatori. Un viaggio indimenticabile tra natura, storia e gastronomia locale.",
+            "day1-title": "1° Giorno – Arrivo in Sardegna",
+            "day1-description": "Arrivo in Sardegna. Check-in in hotel e cena di benvenuto con sapori locali.",
+            "day2-title": "2° Giorno – Cagliari",
+            "day2-description": "Scopri il fascino storico di Cagliari, le sue antiche strade e le viste panoramiche.",
+            "day3-title": "3° Giorno – Costa Smeralda",
+            "day3-description": "Visita la lussuosa Costa Smeralda, con le sue spiagge mozzafiato e le acque turchesi.",
+            "day4-title": "4° Giorno – Traghetto per la Corsica ",
+            "day4-description": "Goditi una panoramica traversata in traghetto verso la Corsica e sistemati nella pittoresca Bonifacio.",
+            "day5-title": "5° Giorno – Bonifacio e Dintorni",
+            "day5-description": "Esplora la città medievale di Bonifacio e goditi le sue vedute a picco sulla scogliera.",
+            "day6-title": "6° Giorno – Ajaccio e il Patrimonio Napoleonico",
+            "day6-description": "Visita Ajaccio, città natale di Napoleone, e le bellezze naturali circostanti.",
+            "day7-title": "7° Giorno - Natura e Villaggi della Corsica",
+            "day7-description": "Immergiti nei paesaggi mozzafiato e nei villaggi affascinanti della Corsica.",
+            "day8-title": "8° Giorno – Partenza",
+            "day8-description": "Colazione di addio e partenza, portando con te i ricordi delle isole.",
+            "contact-us-title": "Contattaci",
+            "send-button": "Invia",
+            "follow-us-title": "Seguici",
+            "all-rights-reserved": "Tutti i diritti riservati",
+        },
+        fr: {
+            "main-title": "Îles de Sardaigne et de Corse",
+            "main-description": "Explorez les îles enchanteresses de la Sardaigne et de la Corse, où le charme méditerranéen, les eaux cristallines et les paysages à couper le souffle se rencontrent. Découvrez la culture unique, les sites historiques et les plages idylliques qui font de ces îles un véritable paradis pour les voyageurs. Un voyage inoubliable à travers la nature, l'histoire et la gastronomie locale.",
+            "day1-title": "Jour 1 – Arrivée en Sardaigne",
+            "day1-description": "Arrivée en Sardaigne. Installation à l'hôtel et dîner de bienvenue aux saveurs locales.",
+            "day2-title": "Jour 2 – Découverte de Cagliari",
+            "day2-description": "Découvrez le charme historique de Cagliari, ses ruelles anciennes et ses vues panoramiques.",
+            "day3-title": "Jour 3 – Costa Smeralda",
+            "day3-description": "Visitez la luxueuse Costa Smeralda, avec ses plages magnifiques et ses eaux turquoise.",
+            "day4-title": "Jour 4 – Ferry pour la Corse",
+            "day4-description": "Profitez d'une traversée panoramique en ferry pour la Corse et installez-vous dans la pittoresque ville de Bonifacio.",
+            "day5-title": "Jour 5 – Bonifacio et ses environs",
+            "day5-description": "Explorez la ville médiévale de Bonifacio et admirez ses vues sur les falaises.",
+            "day6-title": "Jour 6 – Ajaccio et le patrimoine napoléonien",
+            "day6-description": "Visitez Ajaccio, le lieu de naissance de Napoléon, et ses beautés naturelles environnantes.",
+            "day7-title": "Jour 7 – Nature et villages corses",
+            "day7-description": "Plongez dans les paysages époustouflants et les villages charmants de la Corse.",
+            "day8-title": "Jour 8 – Départ",
+            "day8-description": "Petit-déjeuner d'adieu et départ, emportant avec vous des souvenirs inoubliables.",
+            "contact-us-title": "Contactez-Nous",
+            "send-button": "Envoyer",
+            "follow-us-title": "Suivez-Nous",
+            "all-rights-reserved": "Tous droits réservés",
+
+        },
+        es: {
+            "main-title": "Islas de Cerdeña y Córcega",
+            "main-description": "Descubre las encantadoras islas de Cerdeña y Córcega, donde el encanto mediterráneo, las aguas cristalinas y los paisajes impresionantes se unen. Explora la cultura única, los sitios históricos y las playas idílicas que hacen de estas islas un paraíso para los viajeros. Un viaje inolvidable por la naturaleza, la historia y la gastronomía local.",
+            "day1-title": "Día 1 – Llegada a Cerdeña",
+            "day1-description": "Llegada a Cerdeña. Check-in en el hotel y cena de bienvenida con sabores locales.",
+            "day2-title": "Día 2 – Explorando Cagliari",
+            "day2-description": "Descubre el encanto histórico de Cagliari, sus antiguas calles y vistas panorámicas.",
+            "day3-title": "Día 3 – Costa Esmeralda",
+            "day3-description": "Visita la lujosa Costa Esmeralda, con sus playas impresionantes y aguas turquesas.",
+            "day4-title": "Día 4 – Ferry a Córcega",
+            "day4-description": "Disfruta de un pintoresco viaje en ferry a Córcega y acomódate en la pintoresca ciudad de Bonifacio.",
+            "day5-title": "Día 5 – Bonifacio y alrededores",
+            "day5-description": "Explora la ciudad medieval de Bonifacio y disfruta de sus vistas sobre los acantilados.",
+            "day6-title": "Día 6 – Ajaccio y el legado napoleónico",
+            "day6-description": "Visita Ajaccio, lugar de nacimiento de Napoleón, y sus alrededores naturales.",
+            "day7-title": "Día 7 – Naturaleza y pueblos de Córcega",
+            "day7-description": "Sumérgete en los paisajes impresionantes y los encantadores pueblos de Córcega.",
+            "day8-title": "Día 8 – Salida",
+            "day8-description": "Desayuno de despedida y salida, llevándote recuerdos inolvidables de las islas.",
+            "contact-us-title": "Contáctanos",
+            "send-button": "Enviar",
+            "follow-us-title": "Síguenos",
+            "all-rights-reserved": "Todos los derechos reservados"
+        },
+                
+        pt: {
+            "menu-title": "Menu",
+            "home-link": "Home",
+            "company-link": "Nossa Empresa",
+            "info-link": "Informações",
+            "contact-link": "Contatos",
+            "bookings-link": "Reservas Internacionais de Hoteis Online",
+            "main-title": "Ilhas de Sardenha e Córsega",
+            "main-description": "Explore as encantadoras ilhas da Sardenha e da Córsega, onde o charme mediterrâneo, as águas cristalinas e paisagens deslumbrantes se encontram. Descubra a cultura única, os sítios históricos e as praias idílicas que fazem dessas ilhas um paraíso para os viajantes. Uma viagem inesquecível pela natureza, história e gastronomia local.",
+            "day1-title": "1º Dia – Chegada na Sardenha",
+            "day1-description": "Chegada à Sardenha. Check-in no hotel e jantar de boas-vindas com sabores locais.",
+            "day2-title": "2º Dia – Explorando Cagliari",
+            "day2-description": "Descubra o charme histórico de Cagliari, suas ruas antigas e vistas panorâmicas.",
+            "day3-title": "3º Dia – Costa Esmeralda",
+            "day3-description": "Visite a luxuosa Costa Esmeralda, com suas praias deslumbrantes e águas turquesa.",
+            "day4-title": "4º Dia – Ferry para a Córsega",
+            "day4-description": " Ferry para a Córsega",
+        	"day4-description": "Aproveite uma travessia de ferry panorâmica para a Córsega e acomode-se na pitoresca Bonifácio.",
+            "day5-title": "5º Dia – Bonifácio e Arredores",
+            "day5-description": "Explore a cidade medieval de Bonifácio e aprecie suas vistas sobre as falésias.",
+            "day6-title": "6º Dia – Ajaccio e o Legado Napoleônico ",
+            "day6-description": "Visite Ajaccio, local de nascimento de Napoleão, e as belezas naturais ao redor.",
+            "day7-title": "7º Dia – Natureza e Vilarejos da Córsega",
+            "day7-description": "Mergulhe nas paisagens deslumbrantes e nos charmosos vilarejos da Córsega.",
+            "day8-title": "8º Dia – Partida ",
+            "day8-description": "Café da manhã de despedida e partida, levando consigo memórias inesquecíveis das ilhas.",
+            "contact-us-title": "Fale Conosco",
+            "send-button": "Enviar",
+            "follow-us-title": "Siga-Nos",
+            "all-rights-reserved": "Todos os direitos reservados"
+                }
+            };
+
+            for (var id in translations[language]) {
+                var element = document.getElementById(id);
+                if (element) {
+                    element.innerHTML = translations[language][id];
+                }
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var language = getLanguage();
+            translatePage(language);
+        });
+    </script>
+</body>
+</html>

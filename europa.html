@@ -1,0 +1,469 @@
+<!DOCTYPE HTML>
+<head>
+    <title>Erapolis Travel</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        #main {
+            font-family: 'Arial', serif;
+        }
+
+        #header .inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        #header nav {
+            margin-right: 10px;
+        }
+
+        .language-buttons {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+        }
+
+        .language-buttons img {
+            width: 32px;
+            height: 32px;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .language-buttons img:hover {
+            transform: scale(1.1);
+        }
+
+        .tiles .image img {
+            width: 100%;
+            height: auto;
+            max-height: 200px;
+            object-fit: cover;
+        }
+    </style>
+    
+    <link rel="stylesheet" href="assets/css/erapolis-travel-logo.css">
+    <link rel="icon" href="assets/css/erapolis-travel-logo.css" type="image/x-icon">
+    <noscript><link rel="stylesheet" href="assets/css/erapolis-travel-logo.css"></noscript>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <span class="symbol"><img src="images/erapolis-travel-logo.jpg" alt="" /></span><span class="title">Erapolis Travel</span>
+                </a>
+                
+                <!-- Nav -->
+                <nav>
+                    <ul>
+                        <li><a href="#menu" id="menu-title">Menu</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Language Buttons -->
+                <div class="language-buttons">
+                    <img src="images/flags/us.png" onclick="setLanguage('en')" />
+                    <img src="images/flags/br.png" onclick="setLanguage('pt')" />
+                    <img src="images/flags/it.png" onclick="setLanguage('it')" />
+                    <img src="images/flags/fr.png" onclick="setLanguage('fr')" />
+                    <img src="images/flags/es.png" onclick="setLanguage('es')" />
+                </div>
+            
+            </div>
+        </header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <h2 id="menu-title">Menu</h2>
+            <ul>
+                <li><a id="home-link" href="index.html">Home</a></li>
+                <li><a id="company-link" href="nossaempresa.html">Nossa Empresa</a></li>
+                <li><a id="info-link" href="informações.html">Informações</a></li>
+                <li><a id="contact-link" href="contatos.html">Contatos</a></li>
+                <li><a id="bookings-link" href="elements.html">Reservas Internacionais de Hoteis Online</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main" class="animated">
+            <div class="inner">
+                <header style="text-align: center;">
+                    <h1 id="destination-title">Europa</h1>
+                    <p id="description">Roteiros de Encanto e de História</p>
+                </header>
+                 <section class="tiles">
+                <!-- Artigo 1 -->
+                    <article class="style1">
+                        <span class="image">
+                        <img src="images/croacia.jpg" alt="Croácia" />
+                        </span>
+                    <a href="croacia.html">
+                        <h2 id="croacia-title">Encantos da Croácia e Eslovénia</h2>
+                        <div class="content">
+                            <p id="croacia-description">Belezas naturais e história fascinante no coração da Europa.</p>
+                        </div>
+                    </a>
+                </article>
+
+            <!-- Artigo 2 -->
+            <article class="style1">
+                <span class="image">
+                    <img src="images/francaerapolis.jpg" alt="França, Itália e Portugal" />
+                </span>
+                <a href="frança.html">
+                    <h2 id="franca-title">França, Itália e Portugal</h2>
+                    <div class="content">
+                        <p id="franca-description">Uma jornada pelos clássicos da Europa: arte, cultura e gastronomia.</p>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Artigo 3 -->
+            <article class="style1">
+                <span class="image">
+                    <img src="images/sardenha.jpg" alt="Ilhas da Sardenha e Córsega" />
+                </span>
+                <a href="sardenha.html">
+                    <h2 id="ilhas-title">Ilhas da Sardenha e Córsega</h2>
+                    <div class="content">
+                        <p id="ilhas-description">Praias paradisíacas e cultura vibrante no Mediterrâneo.</p>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Artigo 4 -->
+            <article class="style1">
+                <span class="image">
+                    <img src="images/italiaclassica.jpg" alt="Itália Clássica" />
+                </span>
+                <a href="itália.html">
+                    <h2 id="italia-title">Itália Clássica</h2>
+                    <div class="content">
+                        <p id="italia-description">De Roma a Veneza, um mergulho na história e beleza italiana.</p>
+                    </div>
+                </a>
+            </article>
+
+             <!-- Artigo 5 -->
+             <article class="style1">
+                <span class="image">
+                    <img src="images/suica.jpg" alt="Itália e Suíça" />
+                </span>
+                <a href="italiasuiça.html">
+                    <h2 id="suica-title">Itália e Suíça</h2>
+                    <div class="content">
+                        <p id="suica-description">O charme da Itália e a tranquilidade das montanhas suíças.</p>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Artigo 6 -->
+            <article class="style1">
+                <span class="image">
+                    <img src="images/medju.jpg" alt="Itália e Medjugorje" />
+                </span>
+                <a href="medjugorje.html">
+                    <h2 id="medjugorje-title">Itália e Medjugorje</h2>
+                    <div class="content">
+                        <p id="medjugorje-description">Fé, cultura e paisagens deslumbrantes em um só destino.</p>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Artigo 7 -->
+            <article class="style1">
+                <span class="image">
+                    <img src="images/alemanha" alt="Leste Europeu: Alemanha, República Tcheca, Polônia" />
+                </span>
+                <a href="alemanha.html">
+                    <h2 id="alemanha-title">Leste Europeu: Alemanha, República Tcheca, Polônia</h2>
+                    <div class="content">
+                        <p id="alemanha-description">História rica e castelos imponentes no Leste Europeu.</p>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Artigo 8 -->
+            <article class="style1">
+                <span class="image">
+                    <img src="images/bosnia.jpg" alt="Portugal, França e Bósnia" />
+                </span>
+                <a href="bosnia.html">
+                    <h2 id="bosnia-title">Portugal, França e Bósnia</h2>
+                    <div class="content">
+                        <p id="bosnia-description">Tradições e paisagens encantadoras em três culturas únicas.</p>
+                    </div>
+                </a>
+            </article>
+            
+            <style>
+                .tiles .image img {
+                    width: 100%;
+                    height: auto;
+                    max-height: 200px; 
+                    object-fit: cover; 
+                }
+            </style>
+         </div>
+    </div>
+            <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <section>
+                    <h2 id="contact-us-title">Fale Conosco</h2>
+                    <form method="post" action="#">
+                        <div class="fields">
+                            <div class="field half">
+                                <input type="text" name="name" id="name" placeholder="Name" />
+                            </div>
+                            <div class="field half">
+                                <input type="email" name="email" id="email" placeholder="Email" />
+                            </div>
+                            <div class="field">
+                                <textarea name="message" id="message" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <ul class="actions">
+                            <li><input id="send-button" type="submit" value="Send" class="primary" /></li>
+                        </ul>
+                    </form>
+                </section>
+                <section>
+                    <h2 id="follow-us-title">Siga-Nos</h2>
+                    <ul class="icons">
+                        <li><a href="https://www.facebook.com/erapolistravel/" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+                    </ul>
+                </section>
+                <ul class="copyright">
+                    <li>&copy; Erapolis Travel 2025. <span id="all-rights-reserved">Todos os direitos reservados</span></li>
+                </ul>
+            </div>
+        </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Translate Script -->
+<script>
+    function setLanguage(language) {
+        document.cookie = "language=" + language + "; path=/";
+        translatePage(language);
+    }
+
+    function getLanguage() {
+        let name = "language=";
+        let decodedCookie = decodeURIComponent(document.cookie);
+        let ca = decodedCookie.split(';');
+        for (let i = 0; i < ca.length; i++) {
+            let c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "pt"; // Default language
+    }
+
+    function translatePage(language) {  
+        var translations = {
+            en: {
+            "menu-title": "Menu",
+            "home-link": "Home",
+            "company-link": "Our Company",
+            "info-link": "Information",
+            "contact-link": "Contact",
+            "bookings-link": "International Hotel Bookings",
+            "destination-title": "Europe",
+            "description": "Charming and History Itineraries",
+            "europa-title": "Italy",
+            "europa-description": "Natural beauty and rich cultural heritage in the Mediterranean.",
+            "croacia-title": "Charming Croatia and Slovenia",
+            "croacia-description": "Natural beauty and fascinating history in the heart of Europe.",
+            "franca-title": "France, Italy and Portugal",
+            "franca-description": "A journey through Europe's classics: art, culture, and gastronomy.",
+            "ilhas-title": "Sardinia and Corsica",
+            "ilhas-description": "Paradisiacal beaches and vibrant culture in the Mediterranean.",
+            "italia-title": "Classic Italy",
+            "italia-description": "From Rome to Venice, a dive into Italian history and beauty.",
+            "suica-title": "Italy and Switzerland",
+            "suica-description": "The charm of Italy and the tranquility of the Swiss mountains.",
+            "medjugorje-title": "Italy and Medjugorje",
+            "medjugorje-description": "Faith, culture, and breathtaking landscapes in one destination.",
+            "alemanha-title": "Eastern Europe: Germany, Czech Republic, Poland",
+            "alemanha-description": "Rich history and imposing castles in Eastern Europe.",
+            "bosnia-title": "Portugal, France, and Bosnia",
+            "bosnia-description": "Traditions and enchanting landscapes in three unique cultures.",
+            "grecia-title": "Turkey and Greece",
+            "grecia-description": "The perfect fusion of history, culture, and natural beauty",
+            "follow-us-title": "Follow Us",
+            "all-rights-reserved": "All rights reserved",
+            "contact-us-title": "Contact Us",
+            "name": "Name",
+            "message": "Message",
+        },
+            pt: {
+                "menu-title": "Menu",
+                "home-link": "Início",
+                "company-link": "Nossa Empresa",
+                "info-link": "Informações",
+                "contact-link": "Contato",
+                "bookings-link": "Reservas de Hotéis Internacionais",
+                "destination-title": "Europa",
+                "description": "Roteiros de Encanto e de História",
+                "croacia-title": "Encantos da Croácia e Eslovénia",
+                "croacia-description": "Belezas naturais e história fascinante no coração da Europa",
+                "franca-title": "França, Itália e Portugal",
+                "franca-description": "Uma jornada pelos clássicos da Europa: arte, cultura e gastronomia.",
+                "ilhas-title": "Ilhas da Sardenha e Córsega",
+                "ilhas-description": "Praias paradisíacas e cultura vibrante no Mediterrâneo.",
+                "italia-title": "Itália Clássica",
+                "italia-description": "De Roma a Veneza, um mergulho na história e beleza italiana.",
+                "suica-title": "Itália e Suíça",
+                "suica-description": "O charme da Itália e a tranquilidade das montanhas suíças.",
+                "medjugorje-title": "Itália e Medjugorje",
+                "medjugorje-description": "Fé, cultura e paisagens deslumbrantes em um só destino.",
+                "alemanha-title": "Leste Europeu: Alemanha, República Tcheca, Polônia",
+                "alemanha-description": "História rica e castelos imponentes no Leste Europeu.",
+                "bosnia-title": "Portugal, França e Bósnia",
+                "bosnia-description": "Tradições e paisagens encantadoras em três culturas únicas.",
+                "grecia-title": "Turquia e Grécia",
+                "grecia-description": "A fusão perfeita de história, cultura e belezas naturais",
+                "send-button": "Enviar",
+                "follow-us-title": "Siga-Nos",
+                "all-rights-reserved": "Todos os direitos reservados"
+            },
+            it: {
+                "menu-title": "Menu",
+                "home-link": "Home",
+                "company-link": "La nostra azienda",
+                "info-link": "Informazioni",
+                "contact-link": "Contatto",
+                "bookings-link": "Prenotazioni Alberghiere Internazionali",
+                "destination-title": "Europa",
+                "description": "Itinerari affascinanti e storici",
+                "croacia-title": "Incantevole Croazia e Slovenia",
+                "croacia-description": "Bellezza naturale e storia affascinante nel cuore dell'Europa",
+                "franca-title": "Francia, Italia e Portogallo",
+                "franca-description": "Un viaggio attraverso i classici dell'Europa: arte, cultura e gastronomia.",
+                "ilhas-title": "Isole della Sardegna e Corsica",
+                "ilhas-description": "Spiagge paradisiache e cultura vibrante nel Mediterraneo.",
+                "italia-title": "Italia Classica",
+                "italia-description": "Da Roma a Venezia, un tuffo nella storia e bellezza italiana.",
+                "suica-title": "Italia e Svizzera",
+                "suica-description": "Il fascino dell'Italia e la tranquillità delle montagne svizzere.",
+                "medjugorje-title": "Italia e Medjugorje",
+                "medjugorje-description": "Fede, cultura e paesaggi mozzafiato in un'unica destinazione.",
+                "alemanha-title": "Est Europa: Germania, Repubblica Ceca, Polonia",
+                "alemanha-description": "Storia ricca e castelli imponenti nell'Est Europa.",
+                "bosnia-title": "Portogallo, Francia e Bosnia",
+                "bosnia-description": "Tradizioni e paesaggi incantevoli in tre culture uniche.",
+                "grecia-title": "Turchia e Grecia",
+                "grecia-description": "La fusione perfetta di storia, cultura e bellezze naturali",
+                "contact-us-title": "Contattaci",
+                "send-button": "Invia",
+                "follow-us-title": "Seguici",
+                "all-rights-reserved": "Tutti i diritti riservati",
+            },
+            fr: {
+                "menu-title": "Menu",
+                "home-link": "Accueil",
+                "company-link": "Notre Entreprise",
+                "info-link": "Informations",
+                "contact-link": "Contact",
+                "bookings-link": "Réservations d'Hôtels Internationaux",
+                "destination-title": "Europe",
+                "description": "Itinéraires charmants et historiques",
+                "croacia-title": "Croatie et Slovénie charmantes",
+                "croacia-description": "Beauté naturelle et histoire fascinante au cœur de l'Europe",
+                "franca-title": "France, Italie et Portugal",
+                "franca-description": "Un voyage à travers les classiques de l'Europe : art, culture et gastronomie.",
+                "ilhas-title": "Îles de Sardaigne et Corse",
+                "ilhas-description": "Plages paradisiaques et culture vibrante en Méditerranée.",
+                "italia-title": "Italie Classique",
+                "italia-description": "De Rome à Venise, une immersion dans l'histoire et la beauté italiennes.",
+                "suica-title": "Italie et Suisse",
+                "suica-description": "Le charme de l'Italie et la tranquillité des montagnes suisses.",
+                "medjugorje-title": "Italie et Medjugorje",
+                "medjugorje-description": "Foi, culture et paysages à couper le souffle en une seule destination.",
+                "alemanha-title": "Europe de l'Est : Allemagne, République tchèque, Pologne",
+                "alemanha-description": "Histoire riche et châteaux imposants en Europe de l'Est.",
+                "bosnia-title": "Portugal, France et Bosnie",
+                "bosnia-description": "Traditions et paysages enchanteurs de trois cultures uniques.",
+                "grecia-title": "Turquie et Grèce",
+                "grecia-description": "La fusion parfaite entre histoire, culture et beautés naturelles",
+                "contact-us-title": "Contactez-Nous",
+                "send-button": "Envoyer",
+                "follow-us-title": "Suivez-Nous",
+                "all-rights-reserved": "Tous droits réservés",
+             },
+            es: {
+                "menu-title": "Menú",
+                "home-link": "Inicio",
+                "company-link": "Nuestra Empresa",
+                "info-link": "Información",
+                "contact-link": "Contacto",
+                "bookings-link": "Reservas de Hoteles Internacionales",
+                "destination-title": "Europa",
+                "description": "Itinerarios encantadores e históricos",
+                "croacia-title": "Croacia y Eslovenia encantadoras",
+                "croacia-description": "Belleza natural e historia fascinante en el corazón de Europa",
+                "franca-title": "Francia, Italia y Portugal",
+                "franca-description": "Un viaje a través de los clásicos de Europa: arte, cultura y gastronomía.",
+                "ilhas-title": "Islas de Cerdeña y Córcega",
+                "ilhas-description": "Playas paradisíacas y cultura vibrante en el Mediterráneo.",
+                "italia-title": "Italia Clásica",
+                "italia-description": "De Roma a Venecia, una inmersión en la historia y belleza italiana.",
+                "suica-title": "Italia y Suiza",
+                "suica-description": "El encanto de Italia y la tranquilidad de las montañas suizas.",
+                "medjugorje-title": "Italia y Medjugorje",
+                "medjugorje-description": "Fe, cultura y paisajes impresionantes en un solo destino.",
+                "alemanha-title": "Este de Europa: Alemania, República Checa, Polonia",
+                "alemanha-description": "Historia rica y castillos imponentes en el Este de Europa.",
+                "bosnia-title": "Portugal, Francia y Bosnia",
+                "bosnia-description": "Tradiciones y paisajes encantadores en tres culturas únicas.",
+                "grecia-title": "Turquía y Grecia",
+                "grecia-description": "La fusión perfecta de historia, cultura y bellezas naturales",
+                "contact-us-title": "Contáctanos",
+                "send-button": "Enviar",
+                "follow-us-title": "Síguenos",
+                "all-rights-reserved": "Todos los derechos reservados",
+            }
+        };
+       
+        for (var id in translations[language]) {
+                var element = document.getElementById(id);
+                if (element) {
+                    element.innerHTML = translations[language][id];
+                }
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var language = getLanguage();
+            translatePage(language);
+        });
+    
+</script>
+</body>
+</html>

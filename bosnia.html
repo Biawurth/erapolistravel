@@ -1,0 +1,519 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Erapolis Travel</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        #main {
+            font-family: 'Arial', serif;
+        }
+
+        /* Estilo para o cabeçalho */
+        #header .inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; 
+            position: relative;
+        }
+
+        /* Estilo para o menu */
+        #header nav {
+            margin-right: 10px; /* Espaço entre o menu e os botões de idioma */
+        }
+
+        /* Estilo para os botões de idioma */
+        .language-buttons {
+            display: flex;
+            align-items: center; /* Alinha verticalmente com o menu */
+            margin-left: auto;
+        }
+
+        .language-buttons img {
+            width: 32px;
+            height: 32px;
+            margin: 0 5px; /* Espaço entre os ícones */
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .language-buttons img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+    <link rel="stylesheet" href="assets/css/erapolis-travel-logo.css">
+    <link rel="icon" href="assets/css/erapolis-travel-logo.css" type="image/x-icon">
+    <!-- arquivo de estilo para quando o JavaScript estiver desativado -->
+    <noscript><link rel="stylesheet" href="assets/css/erapolis-travel-logo.css"></noscript>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <span class="symbol"><img src="images/erapolis-travel-logo.jpg" alt="" /></span><span class="title">Erapolis Travel</span>
+                </a>
+
+                <!-- Nav -->
+                <nav>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Language Buttons -->
+                <div class="language-buttons">
+                    <img src="images/flags/us.png" onclick="setLanguage('en')" />
+                    <img src="images/flags/br.png" onclick="setLanguage('pt')" />
+                    <img src="images/flags/it.png" onclick="setLanguage('it')" />
+                    <img src="images/flags/fr.png" onclick="setLanguage('fr')" />
+                    <img src="images/flags/es.png" onclick="setLanguage('es')" />
+                </div>
+
+            </div>
+        </header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <h2 id="menu-title">Menu</h2>
+            <ul>
+                <li><a id="home-link" href="index.html">Home</a></li>
+                <li><a id="company-link" href="nossaempresa.html">Nossa Empresa</a></li>
+                <li><a id="info-link" href="informações.html">Informações</a></li>
+                <li><a id="contact-link" href="contatos.html">Contatos</a></li>
+                <li><a id="bookings-link" href="elements.html">Reservas Internacionais de Hoteis Online</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+         <div class="inner">
+            <h1 id="main-title">Portugal, França e Bósnia</h1>
+            <p id="main-description" class="texto-menor">Uma jornada espiritual e cultural por Portugal, Espanha, França, Croácia e Bósnia e Herzegovina, visitando destinos sagrados como o Santuário de Fátima, Lourdes, Medjugorje e a Catedral de Santiago de Compostela. Explore cidades históricas como Lisboa, Paris, Coimbra, Porto e Zagreb, com destaque para monumentos icônicos como o Mosteiro dos Jerônimos, a Torre de Belém e o Palácio de Diocleciano. Uma viagem única de fé, história e devoção.</p>
+            <div class="images">
+                <img src="images/bosnia2" alt="" class="image" />
+                <img src="images/portugal1.jpg" alt="" class="image" />
+                </div>
+                <div class="specific-section">
+                    <h1 id="day1-title">1º Dia: LISBOA</h1>
+                    <p id="day1-description" class="texto-menor">Chegada no aeroporto de Lisboa, recepção e início da visita panorâmica da cidade. Início no bairro da Baixa, reconstruído após o grande terremoto de 1755. Apreciaremos a Praça do Rossio, o Teatro Nacional, a Estação de Comboios, além de restaurantes, tradicionais cafés e a Augusta, rua de pedestres, que liga a praça ao imponente Paço Imperial. Em Alfama, apreciaremos antigas construções e visitaremos a Igreja de Santo Antônio de Lisboa. No famoso bairro de Belém, ponto de onde partiam as caravelas, encontraremos a Torre de Belém e o Padrão dos Descobrimentos, homenagem aos heróis da navegação portuguesa. Passaremos pelo Mosteiro dos Jerônimos, onde poderemos visitar os túmulos de Vasco da Gama e Camões e pela Ponte 25 de Abril. Visita à famosa Casa do Pastel de Belém, com tempo livre para os que desejarem tomar um café acompanhado desta iguaria. Jantar e pernoite no hotel.</p>
+                
+                    <h1 id="day2-title">2º Dia: LISBOA - TOMAR - FÁTIMA</h1>
+                    <p id="day2-description" class="texto-menor">Café da manhã no hotel e saída para Tomar. Visitaremos o Convento do Cristo. Continuação para Fátima. Acomodação no hotel. Tempo livre. À noite, participaremos da Reza do Terço e Procissão das Velas. Jantar e pernoite no hotel.</p>
+                
+                    <h1 id="day3-title">3º Dia: FÁTIMA</h1>
+                    <p id="day3-description" class="texto-menor">Café da manhã no hotel e visita ao Santuário, local das aparições da Mãe de Jesus a 3 pastorinhas em 1917. Visita à Capela das Aparições com Missa no local, e visita à Basílica. Em seguida, visita a Aljustrel e Valinhos. À noite, participaremos da Reza do Terço e Procissão das Velas. Jantar e pernoite no hotel.</p>
+
+                    <h1 id="day4-title">4º Dia: FÁTIMA / COIMBRA / BRAGA</h1>
+                    <p id="day4-description" class="texto-menor">Café da manhã no hotel e saída para Coimbra para visitarmos a famosa Universidade de Coimbra. Logo após, seguiremos para Braga. Chegada, jantar e acomodação no hotel.</p>
+
+                    <h1 id="day5-title">5º Dia: BRAGA / PORTO / SANTIAGO DE COMPOSTELA</h1>
+                    <p id="day5-description" class="texto-menor">Café da manhã no hotel e saída para visitar o Santuário do Bom Jesus. O Santuário é belíssimo com suas escadas adornadas por flores e azulejos da mais alta tradição portuguesa. Continuação da viagem para a visita panorâmica da cidade do Porto. Continuação da viagem para entrarmos na Espanha pela Galícia. Chegada em Santiago de Compostela no final da tarde. Jantar e pernoite no hotel.</p>
+
+                    <h1 id="day6-title">6º Dia: SANTIAGO DE COMPOSTELA</h1>
+                    <p id="day6-description" class="texto-menor">Café da manhã no hotel e saída para a visita panorâmica da cidade passando pela Praça do Obradoiro, onde ficam o edifício do Colégio San Jerônimo, o Palácio Rexoi, o Palácio Gelmirez, o Parador de Los Reyes Católicos e a Catedral de Santiago, onde chegam diariamente inúmeros peregrinos vindos das famosas peregrinações do caminho de Santiago. Ao meio dia, participaremos da Missa do Peregrino na Catedral. Acomodação, jantar e pernoite no hotel.</p>
+
+                    <h1 id="day7-title">7º Dia: SANTIAGO DE COMPOSTELA / LEON</h1>
+                    <p id="day7-description" class="texto-menor">Café da manhã no hotel e saída para Leon seguindo o "Caminho de Santiago". Chegada em Leon, uma das principais cidades do caminho de Santiago. Visitaremos a Catedral, obra-prima do gótico. Acomodação, jantar e pernoite no hotel.</p>
+
+                    <h1 id="day8-title">8º Dia: LEON / BURGOS / LOURDES</h1>
+                    <p id="day8-description" class="texto-menor">Café da manhã no hotel e saída para Burgos, terra natal de Dom Rodrigo de Bivar ("El Cid" o Campeador), com destaque à sua famosa Catedral com arquitetura gótica (uma das mais importantes de toda a Espanha). Continuação em direção a Bayonne e Irun (fronteira franco-espanhola) e chegada em Lourdes. À noite, participação na Procissão das Velas, na Esplanada do Santuário. Jantar e pernoite no hotel.</p>
+
+                    <h1 id="day9-title">9º Dia: LOURDES</h1>
+                    <p id="day9-description" class="texto-menor">Café da manhã no hotel e saída para começar as visitas no Santuário de Nossa Senhora de Lourdes. Visita à gruta onde Nossa Senhora apareceu a Santa Bernadete, entre outros locais. Participação na Benção do Santíssimo (bênção dedicada especialmente às pessoas enfermas) e Via Sacra. À noite, participação na Procissão das Velas, na Esplanada do Santuário. Jantar e pernoite no hotel.</p>
+
+                    <h1 id="day10-title">10º Dia: LOURDES / PARIS</h1>
+                    <p id="day10-description" class="texto-menor">Após café da manhã, traslado ao aeroporto para embarque com destino a Paris. Chegada no aeroporto de Paris, recepção e traslado para o hotel. Acomodação e pernoite no hotel.</p>
+
+                    <h1 id="day11-title">11º Dia: PARIS</h1>
+                    <p id="day11-description" class="texto-menor">Após café da manhã, saída para visitar a Igreja da Medalha Milagrosa (dedicada à santa do silêncio Catarina Labouré, a quem Nossa Senhora apareceu em 1830). Em seguida, tempo livre para almoçar, fazer compras e visitar, opcionalmente. Ao final das compras, visitaremos a Sacré-Coeur e o bairro Montmartre. Pernoite no hotel.</p>
+
+                    <h1 id="day12-title">12º Dia: PARIS / LISIEUX / PARIS</h1>
+                    <p id="day12-description" class="texto-menor">Após café da manhã, saída para Lisieux. Visita da Basílica de Santa Teresa e do convento onde Santa Teresa viveu durante 9 anos em oração e clausura. Saída de Lisieux em direção a Alençon, local onde nasceu Santa Teresinha do Menino Jesus. À tarde, retorno a Paris. Pernoite no hotel.</p>
+
+                    <h1 id="day13-title">13º Dia: PARIS</h1>
+                    <p id="day13-description" class="texto-menor">Após café da manhã, saída para visitar a Catedral de Notre Dame (famosa pela sua arquitetura). Em seguida, visita da cidade passando pelos principais cartões-postais: Torre Eiffel, Pont Neuf, Hotel de Ville, Museu do Louvre (visita externa), Grandes Boulevards, a Praça da Concórdia, Arco do Triunfo, entre outros. Poderemos apreciar a beleza do Rio Sena. Passaremos ainda por bairros famosos como Marais, Bastille, St. Germain des Prés e Montparnasse. Pernoite no hotel.</p>
+
+                    <h1 id="day14-title">14º Dia: PARIS / SPLIT / MEDJUGORJE</h1>
+                    <p id="day14-description" class="texto-menor">Após café da manhã, traslado ao aeroporto para embarque com destino à Croácia. Chegada no aeroporto de Split, recepção e saída para Medjugorje. Acomodação, jantar e pernoite no hotel.</p>
+
+                    <h1 id="day15-title">15º Dia: MEDJUGORJE</h1>
+                    <p id="day15-description" class="texto-menor">Após café da manhã, visita a Medjugorje, a cidade preferida dos católicos, onde apareceu, na colina próxima da cidade, a Virgem Maria e comunicou sua mensagem de paz às testemunhas em 1981. Almoço no hotel. Visitaremos o Podbrdo (Colina das Primeiras Aparições) e a Comunidade de Irmã Elvira. Jantar e pernoite no hotel.</p>
+
+                    <h1 id="day16-title">16º Dia: MEDJUGORJE / SPLIT</h1>
+                    <p id="day16-description" class="texto-menor">Após café da manhã, saída para Split. Parada em Vepric ("Lourdes da Croácia", onde há uma reprodução da gruta de Lourdes). Chegada em Split e, pela tarde, visita da cidade. Esta cidade faz parte do patrimônio mundial da UNESCO, com seu Palácio de Diocleciano, erguido no século III e reformado na Idade Média, a Catedral de São Domnius e o Templo de Júpiter. Jantar e pernoite no hotel.</p>
+
+                    <h1 id="day17-title">17º Dia: SPLIT / ZAGREB</h1>
+                    <p id="day17-description" class="texto-menor">Após café da manhã, saída para Zagreb, a capital da Croácia. Visita da cidade, incluindo o passeio pelo centro histórico "Gornji Grad", com sua famosa Catedral do século XIII, interligado com a cidade baixa por um teleférico, visita à Igreja de São Marcos, e à Praça do Rei Tomislav, onde se encontra o monumento ao rei croata mencionado, obra do escultor Robert Franges. Jantar e pernoite no hotel.</p>
+
+                    <h1 id="day18-title">18º Dia: ZAGREB / LISBOA</h1>
+                    <p id="day18-description" class="texto-menor">Após café da manhã, traslado ao aeroporto para embarque com destino a Portugal. Chegada no aeroporto de Lisboa, recepção e traslado ao hotel. Acomodaçao Jantar e pernoite.</p>
+
+                    <h1 id="day19-title">19º Dia: LISBOA / BRASIL</h1>
+                    <p id="day19-description" class="texto-menor">Após café da manhã, city tour em Lisboa incluindo a visita ao Mosteiro dos Jerônimos, o monumento dedicado aos Descobrimentos, a Igreja de Santo Antônio, a Catedral da Sé, entre outros pontos turísticos. Em seguida, traslado ao aeroporto para embarque com destino ao Brasil.</p>
+
+                </div>
+                
+        </div>
+</div>
+
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <section>
+                    <h2 id="contact-us-title">Fale Conosco</h2>
+                    <form method="post" action="#">
+                        <div class="fields">
+                            <div class="field half">
+                                <input type="text" name="name" id="name" placeholder="Nome" />
+                            </div>
+                            <div class="field half">
+                                <input type="email" name="email" id="email" placeholder="Email" />
+                            </div>
+                            <div class="field">
+                                <textarea name="message" id="message" placeholder="Mensagem"></textarea>
+                            </div>
+                        </div>
+                        <ul class="actions">
+                            <li><input id="send-button" type="submit" value="enviar" class="primary" /></li>
+                        </ul>
+                    </form>
+                </section>
+                <section>
+                    <h2 id="follow-us-title">Siga-Nos</h2>
+                    <ul class="icons">
+                        <li><a href="https://www.facebook.com/erapolistravel/" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+                    </ul>
+                </section>
+                <ul class="copyright">
+                    <li>&copy; Erapolis Travel 2025. <span id="all-rights-reserved">Todos os direitos reservados</span></li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Translate Script -->
+    <script>
+        function setLanguage(language) {
+            document.cookie = "language=" + language + "; path=/";
+            translatePage(language);
+        }
+
+        function getLanguage() {
+            let name = "language=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for(let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "pt"; // Default language
+        }
+
+        function translatePage(language) {
+            var translations = {
+            en: {
+            "menu-title": "Menu",
+            "home-link": "Home",
+            "company-link": "Our Company",
+            "info-link": "Information",
+            "contact-link": "Contacts",
+            "bookings-link": "International Hotel Bookings Online",
+            "main-title": "Portugal, France and Bosnia",
+            "main-description": "A journey of faith and culture through Lisbon, Fatima, Santiago de Compostela, Lourdes, Paris, Medjugorje and other cities. Explore sacred sites, participate in religious activities, and experience unique moments of spirituality amidst the rich historical and scenic landscapes of Portugal, France, and Bosnia.",
+            "day1-title": "Day 1 – LISBON",
+            "day1-description": "Arrival at Lisbon Airport, reception, and panoramic city tour. Visit Baixa, Alfama, Belem and other historical landmarks such as Rossio Square, the National Theatre, and the Belem Tower. Free time for the famous Pastel de Belem. Dinner and overnight at the hotel.",
+            "day2-title": "Day 2 – LISBON - TOMAR - FATIMA",
+            "day2-description": "Breakfast at the hotel and departure to Tomar. Visit the Convent of Christ. Continue to Fatima. Free time and participation in the Rosary and Candle Procession. Dinner and overnight at the hotel.",
+            "day3-title": "Day 3 – FATIMA",
+            "day3-description": "Visit the Sanctuary of Fatima, Chapel of the Apparitions, Basilica and other sacred sites. Participation in the Rosary and Candle Procession. Dinner and overnight at the hotel.",
+            "day4-title": "Day 4 – FATIMA / COIMBRA / BRAGA",
+            "day4-description": "Breakfast at the hotel and departure to Coimbra for a visit to the University of Coimbra. Continue to Braga. Arrival, dinner and hotel accommodation.",
+            "day5-title": "Day 5 – BRAGA / PORTO / SANTIAGO DE COMPOSTELA",
+            "day5-description": "Breakfast and departure to the Sanctuary of Bom Jesus, with emphasis on the architecture and stairs. Panoramic visit to Porto. Continue to Galicia and arrival in Santiago de Compostela. Dinner and overnight at the hotel.",
+            "day6-title": "Day 6 – SANTIAGO DE COMPOSTELA",
+            "day6-description": "Panoramic city tour, including Obradoiro Square and the Santiago Cathedral. Participate in the Pilgrims’ Mass. Dinner and overnight at the hotel.",
+            "day7-title": "Day 7 – SANTIAGO DE COMPOSTELA / LEÓN",
+            "day7-description": "Travel to León, one of the main cities of the Camino de Santiago. Visit León Cathedral. Accommodation, dinner, and overnight at the hotel.",
+            "day8-title": "Day 8 – LEÓN / BURGOS / LOURDES",
+            "day8-description": "Visit Burgos Cathedral and continue to Lourdes. Participate in the Candle Procession at the Sanctuary Esplanade. Dinner and overnight at the hotel.",
+            "day9-title": "Day 9 – LOURDES",
+            "day9-description": "Visit the Sanctuary of Our Lady of Lourdes, including the grotto and participation in the Blessed Sacrament Blessing. Dinner and overnight at the hotel.",
+            "day10-title": "Day 10 – LOURDES / PARIS",
+            "day10-description": "Breakfast and transfer to the airport for a flight to Paris. Arrival and transfer to the hotel. Accommodation and overnight.",
+            "day11-title": "Day 11 – PARIS",
+            "day11-description": "Visit the Church of the Miraculous Medal and free time for shopping. In the afternoon, visit Montmartre and Sacré-Cœur. Overnight at the hotel.",
+            "day12-title": "Day 12 – PARIS / LISIEUX / PARIS",
+            "day12-description": "Visit the Basilica of Saint Therese in Lisieux, where Saint Therese lived. Return to Paris for overnight at the hotel.",
+            "day13-title": "Day 13 – PARIS",
+            "day13-description": "Visit Notre-Dame Cathedral and a tour of the city’s main landmarks, such as the Eiffel Tower, the Arc de Triomphe, and the Louvre Museum. Overnight at the hotel.",
+            "day14-title": "Day 14 – PARIS / SPLIT / MEDJUGORJE",
+            "day14-description": "Transfer to the airport for a flight to Split. Arrival and departure to Medjugorje. Accommodation, dinner, and overnight at the hotel.",
+            "day15-title": "Day 15 – MEDJUGORJE",
+            "day15-description": "Visit Medjugorje, including Podbrdo and the Sister Euvira Community. Dinner and overnight at the hotel.",
+            "day16-title": "Day 16 – MEDJUGORJE / SPLIT",
+            "day16-description": "Departure for Split with a visit to the city, including Diocletian's Palace. Dinner and overnight at the hotel.",
+            "day17-title": "Day 17 – SPLIT / ZAGREB",
+            "day17-description": "Travel to Zagreb and visit the historic center, including the Cathedral and Saint Mark’s Church. Dinner and overnight at the hotel.",
+            "day18-title": "Day 18 – ZAGREB / LISBON",
+            "day18-description": "Transfer to the airport and flight back to Lisbon. Arrival and accommodation at the hotel. Dinner and overnight.",
+            "day19-title": "Day 19 – LISBON / BRAZIL",
+            "day19-description": "City tour in Lisbon, including São Jerônimo Monastery, Santo Antônio Church, Sé Cathedral, and other tourist landmarks. Transfer to the airport and flight to Brazil.",
+            "contact-us-title": "Contact Us",
+            "send-button": "Send",
+            "follow-us-title": "Follow Us",
+            "all-rights-reserved": "All Rights Reserved.",
+        },
+        it: {
+            "menu-title": "Menu",
+            "home-link": "Home",
+            "company-link": "La Nostra Azienda",
+            "info-link": "Informazioni",
+            "contact-link": "Contatti",
+            "bookings-link": "Prenotazioni Internazionali di Hotel Online",
+            "main-title": "Portogallo, Francia e Bosnia",
+            "main-description": "Un viaggio di fede e cultura attraverso Lisbona, Fatima, Santiago di Compostela, Lourdes, Parigi, Medjugorje e altre città. Esplora i luoghi sacri, partecipa ad attività religiose e vivi momenti unici di spiritualità nel contesto ricco di storia e paesaggi di Portogallo, Francia e Bosnia.",
+            "day1-title": "Giorno 1 – LISBONA",
+            "day1-description": "Arrivo all'aeroporto di Lisbona, accoglienza e tour panoramico della città. Visita alla Baixa, Alfama, Belém e ad altri luoghi storici come la Piazza del Rossio, il Teatro Nazionale e la Torre di Belém. Tempo libero per il famoso Pastel de Belém. Cena e pernottamento in hotel.",
+            "day2-title": "Giorno 2 – LISBONA - TOMAR - FATIMA",
+            "day2-description": "Colazione in hotel e partenza per Tomar. Visita al Convento di Cristo. Continuazione verso Fatima. Tempo libero e partecipazione al Rosario e alla Processione delle Candele. Cena e pernottamento in hotel.",
+            "day3-title": "Giorno 3 – FATIMA",
+            "day3-description": "Visita al Santuario di Fatima, alla Cappella delle Apparizioni, alla Basilica e ad altri luoghi sacri. Partecipazione al Rosario e alla Processione delle Candele. Cena e pernottamento in hotel.",
+            "day4-title": "Giorno 4 – FATIMA / COIMBRA / BRAGA",
+            "day4-description": "Colazione in hotel e partenza per Coimbra per la visita all'Università di Coimbra. Continuazione verso Braga. Arrivo, cena e pernottamento in hotel.",
+            "day5-title": "Giorno 5 – BRAGA / PORTO / SANTIAGO DI COMPOSTELA",
+            "day5-description": "Colazione e partenza per il Santuario del Bom Jesus, con enfasi sull'architettura e sulle scale. Visita panoramica alla città di Porto. Continuazione verso la Galizia e arrivo a Santiago di Compostela. Cena e pernottamento in hotel.",
+            "day6-title": "Giorno 6 – SANTIAGO DI COMPOSTELA",
+            "day6-description": "Tour panoramico della città, inclusa la Piazza Obradoiro e la Cattedrale di Santiago. Partecipazione alla Messa del Pellegrino. Cena e pernottamento in hotel.",
+            "day7-title": "Giorno 7 – SANTIAGO DI COMPOSTELA / LEÓN",
+            "day7-description": "Viaggio verso León, una delle principali città del Cammino di Santiago. Visita alla Cattedrale di León. Pernottamento, cena e sistemazione in hotel.",
+            "day8-title": "Giorno 8 – LEÓN / BURGOS / LOURDES",
+            "day8-description": "Visita alla Cattedrale di Burgos e proseguimento per Lourdes. Partecipazione alla Processione delle Candele nell'Esplanade del Santuario. Cena e pernottamento in hotel.",
+            "day9-title": "Giorno 9 – LOURDES",
+            "day9-description": "Visita al Santuario di Nostra Signora di Lourdes, inclusa la grotta e partecipazione alla Benedizione del Santissimo Sacramento. Cena e pernottamento in hotel.",
+            "day10-title": "Giorno 10 – LOURDES / PARIGI",
+            "day10-description": "Colazione e trasferimento per l'aeroporto per il volo verso Parigi. Arrivo e trasferimento in hotel. Sistemazione e pernottamento.",
+            "day11-title": "Giorno 11 – PARIGI",
+            "day11-description": "Visita alla Chiesa della Medaglia Miracolosa e tempo libero per lo shopping. Nel pomeriggio, visita a Montmartre e alla Sacré-Cœur. Pernottamento in hotel.",
+            "day12-title": "Giorno 12 – PARIGI / LISIEUX / PARIGI",
+            "day12-description": "Visita alla Basilica di Santa Teresa a Lisieux, dove Santa Teresa ha vissuto. Ritorno a Parigi per pernottamento in hotel.",
+            "day13-title": "Giorno 13 – PARIGI",
+            "day13-description": "Visita alla Cattedrale di Notre-Dame e tour dei principali luoghi turistici della città, come la Torre Eiffel, l'Arco di Trionfo e il Museo del Louvre. Pernottamento in hotel.",
+            "day14-title": "Giorno 14 – PARIGI / SPLIT / MEDJUGORJE",
+            "day14-description": "Trasferimento per l'aeroporto e volo per Split. Arrivo e partenza per Medjugorje. Sistemazione, cena e pernottamento in hotel.",
+            "day15-title": "Giorno 15 – MEDJUGORJE",
+            "day15-description": "Visita a Medjugorje, inclusi Podbrdo e la Comunità di Suor Euvira. Cena e pernottamento in hotel.",
+            "day16-title": "Giorno 16 – MEDJUGORJE / SPLIT",
+            "day16-description": "Partenza per Split con visita alla città, incluso il Palazzo di Diocleziano. Cena e pernottamento in hotel.",
+            "day17-title": "Giorno 17 – SPLIT / ZAGABRIA",
+            "day17-description": "Viaggio verso Zagabria e visita al centro storico, inclusa la Cattedrale e la Chiesa di San Marco. Cena e pernottamento in hotel.",
+            "day18-title": "Giorno 18 – ZAGABRIA / LISBONA",
+            "day18-description": "Trasferimento per l'aeroporto e volo di ritorno a Lisbona. Arrivo e sistemazione in hotel. Cena e pernottamento.",
+            "day19-title": "Giorno 19 – LISBONA / BRASILE",
+            "day19-description": "Tour della città di Lisbona, inclusi il Monastero di São Jerônimo, la Chiesa di Santo Antônio, la Cattedrale della Sé e altri luoghi turistici. Trasferimento per l'aeroporto e volo per il Brasile.",
+            "contact-us-title": "Contattaci",
+            "send-button": "Invia",
+            "follow-us-title": "Seguici",
+            "all-rights-reserved": "Tutti i diritti riservati",
+        },
+        fr: {
+            "menu-title": "Menu",
+            "home-link": "Accueil",
+            "company-link": "Notre Entreprise",
+            "info-link": "Informations",
+            "contact-link": "Contacts",
+            "bookings-link": "Réservations Internationales d'Hôtels en Ligne",
+            "main-title": "Portugal, France et Bosnie",
+            "main-description": "Un voyage de foi et de culture à travers Lisbonne, Fatima, Saint-Jacques-de-Compostelle, Lourdes, Paris, Medjugorje et d'autres villes. Explorez les lieux sacrés, participez à des activités religieuses et vivez des moments uniques de spiritualité dans le contexte riche en histoire et en paysages du Portugal, de la France et de la Bosnie.",
+            "day1-title": "Jour 1 – LISBONNE",
+            "day1-description": "Arrivée à l'aéroport de Lisbonne, accueil et visite panoramique de la ville. Visite de la Baixa, d'Alfama, de Belém et d'autres sites historiques tels que la Place du Rossio, le Théâtre National et la Tour de Belém. Temps libre pour goûter au célèbre Pastel de Belém. Dîner et nuit à l'hôtel.",
+            "day2-title": "Jour 2 – LISBONNE - TOMAR - FATIMA",
+            "day2-description": "Petit-déjeuner à l'hôtel et départ pour Tomar. Visite du Couvent du Christ. Continuation vers Fatima. Temps libre et participation au Rosaire et à la Procession des Bougies. Dîner et nuit à l'hôtel.",
+            "day3-title": "Jour 3 – FATIMA",
+            "day3-description": "Visite du Sanctuaire de Fatima, de la Chapelle des Apparitions, de la Basilique et d'autres lieux sacrés. Participation au Rosaire et à la Procession des Bougies. Dîner et nuit à l'hôtel.",
+            "day4-title": "Jour 4 – FATIMA / COIMBRA / BRAGA",
+            "day4-description": "Petit-déjeuner à l'hôtel et départ pour Coimbra pour visiter l'Université de Coimbra. Continuation vers Braga. Arrivée, dîner et nuit à l'hôtel.",
+            "day5-title": "Jour 5 – BRAGA / PORTO / SAINT-JACQUES-DE-COMPOSTELLE",
+            "day5-description": "Petit-déjeuner et départ pour le Sanctuaire du Bom Jesus, mettant l'accent sur l'architecture et les escaliers. Visite panoramique de Porto. Continuation vers la Galice et arrivée à Saint-Jacques-de-Compostelle. Dîner et nuit à l'hôtel.",
+            "day6-title": "Jour 6 – SAINT-JACQUES-DE-COMPOSTELLE",
+            "day6-description": "Visite guidée de la ville, y compris la Place Obradoiro et la Cathédrale de Saint-Jacques. Participation à la Messe du Pèlerin. Dîner et nuit à l'hôtel.",
+            "day7-title": "Jour 7 – SAINT-JACQUES-DE-COMPOSTELLE / LEÓN",
+            "day7-description": "Voyage vers León, l'une des principales villes du Chemin de Saint-Jacques. Visite de la Cathédrale de León. Nuit, dîner et hébergement à l'hôtel.",
+            "day8-title": "Jour 8 – LEÓN / BURGOS / LOURDES",
+            "day8-description": "Visite de la Cathédrale de Burgos et continuation vers Lourdes. Participation à la Procession des Bougies sur l'Esplanade du Sanctuaire. Dîner et nuit à l'hôtel.",
+            "day9-title": "Jour 9 – LOURDES",
+            "day9-description": "Visite du Sanctuaire de Notre-Dame de Lourdes, y compris la grotte et participation à la Bénédiction du Saint-Sacrement. Dîner et nuit à l'hôtel.",
+            "day10-title": "Jour 10 – LOURDES / PARIS",
+            "day10-description": "Petit-déjeuner et transfert vers l'aéroport pour un vol à destination de Paris. Arrivée et transfert à l'hôtel. Hébergement et nuit à l'hôtel.",
+            "day11-title": "Jour 11 – PARIS",
+            "day11-description": "Visite de l'Église de la Médaille Miraculeuse et temps libre pour faire du shopping. L'après-midi, visite de Montmartre et de la Basilique du Sacré-Cœur. Nuit à l'hôtel.",
+            "day12-title": "Jour 12 – PARIS / LISIEUX / PARIS",
+            "day12-description": "Visite de la Basilique Sainte-Thérèse à Lisieux, où Sainte Thérèse a vécu. Retour à Paris pour la nuit à l'hôtel.",
+            "day13-title": "Jour 13 – PARIS",
+            "day13-description": "Visite de la Cathédrale Notre-Dame et circuit des principaux sites touristiques de la ville, tels que la Tour Eiffel, l'Arc de Triomphe et le Musée du Louvre. Nuit à l'hôtel.",
+            "day14-title": "Jour 14 – PARIS / SPLIT / MEDJUGORJE",
+            "day14-description": "Transfert vers l'aéroport et vol pour Split. Arrivée et départ pour Medjugorje. Hébergement, dîner et nuit à l'hôtel.",
+            "day15-title": "Jour 15 – MEDJUGORJE",
+            "day15-description": "Visite de Medjugorje, y compris Podbrdo et la Communauté de Sœur Euvira. Dîner et nuit à l'hôtel.",
+            "day16-title": "Jour 16 – MEDJUGORJE / SPLIT",
+            "day16-description": "Départ pour Split avec visite de la ville, y compris le Palais de Dioclétien. Dîner et nuit à l'hôtel.",
+            "day17-title": "Jour 17 – SPLIT / ZAGREB",
+            "day17-description": "Voyage vers Zagreb et visite du centre-ville, y compris la Cathédrale et l'Église de Saint-Marc. Dîner et nuit à l'hôtel.",
+            "day18-title": "Jour 18 – ZAGREB / LISBONNE",
+            "day18-description": "Transfert vers l'aéroport et vol retour vers Lisbonne. Arrivée et hébergement à l'hôtel. Dîner et nuit à l'hôtel.",
+            "day19-title": "Jour 19 – LISBONNE / BRÉSIL",
+            "day19-description": "Visite de la ville de Lisbonne, y compris le Monastère de São Jerônimo, l'Église de Santo Antônio, la Cathédrale de Sé et d'autres lieux touristiques. Transfert à l'aéroport et vol vers le Brésil.",
+            "contact-us-title": "Contactez-Nous",
+            "send-button": "Envoyer",
+            "follow-us-title": "Suivez-Nous",
+            "all-rights-reserved": "Tous droits réservés",
+
+        },
+        es: {
+            "menu-title": "Menú",
+            "home-link": "Inicio",
+            "company-link": "Nuestra Empresa",
+            "info-link": "Información",
+            "contact-link": "Contactos",
+            "bookings-link": "Reservas Internacionales de Hoteles Online",
+            "main-title": "Portugal, Francia y Bosnia",
+            "main-description": "Un viaje de fe y cultura a través de Lisboa, Fátima, Santiago de Compostela, Lourdes, París, Medjugorje y otras ciudades. Explora los lugares sagrados, participa en actividades religiosas y vive momentos únicos de espiritualidad en un contexto lleno de historia y paisajes de Portugal, Francia y Bosnia.",
+            "day1-title": "Día 1 – LISBOA",
+            "day1-description": "Llegada al aeropuerto de Lisboa, bienvenida y recorrido panorámico por la ciudad. Visita al Barrio Baixa, Alfama, Belém y otros sitios históricos como la Plaza del Rossio, el Teatro Nacional y la Torre de Belém. Tiempo libre para disfrutar del famoso Pastel de Belém. Cena y noche en el hotel.",
+            "day2-title": "Día 2 – LISBOA - TOMAR - FÁTIMA",
+            "day2-description": "Desayuno en el hotel y salida hacia Tomar. Visita al Convento de Cristo. Continuación hacia Fátima. Tiempo libre y participación en el Rosario y la Procesión de las Velas. Cena y noche en el hotel.",
+            "day3-title": "Día 3 – FÁTIMA",
+            "day3-description": "Visita al Santuario de Fátima, la Capilla de las Apariciones, la Basílica y otros lugares sagrados. Participación en el Rosario y la Procesión de las Velas. Cena y noche en el hotel.",
+            "day4-title": "Día 4 – FÁTIMA / COIMBRA / BRAGA",
+            "day4-description": "Desayuno en el hotel y salida hacia Coimbra para visitar la Universidad de Coimbra. Continuación hacia Braga. Llegada, cena y noche en el hotel.",
+            "day5-title": "Día 5 – BRAGA / OPORTO / SANTIAGO DE COMPOSTELA",
+            "day5-description": "Desayuno y salida hacia el Santuario del Bom Jesús, destacando la arquitectura y las escaleras. Visita panorámica de Oporto. Continuación hacia Galicia y llegada a Santiago de Compostela. Cena y noche en el hotel.",
+            "day6-title": "Día 6 – SANTIAGO DE COMPOSTELA",
+            "day6-description": "Recorrido guiado por la ciudad, incluyendo la Plaza Obradoiro y la Catedral de Santiago. Participación en la Misa del Peregrino. Cena y noche en el hotel.",
+            "day7-title": "Día 7 – SANTIAGO DE COMPOSTELA / LEÓN",
+            "day7-description": "Viaje hacia León, una de las principales ciudades del Camino de Santiago. Visita a la Catedral de León. Noche, cena y alojamiento en el hotel.",
+            "day8-title": "Día 8 – LEÓN / BURGOS / LOURDES",
+            "day8-description": "Visita a la Catedral de Burgos y continuación hacia Lourdes. Participación en la Procesión de las Velas en la explanada del Santuario. Cena y noche en el hotel.",
+            "day9-title": "Día 9 – LOURDES",
+            "day9-description": "Visita al Santuario de Nuestra Señora de Lourdes, incluida la gruta y participación en la Bendición del Santísimo Sacramento. Cena y noche en el hotel.",
+            "day10-title": "Día 10 – LOURDES / PARÍS",
+            "day10-description": "Desayuno y traslado al aeropuerto para un vuelo a París. Llegada y traslado al hotel. Alojamiento y noche en el hotel.",
+            "day11-title": "Día 11 – PARÍS",
+            "day11-description": "Visita a la Iglesia de la Medalla Milagrosa y tiempo libre para compras. Por la tarde, visita a Montmartre y a la Basílica del Sagrado Corazón. Noche en el hotel.",
+            "day12-title": "Día 12 – PARÍS / LISIEUX / PARÍS",
+            "day12-description": "Visita a la Basílica de Santa Teresa en Lisieux, donde vivió Santa Teresa. Regreso a París para pasar la noche en el hotel.",
+            "day13-title": "Día 13 – PARÍS",
+            "day13-description": "Visita a la Catedral de Notre-Dame y recorrido por los principales sitios turísticos de la ciudad, como la Torre Eiffel, el Arco de Triunfo y el Museo del Louvre. Noche en el hotel.",
+            "day14-title": "Día 14 – PARÍS / SPLIT / MEDJUGORJE",
+            "day14-description": "Traslado al aeropuerto y vuelo a Split. Llegada y salida hacia Medjugorje. Alojamiento, cena y noche en el hotel.",
+            "day15-title": "Día 15 – MEDJUGORJE",
+            "day15-description": "Visita a Medjugorje, incluyendo Podbrdo y la Comunidad de la Hermana Euvira. Cena y noche en el hotel.",
+            "day16-title": "Día 16 – MEDJUGORJE / SPLIT",
+            "day16-description": "Salida hacia Split con visita a la ciudad, incluida el Palacio de Diocleciano. Cena y noche en el hotel.",
+            "day17-title": "Día 17 – SPLIT / ZAGREB",
+            "day17-description": "Viaje hacia Zagreb y visita al centro histórico, incluida la Catedral y la Iglesia de San Marcos. Cena y noche en el hotel.",
+            "day18-title": "Día 18 – ZAGREB / LISBOA",
+            "day18-description": "Traslado al aeropuerto y vuelo de regreso a Lisboa. Llegada y alojamiento en el hotel. Cena y noche en el hotel.",
+            "day19-title": "Día 19 – LISBOA / BRASIL",
+            "day19-description": "Recorrido por la ciudad de Lisboa, incluyendo el Monasterio de São Jerônimo, la Iglesia de Santo Antônio, la Catedral de Sé y otros lugares turísticos. Traslado al aeropuerto y vuelo a Brasil.",
+            "contact-us-title": "Contáctanos",
+            "send-button": "Enviar",
+            "follow-us-title": "Síguenos",
+            "all-rights-reserved": "Todos los derechos reservados"
+        },
+                
+        pt: {
+            "menu-title": "Menu",
+            "home-link": "Home",
+            "company-link": "Nossa Empresa",
+            "info-link": "Informações",
+            "contact-link": "Contatos",
+            "bookings-link": "Reservas Internacionais de Hoteis Online",
+            "main-title": "Portugal, França e Bósnia",
+            "main-description": "Uma jornada de fé e cultura através de Lisboa, Fátima, Santiago de Compostela, Lourdes, Paris, Medjugorje e outras cidades. Explore locais sagrados, participe de atividades religiosas e vivencie momentos únicos de espiritualidade no contexto histórico e paisagístico rico de Portugal, França e Bósnia.",
+            "day1-title": "Dia 1 – LISBOA",
+            "day1-description": "Chegada no aeroporto de Lisboa, recepção e início da visita panorâmica da cidade. Visita à Baixa, Alfama, Belém e outros pontos históricos, como a Praça do Rossio, o Teatro Nacional e a Torre de Belém. Tempo livre para visitar a famosa Casa do Pastel de Belém. Jantar e pernoite no hotel.",
+            "day2-title": "Dia 2 – LISBOA - TOMAR - FÁTIMA",
+            "day2-description": "Café da manhã no hotel e saída para Tomar. Visita ao Convento do Cristo. Continuação para Fátima. Tempo livre e participação na Reza do Terço e Procissão das Velas. Jantar e pernoite no hotel.",
+            "day3-title": "Dia 3 – FÁTIMA",
+            "day3-description": "Visita ao Santuário de Fátima, Capela das Aparições, Basílica e outros locais sagrados. Participação na Reza do Terço e Procissão das Velas. Jantar e pernoite no hotel.",
+            "day4-title": "Dia 4 – FÁTIMA / COIMBRA / BRAGA",
+            "day4-description": "Café da manhã no hotel e saída para Coimbra para visita à Universidade de Coimbra. Continuação para Braga. Chegada, jantar e acomodação no hotel.",
+            "day5-title": "Dia 5 – BRAGA / PORTO / SANTIAGO DE COMPOSTELA",
+            "day5-description": "Café da manhã e saída para o Santuário do Bom Jesus, com destaque para a arquitetura e escadarias. Visita panorâmica à cidade do Porto. Continuação para a Galícia e chegada em Santiago de Compostela. Jantar e pernoite no hotel.",
+            "day6-title": "Dia 6 – SANTIAGO DE COMPOSTELA",
+            "day6-description": "Visita panorâmica da cidade, incluindo a Praça do Obradoiro e a Catedral de Santiago. Participação na Missa do Peregrino. Jantar e pernoite no hotel.",
+            "day7-title": "Dia 7 – SANTIAGO DE COMPOSTELA / LEÓN",
+            "day7-description": "Viagem para León, uma das principais cidades do Caminho de Santiago. Visita à Catedral de León. Acomodação, jantar e pernoite no hotel.",
+            "day8-title": "Dia 8 – LEÓN / BURGOS / LOURDES",
+            "day8-description": "Visita à Catedral de Burgos e continuação para Lourdes. Participação na Procissão das Velas na Esplanada do Santuário. Jantar e pernoite no hotel.",
+            "day9-title": "Dia 9 – LOURDES",
+            "day9-description": "Visita ao Santuário de Nossa Senhora de Lourdes, incluindo a gruta e participação na Benção do Santíssimo. Jantar e pernoite no hotel.",
+            "day10-title": "Dia 10 – LOURDES / PARIS",
+            "day10-description": "Café da manhã e traslado para o aeroporto com destino a Paris. Chegada e traslado para o hotel. Acomodação e pernoite.",
+            "day11-title": "Dia 11 – PARIS",
+            "day11-description": "Visita à Igreja da Medalha Milagrosa e tempo livre para compras. À tarde, visita ao bairro Montmartre e à Sacré-Cœur. Pernoite no hotel.",
+            "day12-title": "Dia 12 – PARIS / LISIEUX / PARIS",
+            "day12-description": "Visita à Basílica de Santa Teresa em Lisieux, onde Santa Teresa viveu. Retorno a Paris para pernoite no hotel.",
+            "day13-title": "Dia 13 – PARIS",
+            "day13-description": "Visita à Catedral de Notre-Dame e tour pelos principais pontos turísticos da cidade, como a Torre Eiffel, o Arco do Triunfo e o Museu do Louvre. Pernoite no hotel.",
+            "day14-title": "Dia 14 – PARIS / SPLIT / MEDJUGORJE",
+            "day14-description": "Traslado ao aeroporto para embarque a Split. Chegada e saída para Medjugorje. Acomodação, jantar e pernoite no hotel.",
+            "day15-title": "Dia 15 – MEDJUGORJE",
+            "day15-description": "Visita a Medjugorje, incluindo o Podbrdo e a Comunidade de Irmã Euvira. Jantar e pernoite no hotel.",
+            "day16-title": "Dia 16 – MEDJUGORJE / SPLIT",
+            "day16-description": "Saída para Split com visita à cidade, incluindo o Palácio de Diocleciano. Jantar e pernoite no hotel.",
+            "day17-title": "Dia 17 – SPLIT / ZAGREB",
+            "day17-description": "Viagem para Zagreb e visita ao centro histórico, incluindo a Catedral e a Igreja de São Marcos. Jantar e pernoite no hotel.",
+            "day18-title": "Dia 18 – ZAGREB / LISBOA",
+            "day18-description": "Traslado para o aeroporto e vôo de volta para Lisboa. Chegada e acomodação no hotel. Jantar e pernoite.",
+            "day19-title": "Dia 19 – LISBOA / BRASIL",
+            "day19-description": "City tour em Lisboa com visita ao Mosteiro de São Jerônimo, Igreja de Santo Antônio, Catedral da Sé e outros pontos turísticos. Traslado para o aeroporto e vôo para o Brasil.",
+            "contact-us-title": "Fale Conosco",
+            "send-button": "Enviar",
+            "follow-us-title": "Siga-Nos",
+            "all-rights-reserved": "Todos os direitos reservados"
+                }
+            };
+
+            for (var id in translations[language]) {
+                var element = document.getElementById(id);
+                if (element) {
+                    element.innerHTML = translations[language][id];
+                }
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var language = getLanguage();
+            translatePage(language);
+        });
+    </script>
+</body>
+</html>

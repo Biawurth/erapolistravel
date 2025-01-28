@@ -1,0 +1,354 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Erapolis Travel</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        #main {
+            font-family: 'Arial', serif;
+        }
+
+        /* Estilo para o cabeçalho */
+        #header .inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; 
+            position: relative;
+        }
+
+        /* Estilo para o menu */
+        #header nav {
+            margin-right: 10px; /* Espaço entre o menu e os botões de idioma */
+        }
+
+        /* Estilo para os botões de idioma */
+        .language-buttons {
+            display: flex;
+            align-items: center; /* Alinha verticalmente com o menu */
+            margin-left: auto;
+        }
+
+        .language-buttons img {
+            width: 32px;
+            height: 32px;
+            margin: 0 5px; /* Espaço entre os ícones */
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .language-buttons img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+    <link rel="stylesheet" href="assets/css/erapolis-travel-logo.css">
+    <link rel="icon" href="assets/css/erapolis-travel-logo.css" type="image/x-icon">
+    <!-- arquivo de estilo para quando o JavaScript estiver desativado -->
+    <noscript><link rel="stylesheet" href="assets/css/erapolis-travel-logo.css"></noscript>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <span class="symbol"><img src="images/erapolis-travel-logo.jpg" alt="" /></span><span class="title">Erapolis Travel</span>
+                </a>
+
+                <!-- Nav -->
+                <nav>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Language Buttons -->
+                <div class="language-buttons">
+                    <img src="images/flags/us.png" onclick="setLanguage('en')" />
+                    <img src="images/flags/br.png" onclick="setLanguage('pt')" />
+                    <img src="images/flags/it.png" onclick="setLanguage('it')" />
+                    <img src="images/flags/fr.png" onclick="setLanguage('fr')" />
+                    <img src="images/flags/es.png" onclick="setLanguage('es')" />
+                </div>
+
+            </div>
+        </header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <h2 id="menu-title">Menu</h2>
+            <ul>
+                <li><a id="home-link" href="index.html">Home</a></li>
+                <li><a id="company-link" href="nossaempresa.html">Nossa Empresa</a></li>
+                <li><a id="info-link" href="informações.html">Informações</a></li>
+                <li><a id="contact-link" href="contatos.html">Contatos</a></li>
+                <li><a id="bookings-link" href="elements.html">Reservas Internacionais de Hoteis Online</a></li>
+            </ul>
+        </nav>
+        <div id="main" class="animated">
+			<div class="inner">
+                <header style="text-align: center;">
+                <h1 id="main-title">Entre em Contato</h1>
+            </header>        
+
+        <!-- Contêiner para Telefones, Fax, Email e Endereço -->
+        <div class="contact-container">
+            <!-- Telefones -->
+            <div class="contact-section">
+                <header>
+                    <h3 id="telefones-title">Telefones</h3>
+                    <p id="telefones-description">Tel. +39 (0)70 2352775/776</p>
+                    <p id="telefone2-description">Toll free number 800 912183</p>
+                </header>
+            </div>
+
+            <!-- Fax -->
+            <div class="contact-section">
+                <header>
+                    <h3 id="fax-title">Fax</h3>
+                    <p id="fax-description">Fax +39 (0)70 2352774</p>
+                </header>
+            </div>
+
+            <!-- Email -->
+            <div class="contact-section">
+                <header>
+                    <h3 id="email-title">Email</h3>
+                    <p id="email-description">info@erapolistravel.it</p>
+                </header>
+            </div>
+
+            <!-- Endereço -->
+            <div class="contact-section">
+                <header>
+                    <h3 id="address-title">Endereço</h3>
+                    <p id="address-description">Via Luigi Pasteur, 7 - 09126 Cagliari</p>
+                </header>
+            </div>
+        </div>
+				
+					<!-- Google Maps -->
+					<div id="map-container">
+						<iframe 
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3091.5416707883946!2d9.135905375951726!3d39.207861971659334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12e733871e60602d%3A0xa0a6224bc8d4afaf!2sVia%20Luigi%20Pasteur%2C%207%2C%2009126%20Cagliari%20CA%2C%20It%C3%A1lia!5e0!3m2!1spt-BR!2sbr!4v1737562192025!5m2!1spt-BR!2sbr"
+						width="100%"
+						height="450"
+						style="border:0;"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade">
+						</iframe>
+					</div>
+					</div>
+					<!-- Aviso Legal -->
+					<div class="inner legal-notice">
+					<blockquote>
+						<i id="avisolegal">
+						Prezado Cliente, Todas as informações pessoais (dados pessoais) que você nos fornecer serão tratadas exclusivamente para atender às suas solicitações. Esses dados pessoais serão tratados por nós principalmente por meio de nosso Sistema Informativo, seja com instrumentos tradicionais (dados em suporte físico) ou com instrumentos eletrônicos (elaboradores) dentro da nossa empresa, e somente poderão ser visualizados pelos responsáveis pelo Tratamento de Dados. 
+						<br><br>
+						Os dados coletados serão tratados exclusivamente dentro da nossa empresa, e somente terão acesso a eles os responsáveis pelo Tratamento de Dados. Eles não serão comunicados nem divulgados, exceto por obrigação legal. 
+						<br><br>
+						Você, como interessado, tem o direito de solicitar à Erapolis Travel Srl (Titular do Tratamento) a confirmação da existência dos dados relacionados a você, ou seja, solicitar a comunicação desses dados em forma inteligível, assim como solicitar o bloqueio, conforme especificado no artigo 7º do Decreto Legislativo nº 196/2003. 
+						<br><br>
+						Para qualquer solicitação ou comunicação referente ao tratamento de seus dados pessoais, você poderá entrar em contato com a Erapolis Travel Srl, por e-mail, no endereço: <a href="mailto:privacy@erapolistravel.it">privacy@erapolistravel.it</a>, ou também por correio, no endereço: Viale Marconi 81, 09131 Cagliari.
+						</i>
+					</blockquote>
+					</div>
+				</div>
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <section>
+                    <h2 id="contact-us-title">Fale Conosco</h2>
+                    <form method="post" action="#">
+                        <div class="fields">
+                            <div class="field half">
+                                <input type="text" name="name" id="name" placeholder="Name" />
+                            </div>
+                            <div class="field half">
+                                <input type="email" name="email" id="email" placeholder="Email" />
+                            </div>
+                            <div class="field">
+                                <textarea name="message" id="message" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <ul class="actions">
+                            <li><input id="send-button" type="submit" value="send" class="primary" /></li>
+                        </ul>
+                    </form>
+                </section>
+                <section>
+                    <h2 id="follow-us-title">Siga-Nos</h2>
+                    <ul class="icons">
+                        <li><a href="https://www.facebook.com/erapolistravel/" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+                    </ul>
+                </section>
+                <ul class="copyright">
+                    <li>&copy; Erapolis Travel 2025. <span id="all-rights-reserved">Todos os direitos reservados</span></li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Translate Script -->
+    <script>
+        function setLanguage(language) {
+            document.cookie = "language=" + language + "; path=/";
+            translatePage(language);
+        }
+
+        function getLanguage() {
+            let name = "language=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for(let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "pt"; // Default language
+        }
+
+        function translatePage(language) {
+            var translations = {
+        en: {
+            "main-title": "Contact Us",
+			"telefones-title": "Phone Numbers",
+			"telefones-description": "Tel. +39 (0)70 2352775/776",
+			"telefone2-description": "Toll-free number 800 912183",
+			"fax-title": "Fax",
+			"fax-description": "Fax +39 (0)70 2352774",
+			"email-title": "Email",
+			"email-description": "info@erapolistravel.it",
+			"address-title": "Address",
+			"address-description": "Via Luigi Pasteur, 7 - 09126 Cagliari",
+            "avisolegal": "Dear Customer, All personal information (personal data) that you provide to us will be treated exclusively to meet your requests. These personal data will mainly be processed by us through our Information System, either with traditional instruments (data in physical form) or with electronic instruments (processors) within our company, and can only be viewed by those responsible for Data Processing. The collected data will be processed exclusively within our company, and only those responsible for Data Processing will have access to it. It will not be communicated or disclosed, except by legal obligation. You, as the interested party, have the right to request from Erapolis Travel Srl (Data Controller) confirmation of the existence of data related to you, that is, request communication of such data in an intelligible form, as well as request its blocking, as specified in Article 7 of Legislative Decree No. 196/2003. For any request or communication regarding the processing of your personal data, you can contact Erapolis Travel Srl via email at: privacy@erapolistravel.it, or by mail at the address: Viale Marconi 81, 09131 Cagliari.",
+            "contact-us-title": "Contact us",
+            "send-button": "Send",
+            "follow-us-title": "Follow Us",
+            "all-rights-reserved": "All rights reserved",
+            "name": "Name",
+            "message": "Message",
+        },
+        it: {
+			"main-title": "Contattaci",
+			"telefones-title": "Numeri di Telefono",
+			"telefones-description": "Tel. +39 (0)70 2352775/776",
+			"telefone2-description": "Numero verde 800 912183",
+			"fax-title": "Fax",
+			"fax-description": "Fax +39 (0)70 2352774",
+			"email-title": "Email",
+			"email-description": "info@erapolistravel.it",
+			"address-title": "Indirizzo",
+			"address-description": "Via Luigi Pasteur, 7 - 09126 Cagliari",
+            "avisolegal": "Gentile Cliente, Tutte le informazioni personali (dati personali) che ci fornirà saranno trattate esclusivamente per soddisfare le sue richieste. Questi dati personali saranno trattati principalmente da noi tramite il nostro Sistema Informativo, sia con strumenti tradizionali (dati in formato fisico) che con strumenti elettronici (elaboratori) all'interno della nostra azienda, e potranno essere visualizzati solo da coloro che sono responsabili del trattamento dei dati. I dati raccolti saranno trattati esclusivamente all'interno della nostra azienda e solo coloro che sono responsabili del trattamento dei dati avranno accesso ad essi. Non saranno comunicati né divulgati, se non per obbligo di legge. Lei, in qualità di interessato, ha il diritto di richiedere a Erapolis Travel Srl (Titolare del trattamento) la conferma dell'esistenza dei dati che lo riguardano, cioè richiedere la comunicazione di tali dati in forma intellegibile, nonché richiederne il blocco, come specificato nell'articolo 7 del Decreto Legislativo n. 196/2003. Per qualsiasi richiesta o comunicazione riguardante il trattamento dei suoi dati personali, può contattare Erapolis Travel Srl via email all'indirizzo: privacy@erapolistravel.it, oppure per posta all'indirizzo: Viale Marconi 81, 09131 Cagliari.",
+            "contact-us-title": "Contattaci",
+            "send-button": "Invia",
+            "follow-us-title": "Seguici",
+            "all-rights-reserved": "Tutti i diritti riservati",
+            "name": "Nome",
+            "message": "Messaggio",
+        },
+        fr: {
+            "main-title": "Contactez-nous",
+			"telefones-title": "Numéros de Téléphone",
+			"telefones-description": "Tél. +39 (0)70 2352775/776",
+			"telefone2-description": "Numéro vert 800 912183",
+			"fax-title": "Fax",
+			"fax-description": "Fax +39 (0)70 2352774",
+			"email-title": "Email",
+			"email-description": "info@erapolistravel.it",
+			"address-title": "Adresse",
+			"address-description": "Via Luigi Pasteur, 7 - 09126 Cagliari",
+            "avisolegal": "Cher client, Toutes les informations personnelles (données personnelles) que vous nous fournirez seront traitées exclusivement pour répondre à vos demandes. Ces données personnelles seront principalement traitées par nous via notre système d'information, soit par des instruments traditionnels (données en format physique), soit par des instruments électroniques (processeurs) au sein de notre entreprise, et ne pourront être visualisées que par les responsables du traitement des données. Les données collectées seront traitées exclusivement au sein de notre entreprise et seuls les responsables du traitement des données y auront accès. Elles ne seront pas communiquées ni divulguées, sauf en cas d'obligation légale. Vous, en tant qu'intéressé, avez le droit de demander à Erapolis Travel Srl (responsable du traitement) la confirmation de l'existence de données vous concernant, c'est-à-dire de demander la communication de ces données sous une forme intelligible, ainsi que de demander leur blocage, comme spécifié à l'article 7 du décret législatif n° 196/2003. Pour toute demande ou communication concernant le traitement de vos données personnelles, vous pouvez contacter Erapolis Travel Srl par e-mail à l'adresse : privacy@erapolistravel.it, ou par courrier à l'adresse suivante : Viale Marconi 81, 09131 Cagliari.",
+            "contact-us-title": "Contactez-nous",
+            "send-button": "Envoyer",
+            "follow-us-title": "Suivez-Nous",
+            "all-rights-reserved": "Tous droits réservés",
+            "name": "Nom",
+            "message": "Message",
+
+        },
+        es: {
+            "main-title": "Contáctenos",
+			"telefones-title": "Teléfonos",
+			"telefones-description": "Tel. +39 (0)70 2352775/776",
+			"telefone2-description": "Número gratuito 800 912183",
+			"fax-title": "Fax",
+			"fax-description": "Fax +39 (0)70 2352774",
+			"email-title": "Correo Electrónico",
+			"email-description": "info@erapolistravel.it",
+			"address-title": "Dirección",
+			"address-description": "Via Luigi Pasteur, 7 - 09126 Cagliari",
+            "avisolegal": "Toda la información personal (datos personales) que nos proporcione será tratada exclusivamente para satisfacer sus solicitudes. Estos datos personales serán procesados principalmente a través de nuestro Sistema de Información, ya sea con instrumentos tradicionales (datos en soporte físico) o con instrumentos electrónicos (procesadores) dentro de nuestra empresa, y solo podrán ser visualizados por los responsables del Tratamiento de Datos. Los datos recogidos serán tratados exclusivamente dentro de nuestra empresa, y solo los responsables del Tratamiento de Datos tendrán acceso a ellos. No serán comunicados ni divulgados, excepto por obligación legal. Usted, como interesado, tiene el derecho de solicitar a Erapolis Travel Srl (Responsable del Tratamiento) la confirmación de la existencia de datos relacionados con usted, es decir, solicitar la comunicación de dichos datos en forma inteligible, así como solicitar su bloqueo, según lo especificado en el artículo 7 del Decreto Legislativo No. 196/2003. Para cualquier solicitud o comunicación relacionada con el tratamiento de sus datos personales, puede ponerse en contacto con Erapolis Travel Srl, por correo electrónico en la dirección: privacy@erapolistravel.it, o también por correo postal en la dirección: Viale Marconi 81, 09131 Cagliari.",
+            "contact-us-title": "Contáctanos",
+            "send-button": "Enviar",
+            "follow-us-title": "Síguenos",
+            "all-rights-reserved": "Todos los derechos reservados",
+            "name": "Nombre",
+            "message": "Mensaje"
+        },
+                
+        pt: {
+            "menu-title": "Menu",
+            "home-link": "Home",
+            "company-link": "Nossa Empresa",
+            "info-link": "Informações",
+            "contact-link": "Contatos",
+            "bookings-link": "Reservas Internacionais de Hoteis Online",
+            "main-title": "Entre em Contato",
+			"telefones-title": "Telefones",
+			"telefones-description": "Tel. +39 (0)70 2352775/776",
+			"telefone2-description": "Número gratuito 800 912183",
+			"fax-title": "Fax",
+			"fax-description": "Fax +39 (0)70 2352774",
+			"email-title": "Email",
+			"email-description": "info@erapolistravel.it",
+			"address-title": "Endereço",
+			"address-description": "Via Luigi Pasteur, 7 - 09126 Cagliari",
+            "avisolegal": "Prezado Cliente, Todas as informações pessoais (dados pessoais) que você nos fornecer serão tratadas exclusivamente para atender às suas solicitações. Esses dados pessoais serão tratados principalmente por meio de nosso Sistema Informativo, seja com instrumentos tradicionais (dados em suporte físico) ou com instrumentos eletrônicos (processadores) dentro de nossa empresa, e somente poderão ser visualizados pelos responsáveis pelo Tratamento de Dados. Os dados coletados serão tratados exclusivamente dentro de nossa empresa, e somente terão acesso a eles os responsáveis pelo Tratamento de Dados. Eles não serão comunicados nem divulgados, exceto por obrigação legal. Você, como interessado, tem o direito de solicitar à Erapolis Travel Srl (Titular do Tratamento) a confirmação da existência dos dados relacionados a você, ou seja, solicitar a comunicação desses dados de forma inteligível, assim como solicitar o bloqueio, conforme especificado no artigo 7º do Decreto Legislativo nº 196/2003. Para qualquer solicitação ou comunicação referente ao tratamento de seus dados pessoais, você poderá entrar em contato com a Erapolis Travel Srl, por e-mail, no endereço: privacy@erapolistravel.it, ou também por correio, no endereço: Viale Marconi 81, 09131 Cagliari.",
+            "contact-us-title": "Fale Conosco",
+            "send-button": "Enviar",
+            "follow-us-title": "Siga-Nos",
+            "all-rights-reserved": "Todos os direitos reservados"
+                }
+            };
+
+            for (var id in translations[language]) {
+                var element = document.getElementById(id);
+                if (element) {
+                    element.innerHTML = translations[language][id];
+                }
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var language = getLanguage();
+            translatePage(language);
+        });
+    </script>
+</body>
+</html>

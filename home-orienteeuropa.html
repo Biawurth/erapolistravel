@@ -1,0 +1,332 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Erapolis Travel</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        #main {
+            font-family: 'Arial', serif;
+        }
+
+        #header .inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        #header nav {
+            margin-right: 10px;
+        }
+
+        .language-buttons {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+        }
+
+        .language-buttons img {
+            width: 32px;
+            height: 32px;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .language-buttons img:hover {
+            transform: scale(1.1);
+        }
+
+        .tiles .image img {
+            width: 100%;
+            height: auto;
+            max-height: 200px;
+            object-fit: cover;
+        }
+    </style>
+    
+    <link rel="stylesheet" href="assets/css/erapolis-travel-logo.css">
+    <link rel="icon" href="assets/css/erapolis-travel-logo.css" type="image/x-icon">
+    <noscript><link rel="stylesheet" href="assets/css/erapolis-travel-logo.css"></noscript>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <a href="index.html" class="logo">
+                    <span class="symbol"><img src="images/erapolis-travel-logo.jpg" alt="" /></span><span class="title">Erapolis Travel</span>
+                </a>
+
+                <nav>
+                    <ul>
+                        <li><a href="#menu" id="menu-title">Menu</a></li>
+                    </ul>
+                </nav>
+
+                <div class="language-buttons">
+                    <img src="images/flags/us.png" onclick="setLanguage('en')" alt="English" />
+                    <img src="images/flags/br.png" onclick="setLanguage('pt')" alt="Portuguese" />
+                    <img src="images/flags/it.png" onclick="setLanguage('it')" alt="Italian" />
+                    <img src="images/flags/fr.png" onclick="setLanguage('fr')" alt="French" />
+                    <img src="images/flags/es.png" onclick="setLanguage('es')" alt="Spanish" />
+                </div>
+            </div>
+        </header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <h2 id="menu-title">Menu</h2>
+            <ul>
+                <li><a id="home-link" href="index.html">Home</a></li>
+                <li><a id="company-link" href="nossaempresa.html">Our Company</a></li>
+                <li><a id="info-link" href="informações.html">Information</a></li>
+                <li><a id="contact-link" href="contatos.html">Contact</a></li>
+                <li><a id="bookings-link" href="elements.html">International Hotel Bookings</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main" class="animated">
+            <div class="inner">
+                <header style="text-align: center;">
+                    <h1 id="destination-title">Oriente Médio e Europa</h1>
+                    <p id="description">Uma viagem entre a história antiga e a cultura vibrante.</p>
+                </header>
+                <section class="tiles">
+                    <article class="style1">
+                        <span class="image">
+                            <img src="images/terrasantaroma.jpg" alt="" />
+                        </span>
+                        <a href="terrasantaroma.html">
+                            <h2 id="terrasanta-title">Terrasanta, Roma e Veneza</h2>
+                            <div class="content">
+                                <p id="terrasanta-description">Uma jornada pelas cidades sagradas e ícones da cultura europeia.</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="style1">
+                        <span class="image">
+                            <img src="images/terrasanta.jpg" alt="" />
+                        </span>
+                        <a href="terrasanta-turquia-lisboa.html">
+                            <h2 id="terrasantaturquia-title">Terrasanta, Turquia e Lisboa</h2>
+                            <div class="content">
+                                <p id="terrasantaturquia-description">Uma viagem entre o sagrado, o místico e o encanto europeu.</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="style1">
+                        <span class="image">
+                            <img src="images/grecia.png" alt="" />
+                        </span>
+                        <a href="turquiagrecia.html">
+                            <h2 id="turquiagrecia-title">Turquia e Grécia</h2>
+                            <div class="content">
+                                <p id="turquiagrecia-description">Uma jornada entre as belezas do Oriente e as riquezas da cultura europeia.</p>
+            </div>
+        
+        </div>
+</div>
+
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <section>
+                    <h2 id="contact-us-title">Fale Conosco</h2>
+                    <form method="post" action="#">
+                        <div class="fields">
+                            <div class="field half">
+                                <input type="text" name="name" id="name" placeholder="Nome" />
+                            </div>
+                            <div class="field half">
+                                <input type="email" name="email" id="email" placeholder="Email" />
+                            </div>
+                            <div class="field">
+                                <textarea name="message" id="message" placeholder="Mensagem"></textarea>
+                            </div>
+                        </div>
+                        <ul class="actions">
+                            <li><input id="send-button" type="submit" value="enviar" class="primary" data-translate="send-button"/></li>
+                        </ul>
+                    </form>
+                </section>
+                <section>
+                    <h2 id="follow-us-title">Siga-Nos</h2>
+                    <ul class="icons">
+                        <li><a href="https://www.facebook.com/erapolistravel/" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+                    </ul>
+                </section>
+                <ul class="copyright">
+                    <li>&copy; Erapolis Travel 2025. <span id="all-rights-reserved">Todos os direitos reservados</span></li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+   <!-- Translate Script -->
+   <script>
+    function setLanguage(language) {
+        document.cookie = "language=" + language + "; path=/";
+        translatePage(language);
+    }
+
+    function getLanguage() {
+        let name = "language=";
+        let decodedCookie = decodeURIComponent(document.cookie);
+        let ca = decodedCookie.split(';');
+        for(let i = 0; i < ca.length; i++) {
+            let c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "pt"; // Default language
+    }
+
+    function translatePage(language) {
+        var translations = {    
+            en: {
+                "menu-title": "Menu",
+                "home-link": "Home",
+                "company-link": "Our Company",
+                "info-link": "Information",
+                "contact-link": "Contact",
+                "bookings-link": "International Hotel Bookings",
+                "destination-title": "Middle East and Europe",
+                "description": "A journey between ancient history and vibrant culture.",
+                "terrasanta-title": "Holy Land, Rome and Venice",
+                "terrasanta-description": "A journey through sacred cities and icons of European culture.",
+                "terrasantaturquia-title": "Holy Land, Turkey and Lisbon",
+                "terrasantaturquia-description": "A journey between the sacred, the mystical, and European charm.",
+                "turquiagrecia-title": "Turkey and Greece",
+                "turquiagrecia-description": "A journey through the beauties of the East and the riches of European culture.",
+                "contact-us-title": "Contact Us",
+                "send-button": "Send",
+                "follow-us-title": "Follow Us",
+                "all-rights-reserved": "All Rights Reserved.",
+                "name": "Name",
+                "email": "Email",
+            },
+            pt: {
+                "menu-title": "Menu",
+                "home-link": "Home",
+                "company-link": "Nossa Empresa",
+                "info-link": "Informações",
+                "contact-link": "Contatos",
+                "bookings-link": "Reservas Internacionais de Hotéis",
+                "destination-title": "Oriente Médio e Europa",
+                "description": "Uma jornada entre a história antiga e a cultura vibrante.",
+                "terrasanta-title": "Terrasanta, Roma e Veneza",
+                "terrasanta-description": "Uma jornada pelas cidades sagradas e ícones da cultura europeia.",
+                "terrasantaturquia-title": "Terrasanta, Turquia e Lisboa",
+                "terrasantaturquia-description": "Uma viagem entre o sagrado, o místico e o encanto europeu.",
+                "turquiagrecia-title": "Turquia e Grécia",
+                "turquiagrecia-description": "Uma jornada entre as belezas do Oriente e as riquezas da cultura europeia.",
+                "contact-us-title": "Fale Conosco",
+                "send-button": "Enviar",
+                "follow-us-title": "Siga-Nos",
+                "all-rights-reserved": "Todos os direitos reservados",
+            },
+            it: {
+                "menu-title": "Menu",
+                "home-link": "Home",
+                "company-link": "La Nostra Azienda",
+                "info-link": "Informazioni",
+                "contact-link": "Contatti",
+                "bookings-link": "Prenotazioni Internazionali di Hotel",
+                "destination-title": "Medio Oriente e Europa",
+                "description": "Un viaggio tra la storia antica e la cultura vibrante.",
+                "terrasanta-title": "Terra Santa, Roma e Venezia",
+                "terrasanta-description": "Un viaggio attraverso le città sacre e i simboli della cultura europea.",
+                "terrasantaturquia-title": "Terra Santa, Turchia e Lisbona",
+                "terrasantaturquia-description": "Un viaggio tra il sacro, il mistico e il fascino europeo.",
+                "turquiagrecia-title": "Turchia e Grecia",
+                "turquiagrecia-description": "Un viaggio tra le bellezze dell'Oriente e le ricchezze della cultura europea.",
+                "contact-us-title": "Contattaci",
+                "send-button": "Invia",
+                "follow-us-title": "Seguici",
+                "all-rights-reserved": "Tutti i diritti riservati",
+            },
+            fr: {
+                "menu-title": "Menu",
+                "home-link": "Accueil",
+                "company-link": "Notre Entreprise",
+                "info-link": "Informations",
+                "contact-link": "Contacts",
+                "bookings-link": "Réservations Internationales d'Hôtels",
+                "destination-title": "Moyen-Orient et Europe",
+                "description": "Un voyage entre l'histoire ancienne et la culture vibrante.",
+                "terrasanta-title": "Terre Sainte, Rome et Venise",
+                "terrasanta-description": "Un voyage à travers les villes saintes et les icônes de la culture européenne.",
+                "terrasantaturquia-title": "Terre Sainte, Turquie et Lisbonne",
+                "terrasantaturquia-description": "Un voyage entre le sacré, le mystique et le charme européen.",
+                "turquiagrecia-title": "Turquie et Grèce",
+                "turquiagrecia-description": "Un voyage entre les beautés de l'Orient et les richesses de la culture européenne.",
+                "contact-us-title": "Contactez-Nous",
+                "send-button": "Envoyer",
+                "follow-us-title": "Suivez-Nous",
+                "all-rights-reserved": "Tous droits réservés",
+            },
+            es: {
+                "menu-title": "Menú",
+                "home-link": "Inicio",
+                "company-link": "Nuestra Empresa",
+                "info-link": "Información",
+                "contact-link": "Contactos",
+                "bookings-link": "Reservas Internacionales de Hoteles",
+                "destination-title": "Oriente Medio y Europa",
+                "description": "Un viaje entre la historia antigua y la cultura vibrante.",
+                "terrasanta-title": "Tierra Santa, Roma y Venecia",
+                "terrasanta-description": "Un viaje por las ciudades sagradas y los íconos de la cultura europea.",
+                "terrasantaturquia-title": "Tierra Santa, Turquía y Lisboa",
+                "terrasantaturquia-description": "Un viaje entre lo sagrado, lo místico y el encanto europeo.",
+                "turquiagrecia-title": "Turquía y Grecia",
+                "turquiagrecia-description": "Un viaje entre las bellezas de Oriente y las riquezas de la cultura europea.",
+                "contact-us-title": "Contáctanos",
+                "send-button": "Enviar",
+                "follow-us-title": "Síguenos",
+                "all-rights-reserved": "Todos los derechos reservados",
+            }
+        };
+
+        for (var id in translations[language]) {
+                var element = document.getElementById(id);
+                if (element) {
+                    element.innerHTML = translations[language][id];
+                }
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var language = getLanguage();
+            translatePage(language);
+        });
+    
+     
+        
+    </script>
+    
+</body>
+</html>

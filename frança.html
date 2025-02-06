@@ -1,0 +1,525 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Erapolis Travel</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        #main {
+            font-family: 'Arial', serif;
+        }
+
+        /* Estilo para o cabeçalho */
+        #header .inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; 
+            position: relative;
+        }
+
+        /* Estilo para o menu */
+        #header nav {
+            margin-right: 10px; /* Espaço entre o menu e os botões de idioma */
+        }
+
+        /* Estilo para os botões de idioma */
+        .language-buttons {
+            display: flex;
+            align-items: center; /* Alinha verticalmente com o menu */
+            margin-left: auto;
+        }
+
+        .language-buttons img {
+            width: 32px;
+            height: 32px;
+            margin: 0 5px; /* Espaço entre os ícones */
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .language-buttons img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+    <link rel="stylesheet" href="assets/css/erapolis-travel-logo.css">
+    <link rel="icon" href="assets/css/erapolis-travel-logo.css" type="image/x-icon">
+    <!-- arquivo de estilo para quando o JavaScript estiver desativado -->
+    <noscript><link rel="stylesheet" href="assets/css/erapolis-travel-logo.css"></noscript>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <span class="symbol"><img src="images/erapolis-travel-logo.jpg" alt="" /></span><span class="title">Erapolis Travel</span>
+                </a>
+
+                <!-- Nav -->
+                <nav>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Language Buttons -->
+                <div class="language-buttons">
+                    <img src="images/flags/us.png" onclick="setLanguage('en')" />
+                    <img src="images/flags/br.png" onclick="setLanguage('pt')" />
+                    <img src="images/flags/it.png" onclick="setLanguage('it')" />
+                    <img src="images/flags/fr.png" onclick="setLanguage('fr')" />
+                    <img src="images/flags/es.png" onclick="setLanguage('es')" />
+                </div>
+
+            </div>
+        </header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <h2 id="menu-title">Menu</h2>
+            <ul>
+                <li><a id="home-link" href="index.html">Home</a></li>
+                <li><a id="company-link" href="nossaempresa.html">Nossa Empresa</a></li>
+                <li><a id="info-link" href="informações.html">Informações</a></li>
+                <li><a id="contact-link" href="contatos.html">Contatos</a></li>
+                <li><a id="bookings-link" href="elements.html">Reservas Internacionais de Hoteis Online</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+         <div class="inner">
+            <h1 id="main-title">França, Itália e Portugal</h1>
+            <p id="main-description" class="texto-menor"> Uma viagem deslumbrante pelos encantos da Europa, onde a sofisticação da França, a história e arte da Itália, e a cultura acolhedora de Portugal se encontram em um roteiro inesquecível. Explore as românticas ruas de Paris, descubra a beleza única das cidades italianas e deixe-se encantar pelas tradições e paisagens deslumbrantes de Portugal. Uma experiência que une charme, história e gastronomia, proporcionando memórias para a vida toda.</p>
+            <div class="images">
+                <img src="images/frança1" alt="" class="image" />
+                <img src="images/italia1" alt="" class="image" />
+                </div>
+        <div class="specific-section">
+            <h1 id="day1-title">1º Dia – Chegada a Paris (França)</h1>
+            <p id="day1-description" class="texto-menor">Chegada a Paris. Assistência do guia que acompanhará o grupo durante toda a viagem. Traslado ao hotel, jantar e pernoite.</p>
+            
+            <h1 id="day2-title">2º Dia – Paris</h1>
+            <p id="day2-description" class="texto-menor">Café da manhã. Visita guiada à cidade, com destaque para a Torre Eiffel, o Museu do Louvre e a Catedral de Notre-Dame. Almoço no hotel. Tarde livre para explorar a cidade ou fazer um passeio de barco pelo Rio Sena. Jantar em restaurante típico. Pernoite.</p>
+            
+            <h1 id="day3-title">3º Dia – Paris</h1>
+            <p id="day3-description" class="texto-menor">Café da manhã. Visita à charmosa região de Montmartre, com destaque para a Basílica de Sacré-Cœur e a Place du Tertre. Tarde livre para compras ou explorar os cafés e lojas de Paris. Jantar e pernoite.</p>
+            
+            <h1 id="day4-title">4º Dia – Paris a Roma (Itália)</h1>
+            <p id="day4-description" class="texto-menor">Café da manhã. Translado para o aeroporto e voo para Roma. Chegada e assistência para o traslado ao hotel. Jantar e pernoite.</p>
+            
+            <h1 id="day5-title">5º Dia – Roma</h1>
+            <p id="day5-description" class="texto-menor">Café da manhã. Visita guiada aos principais pontos turísticos de Roma, incluindo o Coliseu, o Fórum Romano e a Fonte de Trevi. Almoço no hotel. Tarde livre para passeios adicionais ou para explorar as praças e ruas históricas de Roma. Jantar e pernoite.</p>
+            
+            <h1 id="day6-title">6º Dia – Roma</h1>
+            <p id="day6-description" class="texto-menor">Café da manhã. Visita ao Vaticano, com destaque para a Basílica de São Pedro e os Museus Vaticanos, onde se encontra a famosa Capela Sistina. Almoço em restaurante típico. Tarde livre para conhecer mais sobre a cidade ou fazer compras. Jantar e pernoite.</p>
+            
+            <h1 id="day7-title">7º Dia – Roma a Florença (Itália)</h1>
+            <p id="day7-description" class="texto-menor">Café da manhã. Translado para Florença. Chegada e visita guiada pela cidade, passando pela Catedral de Santa Maria del Fiore, a Ponte Vecchio e a Galeria Uffizi. Almoço no hotel. Tarde livre para explorar mais a cidade ou visitar uma vinícola nas proximidades. Jantar e pernoite.</p>
+            
+            <h1 id="day8-title">8º Dia – Florença a Lisboa (Portugal)</h1>
+            <p id="day8-description" class="texto-menor">Café da manhã. Translado para o aeroporto e voo para Lisboa. Chegada e traslado ao hotel. Jantar e pernoite.</p>
+            
+            <h1 id="day9-title">9º Dia – Lisboa</h1>
+            <p id="day9-description" class="texto-menor">Café da manhã. Visita guiada a Lisboa, incluindo o bairro de Belém, a Torre de Belém e o Mosteiro dos Jerónimos. Almoço em restaurante típico. Tarde livre para passeios adicionais ou para explorar o charmante bairro de Alfama. Jantar e pernoite.</p>
+            
+            <h1 id="day10-title">10º Dia – Lisboa</h1>
+            <p id="day10-description" class="texto-menor">Café da manhã. Passeio pelo Parque das Nações e visita ao Oceanário de Lisboa. Almoço no hotel. Tarde livre para explorar mais da cidade ou fazer compras. Jantar e pernoite.</p>
+            
+            <h1 id="day11-title">11º Dia – Lisboa a Porto (Portugal)</h1>
+            <p id="day11-description" class="texto-menor">Café da manhã. Translado para Porto. Chegada e visita guiada pela cidade, incluindo a Livraria Lello, a Ribeira e a Ponte Dom Luís I. Almoço em restaurante típico. Tarde livre para passeios ou degustação do famoso vinho do Porto. Jantar e pernoite.</p>
+            
+            <h1 id="day12-title">12º Dia – Porto</h1>
+            <p id="day12-description" class="texto-menor">Café da manhã. Passeio pelas caves de vinho do Porto, com degustação. Tarde livre para explorar o centro histórico ou fazer compras. Jantar e pernoite.</p>
+            
+            <h1 id="day13-title">13º Dia – Porto a Lisboa</h1>
+            <p id="day13-description" class="texto-menor">Café da manhã. Translado para Lisboa. Tarde livre para últimas compras ou passeios pela cidade. Jantar de despedida em restaurante típico. Pernoite.</p>
+            
+            <h1 id="day14-title">14º Dia – Partida de Lisboa</h1>
+            <p id="day14-description" class="texto-menor">Café da manhã. Traslado ao aeroporto e fim dos nossos serviços.</p>
+            
+    </div>
+        </div>
+</div>
+
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <section>
+                    <h2 id="contact-us-title">Fale Conosco</h2>
+                    <form method="post" action="#">
+                        <div class="fields">
+							<div class="field half">
+                                <input type="text" name="name" id="name" placeholder="Name" />
+                            </div>
+                            <div class="field half">
+                                <input type="email" name="email" id="email" placeholder="Email" />
+                            </div>
+                            <div class="field">
+                                <textarea name="message" id="message" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <ul class="actions">
+                            <li><input id="send-button" type="submit" value="Send" class="primary" /></li>
+                        </ul>
+                    </form>
+                </section>
+                <section>
+                    <h2 id="follow-us-title">Siga-Nos</h2>
+                    <ul class="icons">
+                        <li><a href="https://www.facebook.com/erapolistravel/" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+                    </ul>
+                </section>
+                <ul class="copyright">
+                    <li>&copy; Erapolis Travel 2025. <span id="all-rights-reserved">Todos os direitos reservados</span></li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Translate Script -->
+    <script>
+        function setLanguage(language) {
+            document.cookie = "language=" + language + "; path=/";
+            translatePage(language);
+        }
+
+        function getLanguage() {
+            let name = "language=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for(let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "pt"; // Default language
+        }
+
+        function translatePage(language) {
+            var translations = {
+            en: {
+            "menu-title": "Menu",
+            "home-link": "Home",
+            "company-link": "Our Company",
+            "info-link": "Information",
+            "contact-link": "Contacts",
+            "bookings-link": "International Hotel Bookings Online",          
+            "main-title": "France, Italy, and Portugal",
+            "main-description": "A stunning journey through the charms of Europe, where the sophistication of France, the history and art of Italy, and the welcoming culture of Portugal come together in an unforgettable itinerary. Explore the romantic streets of Paris, discover the unique beauty of the Italian cities, and be enchanted by the traditions and breathtaking landscapes of Portugal. An experience that combines charm, history, and gastronomy, creating memories that will last a lifetime.",
+            
+            "day1-title": "Day 1 – Arrival in Paris (France)",
+            "day1-description": "Arrival in Paris. Assistance from the guide who will accompany the group throughout the trip. Transfer to the hotel, dinner, and overnight stay.",
+            
+            "day2-title": "Day 2 – Paris",
+            "day2-description": "Breakfast. Guided tour of the city, highlighting the Eiffel Tower, the Louvre Museum, and Notre-Dame Cathedral. Lunch at the hotel. Afternoon free to explore the city or take a boat tour on the Seine River. Dinner at a typical restaurant. Overnight stay.",
+            
+            "day3-title": "Day 3 – Paris",
+            "day3-description": "Breakfast. Visit to the charming Montmartre area, highlighting the Basilica of Sacré-Cœur and Place du Tertre. Afternoon free to shop or explore Parisian cafés and stores. Dinner and overnight stay.",
+            
+            "day4-title": "Day 4 – Paris to Florence (Italy)",
+            "day4-description": "Breakfast. Transfer to the train station for the high-speed train to Florence, Italy. Upon arrival, guided city tour, including the Cathedral of Santa Maria del Fiore, the Uffizi Gallery, and Ponte Vecchio. Dinner and overnight stay in Florence.",
+            
+            "day5-title": "Day 5 – Florence",
+            "day5-description": "Breakfast. Morning visit to the Accademia Gallery to see Michelangelo's David. Afternoon free to explore the city or visit the Boboli Gardens. Dinner at a traditional Tuscan restaurant. Overnight stay.",
+            
+            "day6-title": "Day 6 – Florence to Rome (Italy)",
+            "day6-description": "Breakfast. Transfer to Rome by train. Upon arrival, guided tour of the Colosseum, Roman Forum, and the Pantheon. Lunch in a local restaurant. Afternoon free to explore the famous Piazza di Spagna or visit the Trevi Fountain. Dinner and overnight stay in Rome.",
+            
+            "day7-title": "Day 7 – Rome",
+            "day7-description": "Breakfast. Visit to the Vatican Museums, including the Sistine Chapel and St. Peter's Basilica. Afternoon free to explore the charming streets of Trastevere or visit Villa Borghese. Dinner at a traditional Roman restaurant. Overnight stay.",
+            
+            "day8-title": "Day 8 – Rome to Lisbon (Portugal)",
+            "day8-description": "Breakfast. Transfer to the airport for the flight to Lisbon, Portugal. Upon arrival, guided tour of the city, including the Belém Tower, Jerónimos Monastery, and the famous Pastéis de Belém pastry shop. Dinner and overnight stay in Lisbon.",
+            
+            "day9-title": "Day 9 – Lisbon",
+            "day9-description": "Breakfast. Full-day tour of Lisbon, including the historic Alfama district, São Jorge Castle, and the lively Praça do Comércio. Lunch in a local restaurant. Evening free to explore the nightlife or take a tram ride through the city. Dinner and overnight stay.",
+            
+            "day10-title": "Day 10 – Lisbon to Porto (Portugal)",
+            "day10-description": "Breakfast. Transfer to Porto, Portugal's second-largest city. Guided tour of Porto, including the Livraria Lello, the beautiful Ribeira district, and the famous Porto wine cellars. Dinner and overnight stay in Porto.",
+            
+            "day11-title": "Day 11 – Porto",
+            "day11-description": "Breakfast. Morning free to explore Porto at your leisure or take a scenic cruise on the Douro River. Afternoon visit to the beautiful Church of São Francisco and the Palácio da Bolsa. Dinner at a typical Portuguese restaurant. Overnight stay.",
+            
+            "day12-title": "Day 12 – Porto to Lisbon",
+            "day12-description": "Breakfast. Transfer back to Lisbon for a free afternoon to shop or visit any attractions missed earlier in the trip. Dinner at a local restaurant. Overnight stay.",
+            
+            "day13-title": "Day 13 – Lisbon",
+            "day13-description": "Breakfast. Morning free to explore the city at your leisure. Optional excursion to Sintra to visit the Pena Palace and Moorish Castle. Farewell dinner at a traditional Portuguese restaurant. Overnight stay.",
+            
+            "day14-title": "Day 14 – Departure from Lisbon",
+            "day14-description": "Breakfast. Transfer to the airport for your return flight home, carrying unforgettable memories of your journey through France, Italy, and Portugal.",
+			"contact-us-title": "Contact Us",
+			"send-button": "Send",
+			"follow-us-title": "Follow Us",
+			"all-rights-reserved": "All rights reserved",
+			"name": "Name",
+			"message": "Message",
+        },
+        it: {
+            "menu-title": "Menu",
+            "home-link": "Home",
+            "company-link": "La Nostra Azienda",
+            "info-link": "Informazioni",
+            "contact-link": "Contatti",
+            "bookings-link": "Prenotazioni Internazionali di Hotel Online",          
+            "main-title": "Francia, Italia e Portogallo",
+            "main-description": "Un viaggio straordinario attraverso i fascini dell'Europa, dove la sofisticazione della Francia, la storia e l'arte dell'Italia e la cultura accogliente del Portogallo si incontrano in un itinerario indimenticabile. Esplora le romantiche strade di Parigi, scopri la bellezza unica delle città italiane e lasciati incantare dalle tradizioni e dai paesaggi mozzafiato del Portogallo. Un'esperienza che unisce fascino, storia e gastronomia, creando ricordi che dureranno tutta la vita.",
+            
+            "day1-title": "Giorno 1 – Arrivo a Parigi (Francia)",
+            "day1-description": "Arrivo a Parigi. Assistenza della guida che accompagnerà il gruppo durante tutta la durata del viaggio. Trasferimento in hotel, cena e pernottamento.",
+            
+            "day2-title": "Giorno 2 – Parigi",
+            "day2-description": "Colazione. Tour guidato della città, con visita alla Torre Eiffel, al Museo del Louvre e alla Cattedrale di Notre-Dame. Pranzo in hotel. Pomeriggio libero per esplorare la città o fare un giro in barca sulla Senna. Cena in un ristorante tipico. Pernottamento.",
+            
+            "day3-title": "Giorno 3 – Parigi",
+            "day3-description": "Colazione. Visita al suggestivo quartiere di Montmartre, con la Basilica del Sacré-Cœur e la Place du Tertre. Pomeriggio libero per fare shopping o esplorare caffè e negozi parigini. Cena e pernottamento.",
+            
+            "day4-title": "Giorno 4 – Parigi a Firenze (Italia)",
+            "day4-description": "Colazione. Trasferimento alla stazione per il treno ad alta velocità verso Firenze, Italia. All'arrivo, tour guidato della città, con visita alla Cattedrale di Santa Maria del Fiore, alla Galleria degli Uffizi e al Ponte Vecchio. Cena e pernottamento a Firenze.",
+            
+            "day5-title": "Giorno 5 – Firenze",
+            "day5-description": "Colazione. Visita mattutina alla Galleria dell'Accademia per vedere il David di Michelangelo. Pomeriggio libero per esplorare la città o visitare i Giardini di Boboli. Cena in un ristorante tradizionale toscano. Pernottamento.",
+            
+            "day6-title": "Giorno 6 – Firenze a Roma (Italia)",
+            "day6-description": "Colazione. Trasferimento in treno a Roma. All'arrivo, tour guidato del Colosseo, del Foro Romano e del Pantheon. Pranzo in un ristorante locale. Pomeriggio libero per esplorare Piazza di Spagna o visitare la Fontana di Trevi. Cena e pernottamento a Roma.",
+            
+            "day7-title": "Giorno 7 – Roma",
+            "day7-description": "Colazione. Visita ai Musei Vaticani, inclusa la Cappella Sistina e la Basilica di San Pietro. Pomeriggio libero per esplorare le affascinanti strade di Trastevere o visitare Villa Borghese. Cena in un ristorante tradizionale romano. Pernottamento.",
+            
+            "day8-title": "Giorno 8 – Roma a Lisbona (Portogallo)",
+            "day8-description": "Colazione. Trasferimento all'aeroporto per il volo verso Lisbona, Portogallo. All'arrivo, tour guidato della città, con visita alla Torre di Belém, al Monastero dos Jerónimos e alla famosa pasticceria di Pastéis de Belém. Cena e pernottamento a Lisbona.",
+            
+            "day9-title": "Giorno 9 – Lisbona",
+            "day9-description": "Colazione. Tour di un'intera giornata a Lisbona, inclusi il quartiere storico di Alfama, il Castello di São Jorge e la vivace Praça do Comércio. Pranzo in un ristorante locale. Sera libera per esplorare la vita notturna o fare un giro in tram per la città. Cena e pernottamento.",
+            
+            "day10-title": "Giorno 10 – Lisbona a Porto (Portogallo)",
+            "day10-description": "Colazione. Trasferimento a Porto, la seconda città più grande del Portogallo. Tour guidato di Porto, con visita alla Livraria Lello, al quartiere Ribeira e alle famose cantine del vino Porto. Cena e pernottamento a Porto.",
+            
+            "day11-title": "Giorno 11 – Porto",
+            "day11-description": "Colazione. Mattinata libera per esplorare Porto a proprio piacimento o fare una crociera panoramica sul fiume Douro. Pomeriggio con visita alla bellissima Chiesa di São Francisco e al Palácio da Bolsa. Cena in un ristorante tipico portoghese. Pernottamento.",
+            
+            "day12-title": "Giorno 12 – Porto a Lisbona",
+            "day12-description": "Colazione. Trasferimento a Lisbona per un pomeriggio libero per fare shopping o visitare altre attrazioni che non si sono potute vedere in precedenza. Cena in un ristorante locale. Pernottamento.",
+            
+            "day13-title": "Giorno 13 – Lisbona",
+            "day13-description": "Colazione. Mattinata libera per esplorare la città a proprio piacimento. Escursione opzionale a Sintra per visitare il Palazzo Pena e il Castello dei Mori. Cena di arrivederci in un ristorante tradizionale portoghese. Pernottamento.",
+            
+            "day14-title": "Giorno 14 – Partenza da Lisbona",
+            "day14-description": "Colazione. Trasferimento all'aeroporto per il volo di ritorno, portando con sé ricordi indimenticabili del viaggio attraverso Francia, Italia e Portogallo.",
+            "contact-us-title": "Contattaci",
+            "send-button": "Invia",
+            "follow-us-title": "Seguici",
+            "all-rights-reserved": "Tutti i diritti riservati",
+        },
+        fr: {
+            "menu-title": "Menu",
+            "home-link": "Accueil",
+            "company-link": "Notre Entreprise",
+            "info-link": "Informations",
+            "contact-link": "Contacts",
+            "bookings-link": "Réservations Internationales d'Hôtels en Ligne",
+            "main-title": "France, l'Italie et le Portugal",
+            "main-description": "Un voyage fascinant à travers les charmes de l'Europe, où le raffinement de la France, l'histoire et l'art de l'Italie, et la culture accueillante du Portugal se rencontrent dans un itinéraire inoubliable. Explorez les rues romantiques de Paris, découvrez la beauté unique des villes italiennes et laissez-vous envoûter par les traditions et les paysages à couper le souffle du Portugal. Une expérience qui combine charme, histoire et gastronomie, créant des souvenirs inoubliables.",
+            
+            "day1-title": "Jour 1 – Arrivée à Paris (France)",
+            "day1-description": "Arrivée à Paris. Assistance du guide qui accompagnera le groupe tout au long du voyage. Transfert à l'hôtel, dîner et nuit.",
+            
+            "day2-title": "Jour 2 – Paris",
+            "day2-description": "Petit-déjeuner. Visite guidée de la ville, avec une visite de la Tour Eiffel, du Musée du Louvre et de la Cathédrale Notre-Dame. Déjeuner à l'hôtel. Après-midi libre pour explorer la ville ou faire une croisière sur la Seine. Dîner dans un restaurant typique. Nuit.",
+            
+            "day3-title": "Jour 3 – Paris",
+            "day3-description": "Petit-déjeuner. Visite du quartier pittoresque de Montmartre, avec la Basilique du Sacré-Cœur et la Place du Tertre. Après-midi libre pour faire du shopping ou explorer les cafés et magasins parisiens. Dîner et nuit.",
+            
+            "day4-title": "Jour 4 – Paris à Florence (Italie)",
+            "day4-description": "Petit-déjeuner. Transfert à la gare pour prendre le train à grande vitesse vers Florence, Italie. À l'arrivée, visite guidée de la ville, avec la Cathédrale Santa Maria del Fiore, la Galerie des Offices et le Ponte Vecchio. Dîner et nuit à Florence.",
+            
+            "day5-title": "Jour 5 – Florence",
+            "day5-description": "Petit-déjeuner. Visite matinale de la Galerie de l'Académie pour voir le David de Michel-Ange. Après-midi libre pour explorer la ville ou visiter les jardins de Boboli. Dîner dans un restaurant traditionnel toscan. Nuit.",
+            
+            "day6-title": "Jour 6 – Florence à Rome (Italie)",
+            "day6-description": "Petit-déjeuner. Transfert en train à Rome. À l'arrivée, visite guidée du Colisée, du Forum romain et du Panthéon. Déjeuner dans un restaurant local. Après-midi libre pour explorer la Place d'Espagne ou visiter la Fontaine de Trevi. Dîner et nuit à Rome.",
+            
+            "day7-title": "Jour 7 – Rome",
+            "day7-description": "Petit-déjeuner. Visite des Musées du Vatican, y compris la Chapelle Sixtine et la Basilique Saint-Pierre. Après-midi libre pour explorer les rues charmantes de Trastevere ou visiter la Villa Borghèse. Dîner dans un restaurant traditionnel romain. Nuit.",
+            
+            "day8-title": "Jour 8 – Rome à Lisbonne (Portugal)",
+            "day8-description": "Petit-déjeuner. Transfert à l'aéroport pour le vol à destination de Lisbonne, Portugal. À l'arrivée, visite guidée de la ville, avec la Tour de Belém, le Monastère des Hiéronymites et la célèbre pâtisserie Pastéis de Belém. Dîner et nuit à Lisbonne.",
+            
+            "day9-title": "Jour 9 – Lisbonne",
+            "day9-description": "Petit-déjeuner. Visite d'une journée complète de Lisbonne, y compris le quartier historique d'Alfama, le Château de São Jorge et la place animée Praça do Comércio. Déjeuner dans un restaurant local. Soirée libre pour explorer la vie nocturne ou faire un tour en tramway dans la ville. Dîner et nuit.",
+            
+            "day10-title": "Jour 10 – Lisbonne à Porto (Portugal)",
+            "day10-description": "Petit-déjeuner. Transfert à Porto, la deuxième plus grande ville du Portugal. Visite guidée de Porto, y compris la librairie Lello, le quartier Ribeira et les célèbres caves à vin de Porto. Dîner et nuit à Porto.",
+            
+            "day11-title": "Jour 11 – Porto",
+            "day11-description": "Petit-déjeuner. Matinée libre pour explorer Porto à votre rythme ou faire une croisière panoramique sur le fleuve Douro. Après-midi avec une visite de l'église São Francisco et du Palácio da Bolsa. Dîner dans un restaurant typique portugais. Nuit.",
+            
+            "day12-title": "Jour 12 – Porto à Lisbonne",
+            "day12-description": "Petit-déjeuner. Transfert à Lisbonne pour un après-midi libre pour faire du shopping ou visiter d'autres attractions que vous n'avez pas pu voir précédemment. Dîner dans un restaurant local. Nuit.",
+            
+            "day13-title": "Jour 13 – Lisbonne",
+            "day13-description": "Petit-déjeuner. Matinée libre pour explorer la ville à votre rythme. Excursion optionnelle à Sintra pour visiter le Palais de Pena et le Château des Maures. Dîner d'adieu dans un restaurant traditionnel portugais. Nuit.",
+            
+            "day14-title": "Jour 14 – Départ de Lisbonne",
+            "day14-description": "Petit-déjeuner. Transfert à l'aéroport pour votre vol de retour, emportant avec vous des souvenirs inoubliables de ce voyage à travers la France, l'Italie et le Portugal.",
+            "contact-us-title": "Contactez-Nous",
+            "send-button": "Envoyer",
+            "follow-us-title": "Suivez-Nous",
+            "all-rights-reserved": "Tous droits réservés",
+
+        },
+        es: {
+            "menu-title": "Menú",
+            "home-link": "Inicio",
+            "company-link": "Nuestra Empresa",
+            "info-link": "Información",
+            "contact-link": "Contactos",
+            "bookings-link": "Reservas Internacionales de Hoteles Online",
+            "main-title": "Francia, Italia y Portugal",
+            "main-description": "Un fascinante viaje a través de los encantos de Europa, donde la sofisticación de Francia, la historia y el arte de Italia, y la cultura acogedora de Portugal se encuentran en un itinerario inolvidable. Explora las románticas calles de París, descubre la belleza única de las ciudades italianas y déjate cautivar por las tradiciones y los paisajes impresionantes de Portugal. Una experiencia que combina encanto, historia y gastronomía, creando recuerdos inolvidables.",
+            
+            "day1-title": "Día 1 – Llegada a París (Francia)",
+            "day1-description": "Llegada a París. Asistencia del guía que acompañará al grupo durante todo el viaje. Traslado al hotel, cena y pernocte.",
+            
+            "day2-title": "Día 2 – París",
+            "day2-description": "Desayuno. Visita guiada por la ciudad, con recorrido por la Torre Eiffel, el Museo del Louvre y la Catedral de Notre-Dame. Almuerzo en el hotel. Tarde libre para explorar la ciudad o realizar un crucero por el Sena. Cena en un restaurante típico. Pernocte.",
+            
+            "day3-title": "Día 3 – París",
+            "day3-description": "Desayuno. Visita al pintoresco barrio de Montmartre, con la Basílica del Sagrado Corazón y la Plaza del Tertre. Tarde libre para ir de compras o explorar los cafés y tiendas parisinas. Cena y pernocte.",
+            
+            "day4-title": "Día 4 – París a Florencia (Italia)",
+            "day4-description": "Desayuno. Traslado a la estación para tomar el tren de alta velocidad a Florencia, Italia. A la llegada, visita guiada por la ciudad, con la Catedral de Santa María del Fiore, la Galería de los Uffizi y el Ponte Vecchio. Cena y pernocte en Florencia.",
+            
+            "day5-title": "Día 5 – Florencia",
+            "day5-description": "Desayuno. Visita matutina a la Galería de la Academia para ver el David de Miguel Ángel. Tarde libre para explorar la ciudad o visitar los Jardines de Boboli. Cena en un restaurante tradicional toledano. Pernocte.",
+            
+            "day6-title": "Día 6 – Florencia a Roma (Italia)",
+            "day6-description": "Desayuno. Traslado en tren a Roma. A la llegada, visita guiada al Coliseo, el Foro Romano y el Panteón. Almuerzo en un restaurante local. Tarde libre para explorar la Plaza de España o visitar la Fontana di Trevi. Cena y pernocte en Roma.",
+            
+            "day7-title": "Día 7 – Roma",
+            "day7-description": "Desayuno. Visita a los Museos Vaticanos, incluyendo la Capilla Sixtina y la Basílica de San Pedro. Tarde libre para explorar las pintorescas calles de Trastevere o visitar la Villa Borghese. Cena en un restaurante tradicional romano. Pernocte.",
+            
+            "day8-title": "Día 8 – Roma a Lisboa (Portugal)",
+            "day8-description": "Desayuno. Traslado al aeropuerto para tomar el vuelo a Lisboa, Portugal. A la llegada, visita guiada por la ciudad, con la Torre de Belém, el Monasterio de los Jerónimos y la famosa pastelería Pastéis de Belém. Cena y pernocte en Lisboa.",
+            
+            "day9-title": "Día 9 – Lisboa",
+            "day9-description": "Desayuno. Visita de día completo por Lisboa, incluyendo el barrio histórico de Alfama, el Castillo de San Jorge y la animada Plaza del Comercio. Almuerzo en un restaurante local. Noche libre para explorar la vida nocturna o hacer un recorrido en tranvía por la ciudad. Cena y pernocte.",
+            
+            "day10-title": "Día 10 – Lisboa a Oporto (Portugal)",
+            "day10-description": "Desayuno. Traslado a Oporto, la segunda ciudad más grande de Portugal. Visita guiada por Oporto, incluyendo la librería Lello, el barrio Ribeira y las famosas bodegas de vino de Oporto. Cena y pernocte en Oporto.",
+            
+            "day11-title": "Día 11 – Oporto",
+            "day11-description": "Desayuno. Mañana libre para explorar Oporto a su ritmo o hacer un recorrido panorámico por el río Duero. Tarde con visita a la iglesia de São Francisco y al Palacio de la Bolsa. Cena en un restaurante típico portugués. Pernocte.",
+            
+            "day12-title": "Día 12 – Oporto a Lisboa",
+            "day12-description": "Desayuno. Traslado a Lisboa para una tarde libre de compras o para visitar otras atracciones que no se hayan visitado anteriormente. Cena en un restaurante local. Pernocte.",
+            
+            "day13-title": "Día 13 – Lisboa",
+            "day13-description": "Desayuno. Mañana libre para explorar la ciudad a su ritmo. Excursión opcional a Sintra para visitar el Palacio de Pena y el Castillo de los Moros. Cena de despedida en un restaurante tradicional portugués. Pernocte.",
+            
+            "day14-title": "Día 14 – Salida de Lisboa",
+            "day14-description": "Desayuno. Traslado al aeropuerto para su vuelo de regreso, llevando consigo recuerdos inolvidables de este viaje por Francia, Italia y Portugal.",
+            "contact-us-title": "Contáctanos",
+            "send-button": "Enviar",
+            "follow-us-title": "Síguenos",
+            "all-rights-reserved": "Todos los derechos reservados"
+        },
+                
+        pt: {
+            "menu-title": "Menu",
+            "home-link": "Home",
+            "company-link": "Nossa Empresa",
+            "info-link": "Informações",
+            "contact-link": "Contatos",
+            "bookings-link": "Reservas Internacionais de Hoteis Online",
+            "main-title": "França, Itália e Portugal",
+            "main-description": "Uma jornada deslumbrante pelos encantos da Europa, onde a sofisticação da França, a história e a arte da Itália, e a cultura acolhedora de Portugal se encontram em um itinerário inesquecível. Explore as românticas ruas de Paris, descubra a beleza única das cidades italianas e deixe-se encantar pelas tradições e paisagens deslumbrantes de Portugal. Uma experiência que combina charme, história e gastronomia, criando memórias para a vida toda.",
+            
+            "day1-title": "1º Dia – Chegada a Paris (França)",
+            "day1-description": "Chegada a Paris. Assistência do guia que acompanhará o grupo durante toda a viagem. Traslado ao hotel, jantar e pernoite.",
+            
+            "day2-title": "2º Dia – Paris",
+            "day2-description": "Café da manhã. Visita guiada pela cidade, com passeio pela Torre Eiffel, Museu do Louvre e Catedral de Notre-Dame. Almoço no hotel. Tarde livre para explorar a cidade ou fazer um cruzeiro pelo Sena. Jantar em restaurante típico. Pernoite.",
+            
+            "day3-title": "3º Dia – Paris",
+            "day3-description": "Café da manhã. Visita ao charmoso bairro de Montmartre, com a Basílica do Sagrado Coração e a Praça do Tertre. Tarde livre para compras ou explorar os cafés e lojas parisienses. Jantar e pernoite.",
+            
+            "day4-title": "4º Dia – Paris a Florença (Itália)",
+            "day4-description": "Café da manhã. Traslado para a estação de trem para embarque no trem de alta velocidade para Florença, Itália. Chegada e visita guiada à cidade, com destaque para a Catedral de Santa Maria del Fiore, a Galeria Uffizi e a Ponte Vecchio. Jantar e pernoite em Florença.",
+            
+            "day5-title": "5º Dia – Florença",
+            "day5-description": "Café da manhã. Visita matinal à Galeria da Academia para ver o David de Michelangelo. Tarde livre para explorar a cidade ou visitar os Jardins Boboli. Jantar em restaurante tradicional florentino. Pernoite.",
+            
+            "day6-title": "6º Dia – Florença a Roma (Itália)",
+            "day6-description": "Café da manhã. Traslado de trem para Roma. Chegada e visita guiada ao Coliseu, ao Fórum Romano e ao Panteão. Almoço em restaurante local. Tarde livre para explorar a Praça de Espanha ou visitar a Fontana di Trevi. Jantar e pernoite em Roma.",
+            
+            "day7-title": "7º Dia – Roma",
+            "day7-description": "Café da manhã. Visita aos Museus Vaticanos, incluindo a Capela Sistina e a Basílica de São Pedro. Tarde livre para explorar as pitorescas ruas de Trastevere ou visitar a Villa Borghese. Jantar em restaurante tradicional romano. Pernoite.",
+            
+            "day8-title": "8º Dia – Roma a Lisboa (Portugal)",
+            "day8-description": "Café da manhã. Traslado ao aeroporto para embarque no voo com destino a Lisboa, Portugal. Chegada e visita guiada pela cidade, com destaque para a Torre de Belém, o Mosteiro dos Jerónimos e a famosa pastelaria Pastéis de Belém. Jantar e pernoite em Lisboa.",
+            
+            "day9-title": "9º Dia – Lisboa",
+            "day9-description": "Café da manhã. Visita de dia inteiro por Lisboa, incluindo o bairro histórico de Alfama, o Castelo de São Jorge e a animada Praça do Comércio. Almoço em restaurante local. Noite livre para explorar a vida noturna ou fazer um passeio de elétrico pela cidade. Jantar e pernoite.",
+            
+            "day10-title": "10º Dia – Lisboa a Porto (Portugal)",
+            "day10-description": "Café da manhã. Traslado a Porto, a segunda maior cidade de Portugal. Chegada e visita guiada à cidade, com destaque para a Livraria Lello, o bairro Ribeira e as famosas caves de vinho do Porto. Jantar e pernoite em Porto.",
+            
+            "day11-title": "11º Dia – Porto",
+            "day11-description": "Café da manhã. Manhã livre para explorar Porto ou fazer um passeio panorâmico pelo Rio Douro. Tarde com visita à Igreja de São Francisco e à Bolsa de Valores. Jantar em restaurante típico português. Pernoite.",
+            
+            "day12-title": "12º Dia – Porto a Lisboa",
+            "day12-description": "Café da manhã. Traslado de volta a Lisboa para uma tarde livre de compras ou para visitar outras atrações que não foram exploradas. Jantar em restaurante local. Pernoite.",
+            
+            "day13-title": "13º Dia – Lisboa",
+            "day13-description": "Café da manhã. Manhã livre para explorar a cidade à vontade. Excursão opcional a Sintra, para visitar o Palácio da Pena e o Castelo dos Mouros. Jantar de despedida em restaurante tradicional português. Pernoite.",
+            
+            "day14-title": "14º Dia – Saída de Lisboa",
+            "day14-description": "Café da manhã. Traslado ao aeroporto para embarque no voo de retorno, levando consigo recordações inesquecíveis dessa viagem pela França, Itália e Portugal.",
+            "contact-us-title": "Fale Conosco",
+            "send-button": "Enviar",
+            "follow-us-title": "Siga-Nos",
+            "all-rights-reserved": "Todos os direitos reservados"
+                }
+            };
+
+            for (var id in translations[language]) {
+                var element = document.getElementById(id);
+                if (element) {
+                    element.innerHTML = translations[language][id];
+                }
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var language = getLanguage();
+            translatePage(language);
+        });
+    </script>
+</body>
+</html>

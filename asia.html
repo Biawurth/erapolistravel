@@ -40,11 +40,12 @@
             transform: scale(1.1);
         }
 
-         .tiles .image img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
+        .tiles .image img {
+            width: 100%;
+            height: auto;
+            max-height: 200px;
+            object-fit: cover;
+        }
     </style>
     
     <link rel="stylesheet" href="assets/css/erapolis-travel-logo.css">
@@ -109,12 +110,10 @@
                             <h2 id="vietnam-title">Vietnam, Cambodia, and Laos</h2>
                             <div class="content">
                                 <p id="vietnam-description">A journey through cultural wonders, ancient temples, and breathtaking landscapes.</p>
-                            </div>
-                        </a>
-                    </article>
-                </section>
-            </div>
+             </div>
+                    
         </div>
+</div>
 
         <!-- Footer -->
         <footer id="footer">
@@ -161,7 +160,7 @@
 
     <!-- Translate Script -->
     <script>
-        function setLanguage(language) {
+                function setLanguage(language) {
             document.cookie = "language=" + language + "; path=/";
             translatePage(language);
         }
@@ -184,42 +183,89 @@
 
         function translatePage(language) {
             var translations = {
-                en: {
-                    "menu-title": "Menu",
-                    "home-link": "Home",
-                    "company-link": "Our Company",
-                    "info-link": "Information",
-                    "contact-link": "Contact",
-                    "bookings-link": "International Hotel Bookings",
-                    "destination-title": "Asia",
-                    "description": "A journey through cultural wonders, ancient temples, and breathtaking landscapes.",
-                    "vietnam-title": "Vietnam, Cambodia, and Laos",
-                    "vietnam-description": "A journey through cultural wonders, ancient temples, and breathtaking landscapes.",
-                    "contact-us-title": "Contact Us",
-                    "send-button": "Send",
-                    "follow-us-title": "Follow Us",
-                    "all-rights-reserved": "All Rights Reserved.",
-                },
-                pt: {
-                    "menu-title": "Menu",
-                    "home-link": "Home",
-                    "company-link": "Nossa Empresa",
-                    "info-link": "Informações",
-                    "contact-link": "Contatos",
-                    "bookings-link": "Reservas Internacionais de Hotéis",
-                    "destination-title": "Ásia",
-                    "description": "Ásia: misticismo, templos e paisagens fascinantes. Explore Vietnã, Camboja e Laos!",
-                    "vietnam-title": "Vietnã, Camboja e Laos",
-                    "vietnam-description": "Uma jornada por maravilhas culturais, templos antigos e paisagens deslumbrantes.",
-                    "contact-us-title": "Fale Conosco",
-                    "send-button": "Enviar",
-                    "follow-us-title": "Siga-Nos",
-                    "all-rights-reserved": "Todos os direitos reservados",
-                },
-                // ...add other language translations (it, fr, es) here as needed
-            };
+            en: {
+                "menu-title": "Menu",
+                "home-link": "Home",
+                "company-link": "Our Company",
+                "info-link": "Information",
+                "contact-link": "Contact",
+                "bookings-link": "International Hotel Bookings",
+                "destination-title": "Asia",
+                "description": "A journey through cultural wonders, ancient temples, and breathtaking landscapes.",
+                "vietnam-title": "Vietnam, Cambodia, and Laos",
+                "vietnam-description": "A journey through cultural wonders, ancient temples, and breathtaking landscapes.",
+                "contact-us-title": "Contact Us",
+                "send-button": "Send",
+                "follow-us-title": "Follow Us",
+                "all-rights-reserved": "All Rights Reserved.",
+            },
+            pt: {
+                "menu-title": "Menu",
+                "home-link": "Home",
+                "company-link": "Nossa Empresa",
+                "info-link": "Informações",
+                "contact-link": "Contatos",
+                "bookings-link": "Reservas Internacionais de Hotéis",
+                "destination-title": "Ásia",
+                "description": "Ásia: misticismo, templos e paisagens fascinantes. Explore Vietnã, Camboja e Laos!",
+                "vietnam-title": "Vietnã, Camboja e Laos",
+                "vietnam-description": "Uma jornada por maravilhas culturais, templos antigos e paisagens deslumbrantes.",
+                "contact-us-title": "Fale Conosco",
+                "send-button": "Enviar",
+                "follow-us-title": "Siga-Nos",
+                "all-rights-reserved": "Todos os direitos reservados",
+            },
+            it: {
+                "menu-title": "Menu",
+                "home-link": "Home",
+                "company-link": "La Nostra Azienda",
+                "info-link": "Informazioni",
+                "contact-link": "Contatti",
+                "bookings-link": "Prenotazioni Internazionali di Hotel",
+                "destination-title": "Asia",
+                "description": "Asia: misticismo, templi e paesaggi affascinanti. Esplora Vietnam, Cambogia e Laos!",
+                "vietnam-title": "Vietnam, Cambogia e Laos",
+                "vietnam-description": "Un viaggio tra meraviglie culturali, templi antichi e paesaggi mozzafiato.",
+                "contact-us-title": "Contattaci",
+                "send-button": "Invia",
+                "follow-us-title": "Seguici",
+                "all-rights-reserved": "Tutti i diritti riservati",
+            },
+            fr: {
+                "menu-title": "Menu",
+                "home-link": "Accueil",
+                "company-link": "Notre Entreprise",
+                "info-link": "Informations",
+                "contact-link": "Contacts",
+                "bookings-link": "Réservations Internationales d'Hôtels",
+                "destination-title": "Asie",
+                "description": "Asie : mysticisme, temples et paysages fascinants. Explorez le Vietnam, le Cambodge et le Laos !",
+                "vietnam-title": "Vietnam, Cambodge et Laos",
+                "vietnam-description": "Un voyage à travers des merveilles culturelles, des temples anciens et des paysages à couper le souffle.",
+                "contact-us-title": "Contactez-Nous",
+                "send-button": "Envoyer",
+                "follow-us-title": "Suivez-Nous",
+                "all-rights-reserved": "Tous droits réservés",
+            },
+            es: {
+                "menu-title": "Menú",
+                "home-link": "Inicio",
+                "company-link": "Nuestra Empresa",
+                "info-link": "Información",
+                "contact-link": "Contactos",
+                "bookings-link": "Reservas Internacionales de Hoteles",
+                "destination-title": "Asia",
+                "description": "Asia: misticismo, templos y paisajes fascinantes. ¡Explora Vietnam, Camboya y Laos!",
+                "vietnam-title": "Vietnam, Camboya y Laos",
+                "vietnam-description": "Un viaje por maravillas culturales, templos antiguos y paisajes impresionantes.",
+                "contact-us-title": "Contáctanos",
+                "send-button": "Enviar",
+                "follow-us-title": "Síguenos",
+                "all-rights-reserved": "Todos los derechos reservados",
+            }
+        };
 
-            for (var id in translations[language]) {
+        for (var id in translations[language]) {
                 var element = document.getElementById(id);
                 if (element) {
                     element.innerHTML = translations[language][id];

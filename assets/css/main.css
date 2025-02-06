@@ -2854,7 +2854,14 @@ input, select, textarea {
 				}
 
 		}
-
+		.tiles {
+		    display: grid; /* Se estiver usando flexbox, tente grid */
+		    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta a largura */
+		    gap: 10px; /* Espaçamento entre os tiles */
+		}
+		
+		.tile {
+		    height: 300px; /* Defina um tamanho fixo para todos os
 /* Header */
 
 	#header {
